@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-11T23:00:01.913509+08:00",
+  "generated_at": "2026-09-14T20:10:02.433155+08:00",
   "regime": {
     "regime": "bull_low_vol",
-    "vix": 16.02,
-    "spy_price": 757.83,
+    "vix": 17.52,
+    "spy_price": 764.29,
     "gates": {
       "allow_calls": true,
       "allow_puts": false,
@@ -11,6 +11,106 @@
     }
   },
   "sectors": [
+    {
+      "sector": "Broad Market (Nasdaq-100)",
+      "conviction": 4,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "Rate-cut posture from the Fed is a tailwind for growth multiples and duration-heavy NDX names",
+        "Broad market participation (QQQ tracking SPY) suggests the rally is broadening, which historically extends cycle longevity",
+        "Low absolute VIX levels still permit call-buying at reasonable premium with defined risk"
+      ],
+      "headwinds": [
+        "VIX above its 30-day average contradicts the BULL_LOW_VOL label \u2014 regime shift risk is elevated",
+        "QQQ's -56% vol collapse with sideways price action often precedes a sharp directional move, and the trend is too weak to assume upside",
+        "SPY trending up while QQQ goes flat is a bearish divergence that historically resolves in QQQ's direction (down)"
+      ],
+      "risk_to_thesis": "A VIX close above 18.5 (currently 17.52) would break the BULL_LOW_VOL regime and invalidate the range-trade thesis, forcing a reassessment toward defensive positioning",
+      "generated_at": "2026-09-14T19:51:11.820861+08:00",
+      "swing_trade_setup": {
+        "bias": "neutral \u2014 coiled spring, no directional edge",
+        "best_structure": "sell QQQ iron condor 2-3 weeks out (e.g., 690/700/730/740) to collect premium while range holds; or buy a straddle at 715 for a vol breakout play",
+        "key_levels_to_watch": "QQQ 710.4 (50MA) as the pivot \u2014 sustained break below opens 690-700; break above 720 confirms resumption of uptrend. VIX 18.5 is the vol line \u2014 above that, the regime shifts",
+        "avoid": "naked directional calls or puts until QQQ breaks the 700-720 range with conviction; fighting the coil is a premium-destruction strategy"
+      },
+      "news_signal_vs_noise": {
+        "signal": "CPI/PCE prints and FOMC dot-plot revisions \u2014 these will determine whether the rate-cut tailwind persists or reverses",
+        "noise": "Single-stock AI hype headlines; in a broad-market sideways phase, idiosyncratic noise is a distraction from the macro vol regime"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "QQQ",
+          "role": "watch",
+          "reason": "Coiling at 50MA with vol crushed -56% \u2014 the highest-probability swing setup in the market right now, but direction is unconfirmed.",
+          "options_angle": "buy straddle or strangle 2-3 weeks out to play the vol expansion; alternatively sell premium (iron condor) if you believe the range holds"
+        }
+      ],
+      "macro_backdrop": "BULL_LOW_VOL regime intact with SPY up 5.87% on the quarter and above both 50MA and 200MA, but QQQ's sideways chop and VIX at 17.52 above its 30-day average of 15.43 suggest the easy money phase is pausing. The Fed is in a rate-cut posture, but sticky inflation keeps real rates elevated, creating a tug-of-war between supportive duration and eroding growth multiples.",
+      "key_themes": [
+        "QQQ sideways consolidation 0.6% above 50MA signals a coiling breakout setup in either direction with no clear conviction",
+        "VIX at 17.52 vs 30d avg of 15.43 warns that vol compression is over \u2014 complacency is not as safe as the regime label implies",
+        "QQQ in-line with SPY (-0.87% 3M relative) reflects broad market participation rather than narrow mega-cap leadership \u2014 healthier but less explosive"
+      ]
+    },
+    {
+      "sector": "Technology / E-commerce",
+      "conviction": 6,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "Fed rate cuts in low-vol regime boost mega-cap duration names and reduce equity risk premium",
+        "AI capex cycle benefiting MSFT/Azure and AAPL/services revenue streams",
+        "VIX mean-reversion setup supports selective call-buying on pullbacks in strong uptrend names"
+      ],
+      "headwinds": [
+        "VIX above 30d avg suggests vol compression is over \u2014 any spike above 20 would trigger broad tech de-rating",
+        "AMZN and META underperformance shows e-commerce and ad sensitivity to consumer spending fatigue",
+        "MSFT stretched 9.4% above 50MA increases pullback risk on any macro scare"
+      ],
+      "risk_to_thesis": "A VIX spike above 20 (currently 17.52) would invalidate the bull-low-vol regime and compress tech multiples across the board",
+      "generated_at": "2026-09-14T19:50:41.714270+08:00",
+      "swing_trade_setup": {
+        "bias": "mixed \u2014 bullish software/AI, neutral-to-bearish e-commerce/ad",
+        "best_structure": "buy ATM calls 3-4 weeks out on MSFT pullbacks to 475-480; sell puts on AAPL near 310; small long AMZN ATM calls with 250 stop",
+        "key_levels_to_watch": "SPY 758 (50MA), MSFT 453 (50MA), AMZN 255 (50MA), META 660 resistance / 600 support (50MA)",
+        "avoid": "META naked longs until trend reversal confirmed; any tech short here is fighting the regime"
+      },
+      "news_signal_vs_noise": {
+        "signal": "AWS and Azure revenue growth metrics in upcoming earnings previews \u2014 the primary driver of MSFT/AAPL relative strength",
+        "noise": "Short-term ad-revenue headline misses on META; the ad cycle is structurally intact and priced in, making them noise unless macro breaks"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "20.97% 3M return with 15.1% alpha vs SPY; Azure AI monetization is the sector's cleanest growth story.",
+          "options_angle": "buy OTM calls 4 weeks out on pullbacks to 475-480 (near 50MA)"
+        },
+        {
+          "ticker": "AAPL",
+          "role": "leader",
+          "reason": "17.13% 3M and 11.26% alpha, but sideways action and -46% vol suggest a coiling phase before a breakout or breakdown.",
+          "options_angle": "sell cash-secured puts near 310 (below 50MA) to collect premium while waiting for a directional catalyst"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "watch",
+          "reason": "Only 0.6% above 50MA after -12% vs SPY \u2014 the highest beta-reversal candidate if margin narrative improves.",
+          "options_angle": "buy ATM calls 3-4 weeks out, sizing small; set stop below 50MA at 250"
+        },
+        {
+          "ticker": "META",
+          "role": "laggard",
+          "reason": "Downtrend against AI peers with vol only -5% suggests lingering downside risk; ad-revenue headwinds remain unresolved.",
+          "options_angle": "avoid longs; consider put spreads or stay flat until trend stabilizes above 660"
+        }
+      ],
+      "macro_backdrop": "Bull low-vol regime with VIX at 17.52, above its 30-day average of 15.43, signaling rising complacency risk. SPY at 764.29 well above both 50MA ($758.62) and 200MA ($712.06) confirms a healthy uptrend. Fed is in a steady-cut posture supporting duration-sensitive mega-caps, but sticky inflation keeps real rates elevated, pressuring e-commerce margin expansion.",
+      "key_themes": [
+        "AI monetization divergence separating MSFT/AAPL from META/AMZN \u2014 software vs. ad/retail margin stories",
+        "E-commerce margin inflection thesis: AMZN sits right at 50MA after -12% vs SPY, making it the highest-risk-reward swing name",
+        "META's downtrend + elevated vol vs. AI peers signals ad-market rotation risk despite prior AI hype cycle leadership"
+      ]
+    },
     {
       "sector": "Technology",
       "conviction": 6,
@@ -246,193 +346,81 @@
         "Rate-cut tailwind broadening market participation beyond Magnificent Seven \u2014 equal-weight S&P 500 outperforming cap-weight for two consecutive months, a regime shift signal",
         "Corporate buybacks running at $950B annualized, providing a structural bid under the market that offsets weakening insider selling"
       ]
-    },
-    {
-      "sector": "Broad Market (Nasdaq-100)",
-      "conviction": 5,
-      "sentiment": "neutral",
-      "tailwinds": [
-        "BULL_LOW_VOL regime structurally favors call buying; mean-reversion sells have poor risk/reward when VIX is suppressed",
-        "Vol crush across the complex (QQQ IV down 52%) means calls are pricing in very low continuation risk \u2014 any upside move will expand premium",
-        "Seasonality: QQQ historically strong into Q4 as window-dressing and tax-loss harvesting flows reverse"
-      ],
-      "headwinds": [
-        "QQQ is essentially flat vs SPY over 3 months (+0.3% spread) \u2014 tech is no longer leading, suggesting rotation or exhaustion in the AI trade",
-        "VIX at 17.62 is above its 30-day avg (15.38) \u2014 a subtle pickup that, if it continues above 20, would break the BULL_LOW_VOL regime and trigger de-grossing",
-        "QQQ sitting just 0.7% above 50MA with a sideways trend means a close below $711 would confirm distribution and target the 200MA near $670-680"
-      ],
-      "risk_to_thesis": "A VIX spike above 20 \u2014 triggered by a macro shock or a top-10 earnings miss \u2014 would invalidate the BULL_LOW_VOL regime and trigger a rapid de-grossing of concentrated tech positions, sending QQQ toward the 200MA near $670.",
-      "generated_at": "2026-09-10T21:26:23.138107+08:00",
-      "swing_trade_setup": {
-        "bias": "neutral",
-        "best_structure": "Wait for a decisive QQQ close above $730 (breakout) to buy 3-4 week ATM calls targeting $760-770; alternatively, if QQQ rejects at $725 and holds above 50MA, sell $700 OTM puts to collect premium in range.",
-        "key_levels_to_watch": "Support: $711 (50MA), $695 (swing low). Resistance: $730 (breakout trigger), $750 (prior high). Regime invalidation: VIX above 20 or QQQ close below $700.",
-        "avoid": "Avoid short-dated OTM calls on QQQ \u2014 sideways chop kills theta. Avoid long META calls until its downtrend resolves. Avoid pre-earnings straddles in low-vol names \u2014 IV is too compressed to justify the gamma risk."
-      },
-      "news_signal_vs_noise": {
-        "signal": "Any update on Fed policy timing (dot plot, chair commentary) and Q3 guidance from top-weighted names (MSFT, AAPL, NVDA) \u2014 these will determine whether QQQ breaks out or breaks down from the 50MA.",
-        "noise": "Daily correlation and rotation headlines \u2014 QQQ is range-bound by definition; ignore noise about 'tech vs. value rotations' until a level actually breaks."
-      },
-      "notable_tickers": [
-        {
-          "ticker": "QQQ",
-          "role": "watch",
-          "reason": "Sideways chop at 50MA reflects indecision between AI momentum and valuation fatigue; a breakout above $730 or breakdown below $711 will set the next 5-10% move.",
-          "options_angle": "call setup \u2014 buy 3-4 week ATM calls on a decisive breakout above $725-730; alternatively, sell OTM puts ($700 strike) to collect premium if range-bound"
-        },
-        {
-          "ticker": "MSFT",
-          "role": "leader",
-          "reason": "Best-in-class trend within QQQ (9.6% above 50MA, +19.11% 3M); the primary engine if QQQ breaks out.",
-          "options_angle": "call setup \u2014 buy 3-4 week ATM calls on pullback to $475-480; highest-conviction name in the basket"
-        },
-        {
-          "ticker": "META",
-          "role": "laggard",
-          "reason": "In downtrend despite +7.48% 3M \u2014 distribution at highs makes it the weakest link in the top-10 weighting.",
-          "options_angle": "avoid \u2014 do not hold long calls on META until the downtrend breaks; if paired with QQQ call, size META exposure at zero or hedge"
-        }
-      ],
-      "macro_backdrop": "Fed in data-dependent pause with markets pricing gradual cuts into year-end; 10Y yields stable near 4.1% keeping growth multiples supported. USD modestly softer on the quarter, tailwind for multinationals. VIX at 17.62 is slightly above its 30-day average of 15.38 \u2014 a minor pickup but still consistent with a low-vol bull regime.",
-      "key_themes": [
-        "Nasdaq-100 in sideways consolidation just above 50MA ($716.31 vs $711.2) as the AI mega-cap trade pauses to digest 3M gains; direction depends on next catalyst",
-        "Concentration risk dominates: top 10 holdings drive ~50% of QQQ \u2014 any stalling in MSFT, AAPL, NVDA, AMZN, META, AVGO, GOOGL directly caps upside",
-        "Low-vol regime (VIX sub-18) compressing implied vol across tech names, creating historically cheap call entry for the next directional leg"
-      ]
-    },
-    {
-      "sector": "Technology/E-commerce",
-      "conviction": 6,
-      "sentiment": "neutral",
-      "tailwinds": [
-        "AMZN AWS re-acceleration (+20% YoY) with AI workloads now 15-20% of cloud mix, driving margin expansion and FCF growth",
-        "Digital ad spending re-accelerating in Q3 as brands shift budget to AI-optimized targeting; META and GOOGL primary beneficiaries",
-        "Vol crush across mega-cap tech (VIX 17.62, single-stock IVs 40-80% off highs) creates historically cheap call entry for directional swing trades"
-      ],
-      "headwinds": [
-        "AMZN retail margin compression and heavy capex drag (-11.98% vs SPY 3M) has the stock stuck below 50MA \u2014 value trap risk if AWS deceleration materializes",
-        "META's Reality Labs losses widening ($20B+ annualized) while core ad growth decelerates; the 'picks and shovels' premium is getting harder to justify at 25x forward",
-        "Consumer spending late-cycle fatigue could pressure AAPL hardware sales and AMZN discretionary e-commerce in H2 2026"
-      ],
-      "risk_to_thesis": "A hard deceleration in consumer spending \u2014 evidenced by a miss in AMZN Q3 retail guidance or AAPL iPhone 17 pre-order disappointment \u2014 would break the consumer resilience narrative and trigger broad multiple compression across the sector.",
-      "generated_at": "2026-09-10T21:25:35.904753+08:00",
-      "swing_trade_setup": {
-        "bias": "mixed",
-        "best_structure": "Long MSFT calls 3-4 week ATM on pullbacks to $475-480; pair with long AAPL calls on breakout above $320 \u2014 basket approach captures AI monetization and consumer refresh themes while hedging AMZN/META weakness.",
-        "key_levels_to_watch": "AMZN: needs close above $255 to confirm reversal, support at $240. AAPL: support $308, resistance $325. META: must hold $620 or downtrend extends to $580. MSFT: support $475, resistance $510.",
-        "avoid": "Avoid short-dated OTM calls on AMZN (chop kills theta); avoid long META calls until the downtrend structure breaks; avoid AAPL puts \u2014 too much long-term support and buyback flow."
-      },
-      "news_signal_vs_noise": {
-        "signal": "AMZN AWS growth guidance (is AI revenue run-rate hitting $10B+ annualized?) and AAPL iPhone 17 pre-order data \u2014 these will drive the next 5-10% sector move.",
-        "noise": "Daily META regulatory headlines and short reports on AMZN retail margins \u2014 both are well-known and already priced; no new information content."
-      },
-      "notable_tickers": [
-        {
-          "ticker": "AMZN",
-          "role": "watch",
-          "reason": "AWS re-acceleration is real but retail margin compression and capex drag (-11.98% vs SPY 3M) has the stock stuck below 50MA \u2014 needs to clear $255 to confirm reversal.",
-          "options_angle": "call setup \u2014 buy longer-dated (4-6 week) $260-270 calls to capture post-earnings momentum; short-dated choppy, avoid here"
-        },
-        {
-          "ticker": "AAPL",
-          "role": "watch",
-          "reason": "Sideways chop just below 50MA ($315.34 vs $316.3) is coiling for a breakout; iPhone 17 cycle and AI features are the catalyst, but services narrative is at risk.",
-          "options_angle": "call setup \u2014 buy 3-4 week calls on a decisive close above $320; stop below $308; symmetric risk/reward at current levels"
-        },
-        {
-          "ticker": "META",
-          "role": "laggard",
-          "reason": "In downtrend despite +7.48% 3M \u2014 distribution pattern at highs with weakening momentum; AI monetization is working but RL losses and ad deceleration create a show-me story.",
-          "options_angle": "put premium selling \u2014 sell OTM puts ($620-630 strike) on 8-10% pullbacks to collect elevated IV if constructive on medium-term; avoid long calls until downtrend breaks"
-        },
-        {
-          "ticker": "MSFT",
-          "role": "leader",
-          "reason": "Azure AI consumption and Copilot attach rates accelerating; 9.6% above 50MA with strong trend and vol crush (-82%) offers ideal call entry.",
-          "options_angle": "call setup \u2014 buy 3-4 week ATM calls on any pullback to $475-480; asymmetric upside toward $520-530 on continued beat-and-raise"
-        }
-      ],
-      "macro_backdrop": "Fed in data-dependent pause with markets pricing gradual cuts into year-end; 10Y yields stable near 4.1% supporting growth multiples. USD modestly softer on the quarter, benefiting multinationals with overseas revenue exposure. Consumer spending resilient but showing late-cycle fatigue in discretionary e-commerce \u2014 net mixed for the sector.",
-      "key_themes": [
-        "E-commerce growth re-accelerating as consumer spending shifts back to goods; AMZN marketplace share gains accelerating post-pandemic normalization",
-        "AI-driven advertising monetization (META Advantage+, Google Performance Max) compounding market share gains while smaller ad platforms lose signal",
-        "Consumer tech resilience: AAPL installed-base upgrades and services revenue growth offsetting hardware cyclicality"
-      ]
     }
   ],
-  "candidates_generated_at": "2026-09-11T21:35:00+08:00",
+  "candidates_generated_at": "2026-09-14T20:00:00+08:00",
   "candidates": [
     {
       "ticker": "MPC",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 9.14,
-      "price": 400.7,
-      "priority": 9.14
+      "ma_gap_pct": 9.05,
+      "price": 395.93,
+      "priority": 9.05
     },
     {
       "ticker": "VLO",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 8.29,
-      "price": 390.87,
-      "priority": 8.29
+      "ma_gap_pct": 8.28,
+      "price": 390.42,
+      "priority": 8.28
     },
     {
       "ticker": "PSX",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 8.09,
-      "price": 261.08,
-      "priority": 8.09
+      "ma_gap_pct": 8.05,
+      "price": 259.47,
+      "priority": 8.05
     },
     {
       "ticker": "DE",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 6.47,
-      "price": 685.77,
-      "priority": 6.47
+      "ma_gap_pct": 6.36,
+      "price": 675.74,
+      "priority": 6.36
     },
     {
       "ticker": "SLB",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 6.26,
-      "price": 56.53,
-      "priority": 6.26
+      "ma_gap_pct": 6.2,
+      "price": 56.06,
+      "priority": 6.2
     },
     {
       "ticker": "TSLA",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 4.92,
-      "price": 364.35,
-      "priority": 4.92
+      "ma_gap_pct": 4.94,
+      "price": 365.44,
+      "priority": 4.94
     },
     {
       "ticker": "QCOM",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 4.54,
-      "price": 180.41,
-      "priority": 4.54
+      "ma_gap_pct": 4.61,
+      "price": 181.97,
+      "priority": 4.61
     },
     {
       "ticker": "CVX",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 4.41,
-      "price": 213.36,
-      "priority": 4.41
+      "ma_gap_pct": 4.43,
+      "price": 214.06,
+      "priority": 4.43
     }
   ],
   "deep_dives": [
@@ -612,6 +600,24 @@
     }
   ],
   "history": [
+    {
+      "date": "2026-09-14",
+      "kind": "analyst",
+      "id": "analyst_brief_20260914_195001_6be7",
+      "summary": "0 deep-dive(s), regime bull_low_vol"
+    },
+    {
+      "date": "2026-09-14",
+      "kind": "sector",
+      "id": "sector_brief_broad_market_(nasdaq-100)_20260914",
+      "summary": "Broad Market (Nasdaq-100) -- conviction 4"
+    },
+    {
+      "date": "2026-09-14",
+      "kind": "sector",
+      "id": "sector_brief_technology-e-commerce_20260914",
+      "summary": "Technology / E-commerce -- conviction 6"
+    },
     {
       "date": "2026-09-11",
       "kind": "analyst",
@@ -1193,24 +1199,6 @@
       "kind": "sector",
       "id": "sector_brief_semiconductors-ai_20260826",
       "summary": "Semiconductors/AI -- conviction 7"
-    },
-    {
-      "date": "2026-08-26",
-      "kind": "sector",
-      "id": "sector_brief_broad_market_(s&p_500)_20260826",
-      "summary": "Broad Market (S&P 500) -- conviction 4"
-    },
-    {
-      "date": "2026-08-26",
-      "kind": "sector",
-      "id": "sector_brief_technology_20260826",
-      "summary": "Technology -- conviction 6"
-    },
-    {
-      "date": "2026-08-26",
-      "kind": "sector",
-      "id": "sector_brief_broad_market_(nasdaq-100)_20260826",
-      "summary": "Broad Market (Nasdaq-100) -- conviction 4"
     }
   ]
 }
