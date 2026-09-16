@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-15T23:00:01.613675+08:00",
+  "generated_at": "2026-09-16T20:10:02.330673+08:00",
   "regime": {
     "regime": "bull_low_vol",
-    "vix": 16.89,
-    "spy_price": 760.88,
+    "vix": 16.85,
+    "spy_price": 757.39,
     "gates": {
       "allow_calls": true,
       "allow_puts": false,
@@ -11,6 +11,122 @@
     }
   },
   "sectors": [
+    {
+      "sector": "EV/Automotive",
+      "conviction": 4,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "Fed rate cuts reduce monthly payment friction on $50K+ vehicles, supporting near-term demand elasticity",
+        "IRA domestic manufacturing credits and tariff walls provide structural margin protection for US-based production",
+        "Energy costs declining \u2014 gasoline prices dropping reduces the total-cost-of-ownership argument for EV buyers, but lower electricity rates help EV charging economics"
+      ],
+      "headwinds": [
+        "China EV overcapacity + BYD export surge creating a global glut that will compress margins through 2027",
+        "Lease bubble risk \u2014 60%+ of US EV deliveries are leases with depressed residual values, threatening future used-EV price discovery",
+        "Consumer fatigue \u2014 early-adopter market is saturated; next wave of buyers requires charging infra scale that remains 2-3 years away"
+      ],
+      "risk_to_thesis": null,
+      "generated_at": "2026-09-16T19:51:21.045376+08:00",
+      "swing_trade_setup": {
+        "bias": "mixed",
+        "best_structure": "sell cash-secured puts on TSLA at $340-345 support with 30-45 DTE, or buy ATM calls on confirmed breakout above $365 resistance",
+        "key_levels_to_watch": "352.5 (50MA pivot \u2014 holding above confirms short-term bullish bias), 365 (breakout target \u2014 above this, momentum accelerates toward $380), 340 (support \u2014 gamma turns negative below), VIX spike above 20 (would pressure high-beta names)",
+        "avoid": "buying far OTM calls above $380 on FOMO \u2014 implied vol is rich but the risk/reward is skewed by binary event risk on robotaxi timelines"
+      },
+      "news_signal_vs_noise": {
+        "signal": "TSLA robotaxi geographic expansion updates and NHTSA investigation outcomes on FSD \u2014 these directly impact TSLA's $2T+ valuation premium",
+        "noise": "Monthly China auto sales figures and individual EV startup delivery misses \u2014 the structural story is about margin, not volume growth"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "TSLA",
+          "role": "watch",
+          "reason": "Pure-play EV proxy trading just above 50MA with momentum turning, but -13% 3-month underperformance vs SPY signals the market is pricing in execution risk on robotaxi/FSD",
+          "options_angle": "sell premium \u2014 sell 30-45 DTE 30-delta puts at $340-345 support to collect 18-22% implied vol while the stock grinds higher"
+        },
+        {
+          "ticker": "GM",
+          "role": "watch",
+          "reason": "ICE-to-EV transition story with $50+ EV unit pipeline, but China JV writedowns and Cadillac Lyriq delays cloud the earnings trajectory",
+          "options_angle": "premium selling \u2014 sell puts on pullbacks to $52-54 range with 4-6 week expiry"
+        },
+        {
+          "ticker": "RIVN",
+          "role": "laggard",
+          "reason": "Burning cash at $4B/year with R2 production ramp still 12-18 months away; a capital raise at these levels would be materially dilutive",
+          "options_angle": "avoid \u2014 too binary and cash-flow dependent for a swing trade"
+        },
+        {
+          "ticker": "BYD",
+          "role": "leader",
+          "reason": "China's dominant EV player with vertical integration cost advantage; export ramp into LatAm/SEA is underappreciated and provides margin diversification",
+          "options_angle": "buy calls \u2014 3-4 week ATM calls on pullbacks to HK$90-95 range as global expansion story re-rates"
+        }
+      ],
+      "macro_backdrop": "The Fed easing cycle is a tailwind for auto financing demand and consumer confidence, but the benefit is uneven \u2014 mass-market EV adoption still requires affordability improvements that lower rates alone can't fix. China EV overcapacity continues to pressure global pricing, while the stronger USD weighs on foreign OEM margins. The sector is caught between a cyclical recovery narrative and a secular EV adoption plateau.",
+      "key_themes": [
+        "TSLA robotaxi and FSD narrative is the only pure-play catalyst in a sector starved of demand \u2014 everything hinges on autonomous timeline credibility",
+        "China EV overcapacity is compressing global margins; BYD/NIO/Li price-war ripple effects are hitting GM, Ford, and pure-play EVs alike",
+        "Affordability wall \u2014 average transaction price for EVs remains $10-15K above ICE equivalents, and lease penetration is masking underlying demand softness"
+      ]
+    },
+    {
+      "sector": "Broad Market (S&P 500)",
+      "conviction": 5,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "Fed easing tail supporting earnings multiples and limiting recession probability",
+        "Corporate buybacks running at record annualized pace, creating structural bid under SPX"
+      ],
+      "headwinds": [
+        "Concentration risk \u2014 top 10 names drive 35% of index; a single mega-cap earnings miss could trigger 3-5% index drawdown",
+        "Valuation ceiling: SPX forward P/E at 22.5x leaves no margin for error if 10Y real yields retrace above 1.8%"
+      ],
+      "risk_to_thesis": "A VIX spike above 22 driven by either a mega-cap earnings miss or an inflation re-acceleration would unwind the low-vol carry trade and expose the index's concentration flaw \u2014 the SPX could drop 5-7% in days while the headline still reads 'bull market'.",
+      "generated_at": "2026-09-16T19:50:45.714698+08:00",
+      "swing_trade_setup": {
+        "bias": "neutral",
+        "best_structure": "sell cash-secured puts at $745-750 support or buy ATM calls on confirmed breakout above $765 resistance, 3-4 week expiry",
+        "key_levels_to_watch": "759 (50MA pivot), 765 (breakout trigger), 740-745 (support zone where gamma positioning flips negative), 720 (200MA \u2014 would invalidate the bull thesis)",
+        "avoid": "buying far OTM calls above $770 \u2014 implied vol is cheap but the risk/reward chasing breakouts in a range-bound market is poor"
+      },
+      "news_signal_vs_noise": {
+        "signal": "FOMC dot-plot revisions and mega-cap forward guidance revisions \u2014 these directly drive index-level earnings estimates",
+        "noise": "Daily political noise and short-term technical breaks of the 50MA; the trend above 200MA remains intact"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "SPY",
+          "role": "leader",
+          "reason": "The reference asset itself \u2014 trading just below 50MA in a bull-low-vol regime defines the tactical range for everything else",
+          "options_angle": "sell 30-delta puts at $745-750 support to collect premium in low-vol grind"
+        },
+        {
+          "ticker": "QQQ",
+          "role": "leader",
+          "reason": "Tech/growth index benefits most from AI capex momentum and easing rates, but concentration mirrors SPY risk",
+          "options_angle": "buy ATM calls 3-4 weeks out on pullbacks to 50MA or VIX spikes above 20"
+        },
+        {
+          "ticker": "IWM",
+          "role": "laggard",
+          "reason": "Russell 2000 still struggling under higher-for-longer cost of capital \u2014 a rotation signal, not a buy",
+          "options_angle": "avoid long calls until IWM reclaims and holds above 200MA"
+        },
+        {
+          "ticker": "XLF",
+          "role": "watch",
+          "reason": "Financials are the clearest rate-cut beneficiaries, yet the flat yield curve neutralizes net interest margin upside",
+          "options_angle": "premium selling \u2014 sell OTM puts to position for gradual re-rate"
+        }
+      ],
+      "macro_backdrop": "The Fed is mid-easing cycle with two cuts priced by year-end, keeping real rates supportive but limiting incremental fuel. USD is softening modestly, which helps multinationals and EM flows, yet sticky services inflation above 3% caps how aggressive the dovish narrative can get. The posture is 'data-dependent pause after cuts' \u2014 enough to prevent a hard landing but not enough to re-rate multiples meaningfully from here.",
+      "key_themes": [
+        "AI capex cycle remains the dominant earnings driver \u2014 NVDA/MSFT/AAPL FCF beats continue to widen the mega-cap vs. rest-of-index gap",
+        "Rate-cut pricing is fully discounted \u2014 the SPX multiple expansion trade is largely done, shifting the burden to actual earnings delivery",
+        "Breadth narrowing is the hidden risk: equal-weight S&P underperforming cap-weight by 400bps signals a fragile, headline-driven rally"
+      ]
+    },
     {
       "sector": "Broad Market (Nasdaq-100)",
       "conviction": 4,
@@ -230,172 +346,90 @@
         "Memory cycle inflection as HBM and advanced node tightness pushes DRAM/NAND pricing higher into Q4",
         "China tech restrictions creating domestic demand pull but also supply chain uncertainty for equipment names"
       ]
-    },
-    {
-      "sector": "EV/Automotive",
-      "conviction": 3,
-      "sentiment": "bearish",
-      "tailwinds": [
-        "Fed rate cuts reduce financing costs for auto purchases, a marginal tailwind for EV demand",
-        "TSLA's energy/storage business provides a non-auto revenue stream that could re-rate the stock if auto margins stabilize",
-        "Any positive delivery or margin surprise would trigger a violent short-covering rally given the extreme underperformance"
-      ],
-      "headwinds": [
-        "TSLA is a strong underperformer vs SPY by 12% \u2014 underperformance begets underperformance until a clear catalyst reverses the trend",
-        "Sideways action with vol crushed -67% means the next move will be sharp, but the direction is not predetermined by the data",
-        "Consumer demand fatigue and potential tariff impacts on auto supply chains remain unresolved headwinds for the EV sector"
-      ],
-      "risk_to_thesis": "A TSLA close below 350 (50MA) with expanding vol would confirm the underperformance trend is accelerating, invalidating the mean-reversion thesis and opening a move to 330-340",
-      "generated_at": "2026-09-14T21:26:00.702569+08:00",
-      "swing_trade_setup": {
-        "bias": "neutral \u2014 coiled laggard, no directional edge",
-        "best_structure": "buy TSLA straddle or strangle 2-3 weeks out (e.g., 350/380) to play the vol expansion; size small given the undefined direction",
-        "key_levels_to_watch": "TSLA 354.5 (50MA) \u2014 break below opens 330-340. 380 \u2014 breakout level that confirms a trend reversal. VIX 18.5 \u2014 vol regime break that would punish long gamma",
-        "avoid": "naked directional calls or puts here; the coiled setup will punish single-directional bets until price commits. Avoid selling premium into a vol-expansion setup"
-      },
-      "news_signal_vs_noise": {
-        "signal": "TSLA delivery numbers and any margin guidance updates \u2014 these are the only fundamentals that will reverse the underperformance trend",
-        "noise": "Daily social media commentary on Elon Musk or short-term price action; in a coiled laggard, sentiment noise is a distraction from the delivery/margin catalyst"
-      },
-      "notable_tickers": [
-        {
-          "ticker": "TSLA",
-          "role": "laggard",
-          "reason": "-12.02% vs SPY with vol collapsed -67% \u2014 a coiled spring in the most-shorted mega-cap name, but no trend confirmation yet.",
-          "options_angle": "buy straddle or strangle 2-3 weeks out to play the vol expansion; avoid directional bets until price breaks above 380 or below 350"
-        }
-      ],
-      "macro_backdrop": "BULL_LOW_VOL regime with SPY up 5.87% on the quarter, but VIX at 17.9 above its 30-day average of 15.45 signals vol compression is over. The Fed's rate-cut posture is a marginal positive for growth names, yet sticky inflation and elevated real rates keep pressure on consumer discretionary spending \u2014 a headwind for EV demand. TSLA's severe underperformance (-12.02% vs SPY) suggests the market is pricing in a demand/margin deterioration that has not yet reversed.",
-      "key_themes": [
-        "TSLA's -6.15% 3M return with -12.02% alpha vs SPY makes it the most obvious laggard in the mega-cap complex \u2014 a mean-reversion candidate if any catalyst emerges",
-        "Vol collapse of -67% with sideways price action is the classic coiling pattern that precedes a sharp directional move, but the trend bias is unclear",
-        "EV sector is caught between rate-cut optimism and consumer demand fatigue \u2014 the macro tailwind is offset by idiosyncratic margin and delivery risks"
-      ]
-    },
-    {
-      "sector": "Broad Market (S&P 500)",
-      "conviction": 4,
-      "sentiment": "neutral",
-      "tailwinds": [
-        "Fed rate-cut posture provides a floor under duration-sensitive mega-caps and supports equity multiples",
-        "SPY above 200MA with an intact uptrend keeps trend-following and systematic strategies net long",
-        "Low absolute VIX levels still allow for defined-risk call structures at reasonable premium"
-      ],
-      "headwinds": [
-        "VIX at 17.9 above 30d avg of 15.45 breaks the low-vol regime \u2014 complacency is no longer justified",
-        "SPY only 0.75% above 50MA means any pullback immediately tests the trend, with no cushion",
-        "A close below 50MA at 758.62 would be the first trend-break signal in months and likely triggers systematic deleveraging"
-      ],
-      "risk_to_thesis": "VIX closing above 18.5 (currently 17.9) would confirm a regime shift from BULL_LOW_VOL to elevated uncertainty, invalidating the range-trade thesis and forcing a reassessment of long exposure",
-      "generated_at": "2026-09-14T21:25:33.724053+08:00",
-      "swing_trade_setup": {
-        "bias": "neutral \u2014 trend is up but vol regime is weakening",
-        "best_structure": "sell SPY cash-secured puts 2-4 weeks out at 750 strike to harvest elevated premium while the uptrend holds; or buy calls 3-4 weeks out on a confirmed close above 770",
-        "key_levels_to_watch": "SPY 758.62 (50MA) \u2014 trend pivot. 712.06 (200MA) \u2014 cycle-level support. VIX 18.5 \u2014 vol regime break level. SPY 770 \u2014 breakout confirmation that resumes the uptrend",
-        "avoid": "naked long gamma here without a directional catalyst; the coiled setup will punish buyers of premium that doesn't resolve quickly. Avoid fighting the trend until 50MA breaks"
-      },
-      "news_signal_vs_noise": {
-        "signal": "FOMC meeting minutes and any shift in rate-cut guidance \u2014 the macro vol regime hinges entirely on whether the Fed maintains or extends the cutting cycle",
-        "noise": "Single-stock earnings beats/misses that move SPY intraday; in a low-vol-regime transition, idiosyncratic moves are noise, not signal"
-      },
-      "notable_tickers": [
-        {
-          "ticker": "SPY",
-          "role": "watch",
-          "reason": "Coiled just above 50MA with elevated VIX \u2014 the swing setup is directional but edge is low until price commits above 770 or below 758.",
-          "options_angle": "sell cash-secured puts near 750 (below 50MA) to collect elevated premium; or buy calls on a confirmed breakout above 770 with a 760 stop"
-        }
-      ],
-      "macro_backdrop": "SPY up 5.87% on the quarter with a clean uptrend above both 50MA ($758.62) and 200MA ($712.06), but the BULL_LOW_VOL regime is fraying \u2014 VIX at 17.9 sits above its 30-day average of 15.45, signaling that vol compression has paused. The Fed is in a rate-cut posture, yet sticky inflation and elevated real rates keep the soft-landing narrative fragile, with any re-acceleration in price pressures likely to trigger a regime shift.",
-      "key_themes": [
-        "SPY sitting just 0.75% above 50MA after a 5.87% quarterly rally \u2014 momentum is intact but the margin for error has thinned considerably",
-        "VIX above its 30-day average contradicts the low-vol label and historically precedes either a sharp vol expansion or a slow grind higher with elevated intraday chop",
-        "The 200MA at $712.06 is now 7.3% below price, the widest gap in this cycle \u2014 mean reversion risk is building but timing it is a losing game"
-      ]
     }
   ],
-  "candidates_generated_at": "2026-09-15T21:35:00+08:00",
+  "candidates_generated_at": "2026-09-16T20:00:00+08:00",
   "candidates": [
-    {
-      "ticker": "MPC",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 8.82,
-      "price": 401.16,
-      "priority": 8.82
-    },
     {
       "ticker": "SWKS",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 8.75,
-      "price": 82.56,
-      "priority": 8.75
+      "ma_gap_pct": 9.41,
+      "price": 90.0,
+      "priority": 9.41
+    },
+    {
+      "ticker": "MPC",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 8.99,
+      "price": 410.84,
+      "priority": 8.99
     },
     {
       "ticker": "VLO",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 8.4,
-      "price": 385.89,
-      "priority": 8.4
+      "ma_gap_pct": 8.6,
+      "price": 397.04,
+      "priority": 8.6
     },
     {
       "ticker": "PSX",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 7.63,
-      "price": 260.01,
-      "priority": 7.63
+      "ma_gap_pct": 7.76,
+      "price": 264.93,
+      "priority": 7.76
     },
     {
       "ticker": "DE",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 6.7,
-      "price": 685.25,
-      "priority": 6.7
+      "ma_gap_pct": 6.69,
+      "price": 684.04,
+      "priority": 6.69
     },
     {
       "ticker": "META",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 6.07,
-      "price": 664.98,
-      "priority": 6.07
+      "ma_gap_pct": 6.13,
+      "price": 670.24,
+      "priority": 6.13
     },
     {
       "ticker": "QCOM",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 5.14,
-      "price": 185.1,
-      "priority": 5.14
+      "ma_gap_pct": 5.24,
+      "price": 187.8,
+      "priority": 5.24
     },
     {
       "ticker": "CVX",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 4.65,
-      "price": 213.94,
-      "priority": 4.65
+      "ma_gap_pct": 4.77,
+      "price": 217.77,
+      "priority": 4.77
     },
     {
       "ticker": "AAPL",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 3.11,
-      "price": 330.21,
-      "priority": 3.11
+      "ma_gap_pct": 3.13,
+      "price": 331.34,
+      "priority": 3.13
     }
   ],
   "deep_dives": [
@@ -575,6 +609,24 @@
     }
   ],
   "history": [
+    {
+      "date": "2026-09-16",
+      "kind": "analyst",
+      "id": "analyst_brief_20260916_195002_197d",
+      "summary": "0 deep-dive(s), regime bull_low_vol"
+    },
+    {
+      "date": "2026-09-16",
+      "kind": "sector",
+      "id": "sector_brief_ev-automotive_20260916",
+      "summary": "EV/Automotive -- conviction 4"
+    },
+    {
+      "date": "2026-09-16",
+      "kind": "sector",
+      "id": "sector_brief_broad_market_(s&p_500)_20260916",
+      "summary": "Broad Market (S&P 500) -- conviction 5"
+    },
     {
       "date": "2026-09-15",
       "kind": "analyst",
@@ -1156,24 +1208,6 @@
       "kind": "analyst",
       "id": "analyst_brief_20260827_195001_54ab",
       "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-08-27",
-      "kind": "analyst",
-      "id": "analyst_brief_20260827_212501_3c47",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-08-27",
-      "kind": "sector",
-      "id": "sector_brief_broad_market_(nasdaq-100)_20260827",
-      "summary": "Broad Market (Nasdaq-100) -- conviction 5"
-    },
-    {
-      "date": "2026-08-27",
-      "kind": "sector",
-      "id": "sector_brief_technology_20260827",
-      "summary": "Technology -- conviction 6"
     }
   ]
 }
