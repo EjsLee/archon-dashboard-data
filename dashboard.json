@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T23:00:02.283290+08:00",
+  "generated_at": "2026-09-28T20:10:01.537180+08:00",
   "regime": {
     "regime": "bull_low_vol",
-    "vix": 15.17,
-    "spy_price": 767.18,
+    "vix": 16.26,
+    "spy_price": 771.35,
     "gates": {
       "allow_calls": true,
       "allow_puts": false,
@@ -11,6 +11,199 @@
     }
   },
   "sectors": [
+    {
+      "sector": "Broad Market (Nasdaq-100)",
+      "conviction": 5,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "BULL_LOW_VOL regime: SPY above both its 50MA and 200MA with VIX (16.26) near its 30d average (15.57) \u2014 supportive for index-long exposure",
+        "QQQ uptrend intact at $744.50, 4.6% above its 50MA, with modest positive relative strength vs SPY over 3 months"
+      ],
+      "headwinds": [
+        "QQQ volume declined 12% during the 3-month advance \u2014 thinning participation under the uptrend",
+        "SPY's 3-month trend is labeled sideways despite the bullish MA regime, and QQQ's 200MA is n/a, leaving no long-term trend anchor supplied",
+        "VIX at 16.26 is slightly above its 30d average of 15.57 \u2014 a mild vol uptick rather than a low-vol extreme"
+      ],
+      "risk_to_thesis": "A close below QQQ's 50MA at $712.00 \u2014 or SPY losing its 50MA at $759.91 \u2014 would break the uptrend and invalidate the bullish broad-market view",
+      "generated_at": "2026-09-28T19:52:13.638071+08:00",
+      "swing_trade_setup": {
+        "bias": "neutral",
+        "ticker": "QQQ",
+        "levels": {
+          "entry": 744.5,
+          "stop": 712.0,
+          "target": 744.5
+        },
+        "best_structure": "No trade proposed \u2014 QQQ is on the blocklist; the levels above are monitoring anchors only (current price and 50MA), with no upside target derivable since the 200MA is n/a",
+        "key_levels_to_watch": "QQQ $744.50 (current) and $712.00 (50MA); SPY $759.91 (50MA) and $714.84 (200MA) as regime confirmation; VIX 16.26 vs its 15.57 30d average",
+        "avoid": "Any QQQ or TSLA trade (both blocklisted) and all put structures (puts BLOCKED by signal gates)",
+        "gate": {
+          "verdict": "NO TRADE",
+          "reasons": [
+            "bias is 'neutral' -- no directional view",
+            "QQQ is on the risk_rules blocklist"
+          ],
+          "rr": null,
+          "levels": {
+            "entry": 744.5,
+            "stop": 712.0,
+            "target": 744.5
+          },
+          "current_price": 744.5,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50
+          },
+          "rule_warnings": [],
+          "reach": null,
+          "exit_plan": "stop close above $712 or -50% premium \u00b7 target $744.5 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold"
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "For the next 1-3 weeks the decisive supplied data points are QQQ holding above its 50MA ($712.00) and the regime itself \u2014 SPY above both MAs with VIX near its average; these define whether index-long positioning stays valid",
+        "noise": "QQQ's +0.69% 3M relative-performance edge over SPY is within noise, and day-to-day fluctuation around $744.50 carries little signal; no news data supplied"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "QQQ",
+          "role": "watch",
+          "reason": "The Nasdaq-100 tracker is in an uptrend 4.6% above its 50MA, but it is on the blocklist so no trades are permitted \u2014 use it only as a market-health gauge.",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $771.35 holds above both its 50MA ($759.91) and 200MA ($714.84), keeping the BULL_LOW_VOL regime intact. VIX at 16.26 sits only modestly above its 30-day average of 15.57, so volatility remains low with a slight uptick. This is a constructive backdrop for Nasdaq-100 exposure, though SPY's 3-month trend is labeled sideways, capping enthusiasm.",
+      "key_themes": [
+        "QQQ is in an uptrend, trading 4.6% above its 50MA ($712.00) at $744.50 \u2014 the intermediate-term trend is intact",
+        "QQQ's 3M return of +6.35% only edges SPY's +5.66% (+0.69% relative), so mega-cap tech is keeping pace with, not leading, the broad market",
+        "The advance has come on falling volume (vol_chg -12%), a participation warning beneath the uptrend"
+      ],
+      "unsourced_numbers": []
+    },
+    {
+      "sector": "Technology/E-commerce",
+      "conviction": 7,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "SPY above both 50MA and 200MA with VIX near historic lows \u2014 broad market tailwind for long tech exposure",
+        "AAPL and MSFT both in confirmed uptrends with positive relative strength vs SPY (+8.52% and +18.5% respectively)",
+        "META's uptrend is accelerating with expanding volume (+13% vol_chg), the only name showing bullish volume confirmation"
+      ],
+      "headwinds": [
+        "AMZN is in a sideways trend, below its 50MA, and underperforming SPY by 9.39% \u2014 a structural weak spot in the sector",
+        "META at 22.2% above its 50MA is historically extended; mean-reversion risk is elevated even with strong momentum",
+        "MSFT volume collapsed -86% during its 24% rally, suggesting thinning participation and potential exhaustion"
+      ],
+      "risk_to_thesis": "A break below SPY's 50MA at $759.91 or a VIX spike above 20 would invalidate the BULL_LOW_VOL regime and pressure all long tech swing setups simultaneously",
+      "generated_at": "2026-09-28T19:50:42.552021+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "AAPL",
+        "levels": {
+          "entry": 341.07,
+          "stop": 315.0,
+          "target": 370.0
+        },
+        "best_structure": "buy ATM calls 3-4 weeks out on pullbacks to 50MA ($321.70); current price offers a 6.0% buffer above the 50MA for stop placement",
+        "key_levels_to_watch": "AAPL 50MA at $321.70 (stop zone), recent swing lows near $320, and SPY 50MA at $759.91 as regime confirmation",
+        "avoid": "META at 22.2% above 50MA (extension risk), AMZN below 50MA (relative weakness), and any put structures (puts are BLOCKED by signal gates)",
+        "gate": {
+          "verdict": "NO TRADE",
+          "reasons": [
+            "R:R 1.11 < 2",
+            "target is 1.79\u03c3 over 10 trading days (max 1\u03c3)"
+          ],
+          "rr": 1.11,
+          "levels": {
+            "entry": 341.07,
+            "stop": 315.0,
+            "target": 370.0
+          },
+          "current_price": 341.07,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50
+          },
+          "rule_warnings": [],
+          "reach": {
+            "iv": 0.2375,
+            "trading_days": 10,
+            "expected_move": 16.14,
+            "target_sigma": 1.79,
+            "stop_sigma": 1.62,
+            "breakeven_hit": 0.474,
+            "p_target_first": 0.067,
+            "p_stop_first": 0.081,
+            "p_neither": 0.852,
+            "mean_r_no_edge": 0.002
+          },
+          "exit_plan": "stop close below $315 or -50% premium \u00b7 target $370 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold"
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "The 3M relative strength rankings (META +19.29%, MSFT +18.5%, AAPL +8.52% vs SPY -9.39% for AMZN) and the regime (SPY above both MAs, VIX low) are the dominant signals for the next 1-3 weeks \u2014 they define which names to own and which to avoid",
+        "noise": "Single-day price moves within the 3-month trends are likely noise; the -28% volume drop in AAPL and -86% in MSFT are notable divergences but without options flow data their significance is ambiguous"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "AAPL",
+          "role": "leader",
+          "reason": "Confirmed uptrend, 6.0% above 50MA with +8.52% relative strength vs SPY \u2014 the most balanced risk/reward in the group",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "Strongest 3M performer (+24.16%) with +18.5% relative strength, but volume collapse warns of thinning momentum",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "META",
+          "role": "watch",
+          "reason": "Best absolute and relative performance but 22.2% above 50MA makes entry timing critical \u2014 wait for pullback",
+          "options_angle": "avoid"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "laggard",
+          "reason": "Only name below its 50MA and underperforming SPY by 9.39% \u2014 no long setup until it reclaims $256.20",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $771.35 trades above both its 50MA ($759.91) and 200MA ($714.84), confirming a bullish intermediate and long-term trend. VIX at 16.26 sits just above its 30-day average of 15.57, signaling low but slightly elevated volatility \u2014 a constructive backdrop for long equity exposure in high-beta tech. The BULL_LOW_VOL regime favors swing-long setups in names with relative strength.",
+      "key_themes": [
+        "AAPL, MSFT and META all trade above their 50MAs with strong relative strength vs SPY \u2014 the mega-cap tech core is leading this rally",
+        "AMZN is the clear laggard, trading 2.5% below its 50MA and underperforming SPY by 9.39% over 3 months, breaking the sector's otherwise uniform uptrend",
+        "META is the strongest performer (+24.95% 3M, +19.29% vs SPY) but at 22.2% above its 50MA it is deeply extended and vulnerable to mean reversion"
+      ],
+      "unsourced_numbers": [
+        "24%",
+        "$320,"
+      ]
+    },
     {
       "sector": "Technology",
       "conviction": 6,
@@ -60,7 +253,8 @@
         "META's 26.4% gap above 50MA with +18% volume is either a parabolic momentum blow-off or the early innings of a re-rating on ad-platform AI integration \u2014 the market is priced for perfection",
         "MSFT's 17.71% 3M gain on 88% declining volume warns of weak breadth behind the rally; the move is real but participation is thin, making it vulnerable to a sharp reversal on any miss",
         "AMZN is the sector's clear laggard, trading below its 50MA with a 3M -10% gap to SPY \u2014 the market is pricing in margin compression from logistics/AI capex that may already be in the numbers"
-      ]
+      ],
+      "unsourced_numbers": []
     },
     {
       "sector": "Semiconductors/AI",
@@ -111,7 +305,8 @@
         "AI capex from hyperscalers (MSFT, GOOGL, AMZN, META) is accelerating into 2026, with GPU and custom ASIC demand outstripping supply through mid-2027",
         "NVDA's data center revenue growth is decelerating on a base effect, shifting the narrative from 'infinite demand' to 'tiered demand differentiation' \u2014 custom chips (Trainium, Maia) are nibbling at the edges",
         "Memory and HBM pricing is firming after 18 months of contraction, signaling a broader semi cycle recovery beyond just AI accelerators"
-      ]
+      ],
+      "unsourced_numbers": []
     },
     {
       "sector": "EV/Automotive",
@@ -162,7 +357,8 @@
         "TSLA's robotaxi and autonomy narrative is the only thing sustaining its premium multiple \u2014 core auto margins continue compressing as delivery growth decelerates",
         "Chinese EV makers (BYD, NIO) are accelerating export pushes into Europe and Southeast Asia, eroding market share in key growth regions",
         "Legacy OEMs are quietly scaling back pure-EV capex timelines while hybrids resurge, creating a bifurcated sector where pure-play EVs underperform"
-      ]
+      ],
+      "unsourced_numbers": []
     },
     {
       "sector": "Broad Market (S&P 500)",
@@ -215,138 +411,23 @@
         "Concentration risk remains extreme \u2014 top-10 names drive the majority of index returns, masking broad-based earnings stagnation outside tech",
         "Goldilocks macro prints (decent GDP, disinflation, stable employment) are extending the soft-landing bid, but positioning is crowded and complacent",
         "Q3 earnings beat rates are running above average, but forward guidance is cautious as tariff pass-through and AI capex ROI timelines weigh on margin outlooks"
-      ]
-    },
-    {
-      "sector": "Broad Market (Nasdaq-100)",
-      "conviction": 7,
-      "sentiment": "bullish",
-      "tailwinds": [
-        "Synchronized global central bank easing is expanding liquidity and compressing equity risk premiums, which disproportionately benefits the growth-heavy Nasdaq-100",
-        "Cash on sidelines (money market AUM at record highs) provides dry powder for dips, creating a buy-the-dip mentality that supports the uptrend"
       ],
-      "headwinds": [
-        "Concentration risk \u2014 the top 10 names drive the majority of index returns; any growth scare or AI capex disappointment would cascade violently through the index",
-        "Valuation is stretched \u2014 forward P/E above 22x leaves no margin for error if 10Y real yields push above 1.8%, which would compress the entire growth complex"
-      ],
-      "risk_to_thesis": "A breakout in 10Y nominal yields above 5% driven by fiscal deficit concerns or a reflation scare would break the low-valuation-support regime and trigger a risk-off rotation out of growth/tech, invalidating the bullish view across the Nasdaq-100.",
-      "generated_at": "2026-09-25T01:12:42.659840+08:00",
-      "swing_trade_setup": {
-        "bias": "bullish",
-        "best_structure": "QQQ ATM call spread 3-4 weeks out on pullback to 50MA ($711.2); structure strikes 5-8% apart to capture the mean-reversion bounce while capping downside.",
-        "key_levels_to_watch": "QQQ: support at $711.2 (50MA), then $680 (swing support); resistance at $750 (range high). VIX above 18 would threaten the low-vol regime and favor de-risking. A close below $711.2 on rising volume would confirm a trend change.",
-        "avoid": "Selling premium into this compressed-vol environment \u2014 the skew is too expensive and gap risk is real. Also avoid chasing OTM calls with QQQ already 4.2% above 50MA; wait for the pullback."
-      },
-      "news_signal_vs_noise": {
-        "signal": "Fed guidance on rate-cut trajectory and 10Y Treasury yield movements \u2014 these directly impact the discount rate for the index's long-duration constituents. Also watch Q3 earnings from top-10 names for capex and revenue guide.",
-        "noise": "Daily speculation about AI bubble or individual stock rotation headlines \u2014 these create intraday noise but do not shift the medium-term earnings trajectory of the concentrated index."
-      },
-      "notable_tickers": [
-        {
-          "ticker": "QQQ",
-          "role": "leader",
-          "reason": "Trading at 4.2% above 50MA with an uptrend and only -17% volume change \u2014 the broadest, most liquid tech/growth proxy with the most reasonable extension in the sector.",
-          "options_angle": "Buy ATM call spreads 3-4 weeks out on pullbacks to 50MA ($711.2); the cleanest risk/reward in the tech complex"
-        },
-        {
-          "ticker": "NVDA",
-          "role": "watch",
-          "reason": "With forward P/E at historic lows for a growth name and IV rank at 0.0, it represents the asymmetric upside bet within the index if AI capex reaccelerates.",
-          "options_angle": "Single-leg long calls on pullbacks to 50MA ($215.4); premium is at historic lows"
-        },
-        {
-          "ticker": "AMZN",
-          "role": "laggard",
-          "reason": "Trading below its 50MA while the index rallies \u2014 the main detractor from QQQ's performance and a potential contrarian value play if AWS growth reaccelerates.",
-          "options_angle": "Call setup on recapture of 50MA ($256.2); use debit spreads to limit downside"
-        }
-      ],
-      "macro_backdrop": "The Fed's data-dependent easing trajectory is compressing discount rates on long-duration growth cash flows, providing a structural tailwind for the Nasdaq-100's concentrated tech and growth names. USD strength is a modest headwind for the index's large multinational revenue bases, but the capex cycle and AI monetization narratives are dominating FX effects. Low volatility is suppressing options premiums, creating favorable entry points for call buyers on pullbacks.",
-      "key_themes": [
-        "Nasdaq-100 is trading in-line with SPY (+0.76% vs SPY over 3M) with a 4.2% premium to 50MA \u2014 a more reasonable extension than individual mega-cap names, suggesting the index is not overbought at the aggregate level",
-        "AI capex cycle from the top-10 constituents (MSFT, NVDA, AAPL, AMZN, META) provides a visible revenue floor, but concentration risk means the index moves on a handful of names",
-        "Biotech and speculative growth names within QQQ have been quietly underperforming, creating a bifurcated index where mega-cap strength masks broad-based stagnation"
-      ]
-    },
-    {
-      "sector": "Technology/E-commerce",
-      "conviction": 6,
-      "sentiment": "bullish",
-      "tailwinds": [
-        "Consumer spending resilience and seasonal Q4 tailwind directly benefit e-commerce volumes and cloud infrastructure demand",
-        "AI integration in ad targeting (META, AMZN) is improving ROAS and merchant monetization, creating a structural margin expansion story"
-      ],
-      "headwinds": [
-        "Logistics and fulfillment cost inflation from labor and energy is compressing e-commerce margins across the sector, particularly for AMZN's retail business",
-        "META's extreme extension above 50MA leaves no margin for disappointment \u2014 any ad-revenue guide-down would trigger a violent rotation"
-      ],
-      "risk_to_thesis": "A single mega-cap earnings miss \u2014 most likely META given its extreme extension \u2014 would trigger a violent rotation out of tech and invalidate the bullish setup across e-commerce.",
-      "generated_at": "2026-09-25T01:12:13.351676+08:00",
-      "swing_trade_setup": {
-        "bias": "mixed",
-        "best_structure": "AMZN debit call spread on a recapture of 50MA ($256); AAPL call spread on pullback to $321.6. Avoid META entries at current extension.",
-        "key_levels_to_watch": "AMZN: recapture of $256 (50MA) is the trigger. AAPL: $321.6 (50MA) support. META: $613 (50MA) is distant support; any test would be a regime event. VIX above 18 threatens the low-vol bid.",
-        "avoid": "Buying OTM calls on META at 25.6% above 50MA \u2014 premium is elevated and gap risk is real. Avoid short-dated premium selling across the sector given compressed vols."
-      },
-      "news_signal_vs_noise": {
-        "signal": "AMZN AWS growth rate and any reacceleration in e-commerce margins; Q4 holiday sales guidance from AAPL on services; META ad-revenue trends in social commerce.",
-        "noise": "Daily social media sentiment on consumer spending and retail sector headlines \u2014 these move intraday prices but don't shift medium-term earnings power."
-      },
-      "notable_tickers": [
-        {
-          "ticker": "AMZN",
-          "role": "laggard",
-          "reason": "Trading below its 50MA ($256.2) while peers rally \u2014 the only name offering value, but needs a catalyst to re-rate.",
-          "options_angle": "Call setup on a recapture of 50MA ($256); debit spreads preferred to limit downside if the underperformance continues"
-        },
-        {
-          "ticker": "META",
-          "role": "leader",
-          "reason": "Social commerce and AI-ad integration are driving the strongest momentum in the group, but 25.6% above 50MA is extreme.",
-          "options_angle": "Avoid initiating long calls at current levels; covered calls or call diagonals to monetize elevated premium"
-        },
-        {
-          "ticker": "AAPL",
-          "role": "leader",
-          "reason": "Services revenue (e-commerce rails, App Store) is the quiet compounder; 5.1% above 50MA is the most reasonable entry.",
-          "options_angle": "Buy call spreads on any pullback to 50MA ($321.6) \u2014 the cleanest risk/reward in the group"
-        }
-      ],
-      "macro_backdrop": "The Fed's easing trajectory is reducing discount rates on long-duration tech cash flows, providing a valuation tailwind. Consumer spending remains resilient but selective \u2014 discretionary e-commerce volumes are growing, though margin pressure from logistics and AI capex is real. Low volatility is compressing options premiums, favoring call buyers in names with catalysts.",
-      "key_themes": [
-        "AMZN's 2.7% discount to 50MA and 3M -5.92% return vs SPY suggests the market has priced in AWS deceleration and logistics cost inflation \u2014 a contrarian entry if growth reaccelerates",
-        "META's 25.6% extension above 50MA with +17% volume is either AI-ad monetization momentum or a blow-off; either way, the e-commerce/social commerce angle is underappreciated in the thesis",
-        "AAPL's steady 5.1% premium to 50MA with declining volume reflects a name in digestion mode \u2014 iPhone cycles and services revenue (App Store/e-commerce rails) are the quiet driver"
-      ]
+      "unsourced_numbers": []
     }
   ],
-  "candidates_generated_at": "2026-09-25T21:35:00+08:00",
+  "candidates_generated_at": "2026-09-28T20:00:00+08:00",
   "candidates": [
-    {
-      "ticker": "META",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 13.27,
-      "price": 755.15,
-      "priority": 13.27,
-      "iv_rank": 40.4,
-      "iv_regime": "MEDIUM",
-      "days_to_earn": 40,
-      "earnings_date": "2026-11-04",
-      "metrics_status": "ok"
-    },
     {
       "ticker": "INTC",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 12.4,
-      "price": 125.34,
-      "priority": 12.4,
-      "iv_rank": 12.3,
+      "ma_gap_pct": 12.26,
+      "price": 123.0,
+      "priority": 12.26,
+      "iv_rank": 13.2,
       "iv_regime": "LOW",
-      "days_to_earn": 27,
+      "days_to_earn": 24,
       "earnings_date": "2026-10-22",
       "metrics_status": "ok"
     },
@@ -355,12 +436,12 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 11.87,
-      "price": 634.78,
-      "priority": 11.87,
-      "iv_rank": 3.7,
+      "ma_gap_pct": 11.82,
+      "price": 630.63,
+      "priority": 11.82,
+      "iv_rank": 31.5,
       "iv_regime": "LOW",
-      "days_to_earn": 39,
+      "days_to_earn": 36,
       "earnings_date": "2026-11-03",
       "metrics_status": "ok"
     },
@@ -369,12 +450,12 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 9.11,
-      "price": 196.97,
-      "priority": 9.11,
-      "iv_rank": 40.6,
+      "ma_gap_pct": 9.29,
+      "price": 201.97,
+      "priority": 9.29,
+      "iv_rank": 40.3,
       "iv_regime": "MEDIUM",
-      "days_to_earn": 40,
+      "days_to_earn": 37,
       "earnings_date": "2026-11-04",
       "metrics_status": "ok"
     },
@@ -383,45 +464,240 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 3.93,
-      "price": 334.9,
-      "priority": 3.93,
-      "iv_rank": 46.0,
+      "ma_gap_pct": 4.05,
+      "price": 341.07,
+      "priority": 4.05,
+      "iv_rank": 43.0,
       "iv_regime": "MEDIUM",
-      "days_to_earn": 34,
+      "days_to_earn": 31,
       "earnings_date": "2026-10-29",
       "metrics_status": "ok"
     }
   ],
   "deep_dives": [
     {
+      "ticker": "INTC",
+      "company": "Intel Corporation",
+      "sector": "Technology",
+      "bias": "bullish",
+      "conviction": 4,
+      "thesis": "INTC is in a strong uptrend (+11.01% 3M, +5.35% vs SPY) with volume rising +21%, but at 24.2% above its $99.10 50MA it is dangerously extended, and the analyst mean target of $116.37 sits below the current $123.00 \u2014 the market has already priced in more than consensus expects. With a negative profit margin (-19.8%) the rally is sentiment-driven, so the only rational structure is a pullback entry using cheap options (IV rank 13.2), not chasing strength.",
+      "moat_assessment": "Intel's moat is under reconstruction \u2014 foundry scale ambitions and x86 installed base provide residual switching costs, but negative margins show pricing power has not yet translated to profits, making durability unproven.",
+      "macro_sensitivity": "High-beta semi: benefits from AI capex sentiment and low VIX; sharply hurt by rate spikes and VIX jumps; USD weakness helps international sales; among the most VIX-sensitive names in tech.",
+      "key_catalysts": [
+        "Next earnings 2026-10-23 \u2014 foundry progress and margin trajectory",
+        "Mean-reversion pullback toward $115 as entry opportunity after 24.2% extension above 50MA"
+      ],
+      "disconfirming_evidence": "A daily close below the $99.10 50MA breaks the trend; failure to hold $115 on a pullback signals distribution; analyst target already below price \u2014 continued rally requires estimate revisions upward, not just momentum.",
+      "bull_scenario": "Pullback to $115 holds, trend resumes to $132 (+14.8%); cheap 0.50-delta call roughly doubles on the move.",
+      "base_scenario": "Choppy consolidation $110-$125 over 3-21 days as the 24.2% extension unwinds; call decays slowly, roughly flat to -20%.",
+      "bear_scenario": "Extension snaps \u2014 close below $105 and slide toward the $99.10 50MA (-19.4% from current); single-leg call loses 80-100% of premium.",
+      "trade_plan": {
+        "structure": "Buy 0.45-0.60 delta call, single leg, 21-28 DTE, exited before 2026-10-23 earnings (IV rank 13.2 makes premium cheap)",
+        "entry_trigger": "Pullback to ~$115 (6.5% below current, first meaningful support) while 50MA holds and volume contracts on the decline",
+        "target": "$132 (+14.8% from entry \u2014 within the ~15% typical 10-day move at IV 76%)",
+        "stop": "Daily close below $105 (6% below entry, well above the 50MA)",
+        "levels": {
+          "entry": 115,
+          "stop": 105,
+          "target": 132
+        },
+        "position_size_note": "Half size (4-5% of portfolio) \u2014 trend is up but extreme extension and negative margins demand caution",
+        "risk_reward": "1:1.7",
+        "avoid_if": "No pullback to $115 (do not chase at $123+), daily close below $99.10 50MA, VIX > 20, or entry within 14 days of the 10/23 earnings"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "conviction 4 < 5",
+          "R:R 1.7 < 2"
+        ],
+        "rr": 1.7,
+        "levels": {
+          "entry": 115.0,
+          "stop": 105.0,
+          "target": 132.0
+        },
+        "current_price": 123.0,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.755,
+          "trading_days": 10,
+          "expected_move": 17.3,
+          "target_sigma": 0.98,
+          "stop_sigma": 0.58,
+          "breakeven_hit": 0.37,
+          "p_target_first": 0.274,
+          "p_stop_first": 0.508,
+          "p_neither": 0.218,
+          "mean_r_no_edge": 0.018
+        },
+        "exit_plan": "stop close below $105 or -50% premium \u00b7 target $132 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold"
+      },
+      "unsourced_numbers": [
+        "$115"
+      ],
+      "fundamentals_note": "Profit margin -19.8% and forward P/E 59.65 show the rally is not earnings-supported; revenue growth 25.4% is the bull anchor; analyst mean target $116.37 is below current price; next earnings 2026-10-23.",
+      "researched_at": "2026-09-27T02:26:32.606343+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "sector": "Technology",
+      "bias": "bullish",
+      "conviction": 5,
+      "thesis": "AAPL remains in an uptrend, outperforming SPY by 850bps over 3M with declining volume, but at trailing P/E 39.07 and 6.0% above the $321.70 50MA, chasing here is poor risk/reward \u2014 the analyst mean target of $328.22 sits below the current $341.07. The edge is a pullback entry toward $330 with a target sized to one typical 10-day move (~4.7% at IV 24%), not a swing for extended highs.",
+      "moat_assessment": "Ecosystem lock-in via integrated hardware-software-services across a massive installed base creates durable switching costs and premium pricing power, the strongest form of Porter differentiation moat.",
+      "macro_sensitivity": "Long-duration growth equity: benefits from low VIX (14.87) and stable rates; hurt by USD strength and rate-spike repricing; strong balance-sheet quality cushions VIX spikes relative to high-beta tech.",
+      "key_catalysts": [
+        "Next earnings 2026-10-30 \u2014 services growth and guidance commentary",
+        "Pullback toward the $321.70 50MA zone as trend-continuation entry"
+      ],
+      "disconfirming_evidence": "A daily close below $321.70 (50MA) breaks the uptrend; VIX spiking above ~18 unwinds the low-vol bid; the analyst target already below price confirms fundamental extension \u2014 a failure to hold $330 on a pullback would signal distribution.",
+      "bull_scenario": "Pullback to $330 finds support and rallies to $345 (+4.5%); spread captures 50-65% of the move.",
+      "base_scenario": "Consolidation between $330-$345 over 3-21 days; spread roughly flat with modest theta/IV drag.",
+      "bear_scenario": "Close below $321.70 triggers a trend break toward ~$310 (-9% from current); spread loses 90-100% of premium.",
+      "trade_plan": {
+        "structure": "Bull call debit spread: long 0.45-0.60 delta call, short further-OTM call same expiry, 21-28 DTE, fully exited before 2026-10-30 earnings",
+        "entry_trigger": "Pullback to ~$330 (midway between current price and 50MA) with price holding above the 50MA and RSI > 50",
+        "target": "$345 (+4.5% from entry \u2014 within one typical 10-day move at IV 24%)",
+        "stop": "Daily close below $321.70 (50MA)",
+        "levels": {
+          "entry": 330,
+          "stop": 321.7,
+          "target": 345
+        },
+        "position_size_note": "Half size (5-7% of portfolio) \u2014 trend intact but valuation stretched and IV rank 43 caps edge",
+        "risk_reward": "1:1.8",
+        "avoid_if": "Daily close below $321.70, VIX > 18, no pullback to $330 (do not chase above $341), or entry inside 14 days of the 10/30 earnings"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "R:R 1.81 < 2"
+        ],
+        "rr": 1.81,
+        "levels": {
+          "entry": 330.0,
+          "stop": 321.7,
+          "target": 345.0
+        },
+        "current_price": 341.07,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.2375,
+          "trading_days": 10,
+          "expected_move": 15.61,
+          "target_sigma": 0.96,
+          "stop_sigma": 0.53,
+          "breakeven_hit": 0.356,
+          "p_target_first": 0.273,
+          "p_stop_first": 0.533,
+          "p_neither": 0.194,
+          "mean_r_no_edge": 0.035
+        },
+        "exit_plan": "stop close below $321.7 or -50% of debit \u00b7 target $345 or 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold"
+      },
+      "unsourced_numbers": [
+        "$330"
+      ],
+      "fundamentals_note": "Trailing P/E 39.07 and P/B 46.34 are extended; profit margin 27.6% and revenue growth 16.4% are strong but already priced; analyst mean target $328.22 is below the current $341.07; next earnings 2026-10-30.",
+      "researched_at": "2026-09-27T02:25:58.156708+08:00"
+    },
+    {
       "ticker": "INTL",
-      "company": "Identity unverified in provided data \u2014 ticker INTL (no live fundamental data \u2014 technical/regime/sector only)",
-      "sector": "Unknown \u2014 insufficient context provided",
+      "company": "Intel Corporation",
+      "sector": "Technology",
       "bias": "neutral",
-      "conviction": 2,
-      "thesis": "INTL at $30.81 has slipped to 0.3% below its 50MA ($30.90) in a sideways trend, with 3M +3.81% in-line with the market (vs SPY -1.38%) and volume down -39%; there is no momentum edge, no extension to fade, and no fundamental data to anchor a view. The only actionable feature is cheap options (IV rank 21.5), which favors premium buyers but creates no signal by itself. A low-conviction, technical-only name best left alone until a decisive breakout or breakdown defines direction.",
-      "moat_assessment": "Cannot be assessed \u2014 company fundamentals and business model are not available in the provided context (no live fundamental data \u2014 technical/regime/sector only).",
-      "macro_sensitivity": "Unknown business mix; as a general rule, low-priced names with cheap IV (21.5) are vulnerable to broad VIX spikes above 20 and benefit from the current BULL_LOW_VOL regime's rate-easing tailwind.",
+      "conviction": 4,
+      "thesis": "INTL is compressing at its $30.90 50MA with volume declining 40%, a setup that typically precedes directional expansion. In the BULL_LOW_VOL regime, the path of least resistance is higher, though the absence of fundamental data and earnings date limits conviction to a technical-only thesis.",
+      "moat_assessment": "Intel's x86 moat in enterprise/data center is eroding as TSMC-manufactured AMD and ARM-based designs gain share, though Intel's installed base and IDM model provide residual pricing power.",
+      "macro_sensitivity": "INTL is pro-cyclical to tech capex (AI/data center buildout), moderately sensitive to rates, and benefits from weaker USD on international sales.",
       "key_catalysts": [
         "earnings date unknown \u2014 no live data",
-        "Decisive break above or below the tight $30.90 50MA consolidation range"
+        "Foundry/process node execution updates or capex cycle inflection"
       ],
-      "disconfirming_evidence": "A daily close below $30.00 on rising volume would turn the sideways structure bearish; equally, this thesis has no bullish claim to disprove \u2014 the burden is on a breakout above the range with volume to justify any entry.",
-      "bull_scenario": "Range breakout above $32 on volume drives INTL to $33.50-35 (~9-14% upside); cheap IV rank 21.5 amplifies delta gains.",
-      "base_scenario": "Continued sideways chop between $30-32 with the 50MA flat; theta slowly erodes the call while IV stays cheap.",
-      "bear_scenario": "Range breakdown below $30.00 opens air toward $28-29 (~6-9% downside); call expires worthless.",
+      "disconfirming_evidence": "INTL closes below $30.90 50MA with expanding volume, or VIX spikes above 20 unwinding the low-vol bid under semis.",
+      "bull_scenario": "Breakout triggers rally to $32.50 (+4.9%); call option captures 50-60% of move.",
+      "base_scenario": "Continued sideways consolidation $30.50-$31.50; option decays slowly due to low IV.",
+      "bear_scenario": "Close below $30.90 50MA triggers selloff to $29.50 (-4.8%); single-leg call loses 70-90% of premium.",
       "trade_plan": {
-        "structure": "Buy 0.45-0.55 delta call, 21-28 DTE, single leg",
-        "entry_trigger": "Daily close above $32.00 on volume expansion (breakout from the 50MA-anchored range), or a reclaim of $30.90 with a bullish reversal candle",
-        "target": "$33.00-34.00 (~7-10% upside on range expansion)",
-        "stop": "Close if INTL closes below $30.00 or the call loses 50% of premium",
-        "position_size_note": "half at most \u2014 no fundamental anchor and no momentum edge justify reduced risk; avoid if portfolio already has full tech-call exposure",
-        "risk_reward": "1:2",
-        "avoid_if": "No breakout confirmation, VIX breaks above 20, or any earnings date surfaces inside 14 days (currently unknown \u2014 verify before entry)"
+        "structure": "Buy 0.45-0.60 delta call, 21-28 DTE, single leg (IV rank 21.5 < 30)",
+        "entry_trigger": "Daily close above $30.90 (50MA) with volume expansion, confirming breakout from sideways compression",
+        "target": "$32.50",
+        "stop": "Close below $30.00",
+        "levels": {
+          "entry": 30.99,
+          "stop": 30.0,
+          "target": 32.5
+        },
+        "position_size_note": "3-5% of portfolio (small \u2014 sideways trend, no fundamental catalyst)",
+        "risk_reward": "1:1.5",
+        "avoid_if": "Daily close below $30.90 50MA, VIX > 20, or entry inside 14 days of any earnings"
       },
-      "fundamentals_note": "(no live fundamental data \u2014 technical/regime/sector only) \u2014 only trailing P/E 15.56 is live; revenue, margins, growth, targets, and earnings date are unavailable.",
-      "researched_at": "2026-09-25T22:45:30.578188+08:00"
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "bias is 'neutral' -- no directional view",
+          "conviction 4 < 5"
+        ],
+        "rr": null,
+        "levels": {
+          "entry": 30.99,
+          "stop": 30.0,
+          "target": 32.5
+        },
+        "current_price": 30.99,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false
+        },
+        "rule_warnings": [],
+        "exit_plan": "stop close above $30 or -50% premium \u00b7 target $32.5 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold"
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "Trailing P/E 15.66 is the only available metric; revenue growth, profit margin, market cap, analyst targets, and next earnings date are all unavailable \u2014 (no live fundamental data \u2014 technical/regime/sector only)",
+      "researched_at": "2026-09-26T13:37:59.364107+08:00"
     },
     {
       "ticker": "TSLA",
@@ -429,17 +705,17 @@
       "sector": "Consumer Discretionary / Electric Vehicles",
       "bias": "neutral",
       "conviction": 4,
-      "thesis": "TSLA has pulled back to $370.27, now 6.3% above its 50MA ($348.20) \u2014 extension compressing from prior levels as the 3M underperformance (-8.38% vs SPY -13.42%) and volume collapse (-69%) drain momentum; the uptrend is intact but thin. Forward P/E of 168.3 against a 3.67% profit margin offers no fundamental error margin, and the analyst mean target of $396.62 implies only ~7% upside. A single-leg call at IV rank 24.2 is cheap premium on a momentum bet, but the risk/reward stays asymmetric to the downside if the 50MA breaks.",
+      "thesis": "TSLA at $371.75 remains 6.7% above its 50MA ($348.20) in an uptrend, but the 3M -8.01% return underperforms SPY by -13.64% and volume has collapsed -68% \u2014 momentum is thin and the tape is drifting rather than trending. Forward P/E of 168.9 against a 3.67% profit margin offers no fundamental error margin, and the analyst mean target of $396.62 implies only ~7% upside. Cheap premium (IV rank 21.1) makes calls affordable, but the risk/reward remains asymmetric to the downside if the 50MA breaks.",
       "moat_assessment": "Tesla's brand, Supercharger network, and autonomy data advantage create a temporary moat, but Chinese EV competition, lack of pricing power, and a commoditizing market mean the moat is narrowing rather than deepening.",
-      "macro_sensitivity": "TSLA is highly rate-sensitive given its long-duration growth profile; VIX spikes above 20 aggressively compress the forward P/E of 168.3, while lower Fed rates provide modest support. Oil prices create ambiguous effects \u2014 lower crude may reduce EV substitution but signals softer consumer spending.",
+      "macro_sensitivity": "TSLA is highly rate-sensitive given its long-duration growth profile; VIX spikes above 20 aggressively compress the forward P/E of 168.9, while lower Fed rates provide modest support. Oil prices create ambiguous effects \u2014 lower crude may reduce EV substitution but signals softer consumer spending.",
       "key_catalysts": [
         "Q3 2026 earnings on 2026-10-22",
         "FSD/autonomy regulatory progress and delivery volume updates"
       ],
       "disconfirming_evidence": "A daily close below the 50MA ($348.20) on rising volume would confirm the downtrend is resuming; any VIX break above 20 or a hawkish Fed surprise would further compress the stretched P/E multiple.",
-      "bull_scenario": "Trend continuation plus FSD or delivery catalyst pushes TSLA to $410-420 (~11-13% upside); cheap IV rank 24.2 amplifies delta expansion on the move.",
+      "bull_scenario": "Trend continuation plus FSD or delivery catalyst pushes TSLA to $410-420 (~10-13% upside); cheap IV rank 21.1 amplifies delta expansion on the move.",
       "base_scenario": "Sideways digestion between $350-375 as the stock works off 3M underperformance; moderate IV keeps time decay manageable.",
-      "bear_scenario": "Breakdown below 50MA triggers algorithmic selling toward $330-340 (~8-11% downside); call expires worthless.",
+      "bear_scenario": "Breakdown below 50MA triggers algorithmic selling toward $330-340 (~9-11% downside); call expires worthless.",
       "trade_plan": {
         "structure": "Buy 0.45-0.55 delta call, 14-21 DTE, single leg",
         "entry_trigger": "Pullback to 50MA at $348.20 with RSI below 40 or a volume-supported bounce off that level",
@@ -447,10 +723,43 @@
         "stop": "Close if price closes below $340 or the option loses 50% of premium",
         "position_size_note": "half \u2014 extreme P/E warrants caution; cap at 5% given single-leg risk",
         "risk_reward": "1:2",
-        "avoid_if": "Price extends above $390 before entry, VIX breaks above 20, or entry falls inside 14 days of Oct 22 earnings"
+        "avoid_if": "Price extends above $390 before entry, VIX breaks above 20, or entry falls inside 14 days of Oct 22 earnings (no entries after ~Oct 8)"
       },
-      "fundamentals_note": "Forward P/E 168.3, revenue $103.6B with 25.5% growth, profit margin 3.67%, trailing P/E 336.7, analyst mean target $396.62 \u2014 extreme valuation with no earnings buffer.",
-      "researched_at": "2026-09-25T22:16:01.291911+08:00"
+      "gate": null,
+      "unsourced_numbers": [],
+      "fundamentals_note": "Forward P/E 168.9, revenue $103.6B with 25.5% growth, profit margin 3.67%, trailing P/E 338.0, analyst mean target $396.62 \u2014 extreme valuation with no earnings buffer.",
+      "researched_at": "2026-09-26T00:36:17.193838+08:00"
+    },
+    {
+      "ticker": "QCOM",
+      "company": "Qualcomm Inc.",
+      "sector": "Technology / Semiconductors",
+      "bias": "bearish",
+      "conviction": 3,
+      "thesis": "QCOM has extended to $204.04 \u2014 now 20.2% above its 50MA ($169.70) and ~5% ABOVE the analyst mean target of $194.13, meaning the stock has overshot consensus on deteriorating fundamentals: revenue is contracting (-4% growth) with a 21% profit margin. The 3M return (+5.26%) is merely in-line with SPY despite the 20% extension, indicating the gains are recent and momentum-driven rather than earnings-supported. This is a blow-off-risk profile with rich premium (IV rank 41.5) \u2014 chasing here offers poor risk/reward in either structure.",
+      "moat_assessment": "Qualcomm's modem and IP licensing moat is durable through high switching costs and patent walls, but smartphone end-market maturation and Apple's in-house silicon transition are structural headwinds eroding the long-term growth runway.",
+      "macro_sensitivity": "QCOM is moderately rate-sensitive given its handset exposure; lower Fed rates support the replacement cycle, while VIX spikes above 20 compress semi multiples. USD strength creates headwinds on China sales.",
+      "key_catalysts": [
+        "Q3 FY2027 earnings on 2026-11-05",
+        "Smartphone shipment trends and Apple modem transition updates"
+      ],
+      "disconfirming_evidence": "A daily close above $210 on rising volume would invalidate the bearish view and suggest the market is pricing in an IoT/auto recovery beyond consensus; any Apple modem delay would support the stock.",
+      "bull_scenario": "IoT/auto recovery and Apple modem delay drive QCOM to $215-225 (~5-10% upside); IV rank 41.5 keeps spread premium contained.",
+      "base_scenario": "Digestion between $185-205 as the 20.2% extension works off; theta erodes spread value sideways.",
+      "bear_scenario": "Mean reversion toward 50MA triggers algorithmic selling toward $170-180 (~12-17% downside); spread expires near max loss.",
+      "trade_plan": {
+        "structure": "Buy debit call spread: long 0.45-0.55 delta call, short OTM call at ~0.20 delta, 21-28 DTE",
+        "entry_trigger": "Pullback to $180-188 zone (8-12% off highs) on declining volume, or a confirmed base above $190 for 3+ sessions",
+        "target": "$205-215 (re-test of extension highs)",
+        "stop": "Close if QCOM closes below $175 or spread loses 50% of debit paid",
+        "position_size_note": "half \u2014 negative revenue growth, price above analyst target, and 20% extension warrant caution",
+        "risk_reward": "1:1.5",
+        "avoid_if": "Entry above $200, VIX breaks above 20, or QCOM closes below $178 before entry"
+      },
+      "gate": null,
+      "unsourced_numbers": [],
+      "fundamentals_note": "Revenue $44.07B with -4% growth (contracting), profit margin 21%, forward P/E 20.0, P/S 4.9, analyst mean target $194.13 \u2014 price now trades ~5% above consensus target on negative growth.",
+      "researched_at": "2026-09-26T00:35:54.208642+08:00"
     },
     {
       "ticker": "SPCX",
@@ -478,37 +787,10 @@
         "risk_reward": "1:2",
         "avoid_if": "Entry falls inside 14 days of Nov 4 earnings, VIX breaks above 20, or SPCX closes below $130 before entry"
       },
+      "gate": null,
+      "unsourced_numbers": [],
       "fundamentals_note": "Forward P/E 84.2, revenue $23.04B with 91.9% growth, profit margin -35.7%, P/S 83.9, P/B 15.2, analyst mean target $222.42 \u2014 extreme valuation with negative earnings.",
       "researched_at": "2026-09-25T22:15:33.686572+08:00"
-    },
-    {
-      "ticker": "INTC",
-      "company": "Intel Corporation",
-      "sector": "Technology / Semiconductors",
-      "bias": "bearish",
-      "conviction": 3,
-      "thesis": "INTC's 29.3% extension above its 50MA ($98.50) is extreme, and the fundamental picture is troubled: a negative profit margin of -19.8% and forward P/E of 61.8 against an analyst mean target of $116.37 \u2014 which sits ~8% BELOW the current $127.39 price. The market is pricing in a foundry/AI turnaround that the income statement does not yet support. This is a momentum trade with no fundamental floor; risk/reward at current levels is unfavorable.",
-      "moat_assessment": "Intel's x86 architecture and integrated manufacturing historically created a deep moat, but process-leadership erosion and the costly foundry transition have structurally weakened competitive positioning against AMD, ARM, and TSMC.",
-      "macro_sensitivity": "INTC is highly rate-sensitive given its capital-intensive foundry model; lower rates support the expansion, but VIX spikes above 20 compress the forward P/E of 61.8 aggressively. A weaker USD benefits international revenue.",
-      "key_catalysts": [
-        "Q3 2026 earnings on 2026-10-23",
-        "Foundry customer wins and process-node execution updates"
-      ],
-      "disconfirming_evidence": "A daily close below the 50MA ($98.50) on rising volume would confirm the uptrend has failed; any foundry delay or AI revenue miss would accelerate the re-rate lower toward the $116.37 target.",
-      "bull_scenario": "Foundry catalyst or AI chip surprise drives INTC to $140-150 (~10-18% upside); low IV rank 12.3 keeps theta manageable.",
-      "base_scenario": "Digestion between $115-128 as the 29.3% extension works off; cheap IV minimizes time decay.",
-      "bear_scenario": "Mean reversion toward 50MA triggers algorithmic selling toward $100-105 (~18-22% downside); call expires worthless.",
-      "trade_plan": {
-        "structure": "Buy 0.45-0.55 delta call, 21-28 DTE, single leg",
-        "entry_trigger": "ONLY on pullback to $110-115 zone (10-14% off highs) on declining volume",
-        "target": "$135-140 (re-test of extension highs)",
-        "stop": "Close if INTC closes below $105 or the call loses 50% of premium",
-        "position_size_note": "half \u2014 negative margin and sub-target pricing warrant caution",
-        "risk_reward": "1:2",
-        "avoid_if": "Entry above $125, VIX breaks above 20, or entry falls inside 14 days of Oct 23 earnings"
-      },
-      "fundamentals_note": "Forward P/E 61.8, revenue $57.03B with 25.4% growth, profit margin -19.8%, P/S 11.8, P/B 7.3, analyst mean target $116.37 \u2014 negative margins and target below current price signal fundamental deterioration.",
-      "researched_at": "2026-09-25T12:35:24.841086+08:00"
     },
     {
       "ticker": "NVDA",
@@ -536,37 +818,10 @@
         "risk_reward": "1:3",
         "avoid_if": "Entry falls inside 14 days of Nov 18 earnings, VIX breaks above 20, or NVDA closes below $210 before entry"
       },
+      "gate": null,
+      "unsourced_numbers": [],
       "fundamentals_note": "Trailing P/E 28.5, forward P/E 14.3, revenue $302.97B with 105.9% growth, profit margin 63.7%, P/B 23.7, analyst mean target $327.70",
       "researched_at": "2026-09-25T12:05:36.002954+08:00"
-    },
-    {
-      "ticker": "QCOM",
-      "company": "Qualcomm Inc.",
-      "sector": "Technology / Semiconductors",
-      "bias": "bearish",
-      "conviction": 3,
-      "thesis": "QCOM's 15% extension above its 50MA ($169.00) at $194.26 is extreme against deteriorating fundamentals \u2014 revenue is contracting (-4% growth) and the forward P/E of 19.0 prices in a recovery that hasn't materialized. The analyst mean target of $194.13 sits essentially AT the current price (~0% upside), and 3M underperformance vs SPY (-3.73% vs +4.39%) suggests the market is slowly recognizing the deterioration. This is an uptrend running on momentum, not fundamentals, with no clear reward for the risk of a mean reversion.",
-      "moat_assessment": "Qualcomm's modem and IP licensing moat is durable through high switching costs and patent walls, but smartphone end-market maturation and Apple's in-house silicon transition are structural headwinds eroding the long-term growth runway.",
-      "macro_sensitivity": "QCOM is moderately rate-sensitive given its handset-exposure; lower Fed rates support the replacement cycle, while VIX spikes above 20 compress semi multiples. USD strength creates headwinds on China sales.",
-      "key_catalysts": [
-        "Q3 FY2027 earnings on 2026-11-05",
-        "Smartphone shipment trends and Apple modem transition updates"
-      ],
-      "disconfirming_evidence": "A daily close above $200 on rising volume would invalidate the bearish view and suggest the market is pricing in an IoT/auto recovery; any Apple modem delay would support the stock.",
-      "bull_scenario": "IoT/auto recovery and Apple modem delay drive QCOM to $210-220 (~8-13% upside); IV rank 40.6 keeps spread premium contained.",
-      "base_scenario": "Digestion between $180-195 as the 15% extension works off; theta slowly erodes spread value sideways.",
-      "bear_scenario": "Mean reversion toward 50MA triggers algorithmic selling toward $170-175 (~10-12% downside); spread expires near max loss.",
-      "trade_plan": {
-        "structure": "Buy debit call spread: long 0.45-0.55 delta call, short OTM call at ~0.20 delta, 21-28 DTE",
-        "entry_trigger": "Pullback to $175-180 zone (8-10% off highs) on declining volume, or daily close above $200 on +30% volume expansion confirming breakout",
-        "target": "$205-215 (re-test of extension highs)",
-        "stop": "Close if QCOM closes below $170 or spread loses 50% of debit paid",
-        "position_size_note": "half \u2014 negative revenue growth and analyst target at current price warrant caution",
-        "risk_reward": "1:1.5",
-        "avoid_if": "Entry above $190 without volume confirmation, VIX breaks above 20, or QCOM closes below $175 before entry"
-      },
-      "fundamentals_note": "Revenue $44.07B with -4% growth (contracting), profit margin 21%, forward P/E 19.0, analyst mean target $194.13 \u2014 negative growth with no upside consensus.",
-      "researched_at": "2026-09-25T12:01:03.984703+08:00"
     },
     {
       "ticker": "META",
@@ -594,6 +849,8 @@
         "risk_reward": "1:2",
         "avoid_if": "Price remains above $760 at entry, VIX breaks above 20, or entry falls inside 14 days of Oct 29 earnings"
       },
+      "gate": null,
+      "unsourced_numbers": [],
       "fundamentals_note": "Trailing P/E 28.0, forward P/E 22.3, revenue $228.2B with 28% growth, profit margin 29.8%, P/B 7.6, analyst mean target $786.80",
       "researched_at": "2026-09-25T12:00:43.266324+08:00"
     },
@@ -623,6 +880,8 @@
         "risk_reward": "1:2.5",
         "avoid_if": "Stock breaks below $245 (range breakdown) or VIX above 18 (would trigger a de-rating of the forward multiple)"
       },
+      "gate": null,
+      "unsourced_numbers": [],
       "fundamentals_note": "Revenue growth 19.6%, profit margin 17.44%, trailing P/E 20.45 vs forward 24.13 \u2014 forward multiple expansion signals expected earnings decline; analyst mean target $329.29 vs current $250.71.",
       "researched_at": "2026-09-23T23:00:42.789724+08:00"
     },
@@ -652,6 +911,8 @@
         "risk_reward": "1:1.5",
         "avoid_if": "Stock is above $93 (too extended to earn edge) or VIX above 18 (regime break)"
       },
+      "gate": null,
+      "unsourced_numbers": [],
       "fundamentals_note": "Trailing P/E 47.15 vs forward 18.53 implies expected earnings acceleration, but revenue decline (-3.1%) and thin 7.2% margin cast doubt on that narrative; analyst mean target $68.35 vs current $91.95 signals the Street expects mean reversion.",
       "researched_at": "2026-09-23T22:46:37.448882+08:00"
     },
@@ -681,6 +942,8 @@
         "risk_reward": "1:2",
         "avoid_if": "VIX spikes above 18 or SPY breaks below its 50MA ($755.34), which would likely drag MSFT lower given its beta."
       },
+      "gate": null,
+      "unsourced_numbers": [],
       "fundamentals_note": "trailing P/E 27.69, forward P/E 21.08, revenue growth 0.177 (17.7%), profit margin 0.40305 (40.3%), P/S 11.12, analyst target mean $571.38, next earnings 2026-10-29",
       "researched_at": "2026-09-03T20:08:14.996740+08:00"
     },
@@ -710,11 +973,79 @@
         "risk_reward": "1:1.8 at target from a $955 reclaim entry; at current $929 the RR is unfavorable",
         "avoid_if": "Price remains below $954.9 50MA or memory spot pricing shows any signs of rolling over \u2014 chasing blow-off tops with collapsing volume is a loser's game"
       },
+      "gate": null,
+      "unsourced_numbers": [],
       "fundamentals_note": "Forward P/E 5.99, revenue growth 345.7%, profit margin 55.9%, analyst target $1513.41 vs current $928.92 \u2014 fundamentals are extraordinary but the ultra-cheap forward P/E for a hyper-growth company is the market pricing in a violent cyclical downturn, not a valuation anomaly.",
       "researched_at": "2026-08-29T03:32:26.933118+08:00"
     }
   ],
   "history": [
+    {
+      "date": "2026-09-28",
+      "kind": "analyst",
+      "id": "analyst_brief_20260928_195001_72b0",
+      "summary": "0 deep-dive(s), regime bull_low_vol"
+    },
+    {
+      "date": "2026-09-28",
+      "kind": "sector",
+      "id": "sector_brief_broad_market_(nasdaq-100)_20260928",
+      "summary": "Broad Market (Nasdaq-100) -- conviction 5"
+    },
+    {
+      "date": "2026-09-28",
+      "kind": "sector",
+      "id": "sector_brief_technology-e-commerce_20260928",
+      "summary": "Technology/E-commerce -- conviction 7"
+    },
+    {
+      "date": "2026-09-27",
+      "kind": "deepdive",
+      "id": "deepdive_AAPL_20260927T022558.156708_0800",
+      "summary": "AAPL [BULLISH] -- conviction 5/10"
+    },
+    {
+      "date": "2026-09-27",
+      "kind": "deepdive",
+      "id": "deepdive_INTC_20260927T022632.606343_0800",
+      "summary": "INTC [BULLISH] -- conviction 4/10"
+    },
+    {
+      "date": "2026-09-26",
+      "kind": "deepdive",
+      "id": "deepdive_AAPL_20260926T133639.939624_0800",
+      "summary": "AAPL [BULLISH] -- conviction 5/10"
+    },
+    {
+      "date": "2026-09-26",
+      "kind": "deepdive",
+      "id": "deepdive_INTC_20260926T003530.137734_0800",
+      "summary": "INTC [BEARISH] -- conviction 3/10"
+    },
+    {
+      "date": "2026-09-26",
+      "kind": "deepdive",
+      "id": "deepdive_INTL_20260926T133759.364107_0800",
+      "summary": "INTL [NEUTRAL] -- conviction 4/10"
+    },
+    {
+      "date": "2026-09-26",
+      "kind": "deepdive",
+      "id": "deepdive_QCOM_20260926T003554.208642_0800",
+      "summary": "QCOM [BEARISH] -- conviction 3/10"
+    },
+    {
+      "date": "2026-09-26",
+      "kind": "deepdive",
+      "id": "deepdive_AAPL_20260926T153529.117364_0800",
+      "summary": "AAPL [BULLISH] -- conviction 5/10"
+    },
+    {
+      "date": "2026-09-26",
+      "kind": "deepdive",
+      "id": "deepdive_TSLA_20260926T003617.193838_0800",
+      "summary": "TSLA [NEUTRAL] -- conviction 4/10"
+    },
     {
       "date": "2026-09-25",
       "kind": "analyst",
@@ -1248,72 +1579,6 @@
       "kind": "sector",
       "id": "sector_brief_broad_market_(nasdaq-100)_20260914",
       "summary": "Broad Market (Nasdaq-100) -- conviction 4"
-    },
-    {
-      "date": "2026-09-14",
-      "kind": "sector",
-      "id": "sector_brief_ev-automotive_20260914",
-      "summary": "EV/Automotive -- conviction 3"
-    },
-    {
-      "date": "2026-09-14",
-      "kind": "sector",
-      "id": "sector_brief_broad_market_(s&p_500)_20260914",
-      "summary": "Broad Market (S&P 500) -- conviction 4"
-    },
-    {
-      "date": "2026-09-14",
-      "kind": "sector",
-      "id": "sector_brief_technology-e-commerce_20260914",
-      "summary": "Technology / E-commerce -- conviction 6"
-    },
-    {
-      "date": "2026-09-11",
-      "kind": "analyst",
-      "id": "analyst_brief_20260911_195002_a8d7",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-11",
-      "kind": "analyst",
-      "id": "analyst_brief_20260911_212501_8c43",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-11",
-      "kind": "sector",
-      "id": "sector_brief_broad_market_(s&p_500)_20260911",
-      "summary": "Broad Market (S&P 500) -- conviction 7"
-    },
-    {
-      "date": "2026-09-11",
-      "kind": "sector",
-      "id": "sector_brief_technology_20260911",
-      "summary": "Technology -- conviction 6"
-    },
-    {
-      "date": "2026-09-11",
-      "kind": "sector",
-      "id": "sector_brief_semiconductors-ai_20260911",
-      "summary": "Semiconductors/AI -- conviction 8"
-    },
-    {
-      "date": "2026-09-11",
-      "kind": "sector",
-      "id": "sector_brief_ev-automotive_20260911",
-      "summary": "EV/Automotive -- conviction 5"
-    },
-    {
-      "date": "2026-09-10",
-      "kind": "analyst",
-      "id": "analyst_brief_20260910_195002_8d13",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-10",
-      "kind": "analyst",
-      "id": "analyst_brief_20260910_212501_417b",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
     }
   ]
 }
