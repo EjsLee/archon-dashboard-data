@@ -1,0 +1,458 @@
+{
+  "run_id": "analyst_brief_20260929_212501_9213",
+  "generated_at": "2026-09-29 21:25 UTC+08:00",
+  "regime": {
+    "regime": "bull_low_vol",
+    "vix": 15.85,
+    "spy_price": 765.61,
+    "gates": {
+      "allow_calls": true,
+      "allow_puts": false,
+      "size_scalar": 1.0
+    }
+  },
+  "sectors": [
+    {
+      "sector": "Technology/E-commerce",
+      "conviction": 6,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "AAPL and MSFT both in uptrends with moderate extension (5.1% and 6.6% above 50MA) and declining volume (-29% and -86%) \u2014 quiet-strength signatures that typically precede further upside in BULL_LOW_VOL regimes",
+        "SPY above both 50MA and 200MA provides a supportive trend backdrop; calls ALLOWED, puts BLOCKED aligns with the macro direction",
+        "MSFT's -86% volume contraction during a +21.43% 3M run is among the strongest quiet-strength readings in the sector"
+      ],
+      "headwinds": [
+        "META at 16.0% above its 50MA on rising volume (+8%) is the most extended large-cap tech name \u2014 this often precedes mean-reversion in low-VIX regimes",
+        "AMZN in a downtrend and below its 50MA drags sector breadth; any further weakness could spill over to the other names",
+        "VIX at 15.85 offers no buffer \u2014 a spike above 20 would simultaneously hit META's extended longs and overwhelm AAPL/MSFT quiet-strength setups"
+      ],
+      "risk_to_thesis": "A VIX spike above 18-20 (from 15.85) that simultaneously pushes AMZN below $240 and triggers mean-reversion in META would likely drag the entire sector lower, invalidating the bullish BULL_LOW_VOL tech thesis even if MSFT and AAPL hold their 50MAs.",
+      "generated_at": "2026-09-29T21:25:27.910051+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "MSFT",
+        "best_structure": "buy ATM calls 3-4 weeks out on pullbacks to 50MA ($477.70); MOMENTUM entry at market if price holds above $500 on declining volume",
+        "key_levels_to_watch": "$477.70 (50MA support), $500 (psychological support), volume confirmation on any rally, VIX above 20 would invalidate the low-vol setup",
+        "avoid": "QQQ and TSLA are blocklisted; avoid AMZN calls (downtrend, below 50MA); avoid META calls at current extension (16% above 50MA); puts BLOCKED by signal gate",
+        "gates": {
+          "pullback": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 491.64,
+              "stop": 475.31,
+              "target": 524.3
+            },
+            "current_price": 509.22,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.3335,
+              "trading_days": 10,
+              "expected_move": 32.66,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $475.31 or -50% premium \u00b7 target $524.3 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "pullback",
+            "entry_gap_sigma": 0.52
+          },
+          "momentum": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 509.22,
+              "stop": 492.31,
+              "target": 543.05
+            },
+            "current_price": 509.22,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.3335,
+              "trading_days": 10,
+              "expected_move": 33.83,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $492.31 or -50% premium \u00b7 target $543.05 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "momentum",
+            "entry_gap_sigma": 0.0
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "TRADE",
+          "reasons": [],
+          "rr": 2.0,
+          "levels": {
+            "entry": 491.64,
+            "stop": 475.31,
+            "target": 524.3
+          },
+          "current_price": 509.22,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "strategies": {
+              "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": {
+            "iv": 0.3335,
+            "trading_days": 10,
+            "expected_move": 32.66,
+            "target_sigma": 1.0,
+            "stop_sigma": 0.5,
+            "breakeven_hit": 0.333,
+            "p_target_first": 0.255,
+            "p_stop_first": 0.555,
+            "p_neither": 0.19,
+            "mean_r_no_edge": 0.043
+          },
+          "exit_plan": "stop close below $475.31 or -50% premium \u00b7 target $524.3 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "strategy": "pullback",
+          "entry_gap_sigma": 0.52
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "The 50MA extensions and volume divergences matter most \u2014 MSFT's -86% vol contraction on a +21% run is the clearest signal of sustained institutional accumulation; META's +8% vol on 16% extension is the clearest risk signal.",
+        "noise": "No news feed is supplied; the 3M returns for AMZN (-7.12%) and META (+18.48%) are factual price inputs, but without positioning or headline data, the narrative driver of either move is unknown and should not be extrapolated as a catalyst."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "Strongest combination of trend, relative strength (+17.62% vs SPY), and quiet accumulation (-86% volume) \u2014 the highest-quality setup in the sector.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "META",
+          "role": "leader",
+          "reason": "Exceptional 3M (+18.48%) and RS (+14.67%) but 16.0% extended above 50MA on rising volume \u2014 a late-cycle momentum play with elevated mean-reversion risk.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "laggard",
+          "reason": "The only ticker below its 50MA ($256.20) in a downtrend, with -10.93% vs SPY \u2014 a value trap until the downtrend breaks.",
+          "options_angle": "avoid"
+        },
+        {
+          "ticker": "AAPL",
+          "role": "leader",
+          "reason": "Solid uptrend, +8.25% RS vs SPY, and quiet volume (-29%) \u2014 a lower-beta tech anchor with cleaner risk/reward than META.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY at $765.61 trades just above its 50MA at $760.39 and well above the 200MA at $715.29, confirming a long-term bull trend despite near-term sideways action (+3.81% over 3M). VIX at 15.85 sits barely above its 30d average of 15.56, signaling a complacency regime where growth stocks with positive relative strength can grind higher on residual flows, but any vol spike would hit extended names hardest.",
+      "key_themes": [
+        "Three of four focus tickers (AAPL, MSFT, META) are in confirmed uptrends with positive relative strength vs SPY, showing broad tech leadership despite AMZN's downtrend",
+        "MSFT (+21.43% 3M, +17.62% vs SPY) and META (+18.48% 3M, +14.67% vs SPY) are strong outperformers but META at 16.0% above its 50MA on +8% volume is flashing late-cycle momentum risk",
+        "AMZN is the sole laggard \u2014 in a downtrend at $246.15, 3.9% below its 50MA of $256.20, with 3M -7.12% (-10.93% vs SPY), and -65% volume contraction suggests the sell-off is exhausting but no bottom is confirmed"
+      ],
+      "unsourced_numbers": [
+        "21%",
+        "$500",
+        "$240"
+      ]
+    },
+    {
+      "sector": "Broad Market (Nasdaq-100)",
+      "conviction": 4,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "QQQ in an uptrend with only 3.3% extension from 50MA and declining volume (-11%) \u2014 the cleanest, most sustainable trend structure among focus tickers",
+        "SPY above both 50MA and 200MA provides a supportive broad-market backdrop; calls ALLOWED, puts BLOCKED aligns with the macro direction",
+        "VIX at 15.85 near its 30d average of 15.56 suggests the market is not complacent enough to trigger a mean-reversion event"
+      ],
+      "headwinds": [
+        "QQQ's 3M relative performance vs SPY is -0.31% \u2014 the Nasdaq-100 is not outperforming, suggesting tech/rotation is not providing incremental alpha",
+        "QQQ is BLOCKLISTED \u2014 no trades can be executed regardless of the technical setup",
+        "VIX at 15.85 offers no buffer \u2014 a spike above 20 would hit index exposure across the board with no single-name defense"
+      ],
+      "risk_to_thesis": "QQQ is BLOCKLISTED, so this sector view is informational only \u2014 any attempt to act on it through the provided focus ticker violates the hard constraint, and the broad-market BULL_LOW_VOL thesis is itself contingent on VIX remaining below 20.",
+      "generated_at": "2026-09-29T21:25:56.013112+08:00",
+      "swing_trade_setup": {
+        "bias": "neutral",
+        "ticker": "QQQ",
+        "best_structure": "QQQ is BLOCKLISTED \u2014 no trade setup can be proposed for this ticker; substitute with non-blocklisted tickers from other sectors (e.g., MSFT, NVDA, AMD) if Nasdaq-100 beta exposure is desired.",
+        "key_levels_to_watch": "$712.80 (50MA support), $736.53 (current price holding as support), VIX above 20 would invalidate the low-vol thesis broadly",
+        "avoid": "QQQ is BLOCKLISTED \u2014 no trades allowed; also avoid TSLA (blocklisted); avoid AMZN (downtrend, below 50MA); avoid META at 16% extension; puts BLOCKED by signal gate",
+        "gates": {
+          "pullback": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "no directional view ('neutral')",
+              "bias is 'neutral' -- no directional view",
+              "conviction 4 < 5",
+              "QQQ is on the risk_rules blocklist"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": 736.53,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% premium \u00b7 target +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "pullback",
+            "entry_gap_sigma": null
+          },
+          "momentum": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "no directional view ('neutral')",
+              "bias is 'neutral' -- no directional view",
+              "conviction 4 < 5",
+              "QQQ is on the risk_rules blocklist"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": 736.53,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% premium \u00b7 target +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "momentum",
+            "entry_gap_sigma": null
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "NO TRADE",
+          "reasons": [
+            "no directional view ('neutral')",
+            "bias is 'neutral' -- no directional view",
+            "conviction 4 < 5",
+            "QQQ is on the risk_rules blocklist"
+          ],
+          "rr": null,
+          "levels": {
+            "entry": null,
+            "stop": null,
+            "target": null
+          },
+          "current_price": 736.53,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "strategies": {
+              "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": null,
+          "exit_plan": "stop -50% premium \u00b7 target +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "strategy": "pullback",
+          "entry_gap_sigma": null
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "QQQ's 3.3% extension above the 50MA and -11% volume contraction are the most important signals \u2014 they confirm the broad-market uptrend is intact but not stretched.",
+        "noise": "No news feed is supplied; QQQ's -0.31% relative performance vs SPY over 3M is statistically indistinguishable from noise and should not be extrapolated as a rotation signal."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "QQQ",
+          "role": "watch",
+          "reason": "The sole focus ticker for this sector is in a confirmed uptrend with the lowest extension (3.3% above 50MA) \u2014 but it is BLOCKLISTED and cannot be traded.",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $765.61 trades just above its 50MA at $760.39 and well above the 200MA at $715.29, confirming a long-term bull trend despite near-term sideways action (+3.81% over 3M). VIX at 15.85 sits barely above its 30d average of 15.56, signaling a complacency regime where index-level exposures can grind higher but any vol spike would hit simultaneously across names.",
+      "key_themes": [
+        "QQQ is in a confirmed uptrend at $736.53, just 3.3% above its 50MA at $712.80 \u2014 the most moderate extension among all focus tickers, suggesting steady index-level accumulation",
+        "QQQ's 3M +3.5% vs SPY +3.81% (-0.31%) shows the Nasdaq-100 tracking nearly identical to the S&P 500 \u2014 no leadership, no lag, pure beta",
+        "Volume in QQQ has declined 11% during the uptrend, consistent with broad-market quiet strength rather than speculative excess"
+      ],
+      "unsourced_numbers": [
+        "500",
+        "16%"
+      ]
+    }
+  ],
+  "deep_dives": []
+}
