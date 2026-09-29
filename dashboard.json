@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-28T23:00:01.966246+08:00",
+  "generated_at": "2026-09-29T20:10:02.147568+08:00",
   "regime": {
     "regime": "bull_low_vol",
-    "vix": 16.03,
-    "spy_price": 771.35,
+    "vix": 15.84,
+    "spy_price": 765.61,
     "gates": {
       "allow_calls": true,
       "allow_puts": false,
@@ -11,6 +11,462 @@
     }
   },
   "sectors": [
+    {
+      "sector": "Technology",
+      "conviction": 6,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "AAPL and MSFT both in uptrends with moderate extension (5.1% and 6.6% above 50MA) and declining volume (-29% and -86%) \u2014 quiet-strength signatures that typically precede further upside in BULL_LOW_VOL regimes",
+        "SPY above both 50MA and 200MA provides a supportive trend backdrop; calls ALLOWED, puts BLOCKED aligns with the macro direction",
+        "MSFT's -86% volume contraction during a +21.43% 3M run is among the strongest quiet-strength readings in the sector"
+      ],
+      "headwinds": [
+        "META at 16.0% above its 50MA on rising volume (+8%) is the most extended large-cap tech name \u2014 this often precedes mean-reversion in low-VIX regimes",
+        "AMZN in a downtrend and below its 50MA drags sector breadth; any further weakness could spill over to the other names",
+        "VIX at 15.84 offers no buffer \u2014 a spike above 20 would simultaneously hit META's extended longs and overwhelm AAPL/MSFT quiet-strength setups"
+      ],
+      "risk_to_thesis": "A VIX spike above 18-20 (from 15.84) that simultaneously pushes AMZN below $240 and triggers mean-reversion in META would likely drag the entire sector lower, invalidating the bullish BULL_LOW_VOL tech thesis even if MSFT and AAPL hold their 50MAs.",
+      "generated_at": "2026-09-29T19:51:14.853169+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "MSFT",
+        "best_structure": "buy ATM calls 3-4 weeks out on pullbacks to 50MA ($477.70); MOMENTUM entry at market if price holds above $500 on declining volume",
+        "key_levels_to_watch": "$477.70 (50MA support), $500 (psychological support), volume confirmation on any rally, VIX above 20 would invalidate the low-vol setup",
+        "avoid": "QQQ and TSLA are blocklisted; avoid AMZN calls (downtrend, below 50MA); avoid META calls at current extension (16% above 50MA); puts BLOCKED by signal gate",
+        "gates": {
+          "pullback": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 491.64,
+              "stop": 475.31,
+              "target": 524.3
+            },
+            "current_price": 509.22,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.3335,
+              "trading_days": 10,
+              "expected_move": 32.66,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $475.31 or -50% premium \u00b7 target $524.3 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "pullback",
+            "entry_gap_sigma": 0.52
+          },
+          "momentum": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 509.22,
+              "stop": 492.31,
+              "target": 543.05
+            },
+            "current_price": 509.22,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.3335,
+              "trading_days": 10,
+              "expected_move": 33.83,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $492.31 or -50% premium \u00b7 target $543.05 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "momentum",
+            "entry_gap_sigma": 0.0
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "TRADE",
+          "reasons": [],
+          "rr": 2.0,
+          "levels": {
+            "entry": 491.64,
+            "stop": 475.31,
+            "target": 524.3
+          },
+          "current_price": 509.22,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "strategies": {
+              "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": {
+            "iv": 0.3335,
+            "trading_days": 10,
+            "expected_move": 32.66,
+            "target_sigma": 1.0,
+            "stop_sigma": 0.5,
+            "breakeven_hit": 0.333,
+            "p_target_first": 0.255,
+            "p_stop_first": 0.555,
+            "p_neither": 0.19,
+            "mean_r_no_edge": 0.043
+          },
+          "exit_plan": "stop close below $475.31 or -50% premium \u00b7 target $524.3 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "strategy": "pullback",
+          "entry_gap_sigma": 0.52
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "The 50MA extensions and volume divergences matter most \u2014 MSFT's -86% vol contraction on a +21% run is the clearest signal of sustained institutional accumulation; META's +8% vol on 16% extension is the clearest risk signal.",
+        "noise": "No news feed is supplied; the 3M returns for AMZN (-7.12%) and META (+18.48%) are factual price inputs, but without positioning or headline data, the narrative driver of either move is unknown and should not be extrapolated as a catalyst."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "Strongest combination of trend, relative strength (+17.62% vs SPY), and quiet accumulation (-86% volume) \u2014 the highest-quality setup in the sector.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "META",
+          "role": "leader",
+          "reason": "Exceptional 3M (+18.48%) and RS (+14.67%) but 16.0% extended above 50MA on rising volume \u2014 a late-cycle momentum play with elevated mean-reversion risk.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "laggard",
+          "reason": "The only ticker below its 50MA ($256.20) in a downtrend, with -10.93% vs SPY \u2014 a value trap until the downtrend breaks.",
+          "options_angle": "avoid"
+        },
+        {
+          "ticker": "AAPL",
+          "role": "leader",
+          "reason": "Solid uptrend, +8.25% RS vs SPY, and quiet volume (-29%) \u2014 a lower-beta tech anchor with cleaner risk/reward than META.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY at $765.61 trades just above its 50MA at $760.39 and well above the 200MA at $715.29, confirming a long-term bull trend despite near-term sideways action (+3.81% over 3M). VIX at 15.84 sits barely above its 30d average of 15.56, signaling a complacency regime where tech stocks with positive relative strength can continue to grind higher on residual flows, but any vol spike would hit the extended names hardest.",
+      "key_themes": [
+        "Three of four focus tickers (AAPL, MSFT, META) are in confirmed uptrends with positive relative strength vs SPY, showing broad tech leadership despite AMZN's downtrend",
+        "MSFT (+21.43% 3M, +17.62% vs SPY) and META (+18.48% 3M, +14.67% vs SPY) are strong outperformers but META at 16.0% above its 50MA on +8% volume is flashing late-cycle momentum risk",
+        "AMZN is the sole laggard \u2014 in a downtrend at $246.15, 3.9% below its 50MA of $256.20, with 3M -7.12% (-10.93% vs SPY), and -65% volume contraction suggests the sell-off is exhausting but no bottom is confirmed"
+      ],
+      "unsourced_numbers": [
+        "21%",
+        "$500",
+        "$240"
+      ]
+    },
+    {
+      "sector": "Semiconductors/AI",
+      "conviction": 6,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "NVDA in a confirmed uptrend with only 5.8% extension from 50MA \u2014 not overextended",
+        "BULL_LOW_VOL regime with VIX 15.84 near its 30d avg of 15.56 favors steady buying of growth/semi exposure",
+        "SPY above both 50MA and 200MA provides a supportive macro trend backdrop"
+      ],
+      "headwinds": [
+        "NVDA's 3M return of +2.65% underperforms SPY +3.81%, suggesting muted momentum despite the uptrend label",
+        "Volume down 44% confirms participation is thin \u2014 a sudden vol expansion could be downside, not upside",
+        "Only one focus ticker (NVDA) is supplied for this sector; sector breadth cannot be assessed from the available data"
+      ],
+      "risk_to_thesis": "A VIX spike above 20 (from 15.84) coinciding with NVDA's 50MA at $216.30 breaking would invalidate the bullish, low-vol semi/AI thesis and confirm the uptrend has failed.",
+      "generated_at": "2026-09-29T19:50:35.354780+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "NVDA",
+        "best_structure": "buy ATM calls 3-4 weeks out on pullbacks to 50MA ($216.30); MOMENTUM entry at market if volume expands in the uptrend",
+        "key_levels_to_watch": "$216.30 (50MA support), $228.86 (current price holding as support), volume expansion or contraction, VIX above 20 would invalidate the low-vol thesis",
+        "avoid": "QQQ and TSLA are blocklisted \u2014 no trades in those; also avoid put structures as puts are BLOCKED by the signal gate",
+        "gates": {
+          "pullback": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 222.98,
+              "stop": 215.22,
+              "target": 238.51
+            },
+            "current_price": 228.86,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.3495,
+              "trading_days": 10,
+              "expected_move": 15.52,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $215.22 or -50% premium \u00b7 target $238.51 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "pullback",
+            "entry_gap_sigma": 0.37
+          },
+          "momentum": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 228.86,
+              "stop": 220.89,
+              "target": 244.79
+            },
+            "current_price": 228.86,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "strategies": {
+                "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.3495,
+              "trading_days": 10,
+              "expected_move": 15.93,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $220.89 or -50% premium \u00b7 target $244.79 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "momentum",
+            "entry_gap_sigma": 0.0
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "TRADE",
+          "reasons": [],
+          "rr": 2.0,
+          "levels": {
+            "entry": 222.98,
+            "stop": 215.22,
+            "target": 238.51
+          },
+          "current_price": 228.86,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "strategies": {
+              "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": {
+            "iv": 0.3495,
+            "trading_days": 10,
+            "expected_move": 15.52,
+            "target_sigma": 1.0,
+            "stop_sigma": 0.5,
+            "breakeven_hit": 0.333,
+            "p_target_first": 0.255,
+            "p_stop_first": 0.555,
+            "p_neither": 0.19,
+            "mean_r_no_edge": 0.043
+          },
+          "exit_plan": "stop close below $215.22 or -50% premium \u00b7 target $238.51 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "strategy": "pullback",
+          "entry_gap_sigma": 0.37
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "The trend labels (NVDA uptrend), volume contraction (-44%), and SPY's position above both MAs matter most for the next 1-3 weeks \u2014 they define the directional regime and whether NVDA's quiet strength continues or reverses.",
+        "noise": "No news feed is supplied; any narrative interpretation of NVDA's -1.16% relative strength vs SPY is speculation without positioning or headline data to confirm whether the underperformance is selling pressure or consolidation."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "NVDA",
+          "role": "leader",
+          "reason": "The sole focus ticker in this sector, in a confirmed uptrend with low extension from the 50MA in a bull/low-vol regime \u2014 the only actionable semi/AI setup supplied.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY at $765.61 trades just above its 50MA at $760.39 and well above the 200MA at $715.29, confirming a long-term uptrend despite near-term sideways action (+3.81% over 3M). VIX at 15.84 sits barely above its 30d average of 15.56, signaling extreme complacency and a risk-on regime where growth stocks \u2014 including semis \u2014 can grind higher on residual flows.",
+      "key_themes": [
+        "NVDA trades in a confirmed uptrend at $228.86, just 5.8% above its 50MA at $216.30 \u2014 modest extension with room to run",
+        "NVDA's 3M relative performance vs SPY is essentially flat (-1.16%), suggesting AI-name fatigue that could reverse if AI capex flows resume",
+        "Volume in NVDA has contracted 44% during the uptrend, a quiet-strength signature often preceding further upside in low-VIX regimes"
+      ],
+      "unsourced_numbers": []
+    },
     {
       "sector": "EV/Automotive",
       "conviction": 3,
@@ -375,125 +831,21 @@
         "24%",
         "$320,"
       ]
-    },
-    {
-      "sector": "Technology",
-      "conviction": 6,
-      "sentiment": "bullish",
-      "tailwinds": [
-        "AI monetization is shifting from 'capex build-out' to 'revenue realization' \u2014 ad targeting (META), cloud (MSFT), and devices (AAPL) are all showing early signs of AI-driven monetization",
-        "Low VIX and compressed implied vols make call premiums historically cheap, creating favorable risk/reward for structured call spreads on pullbacks"
-      ],
-      "headwinds": [
-        "Concentration risk: AAPL, MSFT, META together represent ~15% of SPY; any sector rotation out of tech would hit the broader index violently",
-        "META's 26.4% gap above 50MA leaves no room for disappointment \u2014 any guide-down on ad revenue or Reality Labs spend would trigger a rapid mean-reversion"
-      ],
-      "risk_to_thesis": "A single mega-cap earnings miss \u2014 most likely META given its extreme extension \u2014 would trigger a violent rotation out of tech and invalidate the low-vol, bullish setup across the entire sector.",
-      "generated_at": "2026-09-25T02:40:03.105260+08:00",
-      "swing_trade_setup": {
-        "bias": "mixed",
-        "best_structure": "AAPL ATM call spread 3-4 weeks out on pullback to $321.6 (50MA); this is the least extended mega-cap with the best risk/reward. Avoid chasing META at 26% above support.",
-        "key_levels_to_watch": "AAPL: support at $321.6 (50MA), resistance at $350. META: support at $613.5 (50MA) \u2014 any test would be a major event; resistance is untrended at $750+. AMZN: must recapture $256.2 (50MA) to confirm reversal. VIX above 18 would threaten the low-vol bid.",
-        "avoid": "Buying OTM calls on META at current levels \u2014 the gap to 50MA is too wide and the vol risk too elevated. Avoid selling premium on MSFT given the thin-volume rally is vulnerable to a gap down."
-      },
-      "news_signal_vs_noise": {
-        "signal": "META's ad revenue trends and AI monetization metrics on next earnings; AMZN AWS growth acceleration or deceleration; any Fed guidance that shifts rate-cut expectations.",
-        "noise": "Daily product launch rumors and social media sentiment on consumer tech \u2014 these create intraday noise but do not shift the medium-term earnings trajectory."
-      },
-      "notable_tickers": [
-        {
-          "ticker": "META",
-          "role": "leader",
-          "reason": "26.4% above 50MA with +18% volume is the sector's strongest momentum name but also its most crowded \u2014 priced for flawless execution.",
-          "options_angle": "Avoid buying calls at current levels; if already long, consider call diagonals or covered calls to monetize elevated premium. Wait for a pullback to 50MA ($613.5) before initiating new long gamma."
-        },
-        {
-          "ticker": "AAPL",
-          "role": "leader",
-          "reason": "Steady outperformer at only 5.0% above 50MA with declining volume \u2014 the least extended mega-cap, offering the best risk/reward for new entries.",
-          "options_angle": "Buy ATM call spreads 3-4 weeks out on any pullback to $321.6 (50MA); this is the cleanest risk/reward in the group."
-        },
-        {
-          "ticker": "AMZN",
-          "role": "laggard",
-          "reason": "2.4% below 50MA and sideways for 3 months while peers rallied \u2014 the market is pricing in a margin reset that may already be reflected.",
-          "options_angle": "Watch for a break above 50MA ($256.2) on rising volume as a bullish reversal signal; until then, avoid or consider put selling if you believe the worst is priced in."
-        }
-      ],
-      "macro_backdrop": "The Fed's easing posture is compressing discount rates on long-duration tech cash flows, providing a tailwind for mega-cap multiples. USD strength is a modest headwind for international revenue, but domestic demand and AI monetization narratives are swamping FX effects. Low volatility is suppressing options premiums, creating favorable entry points for call buyers.",
-      "key_themes": [
-        "META's 26.4% gap above 50MA with +18% volume is either a parabolic momentum blow-off or the early innings of a re-rating on ad-platform AI integration \u2014 the market is priced for perfection",
-        "MSFT's 17.71% 3M gain on 88% declining volume warns of weak breadth behind the rally; the move is real but participation is thin, making it vulnerable to a sharp reversal on any miss",
-        "AMZN is the sector's clear laggard, trading below its 50MA with a 3M -10% gap to SPY \u2014 the market is pricing in margin compression from logistics/AI capex that may already be in the numbers"
-      ],
-      "unsourced_numbers": []
-    },
-    {
-      "sector": "Semiconductors/AI",
-      "conviction": 5,
-      "sentiment": "neutral",
-      "tailwinds": [
-        "Hyperscaler capex budgets are guided up another 25-40% YoY, providing a visible revenue floor for the entire AI semiconductor supply chain",
-        "CoWoS and advanced packaging capacity expansion is finally catching up, which should ease the HBM bottleneck and accelerate revenue recognition"
-      ],
-      "headwinds": [
-        "NVDA's forward P/E near 30x demands flawless execution \u2014 any quarterly guide-down on data center would trigger a 15-20% de-rating that cascades through the whole sector",
-        "China export controls are tightening again, threatening a significant portion of NVDA's revenue and forcing costly product downgrades to maintain compliance"
-      ],
-      "risk_to_thesis": "A single NVDA quarterly guide-down on data center revenue would shatter the 'AI capex is bulletproof' thesis and likely compress the entire sector's multiples by 20-30%.",
-      "generated_at": "2026-09-25T02:39:34.402108+08:00",
-      "swing_trade_setup": {
-        "bias": "mixed",
-        "best_structure": "NVDA ATM call spread 3 weeks out on a pullback to $215.4 (50MA); structure strikes 8-10% apart to isolate the mean-reversion bounce while capping downside.",
-        "key_levels_to_watch": "NVDA: support at $215.4 (50MA), then $200 (psychological and swing support); resistance at $240 (recent high). A break below $215.4 on rising volume would confirm a trend change.",
-        "avoid": "Avoid selling premium into this vol environment \u2014 the skew is too expensive and gap risk around hyperscaler earnings is real. Also avoid short-dated OTM NVDA calls at current levels; they're overpriced and decay fast."
-      },
-      "news_signal_vs_noise": {
-        "signal": "NVDA's next data center revenue guide and any hyperscaler capex commentary on earnings calls \u2014 these directly set the sector's revenue run-rate. Also watch for new China restriction announcements.",
-        "noise": "Daily social media speculation about 'AI bubble' or individual chip benchmark comparisons \u2014 these move intraday prices but don't alter the 2-3 year capex trajectory."
-      },
-      "notable_tickers": [
-        {
-          "ticker": "NVDA",
-          "role": "leader",
-          "reason": "4.1% above 50MA in an uptrend but underperforming SPY by 3.4% over 3 months \u2014 the market is questioning whether AI demand is peaking or just pausing.",
-          "options_angle": "Buy ATM call spread 3-4 weeks out on pullbacks to 50MA ($215.4); avoid OTM calls given elevated implied vol and binary earnings risk"
-        },
-        {
-          "ticker": "AVGO",
-          "role": "watch",
-          "reason": "Custom ASIC and networking exposure with a more reasonable multiple than NVDA \u2014 the 'if not NVDA then what' trade for AI capital rotation.",
-          "options_angle": "Call setup 4-6 weeks out; better risk/reward than NVDA for investors worried about concentration"
-        },
-        {
-          "ticker": "MU",
-          "role": "watch",
-          "reason": "HBM3E ramp and memory pricing recovery is a pure-play on the broader semi cycle turning \u2014 more leveraged to unit recovery than NVDA.",
-          "options_angle": "Longer-dated calls (6-8 weeks) to capture the memory upcycle; avoid short-dated premium selling given memory spot volatility"
-        }
-      ],
-      "macro_backdrop": "The Fed's rate-cut trajectory is reducing the discount rate on long-duration growth cash flows, which disproportionately benefits high-multiple semis. USD strength is a modest headwind for international revenue translation, but AI capex is so overwhelming that it swamps FX effects. Inflation moderation gives the Fed room to stay accommodative, extending the semi multiple expansion cycle.",
-      "key_themes": [
-        "AI capex from hyperscalers (MSFT, GOOGL, AMZN, META) is accelerating into 2026, with GPU and custom ASIC demand outstripping supply through mid-2027",
-        "NVDA's data center revenue growth is decelerating on a base effect, shifting the narrative from 'infinite demand' to 'tiered demand differentiation' \u2014 custom chips (Trainium, Maia) are nibbling at the edges",
-        "Memory and HBM pricing is firming after 18 months of contraction, signaling a broader semi cycle recovery beyond just AI accelerators"
-      ],
-      "unsourced_numbers": []
     }
   ],
-  "candidates_generated_at": "2026-09-28T21:35:00+08:00",
+  "candidates_generated_at": "2026-09-29T20:00:00+08:00",
   "candidates": [
     {
       "ticker": "INTC",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 13.86,
-      "price": 120.01,
-      "priority": 13.86,
-      "iv_rank": 13.2,
-      "iv_regime": "LOW",
-      "days_to_earn": 24,
+      "ma_gap_pct": 13.62,
+      "price": 116.03,
+      "priority": 13.62,
+      "iv_rank": 40.9,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 23,
       "earnings_date": "2026-10-22",
       "metrics_status": "ok"
     },
@@ -502,12 +854,12 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 13.55,
-      "price": 623.42,
-      "priority": 13.55,
-      "iv_rank": 31.5,
+      "ma_gap_pct": 13.37,
+      "price": 607.87,
+      "priority": 13.37,
+      "iv_rank": 30.0,
       "iv_regime": "LOW",
-      "days_to_earn": 36,
+      "days_to_earn": 35,
       "earnings_date": "2026-11-03",
       "metrics_status": "ok"
     },
@@ -516,12 +868,12 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 9.46,
-      "price": 193.6,
-      "priority": 9.46,
-      "iv_rank": 40.3,
+      "ma_gap_pct": 9.24,
+      "price": 187.48,
+      "priority": 9.24,
+      "iv_rank": 41.3,
       "iv_regime": "MEDIUM",
-      "days_to_earn": 37,
+      "days_to_earn": 36,
       "earnings_date": "2026-11-04",
       "metrics_status": "ok"
     },
@@ -530,17 +882,379 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 3.93,
-      "price": 341.4,
-      "priority": 3.93,
-      "iv_rank": 43.0,
+      "ma_gap_pct": 3.87,
+      "price": 338.4,
+      "priority": 3.87,
+      "iv_rank": 45.5,
       "iv_regime": "MEDIUM",
-      "days_to_earn": 31,
+      "days_to_earn": 30,
       "earnings_date": "2026-10-29",
       "metrics_status": "ok"
     }
   ],
   "deep_dives": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "sector": "Semiconductors / AI Infrastructure",
+      "bias": "bullish",
+      "conviction": 7,
+      "thesis": "NVDA trades in a confirmed uptrend at $228.86, just 5.8% above the 50MA at $216.30, with volume collapsing 44% \u2014 quiet strength, not exhaustion. Fundamentals are extraordinary: revenue $303B growing 105.9% YoY, profit margin 63.7%, forward P/E 14.6 \u2014 yet the stock is in-line with the market (+2.65% vs SPY +3.81% over 3M), suggesting AI euphoria has cooled temporarily and the risk/reward is now asymmetric if growth re-accelerates. Analyst target $327.70 implies 43% upside.",
+      "moat_assessment": "CUDA software ecosystem + data-center GPU dominance creates near-monopoly switching costs; durability is exceptional but customer concentration (hyperscaler capex cycles) is the key structural risk.",
+      "macro_sensitivity": "Positive to AI capex cycle and low VIX (risk-on growth); negative to USD strength, China export restrictions, and any hyperscaler capex slowdown headlines.",
+      "key_catalysts": [
+        "Next earnings: 2026-11-18 (51 days away \u2014 well outside 14-day exclusion window)",
+        "Hyperscaler capex guidance and Blackwell/Ultra GPU demand signals"
+      ],
+      "disconfirming_evidence": "A hyperscalx capex pause or China ban escalation would collapse the 105.9% rev growth narrative; forward P/E 14.6 leaves no room for deceleration.",
+      "bull_scenario": "Hyperscaler capex acceleration + Blackwell demand sends NVDA to $250 (+9.3%), single-leg call gains substantially on delta + low-IV tailwind",
+      "base_scenario": "NVDA consolidates $225-245, long call gains modestly on delta or scratches with residual theta",
+      "bear_scenario": "China export ban or capex pause headline drives NVDA to 50MA ($216.30, -5.5%), long call loses 50-60%",
+      "trade_plan": {
+        "structure": "Buy 0.45-0.60 delta single-leg call, 21-28 DTE (IV rank 3.2 < 30, premium is historically cheap)",
+        "entry_trigger": "NVDA holds above $225 on expanding daily volume in the uptrend",
+        "target": "$240-245 (within ~7% typical 10-day move); Python validates within 1-typical-move band",
+        "stop": "NVDA closes below 50MA at $216.30",
+        "position_size_note": "Full position (10% of portfolio); IV rank 3.2 is historically cheap and 51-day earnings distance allows time for thesis to play out",
+        "risk_reward": "Estimated 1:2.5 if target hits before expiry",
+        "avoid_if": "VIX >22 (regime break) or NVDA gaps below $220 pre-entry"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "reasons": [],
+        "rr": 2.0,
+        "levels": {
+          "entry": 222.98,
+          "stop": 215.22,
+          "target": 238.51
+        },
+        "current_price": 228.86,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "strategies": {
+            "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.3495,
+          "trading_days": 10,
+          "expected_move": 15.52,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.255,
+          "p_stop_first": 0.555,
+          "p_neither": 0.19,
+          "mean_r_no_edge": 0.043
+        },
+        "exit_plan": "stop close below $215.22 or -50% premium \u00b7 target $238.51 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.37
+      },
+      "unsourced_numbers": [
+        "43%"
+      ],
+      "fundamentals_note": "Trailing P/E 28.5 vs forward 14.6 (massive earnings acceleration expected); revenue $303B, rev growth 105.9%, profit margin 63.7%; analyst target $327.70.",
+      "researched_at": "2026-09-29T11:05:32.734705+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla, Inc.",
+      "sector": "Electric Vehicles / Clean Energy",
+      "bias": "bullish",
+      "conviction": 3,
+      "thesis": "TSLA trades in a shallow uptrend at $357.45, just 2.8% above the 50MA at $347.80, with volume collapsing 70% \u2014 a quiet consolidation, not momentum. The 3M -14.33% drawdown (-18.14% vs SPY) signals structural weakness that an uptrend label alone doesn't capture. Fundamentals are extreme: trailing P/E 343.7, forward P/E 164.5, profit margin 3.7% on $103.6B revenue \u2014 the stock is priced for perfection with thin error margin.",
+      "moat_assessment": "Brand scale, Supercharger network, and data lead in autonomous driving provide real advantage, but Chinese OEM competition, margin compression, and Musk-concentrated risk erode durability.",
+      "macro_sensitivity": "Highly sensitive to rate moves (growth multiple compression), USD strength (global deliveries), and Musk/political headlines; VIX spikes amplify downside beta.",
+      "key_catalysts": [
+        "Next earnings: 2026-10-22 (23 days away \u2014 outside 14-day exclusion window)",
+        "Autonomous/Robotaxi timeline updates and margin recovery signals"
+      ],
+      "disconfirming_evidence": "A 3.7% margin in a rate-stable but competitive EV market cannot justify P/E 343.7; any miss vs the 25.5% rev growth or margin guidance would trigger aggressive de-rating.",
+      "bull_scenario": "Robotaxi/autonomy catalyst + margin inflection sends TSLA to analyst target $395.83 (+10.7%), long call gains substantially",
+      "base_scenario": "TSLA consolidates $350-375 into earnings, long call loses modest theta or scratches",
+      "bear_scenario": "Margin disappointment or macro risk-off drives TSLA to 50MA ($347.80, -2.7%) or below, long call loses 50-70%",
+      "trade_plan": {
+        "structure": "Buy 0.45-0.60 delta single-leg call, 21-28 DTE (IV rank 21.7 < 30, premium cheap enough to own outright)",
+        "entry_trigger": "TSLA holds above $350 on expanding daily volume in the uptrend",
+        "target": "$385-390 (within ~9.7% typical 10-day move); Python validates within 1-typical-move band",
+        "stop": "TSLA closes below 50MA at $347.80",
+        "position_size_note": "Half position (5% of portfolio); extreme P/E 343.7 and thin 3.7% margin warrant minimal exposure",
+        "risk_reward": "Estimated 1:2.0 if target hits before earnings",
+        "avoid_if": "VIX >22 (regime break) or TSLA gaps below $350 pre-entry"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "conviction 3 < 5",
+          "TSLA is on the risk_rules blocklist"
+        ],
+        "rr": 3.06,
+        "levels": {
+          "entry": 357.45,
+          "stop": 346.06,
+          "target": 392.27
+        },
+        "current_price": 357.45,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "strategies": {
+            "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.489,
+          "trading_days": 10,
+          "expected_move": 34.82,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.33,
+          "breakeven_hit": 0.246,
+          "p_target_first": 0.224,
+          "p_stop_first": 0.677,
+          "p_neither": 0.099,
+          "mean_r_no_edge": 0.103
+        },
+        "exit_plan": "stop close below $346.06 or -50% premium \u00b7 target $392.27 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.0
+      },
+      "unsourced_numbers": [
+        "$103.6B"
+      ],
+      "fundamentals_note": "Trailing P/E 343.7 vs forward 164.5; revenue $103.6B, rev growth 25.5%, profit margin 3.7%; analyst target $395.83.",
+      "researched_at": "2026-09-29T10:42:49.074432+08:00"
+    },
+    {
+      "ticker": "QCOM",
+      "company": "QUALCOMM Incorporated",
+      "sector": "Semiconductors / Wireless Technology",
+      "bias": "bullish",
+      "conviction": 5,
+      "thesis": "QCOM trades in a confirmed uptrend at $187.48 despite 3M underperformance of -6.57% vs SPY, sitting 10.3% above the 50MA at $170.00 with volume declining 13% \u2014 quiet-strength accumulation. Fundamentals are mixed: revenue $44.1B but rev growth -4%, profit margin 21%, trailing P/E 23.1, yet forward P/E 18.4 implies expected earnings improvement. Mean analyst target $194.13 offers only ~3.5% upside.",
+      "moat_assessment": "Essential cellular IP (modem, Snapdragon) with high switching costs and licensing revenue creates durable advantage, though customer concentration (Apple, Samsung) and patent cliffs are risks.",
+      "macro_sensitivity": "Positive to smartphone/auto cycle recovery and China demand; negative to USD strength and tariff/China regulatory risk; moderate rate sensitivity.",
+      "key_catalysts": [
+        "Next earnings: 2026-11-05 (37 days away)",
+        "Auto/AI chip design wins and Android premium cycle"
+      ],
+      "disconfirming_evidence": "Apple or Samsung vertical modem integration would structurally erode licensing revenue; continued -4% rev trend would compress forward P/E 18.4.",
+      "bull_scenario": "Auto/AI wins + earnings beat sends QCOM to $200 (+6.7%), spread near-maxes",
+      "base_scenario": "QCOM consolidates $183-195, spread captures partial gain or small loss into earnings",
+      "bear_scenario": "Mean reversion to 50MA ($170, -9.3%) or China headline triggers selloff, spread loses ~100%",
+      "trade_plan": {
+        "structure": "Bull call debit spread, 21-28 DTE, long leg 0.45-0.60 delta call near $187.50, short leg ~$195-200 OTM same expiry",
+        "entry_trigger": "QCOM holds above $185 on expanding daily volume in the uptrend",
+        "target": "Short leg strike reached \u2014 estimated $195-200 zone (within ~10% typical 10-day move); Python validates within 1-typical-move band",
+        "stop": "Long leg loses >50% of debit paid or QCOM closes below 50MA ($170.00)",
+        "position_size_note": "Half position (5% of portfolio); IV rank 41.3 and 10.3% extension reduce sizing",
+        "risk_reward": "Estimated 1:2.0-2.5 if short strike hits before expiry",
+        "avoid_if": "VIX >22 or QCOM gaps below $182 pre-entry"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "reasons": [],
+        "rr": 2.0,
+        "levels": {
+          "entry": 178.1,
+          "stop": 169.15,
+          "target": 195.99
+        },
+        "current_price": 187.48,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "strategies": {
+            "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.5044,
+          "trading_days": 10,
+          "expected_move": 17.9,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.257,
+          "p_stop_first": 0.557,
+          "p_neither": 0.186,
+          "mean_r_no_edge": 0.04
+        },
+        "exit_plan": "stop close below $169.15 or -50% of debit \u00b7 target $195.99 or 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.5
+      },
+      "unsourced_numbers": [
+        "$44.1B",
+        "3.5%"
+      ],
+      "fundamentals_note": "Trailing P/E 23.1 vs forward 18.4 (expected earnings growth); rev $44.1B, rev growth -4%; profit margin 21%; analyst target $194.13.",
+      "researched_at": "2026-09-29T10:41:57.052930+08:00"
+    },
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "sector": "Technology / Consumer Electronics",
+      "bias": "bullish",
+      "conviction": 5,
+      "thesis": "AAPL trades in a confirmed uptrend at $338.40, +12.06% over 3 months and +8.25% vs SPY, sitting 5.1% above the 50MA at $321.80. Fundamentals are robust: revenue $466.8B, profit margin 27.6%, revenue growth 16.4%. However, trailing P/E of 39.1 and mean analyst target of $328 (below current price) imply limited upside cushion \u2014 the stock is priced for execution with little room for disappointment into the Oct 30 print.",
+      "moat_assessment": "Deep ecosystem lock-in (services flywheel, ~1.5B installed devices) plus 27.6% profit margins create high switching costs and pricing power; durability is strong but increasingly dependent on services growth to offset hardware saturation.",
+      "macro_sensitivity": "Negative to USD strength (international revenue translation), positive to low VIX/risk-on (growth premium compresses), moderately sensitive to China regulatory/tariff risk; rate moves have modest direct impact given net cash-adj balance sheet.",
+      "key_catalysts": [
+        "Next earnings: 2026-10-30 (31 days away)",
+        "Holiday quarter iPhone/services guidance"
+      ],
+      "disconfirming_evidence": "AAPL mean-reverts to 50MA ($321.80, -5.1%) on a VIX spike or macro risk-off; earnings miss vs the 16.4% rev growth expectations would compress the 39x P/E rapidly.",
+      "bull_scenario": "Earnings beat + strong holiday guidance sends AAPL to $355-360 (+5-6.5%), spread maxes or near-maxes",
+      "base_scenario": "AAPL consolidates sideways in $335-345 range into earnings, spread captures partial theta-adjusted gain or small loss",
+      "bear_scenario": "Risk-off or earnings-miss-priming selloff drives AAPL to 50MA ($321.80, -5.1%), debit spread loses ~100% of premium paid",
+      "trade_plan": {
+        "structure": "Bull call debit spread, 21-28 DTE, long leg 0.45-0.60 delta call near $340, short leg ~5-7 strikes further OTM (~$355-360) in same expiry",
+        "entry_trigger": "AAPL holds above $335 with expanding daily volume on a continuation day in the uptrend",
+        "target": "Short leg strike reached \u2014 estimated $355-360 zone (within ~5.2% typical 10-day move); Python validates within 1-typical-move band",
+        "stop": "Long leg loses >50% of debit paid or AAPL closes below 50MA ($321.80)",
+        "position_size_note": "Half position (5% of portfolio); IV rank 45.5 elevates debit cost, reduce size accordingly",
+        "risk_reward": "Estimated 1:2.0-2.5 if short strike hits before expiry",
+        "avoid_if": "VIX >22 (regime break) or AAPL gaps below $330 pre-entry"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "reasons": [],
+        "rr": 2.0,
+        "levels": {
+          "entry": 328.73,
+          "stop": 320.19,
+          "target": 345.8
+        },
+        "current_price": 338.4,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "strategies": {
+            "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.2607,
+          "trading_days": 10,
+          "expected_move": 17.07,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.255,
+          "p_stop_first": 0.554,
+          "p_neither": 0.192,
+          "mean_r_no_edge": 0.045
+        },
+        "exit_plan": "stop close below $320.19 or -50% of debit \u00b7 target $345.8 or 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.55
+      },
+      "unsourced_numbers": [
+        "$466.8B",
+        "1.5B",
+        "39x"
+      ],
+      "fundamentals_note": "Trailing P/E 39.1 vs analyst mean target $328 (implying ~3% downside from $338.40); revenue $466.8B, profit margin 27.6%, rev growth 16.4% \u2014 strong but richly valued.",
+      "researched_at": "2026-09-29T10:41:03.688493+08:00"
+    },
     {
       "ticker": "INTC",
       "company": "Intel Corporation",
@@ -623,86 +1337,6 @@
       "researched_at": "2026-09-27T02:26:32.606343+08:00"
     },
     {
-      "ticker": "AAPL",
-      "company": "Apple Inc.",
-      "sector": "Technology",
-      "bias": "bullish",
-      "conviction": 5,
-      "thesis": "AAPL remains in an uptrend, outperforming SPY by 850bps over 3M with declining volume, but at trailing P/E 39.07 and 6.0% above the $321.70 50MA, chasing here is poor risk/reward \u2014 the analyst mean target of $328.22 sits below the current $341.07. The edge is a pullback entry toward $330 with a target sized to one typical 10-day move (~4.7% at IV 24%), not a swing for extended highs.",
-      "moat_assessment": "Ecosystem lock-in via integrated hardware-software-services across a massive installed base creates durable switching costs and premium pricing power, the strongest form of Porter differentiation moat.",
-      "macro_sensitivity": "Long-duration growth equity: benefits from low VIX (14.87) and stable rates; hurt by USD strength and rate-spike repricing; strong balance-sheet quality cushions VIX spikes relative to high-beta tech.",
-      "key_catalysts": [
-        "Next earnings 2026-10-30 \u2014 services growth and guidance commentary",
-        "Pullback toward the $321.70 50MA zone as trend-continuation entry"
-      ],
-      "disconfirming_evidence": "A daily close below $321.70 (50MA) breaks the uptrend; VIX spiking above ~18 unwinds the low-vol bid; the analyst target already below price confirms fundamental extension \u2014 a failure to hold $330 on a pullback would signal distribution.",
-      "bull_scenario": "Pullback to $330 finds support and rallies to $345 (+4.5%); spread captures 50-65% of the move.",
-      "base_scenario": "Consolidation between $330-$345 over 3-21 days; spread roughly flat with modest theta/IV drag.",
-      "bear_scenario": "Close below $321.70 triggers a trend break toward ~$310 (-9% from current); spread loses 90-100% of premium.",
-      "trade_plan": {
-        "structure": "Bull call debit spread: long 0.45-0.60 delta call, short further-OTM call same expiry, 21-28 DTE, fully exited before 2026-10-30 earnings",
-        "entry_trigger": "Pullback to ~$330 (midway between current price and 50MA) with price holding above the 50MA and RSI > 50",
-        "target": "$345 (+4.5% from entry \u2014 within one typical 10-day move at IV 24%)",
-        "stop": "Daily close below $321.70 (50MA)",
-        "levels": {
-          "entry": 330,
-          "stop": 321.7,
-          "target": 345
-        },
-        "position_size_note": "Half size (5-7% of portfolio) \u2014 trend intact but valuation stretched and IV rank 43 caps edge",
-        "risk_reward": "1:1.8",
-        "avoid_if": "Daily close below $321.70, VIX > 18, no pullback to $330 (do not chase above $341), or entry inside 14 days of the 10/30 earnings"
-      },
-      "gate": {
-        "verdict": "NO TRADE",
-        "reasons": [
-          "R:R 1.81 < 2"
-        ],
-        "rr": 1.81,
-        "levels": {
-          "entry": 330.0,
-          "stop": 321.7,
-          "target": 345.0
-        },
-        "current_price": 341.07,
-        "profile": "swing_21_28",
-        "rules": {
-          "min_rr": 2.0,
-          "min_conviction": 5,
-          "max_level_distance_pct": 30,
-          "stop_premium_pct": -50,
-          "target_premium_pct": 100,
-          "time_exit_dte": 10,
-          "entry_dte_min": 21,
-          "entry_dte_max": 28,
-          "allow_expiry_hold": false,
-          "hold_trading_days": 10,
-          "max_target_sigma": 1.0,
-          "spread_target_pct_of_max": 50,
-          "spread_stop_pct_of_debit": 50
-        },
-        "rule_warnings": [],
-        "reach": {
-          "iv": 0.2375,
-          "trading_days": 10,
-          "expected_move": 15.61,
-          "target_sigma": 0.96,
-          "stop_sigma": 0.53,
-          "breakeven_hit": 0.356,
-          "p_target_first": 0.273,
-          "p_stop_first": 0.533,
-          "p_neither": 0.194,
-          "mean_r_no_edge": 0.035
-        },
-        "exit_plan": "stop close below $321.7 or -50% of debit \u00b7 target $345 or 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold"
-      },
-      "unsourced_numbers": [
-        "$330"
-      ],
-      "fundamentals_note": "Trailing P/E 39.07 and P/B 46.34 are extended; profit margin 27.6% and revenue growth 16.4% are strong but already priced; analyst mean target $328.22 is below the current $341.07; next earnings 2026-10-30.",
-      "researched_at": "2026-09-27T02:25:58.156708+08:00"
-    },
-    {
       "ticker": "INTL",
       "company": "Intel Corporation",
       "sector": "Technology",
@@ -766,68 +1400,6 @@
       "researched_at": "2026-09-26T13:37:59.364107+08:00"
     },
     {
-      "ticker": "TSLA",
-      "company": "Tesla Inc.",
-      "sector": "Consumer Discretionary / Electric Vehicles",
-      "bias": "neutral",
-      "conviction": 4,
-      "thesis": "TSLA at $371.75 remains 6.7% above its 50MA ($348.20) in an uptrend, but the 3M -8.01% return underperforms SPY by -13.64% and volume has collapsed -68% \u2014 momentum is thin and the tape is drifting rather than trending. Forward P/E of 168.9 against a 3.67% profit margin offers no fundamental error margin, and the analyst mean target of $396.62 implies only ~7% upside. Cheap premium (IV rank 21.1) makes calls affordable, but the risk/reward remains asymmetric to the downside if the 50MA breaks.",
-      "moat_assessment": "Tesla's brand, Supercharger network, and autonomy data advantage create a temporary moat, but Chinese EV competition, lack of pricing power, and a commoditizing market mean the moat is narrowing rather than deepening.",
-      "macro_sensitivity": "TSLA is highly rate-sensitive given its long-duration growth profile; VIX spikes above 20 aggressively compress the forward P/E of 168.9, while lower Fed rates provide modest support. Oil prices create ambiguous effects \u2014 lower crude may reduce EV substitution but signals softer consumer spending.",
-      "key_catalysts": [
-        "Q3 2026 earnings on 2026-10-22",
-        "FSD/autonomy regulatory progress and delivery volume updates"
-      ],
-      "disconfirming_evidence": "A daily close below the 50MA ($348.20) on rising volume would confirm the downtrend is resuming; any VIX break above 20 or a hawkish Fed surprise would further compress the stretched P/E multiple.",
-      "bull_scenario": "Trend continuation plus FSD or delivery catalyst pushes TSLA to $410-420 (~10-13% upside); cheap IV rank 21.1 amplifies delta expansion on the move.",
-      "base_scenario": "Sideways digestion between $350-375 as the stock works off 3M underperformance; moderate IV keeps time decay manageable.",
-      "bear_scenario": "Breakdown below 50MA triggers algorithmic selling toward $330-340 (~9-11% downside); call expires worthless.",
-      "trade_plan": {
-        "structure": "Buy 0.45-0.55 delta call, 14-21 DTE, single leg",
-        "entry_trigger": "Pullback to 50MA at $348.20 with RSI below 40 or a volume-supported bounce off that level",
-        "target": "$397 (analyst mean target, ~7% upside)",
-        "stop": "Close if price closes below $340 or the option loses 50% of premium",
-        "position_size_note": "half \u2014 extreme P/E warrants caution; cap at 5% given single-leg risk",
-        "risk_reward": "1:2",
-        "avoid_if": "Price extends above $390 before entry, VIX breaks above 20, or entry falls inside 14 days of Oct 22 earnings (no entries after ~Oct 8)"
-      },
-      "gate": null,
-      "unsourced_numbers": [],
-      "fundamentals_note": "Forward P/E 168.9, revenue $103.6B with 25.5% growth, profit margin 3.67%, trailing P/E 338.0, analyst mean target $396.62 \u2014 extreme valuation with no earnings buffer.",
-      "researched_at": "2026-09-26T00:36:17.193838+08:00"
-    },
-    {
-      "ticker": "QCOM",
-      "company": "Qualcomm Inc.",
-      "sector": "Technology / Semiconductors",
-      "bias": "bearish",
-      "conviction": 3,
-      "thesis": "QCOM has extended to $204.04 \u2014 now 20.2% above its 50MA ($169.70) and ~5% ABOVE the analyst mean target of $194.13, meaning the stock has overshot consensus on deteriorating fundamentals: revenue is contracting (-4% growth) with a 21% profit margin. The 3M return (+5.26%) is merely in-line with SPY despite the 20% extension, indicating the gains are recent and momentum-driven rather than earnings-supported. This is a blow-off-risk profile with rich premium (IV rank 41.5) \u2014 chasing here offers poor risk/reward in either structure.",
-      "moat_assessment": "Qualcomm's modem and IP licensing moat is durable through high switching costs and patent walls, but smartphone end-market maturation and Apple's in-house silicon transition are structural headwinds eroding the long-term growth runway.",
-      "macro_sensitivity": "QCOM is moderately rate-sensitive given its handset exposure; lower Fed rates support the replacement cycle, while VIX spikes above 20 compress semi multiples. USD strength creates headwinds on China sales.",
-      "key_catalysts": [
-        "Q3 FY2027 earnings on 2026-11-05",
-        "Smartphone shipment trends and Apple modem transition updates"
-      ],
-      "disconfirming_evidence": "A daily close above $210 on rising volume would invalidate the bearish view and suggest the market is pricing in an IoT/auto recovery beyond consensus; any Apple modem delay would support the stock.",
-      "bull_scenario": "IoT/auto recovery and Apple modem delay drive QCOM to $215-225 (~5-10% upside); IV rank 41.5 keeps spread premium contained.",
-      "base_scenario": "Digestion between $185-205 as the 20.2% extension works off; theta erodes spread value sideways.",
-      "bear_scenario": "Mean reversion toward 50MA triggers algorithmic selling toward $170-180 (~12-17% downside); spread expires near max loss.",
-      "trade_plan": {
-        "structure": "Buy debit call spread: long 0.45-0.55 delta call, short OTM call at ~0.20 delta, 21-28 DTE",
-        "entry_trigger": "Pullback to $180-188 zone (8-12% off highs) on declining volume, or a confirmed base above $190 for 3+ sessions",
-        "target": "$205-215 (re-test of extension highs)",
-        "stop": "Close if QCOM closes below $175 or spread loses 50% of debit paid",
-        "position_size_note": "half \u2014 negative revenue growth, price above analyst target, and 20% extension warrant caution",
-        "risk_reward": "1:1.5",
-        "avoid_if": "Entry above $200, VIX breaks above 20, or QCOM closes below $178 before entry"
-      },
-      "gate": null,
-      "unsourced_numbers": [],
-      "fundamentals_note": "Revenue $44.07B with -4% growth (contracting), profit margin 21%, forward P/E 20.0, P/S 4.9, analyst mean target $194.13 \u2014 price now trades ~5% above consensus target on negative growth.",
-      "researched_at": "2026-09-26T00:35:54.208642+08:00"
-    },
-    {
       "ticker": "SPCX",
       "company": "SpaceX (Space Exploration Technologies Corp.)",
       "sector": "Industrials / Aerospace",
@@ -857,37 +1429,6 @@
       "unsourced_numbers": [],
       "fundamentals_note": "Forward P/E 84.2, revenue $23.04B with 91.9% growth, profit margin -35.7%, P/S 83.9, P/B 15.2, analyst mean target $222.42 \u2014 extreme valuation with negative earnings.",
       "researched_at": "2026-09-25T22:15:33.686572+08:00"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corporation",
-      "sector": "Technology / Semiconductors",
-      "bias": "bullish",
-      "conviction": 7,
-      "thesis": "NVDA sits only 4.2% above its 50MA ($215.40) after 3M underperformance vs SPY (-3.14%), yet forward P/E of 14.3 against 105.9% revenue growth and 63.7% profit margins suggests the market is pricing in an AI capex slowdown that isn't visible in the data. IV rank at 0.0 makes call premium historically cheap, and the $327.70 analyst target (~46% upside) implies a significant re-rating opportunity if the uptrend resumes. Declining volume (-45%) is the key risk \u2014 participation is weak, and this needs volume confirmation.",
-      "moat_assessment": "NVIDIA's CUDA ecosystem and data-center GPU dominance create a deepening moat through high switching costs and developer lock-in, though custom silicon (TPU, MI300) and geopolitical export restrictions are the primary long-term threats to the franchise.",
-      "macro_sensitivity": "NVDA is highly rate-sensitive given its long-duration growth profile; a VIX spike above 20 would compress the multiple sharply, while lower Fed rates directly support the AI capex cycle. A stronger USD creates headwinds on international revenue.",
-      "key_catalysts": [
-        "Q3 FY2027 earnings on 2026-11-18",
-        "AI data-center capex updates from hyperscalers and any export-control clarity"
-      ],
-      "disconfirming_evidence": "A daily close below the 50MA ($215.40) on rising volume would confirm the downtrend and invalidate the setup; any AI capex deceleration signal from hyperscalers or a VIX break above 20 would suppress the forward P/E re-rating.",
-      "bull_scenario": "AI capex acceleration and volume confirmation drive NVDA to $260-280 (~16-25% upside); low IV rank amplifies vega expansion alongside delta.",
-      "base_scenario": "Range-bound between $215-230 as volume slowly recovers; theta decay is minimal at IV rank 0.0.",
-      "bear_scenario": "Breakdown below 50MA triggers algorithmic selling toward $200-205 (~9-11% downside); call expires worthless.",
-      "trade_plan": {
-        "structure": "Buy 0.45-0.55 delta call, 21-28 DTE, single leg",
-        "entry_trigger": "Bounce off 50MA at $215.40 with volume expansion, or daily close above $220 on +20% volume",
-        "target": "$245-255 (move toward 3M high and implied re-rating)",
-        "stop": "Close if NVDA closes below $210 or the call loses 50% of premium",
-        "position_size_note": "full \u2014 IV rank 0.0 offers exceptional risk/reward for single-leg convexity",
-        "risk_reward": "1:3",
-        "avoid_if": "Entry falls inside 14 days of Nov 18 earnings, VIX breaks above 20, or NVDA closes below $210 before entry"
-      },
-      "gate": null,
-      "unsourced_numbers": [],
-      "fundamentals_note": "Trailing P/E 28.5, forward P/E 14.3, revenue $302.97B with 105.9% growth, profit margin 63.7%, P/B 23.7, analyst mean target $327.70",
-      "researched_at": "2026-09-25T12:05:36.002954+08:00"
     },
     {
       "ticker": "META",
@@ -1046,6 +1587,66 @@
     }
   ],
   "history": [
+    {
+      "date": "2026-09-29",
+      "kind": "analyst",
+      "id": "analyst_brief_20260929_195002_041a",
+      "summary": "0 deep-dive(s), regime bull_low_vol"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "sector",
+      "id": "sector_brief_semiconductors-ai_20260929",
+      "summary": "Semiconductors/AI -- conviction 6"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "sector",
+      "id": "sector_brief_technology_20260929",
+      "summary": "Technology -- conviction 6"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "deepdive",
+      "id": "deepdive_NVDA_20260929T110532.734705_0800",
+      "summary": "NVDA [BULLISH] -- conviction 7/10"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "deepdive",
+      "id": "deepdive_QCOM_20260929T000114.898977_0800",
+      "summary": "QCOM [BULLISH] -- conviction 5/10"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "deepdive",
+      "id": "deepdive_QCOM_20260929T104157.052930_0800",
+      "summary": "QCOM [BULLISH] -- conviction 5/10"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "deepdive",
+      "id": "deepdive_NVDA_20260929T000204.518158_0800",
+      "summary": "NVDA [BULLISH] -- conviction 6/10"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "deepdive",
+      "id": "deepdive_TSLA_20260929T104249.074432_0800",
+      "summary": "TSLA [BULLISH] -- conviction 3/10"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "deepdive",
+      "id": "deepdive_TSLA_20260929T000320.659855_0800",
+      "summary": "TSLA [NEUTRAL] -- conviction 3/10"
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "deepdive",
+      "id": "deepdive_AAPL_20260929T104103.688493_0800",
+      "summary": "AAPL [BULLISH] -- conviction 5/10"
+    },
     {
       "date": "2026-09-28",
       "kind": "analyst",
@@ -1585,66 +2186,6 @@
       "kind": "analyst",
       "id": "analyst_brief_20260916_212502_b65d",
       "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-16",
-      "kind": "sector",
-      "id": "sector_brief_semiconductors-ai_20260916",
-      "summary": "Semiconductors/AI -- conviction 7"
-    },
-    {
-      "date": "2026-09-16",
-      "kind": "sector",
-      "id": "sector_brief_ev-automotive_20260916",
-      "summary": "EV/Automotive -- conviction 4"
-    },
-    {
-      "date": "2026-09-16",
-      "kind": "sector",
-      "id": "sector_brief_technology_20260916",
-      "summary": "Technology -- conviction 5"
-    },
-    {
-      "date": "2026-09-16",
-      "kind": "sector",
-      "id": "sector_brief_broad_market_(s&p_500)_20260916",
-      "summary": "Broad Market (S&P 500) -- conviction 5"
-    },
-    {
-      "date": "2026-09-15",
-      "kind": "analyst",
-      "id": "analyst_brief_20260915_195002_245a",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-15",
-      "kind": "analyst",
-      "id": "analyst_brief_20260915_212501_943c",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-15",
-      "kind": "sector",
-      "id": "sector_brief_semiconductors-ai_20260915",
-      "summary": "Semiconductors/AI -- conviction 6"
-    },
-    {
-      "date": "2026-09-15",
-      "kind": "sector",
-      "id": "sector_brief_broad_market_(nasdaq-100)_20260915",
-      "summary": "Broad Market (Nasdaq-100) -- conviction 4"
-    },
-    {
-      "date": "2026-09-15",
-      "kind": "sector",
-      "id": "sector_brief_technology-e-commerce_20260915",
-      "summary": "Technology/E-commerce -- conviction 5"
-    },
-    {
-      "date": "2026-09-15",
-      "kind": "sector",
-      "id": "sector_brief_technology_20260915",
-      "summary": "Technology -- conviction 5"
     }
   ]
 }
