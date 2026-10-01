@@ -1,0 +1,482 @@
+{
+  "run_id": "analyst_brief_20261001_212501_ce27",
+  "generated_at": "2026-10-01 21:25 UTC+08:00",
+  "regime": {
+    "regime": "bull_low_vol",
+    "vix": 16.36,
+    "spy_price": 762.63,
+    "gates": {
+      "allow_calls": true,
+      "allow_puts": false,
+      "size_scalar": 1.0
+    }
+  },
+  "sectors": [
+    {
+      "sector": "Broad Market (S&P 500)",
+      "conviction": 7,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "SPY trading above both the 50MA and 200MA confirms a bullish intermediate and long-term trend",
+        "VIX remains low at 16.36, supporting risk-on positioning and call premium affordability"
+      ],
+      "headwinds": [
+        "SPY's 3-month trend is sideways with only +2.8%, indicating a lack of strong directional conviction",
+        "VIX is slightly above its 30-day average (16.36 vs 15.63), hinting at mild volatility creep that could stall momentum"
+      ],
+      "risk_to_thesis": "SPY closing below the 50MA ($761.19) with a VIX spike above 20 would invalidate the bullish structure.",
+      "generated_at": "2026-10-01T21:25:26.680052+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "SPY",
+        "best_structure": "SPY: ATM calls or call debit spread, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE \u2014 price or volatility unavailable \u00b7 Momentum: \u26d4 NO TRADE \u2014 price or volatility unavailable; relative strength vs SPY unavailable | Watch: SPY holding above the 50MA ($761.19), VIX remaining below 20, and volume confirming any breakout from the sideways range",
+        "avoid": "put structures (puts are BLOCKED by signal gates), QQQ and TSLA (on blocklist)",
+        "gates": {
+          "pullback": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "price or volatility unavailable"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": null,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% of debit \u00b7 target 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "pullback",
+            "entry_gap_sigma": null,
+            "rs_vs_spy": null
+          },
+          "momentum": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "price or volatility unavailable",
+              "relative strength vs SPY unavailable"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": null,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% of debit \u00b7 target 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "momentum",
+            "entry_gap_sigma": null,
+            "rs_vs_spy": null
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "NO TRADE",
+          "reasons": [
+            "price or volatility unavailable"
+          ],
+          "rr": null,
+          "levels": {
+            "entry": null,
+            "stop": null,
+            "target": null
+          },
+          "current_price": null,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "momentum_require_rs": true,
+            "momentum_min_rs_pct": 0.0,
+            "option_cost": {
+              "enabled": true,
+              "dte": 25,
+              "exit_trading_days": 5,
+              "iv_reversion": 0.5,
+              "rich_ratio": 1.3,
+              "cheap_ratio": 0.9,
+              "rate": 0.04,
+              "min_option_rr": null
+            },
+            "strategies": {
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": null,
+          "exit_plan": "stop -50% of debit \u00b7 target 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "strategy": "pullback",
+          "entry_gap_sigma": null,
+          "rs_vs_spy": null
+        },
+        "model_levels_to_watch": "SPY holding above the 50MA ($761.19), VIX remaining below 20, and volume confirming any breakout from the sideways range"
+      },
+      "news_signal_vs_noise": {
+        "signal": "SPY's position above the 50MA and 200MA, combined with the BULL_LOW_VOL regime, is the dominant signal for the next 1-3 weeks.",
+        "noise": "The sideways 3-month trend and modest VIX elevation above its 30-day average are likely noise and do not override the bullish structure."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "SPY",
+          "role": "leader",
+          "reason": "SPY is the benchmark, above both the 50MA and 200MA, and sits at the focus ticker for the sector.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY sits at $762.63, just above its 50-day MA at $761.19 and comfortably above the 200-day MA at $716.11, confirming a bullish trend structure. VIX at 16.36 is only slightly elevated above its 30-day average of 15.63, indicating low but marginally rising volatility. The BULL_LOW_VOL regime favors upside continuation with manageable risk.",
+      "key_themes": [
+        "SPY holds above both the 50MA ($761.19) and 200MA ($716.11), maintaining a clear bullish trend structure",
+        "SPY's 3-month performance of +2.8% with a sideways trend suggests consolidation rather than momentum exhaustion",
+        "VIX hovering near its 30-day average implies complacency is not yet extreme, leaving room for further gains"
+      ],
+      "unsourced_numbers": []
+    },
+    {
+      "sector": "EV/Automotive",
+      "conviction": 3,
+      "sentiment": "mixed",
+      "tailwinds": [
+        "SPY in a BULL_LOW_VOL regime above both its 50MA and 200MA, providing a risk-on backdrop",
+        "TSLA above its 50MA with an uptrend classification, suggesting near-term price momentum remains intact"
+      ],
+      "headwinds": [
+        "TSLA's 3-month underperformance of -19.51% vs SPY is severe and suggests structural or persistent selling pressure",
+        "TSLA volume contraction of -66% raises concerns about sustainability of the current uptrend",
+        "TSLA RV20 at 40% is elevated, implying above-average near-term volatility risk"
+      ],
+      "risk_to_thesis": "TSLA breaking below its 50MA of $347.0 would invalidate the uptrend and confirm the 3-month underperformance as a regime shift rather than a pullback",
+      "generated_at": "2026-10-01T21:26:24.183831+08:00",
+      "swing_trade_setup": {
+        "bias": "mixed",
+        "ticker": "TSLA",
+        "best_structure": "TSLA: calls allowed per signal gates, but TSLA is blocklisted -- NO TRADE",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE \u2014 no directional view ('mixed'); bias is 'mixed' -- no directional view; conviction 3 < 5; TSLA is on the risk_rules blocklist \u00b7 Momentum: \u26d4 NO TRADE \u2014 no directional view ('mixed'); bias is 'mixed' -- no directional view; conviction 3 < 5; TSLA is on the risk_rules blocklist; lagging SPY: RS -19.51% < +0% (momentum needs strength) | Watch: TSLA 50MA at $347.0 as trend support, volume trends for confirmation, VIX at 16.36 vs 30d avg 15.63 for risk-regime stability",
+        "avoid": "TSLA (blocklisted), any put structures (puts BLOCKED by gates)",
+        "gates": {
+          "pullback": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "no directional view ('mixed')",
+              "bias is 'mixed' -- no directional view",
+              "conviction 3 < 5",
+              "TSLA is on the risk_rules blocklist"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": 354.81,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% premium \u00b7 target +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "pullback",
+            "entry_gap_sigma": null,
+            "rs_vs_spy": -19.51
+          },
+          "momentum": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "no directional view ('mixed')",
+              "bias is 'mixed' -- no directional view",
+              "conviction 3 < 5",
+              "TSLA is on the risk_rules blocklist",
+              "lagging SPY: RS -19.51% < +0% (momentum needs strength)"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": 354.81,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% premium \u00b7 target +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "momentum",
+            "entry_gap_sigma": null,
+            "rs_vs_spy": -19.51
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "NO TRADE",
+          "reasons": [
+            "no directional view ('mixed')",
+            "bias is 'mixed' -- no directional view",
+            "conviction 3 < 5",
+            "TSLA is on the risk_rules blocklist"
+          ],
+          "rr": null,
+          "levels": {
+            "entry": null,
+            "stop": null,
+            "target": null
+          },
+          "current_price": 354.81,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "momentum_require_rs": true,
+            "momentum_min_rs_pct": 0.0,
+            "option_cost": {
+              "enabled": true,
+              "dte": 25,
+              "exit_trading_days": 5,
+              "iv_reversion": 0.5,
+              "rich_ratio": 1.3,
+              "cheap_ratio": 0.9,
+              "rate": 0.04,
+              "min_option_rr": null
+            },
+            "strategies": {
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": null,
+          "exit_plan": "stop -50% premium \u00b7 target +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "strategy": "pullback",
+          "entry_gap_sigma": null,
+          "rs_vs_spy": -19.51
+        },
+        "model_levels_to_watch": "TSLA 50MA at $347.0 as trend support, volume trends for confirmation, VIX at 16.36 vs 30d avg 15.63 for risk-regime stability"
+      },
+      "news_signal_vs_noise": {
+        "signal": "TSLA's position relative to its 50MA (2.3% above) and its trend classification (uptrend) are the most actionable data points for the next 1-3 weeks",
+        "noise": "No news feed is supplied; TSLA's 3-month underperformance may be partly priced in and less relevant to near-term swing timing than its current uptrend and 50MA relationship"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "TSLA",
+          "role": "watch",
+          "reason": "TSLA is the sector bellwether and the only name with supplied price data, but it is on the blocklist",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $762.63 sits 0.2% above its 50MA of $761.19 and 6.5% above its 200MA of $716.11 in a BULL_LOW_VOL regime. VIX at 16.36 is slightly above its 30d average of 15.63, indicating mild but contained risk appetite. SPY trend is sideways with low volatility, a neutral-to-supportive backdrop for higher-beta EV/automotive names that typically thrive in risk-on environments.",
+      "key_themes": [
+        "TSLA at $354.81, 2.3% above its 50MA of $347.0 in an established uptrend",
+        "TSLA has severely underperformed SPY by 19.51% over 3 months (-16.71% vs SPY +2.8%)",
+        "TSLA volume has contracted 66% while RV20 sits at 40%, signaling uncertain commitment to the uptrend"
+      ],
+      "unsourced_numbers": [
+        "0.2%",
+        "6.5%"
+      ]
+    }
+  ],
+  "deep_dives": []
+}
