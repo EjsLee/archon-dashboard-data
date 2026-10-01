@@ -1,0 +1,576 @@
+{
+  "run_id": "analyst_brief_20261001_195001_f82c",
+  "generated_at": "2026-10-01 19:50 UTC+08:00",
+  "regime": {
+    "regime": "bull_low_vol",
+    "vix": 16.48,
+    "spy_price": 762.63,
+    "gates": {
+      "allow_calls": true,
+      "allow_puts": false,
+      "size_scalar": 1.0
+    }
+  },
+  "sectors": [
+    {
+      "sector": "Technology/E-commerce",
+      "conviction": 6,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "Regime is BULL_LOW_VOL with SPY above both 50MA and 200MA, supporting call-biased structures on leaders",
+        "MSFT and META show strong relative strength vs SPY (+19.97% and +16.24% respectively), indicating sector momentum is intact",
+        "AAPL's RV20 is 23%, reasonable for premium efficiency in a low-vol environment"
+      ],
+      "headwinds": [
+        "META trades 16.9% above its 50MA with RV20 at 56%, implying elevated and stretched positioning that raises mean-reversion risk",
+        "MSFT's volume has fallen 84% during its 3-month run, thinning participation on the advance",
+        "AMZN is in a downtrend, 2.7% below its 50MA, with volume down 65%, suggesting weak demand and no bullish catalyst in the price data"
+      ],
+      "risk_to_thesis": "A sustained break below the 50MA by SPY at $761.19, or META's elevated volatility triggering a sharp mean-reversion that drags the entire e-commerce/tech group lower",
+      "generated_at": "2026-10-01T19:50:38.949224+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "AAPL",
+        "best_structure": "AAPL: ATM calls or call debit spread, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u2705 SETUP OK \u00b7 entry $329.35 (0.2\u03c3 away) / stop $320.39 / target $347.26 \u00b7 R:R 2 \u00b7 Momentum: \u2705 SETUP OK \u00b7 entry $333.02 (now) / stop $323.96 / target $351.13 \u00b7 R:R 2 | Watch: AAPL holding above its 50MA at $322.0 and maintaining positive relative strength vs SPY; VIX sustained above 30-day avg (16.48 vs 15.63); volume recovery after recent 35% decline",
+        "avoid": "META due to extreme extension (16.9% above 50MA, RV20 56%); AMZN in downtrend below 50MA; QQQ and TSLA per blocklist",
+        "gates": {
+          "pullback": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 329.35,
+              "stop": 320.39,
+              "target": 347.26
+            },
+            "current_price": 333.02,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.273,
+              "trading_days": 10,
+              "expected_move": 17.91,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.554,
+              "p_neither": 0.191,
+              "mean_r_no_edge": 0.045
+            },
+            "exit_plan": "stop close below $320.39 or -50% of debit \u00b7 target $347.26 or 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "option_cost": {
+              "valid": true,
+              "reason": "",
+              "iv": 0.273,
+              "rv": 0.23,
+              "iv_rv_ratio": 1.19,
+              "iv_label": "fair",
+              "premium_pct": 3.0,
+              "at_target_pct": 105,
+              "at_stop_pct": -61,
+              "option_rr": 1.72,
+              "iv_exit": 0.2515,
+              "hint": "IV fair vs realized"
+            },
+            "strategy": "pullback",
+            "entry_gap_sigma": 0.2,
+            "rs_vs_spy": 5.13
+          },
+          "momentum": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 333.02,
+              "stop": 323.96,
+              "target": 351.13
+            },
+            "current_price": 333.02,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.273,
+              "trading_days": 10,
+              "expected_move": 18.11,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.554,
+              "p_neither": 0.191,
+              "mean_r_no_edge": 0.045
+            },
+            "exit_plan": "stop close below $323.96 or -50% of debit \u00b7 target $351.13 or 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "option_cost": {
+              "valid": true,
+              "reason": "",
+              "iv": 0.273,
+              "rv": 0.23,
+              "iv_rv_ratio": 1.19,
+              "iv_label": "fair",
+              "premium_pct": 3.0,
+              "at_target_pct": 105,
+              "at_stop_pct": -61,
+              "option_rr": 1.72,
+              "iv_exit": 0.2515,
+              "hint": "IV fair vs realized"
+            },
+            "strategy": "momentum",
+            "entry_gap_sigma": 0.0,
+            "rs_vs_spy": 5.13
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "TRADE",
+          "reasons": [],
+          "rr": 2.0,
+          "levels": {
+            "entry": 329.35,
+            "stop": 320.39,
+            "target": 347.26
+          },
+          "current_price": 333.02,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "momentum_require_rs": true,
+            "momentum_min_rs_pct": 0.0,
+            "option_cost": {
+              "enabled": true,
+              "dte": 25,
+              "exit_trading_days": 5,
+              "iv_reversion": 0.5,
+              "rich_ratio": 1.3,
+              "cheap_ratio": 0.9,
+              "rate": 0.04,
+              "min_option_rr": null
+            },
+            "strategies": {
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": {
+            "iv": 0.273,
+            "trading_days": 10,
+            "expected_move": 17.91,
+            "target_sigma": 1.0,
+            "stop_sigma": 0.5,
+            "breakeven_hit": 0.333,
+            "p_target_first": 0.255,
+            "p_stop_first": 0.554,
+            "p_neither": 0.191,
+            "mean_r_no_edge": 0.045
+          },
+          "exit_plan": "stop close below $320.39 or -50% of debit \u00b7 target $347.26 or 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "option_cost": {
+            "valid": true,
+            "reason": "",
+            "iv": 0.273,
+            "rv": 0.23,
+            "iv_rv_ratio": 1.19,
+            "iv_label": "fair",
+            "premium_pct": 3.0,
+            "at_target_pct": 105,
+            "at_stop_pct": -61,
+            "option_rr": 1.72,
+            "iv_exit": 0.2515,
+            "hint": "IV fair vs realized"
+          },
+          "strategy": "pullback",
+          "entry_gap_sigma": 0.2,
+          "rs_vs_spy": 5.13
+        },
+        "model_levels_to_watch": "AAPL holding above its 50MA at $322.0 and maintaining positive relative strength vs SPY; VIX sustained above 30-day avg (16.48 vs 15.63); volume recovery after recent 35% decline"
+      },
+      "news_signal_vs_noise": {
+        "signal": "META's extreme extension (16.9% above 50MA, RV20 56%) is the most actionable signal for the next 1-3 weeks as stretched vols and thin pullback potential create a mean-reversion risk; AAPL's proximity to its 50MA in an uptrend signals the best risk/reward entry.",
+        "noise": "MSFT's 3-month gain magnitude alone is less meaningful without context of volume integrity; AMZN's -6.45% decline looks bad but is partly explained by SPY's +2.8% benchmark context, making the underperformance the key read rather than the absolute drop."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "AAPL",
+          "role": "watch",
+          "reason": "Trades only 3.4% above its 50MA in a confirmed uptrend with +5.13% relative strength vs SPY, offering the cleanest pullback entry among focus names.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "META",
+          "role": "leader",
+          "reason": "Strongest relative performer (+16.24% vs SPY) in a powerful uptrend, but at 16.9% above its 50MA with RV20 at 56%.",
+          "options_angle": "avoid"
+        },
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "Strong outperformer (+19.97% vs SPY) above its 50MA, but the 84% volume decline during the run signals thin liquidity.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "laggard",
+          "reason": "Only focus ticker below its 50MA with a downtrend and -9.25% underperformance vs SPY.",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY trades at $762.63, just above its 50-day MA at $761.19 and well above its 200-day MA at $716.11, confirming a bullish trend in a low-volatility regime (VIX 16.48 vs 30-day avg 15.63). For the e-commerce/tech sector, this backdrop favors large-cap momentum names with positive relative strength, while the low VIX keeps call premiums relatively efficient.",
+      "key_themes": [
+        "MSFT and META are both well above their 50MAs with strong relative strength vs SPY, signaling dominant uptrends within the sector",
+        "AAPL is the only focus name within tight range of its 50MA (3.4% above), making it a cleaner pullback candidate in the group",
+        "AMZN is the sole downtrader, trading 2.7% below its 50MA and underperforming SPY by 9.25% over 3 months, creating a clear divergence vs its peers"
+      ],
+      "unsourced_numbers": [
+        "$329.35",
+        "0.2",
+        "$320.39",
+        "$347.26",
+        "$323.96",
+        "$351.13"
+      ]
+    },
+    {
+      "sector": "Broad Market (Nasdaq-100)",
+      "conviction": 4,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "QQQ is in a confirmed uptrend and above its 50MA at $714.3",
+        "SPY is above both its 50MA and 200MA, confirming the broader bull market structure",
+        "VIX at 16.48 remains near its 30d average of 15.63, indicating a low-volatility environment"
+      ],
+      "headwinds": [
+        "QQQ volume declining 12% while price rises, suggesting weakening participation in the uptrend",
+        "SPY trend is sideways, failing to confirm the broader uptrend despite the BULL_LOW_VOL regime",
+        "RV20 at 15% indicates moderate realized volatility, which may cap near-term upside"
+      ],
+      "risk_to_thesis": "SPY breaking below its 50MA of $761.19 would invalidate the bull market structure and shift the regime",
+      "generated_at": "2026-10-01T19:51:35.812717+08:00",
+      "swing_trade_setup": {
+        "bias": "mixed",
+        "ticker": "QQQ",
+        "best_structure": "QQQ: ATM calls or call debit spread, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE \u2014 no directional view ('mixed'); bias is 'mixed' -- no directional view; conviction 4 < 5; QQQ is on the risk_rules blocklist \u00b7 Momentum: \u26d4 NO TRADE \u2014 no directional view ('mixed'); bias is 'mixed' -- no directional view; conviction 4 < 5; QQQ is on the risk_rules blocklist | Watch: QQQ holding above its 50MA at $714.3, SPY resolving its sideways trend, volume recovery in QQQ",
+        "avoid": "QQQ (BLOCKLISTED), TSLA (BLOCKLISTED)",
+        "gates": {
+          "pullback": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "no directional view ('mixed')",
+              "bias is 'mixed' -- no directional view",
+              "conviction 4 < 5",
+              "QQQ is on the risk_rules blocklist"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": 739.77,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% of debit \u00b7 target 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "pullback",
+            "entry_gap_sigma": null,
+            "rs_vs_spy": 0.52
+          },
+          "momentum": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "no directional view ('mixed')",
+              "bias is 'mixed' -- no directional view",
+              "conviction 4 < 5",
+              "QQQ is on the risk_rules blocklist"
+            ],
+            "rr": null,
+            "levels": {
+              "entry": null,
+              "stop": null,
+              "target": null
+            },
+            "current_price": 739.77,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": null
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": null,
+            "exit_plan": "stop -50% of debit \u00b7 target 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "strategy": "momentum",
+            "entry_gap_sigma": null,
+            "rs_vs_spy": 0.52
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "NO TRADE",
+          "reasons": [
+            "no directional view ('mixed')",
+            "bias is 'mixed' -- no directional view",
+            "conviction 4 < 5",
+            "QQQ is on the risk_rules blocklist"
+          ],
+          "rr": null,
+          "levels": {
+            "entry": null,
+            "stop": null,
+            "target": null
+          },
+          "current_price": 739.77,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "momentum_require_rs": true,
+            "momentum_min_rs_pct": 0.0,
+            "option_cost": {
+              "enabled": true,
+              "dte": 25,
+              "exit_trading_days": 5,
+              "iv_reversion": 0.5,
+              "rich_ratio": 1.3,
+              "cheap_ratio": 0.9,
+              "rate": 0.04,
+              "min_option_rr": null
+            },
+            "strategies": {
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": null,
+          "exit_plan": "stop -50% of debit \u00b7 target 50% of max gain \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "strategy": "pullback",
+          "entry_gap_sigma": null,
+          "rs_vs_spy": 0.52
+        },
+        "model_levels_to_watch": "QQQ holding above its 50MA at $714.3, SPY resolving its sideways trend, volume recovery in QQQ"
+      },
+      "news_signal_vs_noise": {
+        "signal": "The BULL_LOW_VOL regime and QQQ's uptrend above its 50MA are the primary directional signals for the next 1-3 weeks",
+        "noise": "no news data supplied"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "QQQ",
+          "role": "watch",
+          "reason": "QQQ is in an uptrend 3.6% above its 50MA but is on the BLOCKLIST and cannot be traded",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $762.63 sits marginally above its 50MA of $761.19 and 6.5% above its 200MA of $716.11, while VIX at 16.48 is slightly above its 30d average of 15.63. The BULL_LOW_VOL regime favors a constructive stance, but SPY's sideways trend and QQQ's declining volume argue for caution on near-term upside.",
+      "key_themes": [
+        "QQQ is in an uptrend, 3.6% above its 50MA of $714.3, but volume has declined 12% over the period",
+        "SPY is trading sideways just above its 50MA, showing range-bound price action despite the bull regime",
+        "QQQ is performing in-line with SPY at +0.52%, offering no relative outperformance edge"
+      ],
+      "unsourced_numbers": [
+        "6.5%"
+      ]
+    }
+  ],
+  "deep_dives": []
+}
