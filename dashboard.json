@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T21:45:02.375566+08:00",
+  "generated_at": "2026-10-07T23:00:02.264217+08:00",
   "regime": {
     "regime": "bull_low_vol",
     "vix": 15.77,
@@ -2690,6 +2690,308 @@
   ],
   "deep_dives": [
     {
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "bias": "bullish",
+      "conviction": 7,
+      "thesis": "META is a strong outperformer (+18 pts vs SPY over 3 months) with robust fundamentals: 28% revenue growth, 30% profit margins, and a forward P/E of 20.73 suggesting continued earnings expansion. Recent analyst sentiment is bullish, with Wells Fargo setting a $1,000 price target on 10-06 citing Muse AI, and Deutsche Bank noting Muse could drive up to 8% of revenue by 2030. However, the stock is 14.3% above its 50-day MA with volume declining 41%, indicating the uptrend may be losing steam and a pullback or consolidation is increasingly likely before the next leg higher.",
+      "moat_assessment": "Meta's moat is built on powerful network effects across Facebook, Instagram, and WhatsApp, with billions of users creating high switching costs; AI investments in Muse and personal agents could deepen engagement and ad targeting, reinforcing the moat, though heavy AI capex creates execution risk if monetization lags.",
+      "macro_sensitivity": "Meta is highly sensitive to ad spending cycles (economic growth), which drive the majority of revenue; USD strength headwinds affect international revenue translation; VIX spikes and rate moves weigh on growth stock valuations; not directly sensitive to oil prices.",
+      "key_catalysts": [
+        "Q3 earnings on 2026-10-29",
+        "AI monetization progress \u2014 Deutsche Bank noted Muse could drive up to 8% of revenue by 2030 (Yahoo Finance 10-05)"
+      ],
+      "disconfirming_evidence": "A sustained volume divergence where price holds but volume continues declining would signal institutional distribution; if AI capex fails to show near-term ROI, margin compression from heavy spending could disappoint; a regime shift to higher rates or risk-off sentiment would pressure the elevated P/E multiple.",
+      "bull_scenario": "AI monetization accelerates, Muse drives engagement, and META rallies to $800-810 (+10-12%) into earnings as investors price in AI upside.",
+      "base_scenario": "Consolidation around $720-740 (+/- 2%) over the next 2-3 weeks as the uptrend pauses, volume normalizes, and the market awaits earnings on 10-29.",
+      "bear_scenario": "Volume divergence resolves to the downside, AI spending concerns resurface, and META pulls back to $630-650 (-10-13%) toward the 50MA as the extended trend corrects.",
+      "trade_plan": {
+        "structure": "Buy 0.65 delta call, 21-28 DTE",
+        "entry_trigger": "Daily close above $725 on above-average volume (current price $723.62)",
+        "target": "$785 (8.5% gain, within one typical IV-implied move)",
+        "stop": "Daily close below the 50-day moving average",
+        "position_size_note": "Half size (5% of portfolio max) given rich IV rank 58.7",
+        "risk_reward": "1:2",
+        "avoid_if": "Three consecutive sessions of below-average volume before entry, or IV rank dropping below 30"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "too expensive for your account: $3,546 > 10% ($300); no stretch qualifies (otm: still $1,907 > $300; short_dte: conviction 7 < 8) -- skip, or use a cheaper name with the same setup"
+        ],
+        "rr": 2.0,
+        "levels": {
+          "entry": 723.62,
+          "stop": 690.78,
+          "target": 789.31
+        },
+        "current_price": 723.62,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "max_premium_pct_of_account": 10,
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.4557,
+          "trading_days": 10,
+          "expected_move": 65.69,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.257,
+          "p_stop_first": 0.556,
+          "p_neither": 0.187,
+          "mean_r_no_edge": 0.041
+        },
+        "exit_plan": "stop close below $690.78 or -50% premium \u00b7 target $789.31 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "option_cost": {
+          "valid": true,
+          "reason": "",
+          "iv": 0.4557,
+          "rv": 0.53,
+          "iv_rv_ratio": 0.86,
+          "iv_label": "cheap",
+          "premium_pct": 4.9,
+          "at_target_pct": 112,
+          "at_stop_pct": -56,
+          "option_rr": 2.0,
+          "iv_exit": 0.4557,
+          "hint": "IV cheap vs realized -- single-leg option is fine"
+        },
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "money": {
+          "premium": 3546,
+          "loss": 1773,
+          "gain": 3546,
+          "loss_pct": 50,
+          "gain_pct": 100,
+          "contracts": null
+        },
+        "premium_cap": 300,
+        "affordable": false,
+        "stretch_tried": [
+          "otm: still $1,907 > $300",
+          "short_dte: conviction 7 < 8"
+        ],
+        "strategy": "momentum",
+        "entry_gap_sigma": 0.0,
+        "rs_vs_spy": 18.05
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "Trailing P/E 27.38 vs forward 20.73 implies expected earnings growth; revenue $228B with 28% growth and 30% profit margin; analyst mean target $794.96.",
+      "researched_at": "2026-10-07T21:57:52.563129+08:00"
+    },
+    {
+      "ticker": "QCOM",
+      "company": "QUALCOMM Incorporated",
+      "sector": "Semiconductors / Wireless Communications",
+      "bias": "neutral",
+      "conviction": 5,
+      "thesis": "QCOM is in a modest uptrend but has dramatically underperformed SPY by roughly 24 points over three months, signaling structural headwinds that a single Huawei patent deal is unlikely to reverse quickly. Licensing revenue is slipping and at least one analytical note flags the stock as fully valued. With IV rank at 37.4, premium is moderately rich \u2014 favoring a pullback entry into the 50-day moving average rather than chasing.",
+      "moat_assessment": "Qualcomm's 3G/4G/5G patent portfolio creates a durable licensing moat via IP durability and switching costs (7 Powers), but customer concentration risk (Apple, Huawei disputes) and regulatory pushback on licensing terms erode its long-term strength.",
+      "macro_sensitivity": "QCOM is moderately sensitive to USD strength (majority of revenue ex-US), rate moves (growth multiple compression), and the global smartphone cycle; less tied to oil, but VIX spikes compress the P/E channel.",
+      "key_catalysts": [
+        "Next earnings 2026-11-05 \u2014 guidance on licensing trajectory and non-handset revenue",
+        "Huawei licensing deal expansion or further licensing revenue trend data"
+      ],
+      "disconfirming_evidence": "A daily close below the 50-day moving average with expanding selling volume would invalidate the uptrend thesis; any adverse development in the royalty dispute (e.g., rate renegotiation) would pressure licensing revenue.",
+      "bull_scenario": "Huawei deal accelerates licensing stabilization and non-handset momentum builds, pushing QCOM toward analyst target $194 (~9% upside) over three weeks.",
+      "base_scenario": "Range-bound consolidation between the 50MA and recent highs over 3-7 days as markets digest Huawei news and licensing headwinds; modest drift higher if the 50MA holds.",
+      "bear_scenario": "Breakdown below the 50MA with renewed volume on licensing disappointment pushes QCOM toward $165 (~7% downside), invalidating the uptrend.",
+      "trade_plan": {
+        "structure": "Buy 0.60 delta call, 21-28 DTE",
+        "entry_trigger": "Pullback to ~$172 near the 50-day moving average with volume stabilization",
+        "target": "$187-188 (approximately 6% gain, within one typical 10-day move of 10.6%)",
+        "stop": "Daily close below the 50-day moving average",
+        "position_size_note": "Half size \u2014 IV rank 37.4 means premium is rich; size down per entry criteria",
+        "risk_reward": "1:2",
+        "avoid_if": "IV expands above 55% before entry or daily close below the 50-day moving average"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "no directional view ('neutral')",
+          "bias is 'neutral' -- no directional view",
+          "stop >30% from price $177.49"
+        ],
+        "rr": null,
+        "levels": {
+          "entry": 172.0,
+          "stop": 50.0,
+          "target": 187.0
+        },
+        "current_price": 177.49,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "max_premium_pct_of_account": 10,
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": null,
+        "exit_plan": "stop close above $50 or -50% premium \u00b7 target $187 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "money": null,
+        "strategy": "pullback",
+        "entry_gap_sigma": null,
+        "rs_vs_spy": -24.48
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "Trailing P/E 20.54, forward 17.41; P/S 4.30, P/B 6.78; revenue $44.07B with -4% YoY growth; profit margin 21%; analyst mean target $194.13.",
+      "researched_at": "2026-10-07T21:56:14.639738+08:00"
+    },
+    {
       "ticker": "DE",
       "company": "Deere & Company",
       "sector": "Farm & Heavy Trucks / Agricultural Machinery",
@@ -3163,343 +3465,6 @@
       ],
       "fundamentals_note": "forward P/E 28.28, revenue $595.97M growing 86.4% YoY, profit margin -9.568%, P/S 18.54, P/B 6.58, analyst mean target $163.40, next earnings 2026-11-06",
       "researched_at": "2026-10-07T17:08:41.543034+08:00"
-    },
-    {
-      "ticker": "QCOM",
-      "company": "QUALCOMM Incorporated",
-      "sector": "Semiconductors",
-      "bias": "bullish",
-      "conviction": 5,
-      "thesis": "QCOM trades in an uptrend at $181.03, 5.6% above its 50-day MA ($171.50), but has catastrophically underperformed SPY by over 30 points in three months (-27.22% vs +3.51%) on declining volume (-41%) and elevated RV20 (56%). The Huawei 5G patent licensing deal (Oct 5-6) provides a strategic catalyst and potential revenue offset, while a forward P/E of 17.75 vs trailing 20.95 implies the market expects earnings improvement. However, negative revenue growth (-4%) and the Arm litigation overhang over licensing tools temper near-term conviction.",
-      "moat_assessment": "Qualcomm's wireless standard-essential patent portfolio creates a deep licensing moat with high regulatory and legal switching barriers, though royalty disputes (Huawei, Arm) and government scrutiny create recurring vulnerabilities to its QTL model.",
-      "macro_sensitivity": "Moderately rate-sensitive as a growth/tech name; strong USD pressures international licensing revenue; VIX spikes compress its premium multiple; oil is largely a non-factor.",
-      "key_catalysts": [
-        "Earnings on 2026-11-05",
-        "Huawei 5G patent deal monetization and Arm litigation resolution",
-        "Non-handset revenue target ($40B by 202... per Pluang Oct 5)"
-      ],
-      "disconfirming_evidence": "A break below the 50-day MA on expanding volume would invalidate the uptrend; an adverse Arm ruling could impair the licensing model; or continued underperformance vs SPY would signal structural rather than cyclical weakness.",
-      "bull_scenario": "Huawei deal accelerates licensing revenue and non-handset growth targets are met; stock re-rates toward analyst target (~$194), ~7% upside.",
-      "base_scenario": "Choppy uptrend continuation with mean-reversion toward the 50MA; 2-4% upside over 3 weeks as catalysts are priced in gradually.",
-      "bear_scenario": "Arm ruling goes against QCOM or licensing revenue continues to slip; stock retests 50MA support, ~6-8% downside.",
-      "trade_plan": {
-        "structure": "Buy 0.60-0.65 delta call, 21 DTE",
-        "entry_trigger": "A daily close above $182 confirming continuation of the uptrend with volume recovery",
-        "target": "Toward $194-196 (analyst mean target zone, within 1 typical IV-implied move)",
-        "stop": "A break of the uptrend structure or a close below the 50-day MA",
-        "position_size_note": "Half size \u2014 IV rank 37.1 makes premiums rich; cap at 5% of portfolio",
-        "risk_reward": "1:1.5",
-        "avoid_if": "A daily close below the 50-day MA, or IV expansion before entry"
-      },
-      "gate": {
-        "verdict": "NO TRADE",
-        "reasons": [
-          "lagging SPY: RS -30.73% < +0% (momentum needs strength)"
-        ],
-        "rr": 2.0,
-        "levels": {
-          "entry": 181.03,
-          "stop": 171.68,
-          "target": 199.74
-        },
-        "current_price": 181.03,
-        "profile": "swing_21_28",
-        "rules": {
-          "min_rr": 2.0,
-          "min_conviction": 5,
-          "max_level_distance_pct": 30,
-          "stop_premium_pct": -50,
-          "target_premium_pct": 100,
-          "time_exit_dte": 10,
-          "entry_dte_min": 21,
-          "entry_dte_max": 28,
-          "allow_expiry_hold": false,
-          "hold_trading_days": 10,
-          "max_target_sigma": 1.0,
-          "spread_target_pct_of_max": 50,
-          "spread_stop_pct_of_debit": 50,
-          "momentum_require_rs": true,
-          "momentum_min_rs_pct": 0.0,
-          "option_cost": {
-            "enabled": true,
-            "dte": 25,
-            "exit_trading_days": 5,
-            "iv_reversion": 0.5,
-            "rich_ratio": 1.3,
-            "cheap_ratio": 0.9,
-            "rate": 0.04,
-            "min_option_rr": 1.5
-          },
-          "allowed_structures": [
-            "long_call",
-            "long_put"
-          ],
-          "max_entry_gap_sigma": 1.0,
-          "delta_band": [
-            0.45,
-            0.6
-          ],
-          "rich_delta_band": [
-            0.6,
-            0.7
-          ],
-          "risk_budget_usd": null,
-          "account_usd": 3000,
-          "max_premium_pct_of_account": 10,
-          "stretch": {
-            "enabled": true,
-            "otm": {
-              "enabled": true,
-              "delta": 0.35,
-              "label": "0.30-0.40\u0394",
-              "dte": 25,
-              "min_conviction": 7
-            },
-            "short_dte": {
-              "enabled": true,
-              "delta": 0.525,
-              "label": "0.45-0.60\u0394",
-              "dte": 15,
-              "dte_label": "14-17",
-              "time_exit_dte": 5,
-              "min_conviction": 8,
-              "strategies": [
-                "momentum"
-              ]
-            }
-          },
-          "strategies": {
-            "pullback": {
-              "enabled": true,
-              "stop_buffer_pct": 0.5,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            },
-            "momentum": {
-              "enabled": true,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            }
-          }
-        },
-        "rule_warnings": [],
-        "reach": {
-          "iv": 0.5187,
-          "trading_days": 10,
-          "expected_move": 18.71,
-          "target_sigma": 1.0,
-          "stop_sigma": 0.5,
-          "breakeven_hit": 0.333,
-          "p_target_first": 0.257,
-          "p_stop_first": 0.557,
-          "p_neither": 0.186,
-          "mean_r_no_edge": 0.04
-        },
-        "exit_plan": "stop close below $171.68 or -50% premium \u00b7 target $199.74 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-        "option_cost": {
-          "valid": true,
-          "reason": "",
-          "iv": 0.5187,
-          "rv": 0.56,
-          "iv_rv_ratio": 0.93,
-          "iv_label": "fair",
-          "premium_pct": 5.5,
-          "at_target_pct": 113,
-          "at_stop_pct": -56,
-          "option_rr": 2.01,
-          "iv_exit": 0.5187,
-          "hint": "IV fair vs realized"
-        },
-        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-        "structure_kind": "long_call",
-        "money": {
-          "premium": 996,
-          "loss": 498,
-          "gain": 996,
-          "loss_pct": 50,
-          "gain_pct": 100,
-          "contracts": null
-        },
-        "strategy": "momentum",
-        "entry_gap_sigma": 0.0,
-        "rs_vs_spy": -30.73
-      },
-      "unsourced_numbers": [
-        "202"
-      ],
-      "fundamentals_note": "forward P/E 17.75 vs trailing 20.95 implies expected earnings growth; revenue growth -4% y/y; profit margin 21%; analyst mean target $194.13",
-      "researched_at": "2026-10-07T17:07:41.313722+08:00"
-    },
-    {
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "sector": "Internet / Digital Advertising / AI Software",
-      "bias": "bullish",
-      "conviction": 7,
-      "thesis": "META is in a strong uptrend (+17% 3M, +13.5 pts vs SPY) supported by a tangible AI monetization catalyst (Deutsche Bank: Muse could drive 8% of revenue by 2030) and a forward P/E of 21 that prices in growth at a discount to trailing 28. The stock is extended 17% above the 50-day MA, but trend and relative strength justify a momentum stance rather than waiting for a deep pullback. Bull case relies on AI narrative momentum carrying toward analyst mean target ($795); bear case is mean reversion if the AI story stalls or Q3 earnings (10-29) disappoint.",
-      "moat_assessment": "Durable moat from network effects across 3B+ users and a massive ad-data flywheel; AI investments (Muse, Llama) reinforce switching costs and could extend the moat into new revenue surfaces (creator tools, commerce), but regulatory/OS-level privacy risks are a structural counterforce.",
-      "macro_sensitivity": "Sensitive to long-duration rate moves (DCF-heavy); strong USD headwind on international ad revenue; VIX spikes trigger growth-stock de-rating; low VIX regime (15.2) is supportive.",
-      "key_catalysts": [
-        "Q3 earnings on 2026-10-29 \u2014 wait for post-earnings entry per 14-day rule",
-        "Muse AI monetization traction updates (Deutsche Bank: potential 8% of revenue by 2030; Wells Fargo $1000 target)"
-      ],
-      "disconfirming_evidence": "Q3 earnings miss or weak guidance on 10-29; deceleration in ad revenue growth vs AI spend; a broader market de-rating of high-multiple tech if VIX spikes above 20; the 17% extension makes the stock vulnerable to sharp mean reversion.",
-      "bull_scenario": "Muse AI monetization surprises to the upside, analyst targets revise toward $900+, META reaches $800-810 (+8-10%) over 3 weeks as momentum buyers pile in.",
-      "base_scenario": null,
-      "bear_scenario": "AI narrative cools or Q3 print disappoints; mean reversion toward the 50-day MA at $630 (-15%) as the market de-rates high-multiple names; RV20 at 55% means the downside can arrive quickly.",
-      "trade_plan": {
-        "structure": "Buy 0.65 delta call, 21-28 DTE",
-        "entry_trigger": "Daily close above $740 confirming breakout continuation on above-average volume",
-        "target": "$800 (+8.3%)",
-        "stop": "Daily close below the 50-day MA or a 7% adverse move from entry",
-        "position_size_note": "half \u2014 IV rank 56.2 means rich premium; buy more intrinsic (higher delta) and size down",
-        "risk_reward": "1:2",
-        "avoid_if": "IV rank spikes above 65 before entry or a daily close below the 50-day MA"
-      },
-      "gate": {
-        "verdict": "NO TRADE",
-        "reasons": [
-          "too expensive for your account: $3,547 > 10% ($300); no stretch qualifies (otm: still $1,912 > $300; short_dte: conviction 7 < 8) -- skip, or use a cheaper name with the same setup"
-        ],
-        "rr": 2.0,
-        "levels": {
-          "entry": 738.88,
-          "stop": 705.98,
-          "target": 804.67
-        },
-        "current_price": 738.88,
-        "profile": "swing_21_28",
-        "rules": {
-          "min_rr": 2.0,
-          "min_conviction": 5,
-          "max_level_distance_pct": 30,
-          "stop_premium_pct": -50,
-          "target_premium_pct": 100,
-          "time_exit_dte": 10,
-          "entry_dte_min": 21,
-          "entry_dte_max": 28,
-          "allow_expiry_hold": false,
-          "hold_trading_days": 10,
-          "max_target_sigma": 1.0,
-          "spread_target_pct_of_max": 50,
-          "spread_stop_pct_of_debit": 50,
-          "momentum_require_rs": true,
-          "momentum_min_rs_pct": 0.0,
-          "option_cost": {
-            "enabled": true,
-            "dte": 25,
-            "exit_trading_days": 5,
-            "iv_reversion": 0.5,
-            "rich_ratio": 1.3,
-            "cheap_ratio": 0.9,
-            "rate": 0.04,
-            "min_option_rr": 1.5
-          },
-          "allowed_structures": [
-            "long_call",
-            "long_put"
-          ],
-          "max_entry_gap_sigma": 1.0,
-          "delta_band": [
-            0.45,
-            0.6
-          ],
-          "rich_delta_band": [
-            0.6,
-            0.7
-          ],
-          "risk_budget_usd": null,
-          "account_usd": 3000,
-          "max_premium_pct_of_account": 10,
-          "stretch": {
-            "enabled": true,
-            "otm": {
-              "enabled": true,
-              "delta": 0.35,
-              "label": "0.30-0.40\u0394",
-              "dte": 25,
-              "min_conviction": 7
-            },
-            "short_dte": {
-              "enabled": true,
-              "delta": 0.525,
-              "label": "0.45-0.60\u0394",
-              "dte": 15,
-              "dte_label": "14-17",
-              "time_exit_dte": 5,
-              "min_conviction": 8,
-              "strategies": [
-                "momentum"
-              ]
-            }
-          },
-          "strategies": {
-            "pullback": {
-              "enabled": true,
-              "stop_buffer_pct": 0.5,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            },
-            "momentum": {
-              "enabled": true,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            }
-          }
-        },
-        "rule_warnings": [],
-        "reach": {
-          "iv": 0.447,
-          "trading_days": 10,
-          "expected_move": 65.79,
-          "target_sigma": 1.0,
-          "stop_sigma": 0.5,
-          "breakeven_hit": 0.333,
-          "p_target_first": 0.257,
-          "p_stop_first": 0.556,
-          "p_neither": 0.187,
-          "mean_r_no_edge": 0.041
-        },
-        "exit_plan": "stop close below $705.98 or -50% premium \u00b7 target $804.67 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-        "option_cost": {
-          "valid": true,
-          "reason": "",
-          "iv": 0.447,
-          "rv": 0.55,
-          "iv_rv_ratio": 0.81,
-          "iv_label": "cheap",
-          "premium_pct": 4.8,
-          "at_target_pct": 112,
-          "at_stop_pct": -56,
-          "option_rr": 2.0,
-          "iv_exit": 0.447,
-          "hint": "IV cheap vs realized -- single-leg option is fine"
-        },
-        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-        "structure_kind": "long_call",
-        "money": {
-          "premium": 3547,
-          "loss": 1773,
-          "gain": 3547,
-          "loss_pct": 50,
-          "gain_pct": 100,
-          "contracts": null
-        },
-        "premium_cap": 300,
-        "affordable": false,
-        "stretch_tried": [
-          "otm: still $1,912 > $300",
-          "short_dte: conviction 7 < 8"
-        ],
-        "strategy": "momentum",
-        "entry_gap_sigma": 0.0,
-        "rs_vs_spy": 13.51
-      },
-      "unsourced_numbers": [
-        "3B"
-      ],
-      "fundamentals_note": "Trailing P/E 28 vs forward 21 implies strong expected earnings growth; revenue $228.2B with 28% YoY growth and 30% profit margin; analyst mean target $795; next earnings 2026-10-29.",
-      "researched_at": "2026-10-07T17:05:53.685025+08:00"
     },
     {
       "ticker": "AMD",
@@ -4439,6 +4404,12 @@
     {
       "date": "2026-10-07",
       "kind": "deepdive",
+      "id": "deepdive_META_20261007T215752.563129_0800",
+      "summary": "META [BULLISH] -- conviction 7/10"
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "deepdive",
       "id": "deepdive_AAOI_20261007T170841.543034_0800",
       "summary": "AAOI [BEARISH] -- conviction 4/10"
     },
@@ -4453,6 +4424,12 @@
       "kind": "deepdive",
       "id": "deepdive_DE_20261007T205709.837040_0800",
       "summary": "DE [BULLISH] -- conviction 6/10"
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "deepdive",
+      "id": "deepdive_QCOM_20261007T215614.639738_0800",
+      "summary": "QCOM [NEUTRAL] -- conviction 5/10"
     },
     {
       "date": "2026-10-07",
@@ -4969,18 +4946,6 @@
       "kind": "analyst",
       "id": "analyst_brief_20260925_113447_61bc",
       "summary": "1 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-25",
-      "kind": "sector",
-      "id": "sector_brief_semiconductors-ai_20260925",
-      "summary": "Semiconductors/AI -- conviction 5"
-    },
-    {
-      "date": "2026-09-25",
-      "kind": "sector",
-      "id": "sector_brief_technology_20260925",
-      "summary": "Technology -- conviction 6"
     }
   ]
 }
