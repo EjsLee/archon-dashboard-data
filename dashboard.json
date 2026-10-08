@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T21:45:01.994588+08:00",
+  "generated_at": "2026-10-08T23:00:02.744262+08:00",
   "regime": {
     "regime": "bull_low_vol",
     "vix": 15.58,
@@ -3023,6 +3023,183 @@
   ],
   "deep_dives": [
     {
+      "ticker": "MRVL",
+      "company": "Marvell Technology, Inc.",
+      "sector": "Semiconductors",
+      "bias": "bullish",
+      "conviction": 6,
+      "thesis": "Bullish on MRVL's AI-driven revenue acceleration (36.5% YoY growth, $9.45B revenue) and the newly raised 2031 revenue target of $70-90B, which has triggered unanimous analyst upgrades and a fresh gap-up. However, the stock is 18.4% extended above its 50MA with declining volume (-32%), and a trailing P/E of 91.4 leaves no room for execution missteps.",
+      "moat_assessment": "Custom silicon design wins with hyperscalers create high switching costs and customer lock-in, but the custom-chip model faces recurring pricing pressure from large customers, limiting long-term pricing power.",
+      "macro_sensitivity": "High sensitivity to VIX spikes (RV20 52%) and rate moves given the premium valuation; USD strength impacts international revenue; benefits from AI capex cycle but vulnerable to any tech spending slowdown.",
+      "key_catalysts": [
+        "Next earnings 2026-12-02 \u2014 54 days away, well outside the 14-day exclusion window",
+        "AI custom silicon execution vs the newly raised $70-90B 2031 revenue target \u2014 any incremental guidance or design win news"
+      ],
+      "disconfirming_evidence": "A daily close below the 50-day moving average would negate the uptrend; any guidance cut or AI revenue miss vs the $70-90B target would trigger a sharp de-rating given the 91x trailing P/E.",
+      "bull_scenario": "AI execution drives re-rating toward analyst target $338, ~21% upside over 3-4 weeks as the $70-90B narrative gains credibility.",
+      "base_scenario": "Stock consolidates recent gains in a tight range, 3-5% upside over 2-3 weeks as the AI narrative digests and the market awaits next catalyst.",
+      "bear_scenario": "Profit-taking and valuation compression trigger a pullback toward the 50MA, ~15-18% downside as the 91x P/E de-rates on any AI execution doubt.",
+      "trade_plan": {
+        "structure": "Buy 0.50 delta call, 21-28 DTE",
+        "entry_trigger": "At market on confirmation of the gap-up holding above $277 with volume recovery",
+        "target": "~10% upside (within 1 typical RV20 move)",
+        "stop": "Daily close below the 50-day moving average",
+        "position_size_note": "Half position (5% of portfolio) given rich valuation and extension from the 50MA",
+        "risk_reward": "1:2",
+        "avoid_if": "IV jumps above 70% before entry or volume fails to recover above average"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "reasons": [],
+        "rr": 2.0,
+        "levels": {
+          "entry": 248.51,
+          "stop": 233.53,
+          "target": 278.47
+        },
+        "current_price": 277.89,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "max_premium_pct_of_account": 15,
+          "counter_trend_puts": {
+            "enabled": true,
+            "max_rs_pct": -10.0,
+            "min_evidence_net": -2,
+            "min_nonprice_neg": 1
+          },
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.6052,
+          "trading_days": 10,
+          "expected_move": 29.96,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.258,
+          "p_stop_first": 0.558,
+          "p_neither": 0.184,
+          "mean_r_no_edge": 0.038
+        },
+        "exit_plan": "stop close below $233.53 or -50% premium \u00b7 target $278.47 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "option_cost": {
+          "valid": true,
+          "reason": "",
+          "iv": 0.6052,
+          "rv": 0.52,
+          "iv_rv_ratio": 1.16,
+          "iv_label": "fair",
+          "premium_pct": 6.4,
+          "at_target_pct": 110,
+          "at_stop_pct": -62,
+          "option_rr": 1.78,
+          "iv_exit": 0.5626,
+          "hint": "IV fair vs realized"
+        },
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "money": {
+          "premium": 1590,
+          "loss": 795,
+          "gain": 1590,
+          "loss_pct": 50,
+          "gain_pct": 100,
+          "contracts": null
+        },
+        "premium_cap": 450,
+        "affordable": false,
+        "stretch_tried": [
+          "otm: conviction 6 < 7",
+          "short_dte: conviction 6 < 8"
+        ],
+        "over_cap": true,
+        "over_cap_pct": 53,
+        "over_cap_loss_pct": 26,
+        "over_cap_note": "1 contract \u2248 $1,590 = 53% of account, loss at stop \u2248 $795 = 26% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.88,
+        "rs_vs_spy": -7.1
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "Trailing P/E 91.4 vs forward 38.2; revenue $9.45B with 36.5% growth; profit margin 27.9%; analyst mean target $338 vs current $278.",
+      "researched_at": "2026-10-08T22:25:59.626471+08:00"
+    },
+    {
       "ticker": "META",
       "company": "Meta Platforms, Inc.",
       "sector": "Communication Services / Interactive Media",
@@ -3327,177 +3504,6 @@
       "unsourced_numbers": [],
       "fundamentals_note": "Trailing P/E 20.5, forward P/E 17.37, revenue 44.07B with -0.04 growth, profit margin 0.21 \u2014 flat top-line and rich premium (IV rank 37.4) limit upside.",
       "researched_at": "2026-10-08T20:13:47.983383+08:00"
-    },
-    {
-      "ticker": "MRVL",
-      "company": "Marvell Technology, Inc.",
-      "sector": "Semiconductors",
-      "bias": "bullish",
-      "conviction": 6,
-      "thesis": "MRVL is in a confirmed uptrend with extreme relative strength (+26.79 pts vs SPY in 3M) and is benefiting from a positive AI-revision narrative after lifting its 2031 revenue target to $70B-$90B (Yahoo Finance 10-07). However, trailing P/E 93.6 and forward P/E 42.2 embed aggressive execution expectations \u2014 the stock is 22.5% above the 50MA on declining volume (-29%), suggesting the move is aging. Macro CPI/PPI this week (14-15 Oct) will elevate IV and could trigger a shakeout before any continuation.",
-      "moat_assessment": "Custom silicon design for hyperscalers (AWS, Google, Azure) creates a switching-cost moat \u2014 once embedded in custom ASIC/accelerator programs, replacement costs are high and incumbency compounds.",
-      "macro_sensitivity": "High duration tech: rallies on falling rates / weak USD, gets hit hard by VIX spikes (RV20 53% shows it amplifies beta); CPI/PPI this week directly inflate IV via macro uncertainty.",
-      "key_catalysts": [
-        "2026-12-02 earnings (Yahoo) \u2014 54 days out, no entry restriction",
-        "CPI Sep (14 Oct) / PPI Sep (15 Oct) \u2014 IV tends to rise into these, creating potential entry window post-release"
-      ],
-      "disconfirming_evidence": "A post-CPI/PPI VIX spike that breaks the daily uptrend structure, or a single analyst downgrade (currently 16 up / 0 down \u2014 any break in consensus would signal peak narrative).",
-      "bull_scenario": "Post-CPI calm + analyst upgrades on the $90B target narrative push MRVL to the mean target $338 (~19% upside).",
-      "base_scenario": "Range-bound $270-$290 for 1-2 weeks as the $300 breakout fails and investors digest the long-term revenue targets.",
-      "bear_scenario": "Macro VIX spike into CPI/PPI triggers a growth-to-value rotation; MRVL reverts 15-20% toward the 50MA as expensive P/E multiple compresses.",
-      "trade_plan": {
-        "structure": "Buy 0.50 delta call, 21-28 DTE",
-        "entry_trigger": "Price holds above $284.68 current level after CPI/PPI release with no VIX blowout",
-        "target": "~10-12% upside (within the 12.2% implied 10-day move band at IV 61%)",
-        "stop": "Daily close below the 50MA zone (Python sets exact level)",
-        "position_size_note": "half",
-        "risk_reward": "1:2.0",
-        "avoid_if": "IV rank rises above 40 before entry (cheap-premium thesis breaks)"
-      },
-      "gate": {
-        "verdict": "TRADE",
-        "reasons": [],
-        "rr": 2.0,
-        "levels": {
-          "entry": 284.68,
-          "stop": 267.29,
-          "target": 319.47
-        },
-        "current_price": 284.68,
-        "profile": "swing_21_28",
-        "rules": {
-          "min_rr": 2.0,
-          "min_conviction": 5,
-          "max_level_distance_pct": 30,
-          "stop_premium_pct": -50,
-          "target_premium_pct": 100,
-          "time_exit_dte": 10,
-          "entry_dte_min": 21,
-          "entry_dte_max": 28,
-          "allow_expiry_hold": false,
-          "hold_trading_days": 10,
-          "max_target_sigma": 1.0,
-          "spread_target_pct_of_max": 50,
-          "spread_stop_pct_of_debit": 50,
-          "momentum_require_rs": true,
-          "momentum_min_rs_pct": 0.0,
-          "option_cost": {
-            "enabled": true,
-            "dte": 25,
-            "exit_trading_days": 5,
-            "iv_reversion": 0.5,
-            "rich_ratio": 1.3,
-            "cheap_ratio": 0.9,
-            "rate": 0.04,
-            "min_option_rr": 1.5
-          },
-          "allowed_structures": [
-            "long_call",
-            "long_put"
-          ],
-          "max_entry_gap_sigma": 1.0,
-          "delta_band": [
-            0.45,
-            0.6
-          ],
-          "rich_delta_band": [
-            0.6,
-            0.7
-          ],
-          "risk_budget_usd": null,
-          "account_usd": 3000,
-          "max_premium_pct_of_account": 15,
-          "stretch": {
-            "enabled": true,
-            "otm": {
-              "enabled": true,
-              "delta": 0.35,
-              "label": "0.30-0.40\u0394",
-              "dte": 25,
-              "min_conviction": 7
-            },
-            "short_dte": {
-              "enabled": true,
-              "delta": 0.525,
-              "label": "0.45-0.60\u0394",
-              "dte": 15,
-              "dte_label": "14-17",
-              "time_exit_dte": 5,
-              "min_conviction": 8,
-              "strategies": [
-                "momentum"
-              ]
-            }
-          },
-          "strategies": {
-            "pullback": {
-              "enabled": true,
-              "stop_buffer_pct": 0.5,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            },
-            "momentum": {
-              "enabled": true,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            }
-          }
-        },
-        "rule_warnings": [],
-        "reach": {
-          "iv": 0.6134,
-          "trading_days": 10,
-          "expected_move": 34.79,
-          "target_sigma": 1.0,
-          "stop_sigma": 0.5,
-          "breakeven_hit": 0.333,
-          "p_target_first": 0.258,
-          "p_stop_first": 0.558,
-          "p_neither": 0.183,
-          "mean_r_no_edge": 0.038
-        },
-        "exit_plan": "stop close below $267.29 or -50% premium \u00b7 target $319.47 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-        "option_cost": {
-          "valid": true,
-          "reason": "",
-          "iv": 0.6134,
-          "rv": 0.53,
-          "iv_rv_ratio": 1.16,
-          "iv_label": "fair",
-          "premium_pct": 6.5,
-          "at_target_pct": 110,
-          "at_stop_pct": -62,
-          "option_rr": 1.78,
-          "iv_exit": 0.5717,
-          "hint": "IV fair vs realized"
-        },
-        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-        "structure_kind": "long_call",
-        "money": {
-          "premium": 1850,
-          "loss": 925,
-          "gain": 1850,
-          "loss_pct": 50,
-          "gain_pct": 100,
-          "contracts": null
-        },
-        "premium_cap": 450,
-        "affordable": false,
-        "stretch_tried": [
-          "otm: conviction 6 < 7",
-          "short_dte: conviction 6 < 8"
-        ],
-        "over_cap": true,
-        "over_cap_pct": 62,
-        "over_cap_loss_pct": 31,
-        "over_cap_note": "1 contract \u2248 $1,850 = 62% of account, loss at stop \u2248 $925 = 31% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
-        "strategy": "momentum",
-        "entry_gap_sigma": 0.0,
-        "rs_vs_spy": 26.79
-      },
-      "unsourced_numbers": [],
-      "fundamentals_note": "trailing P/E 93.64, forward P/E 42.18, rev growth 36.5%, profit margin 27.9% \u2014 valuation already prices successful execution of the AI custom-silicon ramp.",
-      "researched_at": "2026-10-08T20:12:47.029967+08:00"
     },
     {
       "ticker": "DE",
@@ -4741,6 +4747,12 @@
       "summary": "META [BULLISH] -- conviction 7/10"
     },
     {
+      "date": "2026-10-08",
+      "kind": "deepdive",
+      "id": "deepdive_MRVL_20261008T222559.626471_0800",
+      "summary": "MRVL [BULLISH] -- conviction 6/10"
+    },
+    {
       "date": "2026-10-07",
       "kind": "analyst",
       "id": "analyst_brief_20261007_195001_01fb",
@@ -5279,12 +5291,6 @@
       "kind": "deepdive",
       "id": "deepdive_INTL_20260926T133759.364107_0800",
       "summary": "INTL [NEUTRAL] -- conviction 4/10"
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "deepdive",
-      "id": "deepdive_QCOM_20260926T003554.208642_0800",
-      "summary": "QCOM [BEARISH] -- conviction 3/10"
     }
   ]
 }
