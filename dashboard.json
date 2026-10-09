@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T21:45:01.803974+08:00",
+  "generated_at": "2026-10-09T23:00:02.263507+08:00",
   "regime": {
     "regime": "bull_low_vol",
     "vix": 15.16,
@@ -3121,41 +3121,41 @@
   ],
   "deep_dives": [
     {
-      "ticker": "MRVL",
-      "company": "Marvell Technology, Inc.",
-      "sector": "Semiconductors",
-      "bias": "bullish",
+      "ticker": "ORCL",
+      "company": "Oracle Corporation",
+      "sector": "Enterprise Software & Cloud Infrastructure",
+      "bias": "bearish",
       "conviction": 6,
-      "thesis": "Marvell's AI-driven custom silicon narrative is intact \u2014 rev growth of 36.5% and a raised long-term guide (Reuters/Barchart 10-06) support the premium. Trailing P/E 90.35 and P/S 26.12, however, leave zero margin for execution misstep, and relative strength (-7.93 pts vs SPY) signals the market is not rewarding that growth premium today. The uptrend is real but the 17% extension above the 50MA on -32% volume weakens the risk/reward of entering at current levels.",
-      "moat_assessment": "Custom ASIC/IP moat in data center switching and AI inference is defensible (Porter: high switching costs + design-in lock-in), but Broadcom/AMD are scaling competing silicon so the moat is wide, not deep.",
-      "macro_sensitivity": "Rate-sensitive high-beta: rising real yields compress P/E multiples directly; VIX spikes (RV20 53%) crush premium value; USD strength mildly negative on overseas semis demand.",
+      "thesis": "Oracle is in a severe downtrend (-38.82% in 3M), badly underperforming SPY by 42.27 pts, driven by a negative news cycle around its OpenAI debt-funded chip strategy and revenue transparency concerns. Trailing P/E of 22.0 still prices in growth that a 29.6% revenue growth rate and 26.4% profit margin partially support, but forward P/E of 12.77 implies analysts expect significant earnings acceleration that the current OpenAI narrative is challenging. The stock is trapped below a falling 50MA at $145.70 with volume collapsing -56%, confirming a lack of buyers.",
+      "moat_assessment": null,
+      "macro_sensitivity": "ORCL is moderately sensitive to rate moves (long-duration cash flows on discounted AI revenue) and VIX spikes (as a high-beta AI beneficiary, falling VIX helps, but a VIX spike could trigger further deleveraging of its debt-funded narrative); less directly oil-sensitive but USD strength pressures multinational revenue translation.",
       "key_catalysts": [
-        "CPI (Sep) Wed 14 Oct \u2014 macro vol could expand IV before entry",
-        "Earnings 2026-12-02 \u2014 first print after raised long-term guide; execution check"
+        "CPI Sep 14 and PPI Sep 15 \u2014 macro volatility could delay the 50MA retest or trigger a squeeze",
+        "Next earnings 2026-12-11 \u2014 well outside the 14-day buffer, so not a near-term driver"
       ],
-      "disconfirming_evidence": "A daily close back below the 50MA combined with relative strength deteriorating further vs SPY would invalidate the uptrend and the AI-acceleration thesis on this time frame.",
-      "bull_scenario": "AI custom-silicon demand re-accelerates, MRVL reclaims relative strength vs SPY and runs to analyst target $338 \u2014 ~23% upside over 3-4 weeks.",
-      "base_scenario": "Pullback to 50MA holds, stock grinds sideways-to-higher in the uptrend, closing the gap toward $290-300 over 2-3 weeks.",
-      "bear_scenario": "CPI week triggers a VIX spike and growth-stock de-rating; MRVL breaks the 50MA and falls toward $210-220 \u2014 ~20% downside.",
+      "disconfirming_evidence": "A daily close back above the 50MA ($145.70) with expanding volume, or a headline confirming OpenAI revenue acceleration / debt resolution, would invalidate the bearish thesis.",
+      "bull_scenario": "Oracle rallies back above the 50MA and reclaims $160 (+14% from current) on a positive debt restructuring headline or OpenAI revenue clarity.",
+      "base_scenario": "ORCL oscillates between $135 and $145 as the market absorbs the OpenAI debt news, eventually testing the 50MA before rolling over \u2014 the put gains value on a 5-7% decline to $130-133 over 3 weeks.",
+      "bear_scenario": "The OpenAI narrative deteriorates further, volume stays suppressed, and ORCL breaks below $130 (-7.5%) as forced deleveraging of AI momentum names accelerates.",
       "trade_plan": {
-        "structure": "Buy 0.50 delta call, 21-28 DTE",
-        "entry_trigger": "Pullback to the 50MA (~$234.7 area) with volume confirming support",
-        "target": "$300 (~9% upside, within 1 typical 10-day move of 12.3%)",
-        "stop": "Daily close below the 50MA",
-        "position_size_note": "half position (5% of portfolio) given extreme valuation and weak RS",
+        "structure": "Buy 0.50 delta put, 21-28 DTE",
+        "entry_trigger": "Price rallies to the falling 50MA near $145.70 with bearish candlestick confirmation and volume",
+        "target": "8-11% downside from entry (within 1 RV20 implied move)",
+        "stop": "Daily close above the 50MA with volume",
+        "position_size_note": "half position \u2014 counter-trend trade in bull regime caps size",
         "risk_reward": "1:2.0",
-        "avoid_if": "IV jumps above 70% before entry or a daily close below the 50MA"
+        "avoid_if": "a broad-market squeeze into CPI/PPI data pushes SPY to new highs before ORCL reaches the 50MA"
       },
       "gate": {
         "verdict": "TRADE",
         "reasons": [],
-        "rr": 2.0,
+        "rr": 2.62,
         "levels": {
-          "entry": 248.88,
-          "stop": 233.53,
-          "target": 279.6
+          "entry": 140.44,
+          "stop": 146.43,
+          "target": 124.76
         },
-        "current_price": 274.66,
+        "current_price": 140.44,
         "profile": "swing_21_28",
         "rules": {
           "min_rr": 2.0,
@@ -3198,6 +3198,11 @@
           ],
           "risk_budget_usd": null,
           "account_usd": 3000,
+          "stock": {
+            "enabled": true,
+            "risk_pct_of_account": 1.0,
+            "max_position_pct_of_account": 50
+          },
           "max_premium_pct_of_account": 15,
           "counter_trend_puts": {
             "enabled": true,
@@ -3243,9 +3248,1322 @@
         },
         "rule_warnings": [],
         "reach": {
-          "iv": 0.6195,
+          "iv": 0.5604,
           "trading_days": 10,
-          "expected_move": 30.71,
+          "expected_move": 15.68,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.38,
+          "breakeven_hit": 0.276,
+          "p_target_first": 0.225,
+          "p_stop_first": 0.621,
+          "p_neither": 0.155,
+          "mean_r_no_edge": 0.109
+        },
+        "exit_plan": "stop close above $146.43 or -50% premium \u00b7 target $124.76 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "counter_trend": true,
+        "counter_trend_note": "counter-trend put (market regime bullish): RS -42.27 pts, below 50MA, evidence net -3, negative: analysts, news",
+        "option_cost": {
+          "valid": true,
+          "reason": "",
+          "iv": 0.5604,
+          "rv": 0.47,
+          "iv_rv_ratio": 1.19,
+          "iv_label": "fair",
+          "premium_pct": 5.7,
+          "at_target_pct": 108,
+          "at_stop_pct": -52,
+          "option_rr": 2.08,
+          "iv_exit": 0.5152,
+          "hint": "IV fair vs realized"
+        },
+        "structure": "Buy put 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_put",
+        "money": {
+          "premium": 801,
+          "loss": 400,
+          "gain": 801,
+          "loss_pct": 50,
+          "gain_pct": 100,
+          "contracts": null
+        },
+        "stock": null,
+        "premium_cap": 450,
+        "affordable": false,
+        "stretch_tried": [
+          "otm: conviction 6 < 7",
+          "short_dte: conviction 6 < 8"
+        ],
+        "over_cap": true,
+        "over_cap_pct": 27,
+        "over_cap_loss_pct": 13,
+        "over_cap_note": "1 contract \u2248 $801 = 27% of account, loss at stop \u2248 $400 = 13% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
+        "iv": 0.5604,
+        "rv": 0.47,
+        "profiles": [
+          {
+            "name": "core",
+            "delta": 0.525,
+            "dte": 25,
+            "exit_day": 15,
+            "strike": 143.66,
+            "premium": 9.78,
+            "cost": 978,
+            "at_target_pct": 99,
+            "at_stop_pct": -47,
+            "option_rr": 2.11,
+            "ok": false,
+            "why": "$978 > cap $450"
+          },
+          {
+            "name": "fast",
+            "delta": 0.525,
+            "dte": 15,
+            "exit_day": 10,
+            "strike": 142.59,
+            "premium": 7.41,
+            "cost": 741,
+            "at_target_pct": 141,
+            "at_stop_pct": -64,
+            "option_rr": 2.22,
+            "ok": false,
+            "why": "pullback not allowed"
+          },
+          {
+            "name": "otm",
+            "delta": 0.35,
+            "dte": 25,
+            "exit_day": 15,
+            "strike": 134.53,
+            "premium": 5.27,
+            "cost": 527,
+            "at_target_pct": 124,
+            "at_stop_pct": -61,
+            "option_rr": 2.05,
+            "ok": false,
+            "why": "conviction 6 < 7"
+          }
+        ],
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.0,
+        "rs_vs_spy": -42.27
+      },
+      "verdict": {
+        "label": "SETUP OK",
+        "do_now": "Over your cap: Pullback setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $801 = 27% of account, loss at stop \u2248 $400 = 13% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8 -- your call",
+        "strategy": "pullback",
+        "direction": "put",
+        "levels": {
+          "entry": 140.44,
+          "stop": 146.43,
+          "target": 124.76
+        },
+        "rr": 2.62,
+        "reasons": [],
+        "limit": false,
+        "flags": [
+          "counter-trend",
+          "over cap"
+        ],
+        "stock": null
+      },
+      "cautions": [
+        "Counter-trend trade in a BULL_LOW_VOL regime \u2014 requires a catalyst reversal, not just chart weakness",
+        "CPI and PPI data due Oct 14-15 could cause a broad squeeze that lifts ORCL before it reaches the 50MA",
+        "Volume has collapsed 56%, meaning a pullback to $145.70 may lack the momentum needed to follow through"
+      ],
+      "model_vs_gate": {
+        "disagrees": true,
+        "note": "Model says WAIT vs gate SETUP OK: Counter-trend trade in a BULL_LOW_VOL regime \u2014 requires a catalyst reversal, not just chart weakness",
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": -3,
+        "direction": "bearish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": -1,
+            "reason": "downtrend"
+          },
+          {
+            "name": "rs",
+            "score": -1,
+            "reason": "-42.27 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": 1,
+            "reason": "beat +10.4% (28d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": -1,
+            "reason": "2 up / 5 down (30d, Yahoo)"
+          },
+          {
+            "name": "news",
+            "score": -1,
+            "reason": "0+ / 1- headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": -3.6,
+        "sigma": -0.3
+      },
+      "unsourced_numbers": [
+        "69%"
+      ],
+      "fundamentals_note": "Trailing P/E 22.0, forward P/E 12.77 implying steep earnings growth expectations; revenue growth 29.6%, profit margin 26.4%, analyst mean target $238 (implying 69% upside \u2014 inconsistent with current price action).",
+      "researched_at": "2026-10-09T22:16:57.518693+08:00"
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla, Inc.",
+      "sector": "Consumer Discretionary \u2014 EVs",
+      "bias": "neutral",
+      "conviction": 4,
+      "thesis": "TSLA is in an uptrend but severely underperforming SPY by 12.59 pts on a 3M basis, with volume collapsing 53%, suggesting the trend lacks institutional sponsorship. The Q3 delivery beat (486,532 vehicles, per MarketBeat 10-08) is a positive catalyst, but thin profit margins (3.67%) and delayed European self-driving approvals (Barron's 10-07) create downside risk into the Oct 22 earnings report.",
+      "moat_assessment": "Tesla's vertical integration in batteries, software/FSD data flywheel, and Supercharger network create meaningful switching costs, but the moat is narrowing as legacy OEMs and Chinese EVs scale \u2014 durability is eroding, not expanding.",
+      "macro_sensitivity": "TSLA is highly sensitive to VIX spikes (RV20 of 31% and high beta amplify downside) and rate moves \u2014 its premium multiples compress sharply when real rates rise; USD strength pressures international deliveries; falling oil prices reduce EV demand urgency.",
+      "key_catalysts": [
+        "Q3 earnings on 2026-10-22 \u2014 margin math will decide the reaction (Motley Fool 10-08)",
+        "CPI (Sep) Wed 14 Oct and PPI (Sep) Thu 15 Oct \u2014 macro data can spike IV and compress growth multiples before earnings"
+      ],
+      "disconfirming_evidence": "A sustained relative strength reversal (TSLA outperforming SPY on rising volume) or upward analyst revisions would invalidate the neutral thesis and signal institutional re-accumulation.",
+      "bull_scenario": "Margin beats expectations at Oct 22 earnings, stock re-rates toward analyst mean target ~$392 and overshoots to $420 (+9%) on renewed FSD optimism.",
+      "base_scenario": "Stock consolidates $370-$390 through earnings as the delivery beat and margin concerns offset; post-earnings IV crush punishes long premium holders.",
+      "bear_scenario": "Margin disappointment at Oct 22 sends the stock below the 50MA toward $340 (-12%) as premium multiples compress and the self-driving delay compounds negative sentiment.",
+      "trade_plan": {
+        "structure": "Buy 0.50 delta call, 21-28 DTE \u2014 structure is valid but entry is deferred",
+        "entry_trigger": "Pullback to the 50MA ($354.8) with volume expansion and after the post-earnings IV crush clears",
+        "target": "$420 (approximately 9% upside, within the 9.2% typical 10-day move)",
+        "stop": "A daily close below the 50MA would invalidate the uptrend structure",
+        "position_size_note": "avoid \u2014 not entering inside the earnings blackout",
+        "risk_reward": "N/A \u2014 no active trade",
+        "avoid_if": "Entering before the 14-day earnings blackout clears; entering without volume confirmation on any pullback"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "no directional view ('neutral')",
+          "conviction 4 < 5",
+          "entry, stop >30% from price $384.9"
+        ],
+        "rr": null,
+        "levels": {
+          "entry": 50.0,
+          "stop": 50.0,
+          "target": 420.0
+        },
+        "current_price": 384.9,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "stock": {
+            "enabled": true,
+            "risk_pct_of_account": 1.0,
+            "max_position_pct_of_account": 50
+          },
+          "max_premium_pct_of_account": 15,
+          "counter_trend_puts": {
+            "enabled": true,
+            "max_rs_pct": -10.0,
+            "min_evidence_net": -2,
+            "min_nonprice_neg": 1
+          },
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": null,
+        "exit_plan": "stop close above $50 or -50% premium \u00b7 target $420 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "money": null,
+        "stock": null,
+        "iv": 0.4611,
+        "rv": 0.31,
+        "strategy": "pullback",
+        "entry_gap_sigma": null,
+        "rs_vs_spy": -12.59
+      },
+      "verdict": {
+        "label": "NO TRADE",
+        "do_now": "no trade",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": null,
+        "rr": null,
+        "reasons": [
+          "no directional view ('neutral')",
+          "conviction 4 < 5",
+          "entry, stop >30% from price $384.9"
+        ],
+        "limit": false,
+        "flags": [],
+        "stock": null
+      },
+      "cautions": [
+        "Earnings in 12 days \u2014 inside the 14-day entry blackout; no trade permitted until post-earnings",
+        "Price extended 8.5% above the 50MA with volume down 53% \u2014 trend lacks confirmation",
+        "Severe relative strength deficit: -12.59 pts vs SPY over 3M signals distribution",
+        "European FSD approval delays (Barron's 10-07) are a structural overhang on the autonomy narrative"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "avoid"
+      },
+      "evidence": {
+        "net": 0,
+        "direction": "mixed",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": -1,
+            "reason": "-12.59 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": -1,
+            "reason": "miss -39.1% (78d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 0,
+            "reason": "1 up / 1 down (30d, Yahoo)"
+          },
+          {
+            "name": "news",
+            "score": 1,
+            "reason": "2+ / 1- headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": 8.5,
+        "sigma": 0.9
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "Trailing P/E 356.5 and forward P/E 179.4 price in extreme growth; profit margin of 3.67% leaves no room for disappointment \u2014 revenue of $103.6B growing 25.5% supports growth narrative but margin trajectory at Oct 22 will be the real catalyst.",
+      "researched_at": "2026-10-09T22:16:06.713706+08:00"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corporation",
+      "sector": "Technology",
+      "bias": "bullish",
+      "conviction": 7,
+      "thesis": "MSFT is in a strong uptrend with exceptional relative strength (+20.82 pts vs SPY) and a +24% 3M return, supported by 17.7% revenue growth and a 40.3% profit margin. The Melius Research upgrade to 'Buy' (Oct 6) citing MSFT as 'Adults In Charge' of AI, combined with the Nvidia CEO AI laptop unveil (Oct 7), reinforces the AI catalyst narrative. However, the stock is 6% above the 50MA on declining volume (-69%), suggesting near-term exhaustion.",
+      "moat_assessment": "Wide moat driven by enterprise switching costs across Office/Azure/Windows, network effects in developer tools and LinkedIn, and scale advantages in cloud infrastructure \u2014 durable under a 7 Powers lens.",
+      "macro_sensitivity": "Moderate sensitivity to rates (long-duration growth profile) and USD strength (international revenue exposure); VIX spikes typically pressure growth multiples, but MSFT's defensive cash flows provide relative resilience.",
+      "key_catalysts": [
+        "Next earnings 2026-10-29 \u2014 19 days away",
+        "CPI (Oct 14) and PPI (Oct 15) macro data \u2014 IV tends to rise into these",
+        "MSFT/Nvidia CEO AI laptop unveil at San Francisco event (Oct 7 headline)"
+      ],
+      "disconfirming_evidence": "A daily close below the 50MA would break the uptrend; a hot CPI/PPI print could trigger a market selloff and IV expansion that reverses the rally; disappointing Oct 29 earnings guidance would undermine the AI narrative.",
+      "bull_scenario": "AI momentum continues, MSFT reaches $560-570 (+6%) into earnings on strong guidance expectations.",
+      "base_scenario": "Sideways consolidation around current levels with drift higher into the Oct 29 earnings date.",
+      "bear_scenario": "Hot CPI triggers a growth selloff; MSFT pulls back to the 50MA (-6%).",
+      "trade_plan": {
+        "structure": "Buy 0.60-0.65 delta call, 21-28 DTE",
+        "entry_trigger": "Pullback to the 50MA with volume stabilization, or a daily close above current price with recovered volume",
+        "target": "$560 (within one typical 10-day move of ~6.7%)",
+        "stop": "Daily close below the 50MA",
+        "position_size_note": "Half size \u2014 IV rank 48 warrants reduced exposure",
+        "risk_reward": "1:2",
+        "avoid_if": "IV spikes before entry or a daily close below the 50MA"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "reasons": [
+          "option R:R 1.49 < 1.5 (premium too rich for the move)"
+        ],
+        "rr": 2.0,
+        "levels": {
+          "entry": 514.9,
+          "stop": 497.6,
+          "target": 549.49
+        },
+        "current_price": 529.88,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "stock": {
+            "enabled": true,
+            "risk_pct_of_account": 1.0,
+            "max_position_pct_of_account": 50
+          },
+          "max_premium_pct_of_account": 15,
+          "counter_trend_puts": {
+            "enabled": true,
+            "max_rs_pct": -10.0,
+            "min_evidence_net": -2,
+            "min_nonprice_neg": 1
+          },
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.3373,
+          "trading_days": 10,
+          "expected_move": 34.6,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.255,
+          "p_stop_first": 0.555,
+          "p_neither": 0.19,
+          "mean_r_no_edge": 0.043
+        },
+        "exit_plan": "stop close below $497.6 or -50% premium \u00b7 target $549.49 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "option_cost": {
+          "valid": true,
+          "reason": "",
+          "iv": 0.3373,
+          "rv": 0.22,
+          "iv_rv_ratio": 1.53,
+          "iv_label": "rich",
+          "premium_pct": 3.7,
+          "at_target_pct": 102,
+          "at_stop_pct": -68,
+          "option_rr": 1.49,
+          "iv_exit": 0.2787,
+          "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+        },
+        "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+        "structure_kind": "long_call",
+        "money": {
+          "premium": 1905,
+          "loss": 953,
+          "gain": 1905,
+          "loss_pct": 50,
+          "gain_pct": 100,
+          "contracts": null
+        },
+        "stock": {
+          "entry": 514.9,
+          "stop": 497.6,
+          "target": 549.49,
+          "risk_per_share": 17.3,
+          "gain_per_share": 34.59,
+          "shares": 1,
+          "cost": 515,
+          "risk": 17,
+          "gain": 35,
+          "cost_pct": 17,
+          "risk_pct": 0.6,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 0.6,
+          "one_share_cost_pct": 17
+        },
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.42,
+        "rs_vs_spy": 20.82
+      },
+      "verdict": {
+        "label": "NO TRADE",
+        "do_now": "no trade",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": null,
+        "rr": null,
+        "reasons": [
+          "option R:R 1.49 < 1.5 (premium too rich for the move)"
+        ],
+        "limit": true,
+        "flags": [],
+        "stock": null
+      },
+      "cautions": [
+        "6% extended above the 50MA on declining volume (-69%)",
+        "CPI (Oct 14) and PPI (Oct 15) in 5-6 days \u2014 IV tends to rise into these events",
+        "IV rank 48 \u2014 premiums are rich, favoring smaller size"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": 4,
+        "direction": "bullish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": 1,
+            "reason": "+20.82 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": 1,
+            "reason": "beat +11.8% (71d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 1,
+            "reason": "7 up / 0 down (30d, Yahoo)"
+          },
+          {
+            "name": "news",
+            "score": 0,
+            "reason": "1+ / 1-"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": 6.0,
+        "sigma": 0.9
+      },
+      "unsourced_numbers": [
+        "24%"
+      ],
+      "fundamentals_note": "Trailing P/E 29.5 vs forward P/E 22.4; revenue $331.8B with 17.7% growth and 40.3% profit margin; analyst mean target $587.6.",
+      "researched_at": "2026-10-09T22:13:48.824795+08:00"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "sector": "Semiconductors / AI Infrastructure",
+      "bias": "bullish",
+      "conviction": 7,
+      "thesis": "NVDA's uptrend is underpinned by ~106% revenue growth and 63.7% profit margins, with the forward P/E of 14.5 vs trailing 29.2 indicating rapid earnings acceleration already recognized by the market. The stock's 4.37-point outperformance versus SPY over 3 months and a mean analyst target of $328.72 support a bullish stance, reinforced by headlines citing a record buyback plan (Simply Wall Street 10-08) and a Foxconn-driven record high (Yahoo Finance 10-06). However, a legal challenge to the $20B Groq deal (Yahoo Finance 10-08) and post-OpenAI-report weakness in AI stocks (CNBC 10-08) temper near-term upside.",
+      "moat_assessment": "CUDA ecosystem lock-in and full-stack AI infrastructure integration create high switching costs and scale advantages that are durable under a 7 Powers lens, though custom silicon competition and the Groq legal dispute pose structural threats.",
+      "macro_sensitivity": "NVDA is highly sensitive to VIX spikes as a high-beta, long-duration growth name; benefits from rate cuts via lower discount rates on distant earnings; CPI/PPI prints can trigger 5-7% swings in the AI complex.",
+      "key_catalysts": [
+        "CPI (Oct 14) and PPI (Oct 15) data \u2014 could create a pullback entry opportunity if VIX spikes temporarily",
+        "Next earnings 2026-11-18 \u2014 40 days away, safely outside the 14-day exclusion window"
+      ],
+      "disconfirming_evidence": "A sustained break below the 50MA with expanding volume, or a negative CPI print triggering a broad rotation out of high-multiple AI names.",
+      "bull_scenario": "Earnings acceleration narrative reasserts; NVDA rallies ~10% toward $253-255 over 3-4 weeks.",
+      "base_scenario": "Drifts toward the 50MA then consolidates; flat to +3% over 21 days as AI enthusiasm cools near-term.",
+      "bear_scenario": "Negative CPI triggers AI rotation; NVDA drops ~6-8% to test $213-215 support.",
+      "trade_plan": {
+        "structure": "Buy 0.50 delta call, 21-28 DTE",
+        "entry_trigger": "Pullback to the 50MA ($222 area) with stabilizing or rising volume",
+        "target": "$237 (~7% from pullback entry, within one typical move)",
+        "stop": "A daily close below the 50MA",
+        "position_size_note": "half position at pullback entry, add remainder on confirmed bounce",
+        "risk_reward": "1:2.5",
+        "avoid_if": "a daily close below the 50MA or IV expansion before entry confirmation"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "reasons": [],
+        "rr": 2.0,
+        "levels": {
+          "entry": 229.06,
+          "stop": 220.89,
+          "target": 245.39
+        },
+        "current_price": 230.96,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "stock": {
+            "enabled": true,
+            "risk_pct_of_account": 1.0,
+            "max_position_pct_of_account": 50
+          },
+          "max_premium_pct_of_account": 15,
+          "counter_trend_puts": {
+            "enabled": true,
+            "max_rs_pct": -10.0,
+            "min_evidence_net": -2,
+            "min_nonprice_neg": 1
+          },
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.358,
+          "trading_days": 10,
+          "expected_move": 16.34,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.255,
+          "p_stop_first": 0.555,
+          "p_neither": 0.189,
+          "mean_r_no_edge": 0.042
+        },
+        "exit_plan": "stop close below $220.89 or -50% premium \u00b7 target $245.39 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "option_cost": {
+          "valid": true,
+          "reason": "",
+          "iv": 0.358,
+          "rv": 0.25,
+          "iv_rv_ratio": 1.43,
+          "iv_label": "rich",
+          "premium_pct": 3.9,
+          "at_target_pct": 103,
+          "at_stop_pct": -67,
+          "option_rr": 1.55,
+          "iv_exit": 0.304,
+          "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+        },
+        "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+        "structure_kind": "long_call",
+        "money": {
+          "premium": 893,
+          "loss": 447,
+          "gain": 893,
+          "loss_pct": 50,
+          "gain_pct": 100,
+          "contracts": null
+        },
+        "stock": {
+          "entry": 229.06,
+          "stop": 220.89,
+          "target": 245.39,
+          "risk_per_share": 8.17,
+          "gain_per_share": 16.33,
+          "shares": 3,
+          "cost": 687,
+          "risk": 25,
+          "gain": 49,
+          "cost_pct": 23,
+          "risk_pct": 0.8,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 0.3,
+          "one_share_cost_pct": 8
+        },
+        "premium_cap": 450,
+        "affordable": false,
+        "stretch_tried": [
+          "otm: still $481 > $450",
+          "short_dte: conviction 7 < 8"
+        ],
+        "over_cap": true,
+        "over_cap_pct": 30,
+        "over_cap_loss_pct": 15,
+        "over_cap_note": "1 contract \u2248 $893 = 30% of account, loss at stop \u2248 $447 = 15% of account (cap 15% = $450); cheaper variants: otm: still $481 > $450; short_dte: conviction 7 < 8",
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.12,
+        "rs_vs_spy": 4.37
+      },
+      "verdict": {
+        "label": "SETUP OK",
+        "do_now": "Over your cap: Pullback setup OK -- Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down \u00b7 1 contract \u2248 $893 = 30% of account, loss at stop \u2248 $447 = 15% of account (cap 15% = $450); cheaper variants: otm: still $481 > $450; short_dte: conviction 7 < 8 -- your call",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": {
+          "entry": 229.06,
+          "stop": 220.89,
+          "target": 245.39
+        },
+        "rr": 2.0,
+        "reasons": [],
+        "limit": true,
+        "flags": [
+          "over cap"
+        ],
+        "stock": {
+          "entry": 229.06,
+          "stop": 220.89,
+          "target": 245.39,
+          "risk_per_share": 8.17,
+          "gain_per_share": 16.33,
+          "shares": 3,
+          "cost": 687,
+          "risk": 25,
+          "gain": 49,
+          "cost_pct": 23,
+          "risk_pct": 0.8,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 0.3,
+          "one_share_cost_pct": 8
+        }
+      },
+      "cautions": [
+        "4% extended above the 50MA on -27% volume \u2014 chasing now risks buying into exhaustion",
+        "CPI Oct 14 and PPI Oct 15 within the hold window could spike VIX and temporarily depress beta names",
+        "IV rank at 7.4 is extremely low \u2014 premium is cheap but signals muted demand for calls"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": 4,
+        "direction": "bullish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": 1,
+            "reason": "+4.37 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": 1,
+            "reason": "beat +6.2% (43d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 0,
+            "reason": "0 up / 0 down (30d, Yahoo, too few)"
+          },
+          {
+            "name": "news",
+            "score": 1,
+            "reason": "2+ / 0- headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": 4.0,
+        "sigma": 0.6
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "forward P/E 14.5 vs trailing 29.2 shows earnings acceleration; profit margin 63.7%; analyst mean target $328.72",
+      "researched_at": "2026-10-09T22:11:52.817039+08:00"
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "sector": "Communication Services / Digital Advertising & Social Media",
+      "bias": "bullish",
+      "conviction": 7,
+      "thesis": "META is in a confirmed uptrend, outperforming SPY by +12.05 points over 3 months, supported by accelerating AI monetization narratives \u2014 Wells Fargo raised its price target to $1,000 (Barron's 10-06) on the Muse AI payoff thesis, and Meta joined a $1.8B US government AI biology initiative (TIKR 10-08). Fundamentals are robust: 28% revenue growth, 29.8% profit margin, and a forward P/E of 20.79 that compresses meaningfully vs the trailing 27.05, implying strong earnings momentum. The primary headwind is technical extension \u2014 price sits 12.3% above the 50MA on 53% lower volume, suggesting the near-term move may be exhausted.",
+      "moat_assessment": "Meta's moat is reinforced by network effects across Facebook, Instagram, and WhatsApp \u2014 over 3 billion daily users create a data and distribution flywheel that competitors cannot replicate at scale, while AI ad-targeting improvements deepen the switching cost for advertisers.",
+      "macro_sensitivity": "META is moderately sensitive to rate moves (long-duration growth multiple compression in a hawkish CPI/PPI print) and VIX spikes (IV already elevated at 46%); USD strength hurts international ad revenue translation; oil is a second-order input via ad-spend budgets.",
+      "key_catalysts": [
+        "Q3 earnings on 2026-10-29 \u2014 first read on AI monetization progress and Reality Labs spend discipline",
+        "CPI (Sep) on Wed 14 Oct and PPI (Sep) on Thu 15 Oct \u2014 macro prints that could spike IV and test the bullish regime"
+      ],
+      "disconfirming_evidence": "A hot CPI/PPI print triggering a broad market selloff that drags SPY lower and compresses META's premium multiple, or a daily close below the 50MA on rising volume, would invalidate the uptrend thesis and shift the setup to neutral.",
+      "bull_scenario": "AI-driven ad revenue acceleration and a clean earnings beat on 10-29 push META toward the $799 analyst target (~11% upside), with the call capturing 2-3x that in levered gains.",
+      "base_scenario": null,
+      "bear_scenario": "A hawkish CPI print triggers a broad risk-off move, META retraces to the 50MA (~11% downside), and the call loses 50-70% of its value if the stop is hit.",
+      "trade_plan": {
+        "structure": "Buy 0.65 delta call, 21-28 DTE",
+        "entry_trigger": "Pullback to the 50MA zone near $639.4 with volume stabilizing or expanding on the bounce",
+        "target": "~9% upside (within the 9.1% typical 10-day move implied by 46% IV)",
+        "stop": "A daily close below the 50MA",
+        "position_size_note": "half \u2014 IV rank 59.6 warrants reduced size despite the bullish evidence",
+        "risk_reward": "~1:2",
+        "avoid_if": "IV expands further above 50% before entry, or a daily close below the 50MA"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "reasons": [],
+        "rr": 2.0,
+        "levels": {
+          "entry": 666.54,
+          "stop": 636.2,
+          "target": 727.2
+        },
+        "current_price": 717.93,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "stock": {
+            "enabled": true,
+            "risk_pct_of_account": 1.0,
+            "max_position_pct_of_account": 50
+          },
+          "max_premium_pct_of_account": 15,
+          "counter_trend_puts": {
+            "enabled": true,
+            "max_rs_pct": -10.0,
+            "min_evidence_net": -2,
+            "min_nonprice_neg": 1
+          },
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.4569,
+          "trading_days": 10,
+          "expected_move": 60.67,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.257,
+          "p_stop_first": 0.556,
+          "p_neither": 0.187,
+          "mean_r_no_edge": 0.041
+        },
+        "exit_plan": "stop close below $636.2 or -50% premium \u00b7 target $727.2 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "option_cost": {
+          "valid": true,
+          "reason": "",
+          "iv": 0.4569,
+          "rv": 0.52,
+          "iv_rv_ratio": 0.88,
+          "iv_label": "cheap",
+          "premium_pct": 4.9,
+          "at_target_pct": 112,
+          "at_stop_pct": -56,
+          "option_rr": 2.0,
+          "iv_exit": 0.4569,
+          "hint": "IV cheap vs realized -- single-leg option is fine"
+        },
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "money": {
+          "premium": 3266,
+          "loss": 1633,
+          "gain": 3266,
+          "loss_pct": 50,
+          "gain_pct": 100,
+          "contracts": null
+        },
+        "stock": {
+          "entry": 666.54,
+          "stop": 636.2,
+          "target": 727.2,
+          "risk_per_share": 30.34,
+          "gain_per_share": 60.66,
+          "shares": 0,
+          "cost": 0,
+          "risk": 0,
+          "gain": 0,
+          "cost_pct": 0,
+          "risk_pct": 0.0,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 1.0,
+          "one_share_cost_pct": 22
+        },
+        "premium_cap": 450,
+        "affordable": false,
+        "stretch_tried": [
+          "otm: still $1,760 > $450",
+          "short_dte: conviction 7 < 8"
+        ],
+        "over_cap": true,
+        "over_cap_pct": 109,
+        "over_cap_loss_pct": 54,
+        "over_cap_note": "1 contract \u2248 $3,266 = 109% of account, loss at stop \u2248 $1,633 = 54% of account (cap 15% = $450); cheaper variants: otm: still $1,760 > $450; short_dte: conviction 7 < 8",
+        "strategy": "pullback",
+        "entry_gap_sigma": 0.79,
+        "rs_vs_spy": 12.05
+      },
+      "verdict": {
+        "label": "SETUP OK",
+        "do_now": "Over your cap: Pullback setup OK -- Buy call 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $3,266 = 109% of account, loss at stop \u2248 $1,633 = 54% of account (cap 15% = $450); cheaper variants: otm: still $1,760 > $450; short_dte: conviction 7 < 8 -- your call",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": {
+          "entry": 666.54,
+          "stop": 636.2,
+          "target": 727.2
+        },
+        "rr": 2.0,
+        "reasons": [],
+        "limit": true,
+        "flags": [
+          "over cap"
+        ],
+        "stock": {
+          "entry": 666.54,
+          "stop": 636.2,
+          "target": 727.2,
+          "risk_per_share": 30.34,
+          "gain_per_share": 60.66,
+          "shares": 0,
+          "cost": 0,
+          "risk": 0,
+          "gain": 0,
+          "cost_pct": 0,
+          "risk_pct": 0.0,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 1.0,
+          "one_share_cost_pct": 22
+        }
+      },
+      "cautions": [
+        "Price is 12.3% above the 50MA on volume down 53% \u2014 momentum is thinning",
+        "CPI (Oct 14) and PPI (Oct 15) land within the hold window; IV tends to spike into these, inflating premium cost",
+        "IV rank at 59.6 means options are already rich \u2014 timing entry after an IV dip is preferable",
+        "Last earnings miss (-14.4%, 71 days ago) shows META can gap negatively on delivery"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": 3,
+        "direction": "bullish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": 1,
+            "reason": "+12.05 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": -1,
+            "reason": "miss -14.4% (71d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 1,
+            "reason": "16 up / 1 down (30d, firms, from headlines); Yahoo data stale, latest 2024-09-30"
+          },
+          {
+            "name": "news",
+            "score": 1,
+            "reason": "2+ / 0- headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": 12.3,
+        "sigma": 1.3
+      },
+      "unsourced_numbers": [
+        "11.3%"
+      ],
+      "fundamentals_note": "Trailing P/E 27.05 compressing to forward P/E 20.79 on 28% revenue growth and 29.8% profit margin; analyst mean target $799.34 implies ~11.3% upside from current price.",
+      "researched_at": "2026-10-09T22:06:35.868586+08:00"
+    },
+    {
+      "ticker": "MRVL",
+      "company": "Marvell Technology, Inc.",
+      "sector": "Semiconductors",
+      "bias": "bullish",
+      "conviction": 6,
+      "thesis": "MRVL is in an uptrend with strong analyst support (16 upgrades, 0 downgrades in 30d) and positive news flow around its long-term AI revenue target, but the stock is 14.2% extended above the 50MA on 34% lower volume and has underperformed SPY by 13.84 points over 3 months, suggesting the rally lacks broad participation. The forward P/E of 37 demands flawless execution on the AI custom silicon story, which remains unproven at scale.",
+      "moat_assessment": "Marvell's custom silicon design wins and data center interconnect IP provide a moderate moat, but the AI custom chip space is increasingly contested by hyperscaler in-house ASICs, threatening long-term pricing power and customer retention.",
+      "macro_sensitivity": "As a high-P/E growth semiconductor stock, MRVL is sensitive to rate expectations (long-duration equity), USD strength (international revenue exposure), and VIX spikes (RV20 53% amplifies macro shocks).",
+      "key_catalysts": [
+        "Next earnings 2026-12-02 \u2014 AI custom silicon bookings trajectory and margin outlook",
+        "CPI (Sep) Wed 14 Oct and PPI (Sep) Thu 15 Oct \u2014 macro data that could shift rate expectations and growth stock valuations"
+      ],
+      "disconfirming_evidence": "A sustained break below the 50MA on expanding volume would confirm the uptrend has stalled and the AI narrative is failing to convert to revenue; a negative pre-announcement or guidance cut ahead of December earnings would invalidate the bull case.",
+      "bull_scenario": "AI custom silicon bookings accelerate and the stock re-rates toward the analyst target of $338, +25% upside over 3-4 weeks.",
+      "base_scenario": null,
+      "bear_scenario": "Macro headwinds from CPI/PPI or an AI sentiment shift trigger mean reversion toward the 50MA, -12-15% downside.",
+      "trade_plan": {
+        "structure": "Buy 0.50 delta call, 21-28 DTE",
+        "entry_trigger": "Pullback to the $250-260 zone with volume stabilization, or a daily close above $275 on rising volume confirming momentum resumption",
+        "target": "$300 (approximately 11% upside, within the 12.2% typical 10-day move)",
+        "stop": "Daily close below the 50MA on above-average volume",
+        "position_size_note": "half \u2014 extended entry and weak RS warrant reduced size",
+        "risk_reward": "1:2",
+        "avoid_if": "IV rank spikes above 40 before entry, or a daily close below the 50MA"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "reasons": [],
+        "rr": 2.0,
+        "levels": {
+          "entry": 250.48,
+          "stop": 235.22,
+          "target": 281.02
+        },
+        "current_price": 269.99,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "stock": {
+            "enabled": true,
+            "risk_pct_of_account": 1.0,
+            "max_position_pct_of_account": 50
+          },
+          "max_premium_pct_of_account": 15,
+          "counter_trend_puts": {
+            "enabled": true,
+            "max_rs_pct": -10.0,
+            "min_evidence_net": -2,
+            "min_nonprice_neg": 1
+          },
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.6119,
+          "trading_days": 10,
+          "expected_move": 30.53,
           "target_sigma": 1.0,
           "stop_sigma": 0.5,
           "breakeven_hit": 0.333,
@@ -3254,30 +4572,46 @@
           "p_neither": 0.183,
           "mean_r_no_edge": 0.038
         },
-        "exit_plan": "stop close below $233.53 or -50% premium \u00b7 target $279.6 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "exit_plan": "stop close below $235.22 or -50% premium \u00b7 target $281.02 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
         "option_cost": {
           "valid": true,
           "reason": "",
-          "iv": 0.6195,
+          "iv": 0.6119,
           "rv": 0.53,
-          "iv_rv_ratio": 1.17,
+          "iv_rv_ratio": 1.15,
           "iv_label": "fair",
-          "premium_pct": 6.6,
+          "premium_pct": 6.5,
           "at_target_pct": 110,
           "at_stop_pct": -62,
-          "option_rr": 1.77,
-          "iv_exit": 0.5748,
+          "option_rr": 1.79,
+          "iv_exit": 0.571,
           "hint": "IV fair vs realized"
         },
         "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
         "structure_kind": "long_call",
         "money": {
-          "premium": 1643,
-          "loss": 821,
-          "gain": 1643,
+          "premium": 1628,
+          "loss": 814,
+          "gain": 1628,
           "loss_pct": 50,
           "gain_pct": 100,
           "contracts": null
+        },
+        "stock": {
+          "entry": 250.48,
+          "stop": 235.22,
+          "target": 281.02,
+          "risk_per_share": 15.26,
+          "gain_per_share": 30.54,
+          "shares": 1,
+          "cost": 250,
+          "risk": 15,
+          "gain": 31,
+          "cost_pct": 8,
+          "risk_pct": 0.5,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 0.5,
+          "one_share_cost_pct": 8
         },
         "premium_cap": 450,
         "affordable": false,
@@ -3286,38 +4620,55 @@
           "short_dte: conviction 6 < 8"
         ],
         "over_cap": true,
-        "over_cap_pct": 55,
+        "over_cap_pct": 54,
         "over_cap_loss_pct": 27,
-        "over_cap_note": "1 contract \u2248 $1,643 = 55% of account, loss at stop \u2248 $821 = 27% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
+        "over_cap_note": "1 contract \u2248 $1,628 = 54% of account, loss at stop \u2248 $814 = 27% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
         "strategy": "pullback",
-        "entry_gap_sigma": 0.76,
-        "rs_vs_spy": -7.93
+        "entry_gap_sigma": 0.59,
+        "rs_vs_spy": -13.84
       },
       "verdict": {
         "label": "SETUP OK",
-        "do_now": "Over your cap: Pullback setup OK -- Buy call 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $1,643 = 55% of account, loss at stop \u2248 $821 = 27% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8 -- your call",
+        "do_now": "Over your cap: Pullback setup OK -- Buy call 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $1,628 = 54% of account, loss at stop \u2248 $814 = 27% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8 -- your call",
         "strategy": "pullback",
         "direction": "call",
         "levels": {
-          "entry": 248.88,
-          "stop": 233.53,
-          "target": 279.6
+          "entry": 250.48,
+          "stop": 235.22,
+          "target": 281.02
         },
         "rr": 2.0,
         "reasons": [],
+        "limit": true,
         "flags": [
           "over cap"
-        ]
+        ],
+        "stock": {
+          "entry": 250.48,
+          "stop": 235.22,
+          "target": 281.02,
+          "risk_per_share": 15.26,
+          "gain_per_share": 30.54,
+          "shares": 1,
+          "cost": 250,
+          "risk": 15,
+          "gain": 31,
+          "cost_pct": 8,
+          "risk_pct": 0.5,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 0.5,
+          "one_share_cost_pct": 8
+        }
       },
       "cautions": [
-        "Trailing P/E 90.35 / forward P/E 37.71 \u2014 extreme valuation leaves no room for disappointment",
-        "17% extended above the 50MA on -32% volume \u2014 trend is thinning",
-        "Relative strength -7.93 pts vs SPY \u2014 lagging the bull regime",
-        "RV20 at 53% elevates CPI week (Oct 14-15) event risk into the hold window"
+        "14.2% extended above the 50MA on 34% lower volume",
+        "Relative strength -13.84 pts vs SPY over 3 months \u2014 strong underperformer",
+        "CPI (14 Oct) and PPI (15 Oct) within the hold window may spike IV and pressure growth stocks",
+        "CFO filed to sell $65M in shares (Stocktwits 10-08)"
       ],
       "model_vs_gate": {
-        "disagrees": true,
-        "note": "Model says WAIT vs gate SETUP OK: Trailing P/E 90.35 / forward P/E 37.71 \u2014 extreme valuation leaves no room for disappointment",
+        "disagrees": false,
+        "note": null,
         "stance": "wait"
       },
       "evidence": {
@@ -3332,7 +4683,7 @@
           {
             "name": "rs",
             "score": -1,
-            "reason": "-7.93 pts vs SPY"
+            "reason": "-13.84 pts vs SPY"
           },
           {
             "name": "earnings",
@@ -3352,250 +4703,12 @@
         ]
       },
       "extension": {
-        "pct_above_50ma": 17.0,
-        "sigma": 1.4
+        "pct_above_50ma": 14.2,
+        "sigma": 1.2
       },
       "unsourced_numbers": [],
-      "fundamentals_note": "trailing P/E 90.35, forward P/E 37.71, P/S 26.12, revenue $9.45B, rev growth 36.5%, profit margin 27.9% \u2014 growth justifies premium but valuation is extreme.",
-      "researched_at": "2026-10-09T13:12:22.780039+08:00"
-    },
-    {
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "sector": "Communication Services / Interactive Media & Services",
-      "bias": "bullish",
-      "conviction": 7,
-      "thesis": "META is in a strong uptrend with exceptional relative strength (+18.42 pts vs SPY) and a bullish AI catalyst wave \u2014 Wells Fargo's $1,000 price target (Barron's 10-06), the $1.8B US government AI biology initiative (TIKR 10-08), and the personal AI agent standard alliance (TIKR 10-07) all reinforce the AI monetization narrative. Trailing P/E of 27.18 and forward P/E of 20.87 are premium but supported by 28% revenue growth and 29.8% profit margins. The primary near-term risk is technical extension \u2014 13.4% above the 50MA on 47% lower volume \u2014 suggesting the easy move may be exhausted.",
-      "moat_assessment": "Wide moat from network effects across Facebook, Instagram, and WhatsApp (Porter: high switching costs, scale economies); AI investments in Muse and personal agents could extend the moat into platform/compute layers, though regulatory antitrust risk remains a structural threat.",
-      "macro_sensitivity": "Long-duration growth equity \u2014 negatively sensitive to real rate spikes and VIX surges; moderate USD sensitivity from international revenue; low direct oil sensitivity; benefits from low-vol, risk-on regimes like the current BULL_LOW_VOL setup.",
-      "key_catalysts": [
-        "Next earnings 2026-10-29 \u2014 AI monetization progress and Q3 ad revenue trends",
-        "CPI Sep (Wed 14 Oct) and PPI Sep (Thu 15 Oct) \u2014 macro volatility events that could spike IV and create entry opportunities"
-      ],
-      "disconfirming_evidence": "A CPI print that spikes VIX above 20 and breaks the low-vol regime, a sustained break below the 50MA on rising volume, or an earnings miss on Oct 29 would invalidate the bullish thesis.",
-      "bull_scenario": "AI monetization accelerates post-CPI, Muse AI drives ad targeting gains, stock reaches $785-800 (+9-11%) within 3 weeks.",
-      "base_scenario": "Stock consolidates $700-730 as market digests CPI/PPI and IV remains elevated, modest grind to $750 (+4%) over 2-3 weeks.",
-      "bear_scenario": "Hot CPI spike sends VIX above 20, growth stocks de-rate, META pulls back to $650-670 (-7-10%) as the low-vol regime breaks.",
-      "trade_plan": {
-        "structure": "Buy 0.65 delta call, 21-28 DTE, half size",
-        "entry_trigger": "Wait for either a pullback to $680-690 (reducing extension) or a breakout above $730 on volume expansion, ideally post-CPI/PPI (after Oct 15)",
-        "target": "$785 (~9% upside, within the 9.1% typical 10-day move)",
-        "stop": "$675 (below recent consolidation, ~6.4% down)",
-        "position_size_note": "Half size (5% of portfolio) due to IV rank 60.1 and technical extension",
-        "risk_reward": "1:1.6",
-        "avoid_if": "IV rank spikes above 70 before entry, or a daily close below the 50MA"
-      },
-      "gate": {
-        "verdict": "TRADE",
-        "reasons": [],
-        "rr": 2.0,
-        "levels": {
-          "entry": 720.89,
-          "stop": 687.92,
-          "target": 786.83
-        },
-        "current_price": 720.89,
-        "profile": "swing_21_28",
-        "rules": {
-          "min_rr": 2.0,
-          "min_conviction": 5,
-          "max_level_distance_pct": 30,
-          "stop_premium_pct": -50,
-          "target_premium_pct": 100,
-          "time_exit_dte": 10,
-          "entry_dte_min": 21,
-          "entry_dte_max": 28,
-          "allow_expiry_hold": false,
-          "hold_trading_days": 10,
-          "max_target_sigma": 1.0,
-          "spread_target_pct_of_max": 50,
-          "spread_stop_pct_of_debit": 50,
-          "momentum_require_rs": true,
-          "momentum_min_rs_pct": 0.0,
-          "option_cost": {
-            "enabled": true,
-            "dte": 25,
-            "exit_trading_days": 5,
-            "iv_reversion": 0.5,
-            "rich_ratio": 1.3,
-            "cheap_ratio": 0.9,
-            "rate": 0.04,
-            "min_option_rr": 1.5
-          },
-          "allowed_structures": [
-            "long_call",
-            "long_put"
-          ],
-          "max_entry_gap_sigma": 1.0,
-          "delta_band": [
-            0.45,
-            0.6
-          ],
-          "rich_delta_band": [
-            0.6,
-            0.7
-          ],
-          "risk_budget_usd": null,
-          "account_usd": 3000,
-          "max_premium_pct_of_account": 15,
-          "counter_trend_puts": {
-            "enabled": true,
-            "max_rs_pct": -10.0,
-            "min_evidence_net": -2,
-            "min_nonprice_neg": 1
-          },
-          "stretch": {
-            "enabled": true,
-            "otm": {
-              "enabled": true,
-              "delta": 0.35,
-              "label": "0.30-0.40\u0394",
-              "dte": 25,
-              "min_conviction": 7
-            },
-            "short_dte": {
-              "enabled": true,
-              "delta": 0.525,
-              "label": "0.45-0.60\u0394",
-              "dte": 15,
-              "dte_label": "14-17",
-              "time_exit_dte": 5,
-              "min_conviction": 8,
-              "strategies": [
-                "momentum"
-              ]
-            }
-          },
-          "strategies": {
-            "pullback": {
-              "enabled": true,
-              "stop_buffer_pct": 0.5,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            },
-            "momentum": {
-              "enabled": true,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            }
-          }
-        },
-        "rule_warnings": [],
-        "reach": {
-          "iv": 0.4592,
-          "trading_days": 10,
-          "expected_move": 65.94,
-          "target_sigma": 1.0,
-          "stop_sigma": 0.5,
-          "breakeven_hit": 0.333,
-          "p_target_first": 0.257,
-          "p_stop_first": 0.557,
-          "p_neither": 0.187,
-          "mean_r_no_edge": 0.041
-        },
-        "exit_plan": "stop close below $687.92 or -50% premium \u00b7 target $786.83 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-        "option_cost": {
-          "valid": true,
-          "reason": "",
-          "iv": 0.4592,
-          "rv": 0.52,
-          "iv_rv_ratio": 0.88,
-          "iv_label": "cheap",
-          "premium_pct": 4.9,
-          "at_target_pct": 112,
-          "at_stop_pct": -56,
-          "option_rr": 2.0,
-          "iv_exit": 0.4592,
-          "hint": "IV cheap vs realized -- single-leg option is fine"
-        },
-        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-        "structure_kind": "long_call",
-        "money": {
-          "premium": 3532,
-          "loss": 1766,
-          "gain": 3532,
-          "loss_pct": 50,
-          "gain_pct": 100,
-          "contracts": null
-        },
-        "premium_cap": 450,
-        "affordable": false,
-        "stretch_tried": [
-          "otm: still $1,913 > $450",
-          "short_dte: conviction 7 < 8"
-        ],
-        "over_cap": true,
-        "over_cap_pct": 118,
-        "over_cap_loss_pct": 59,
-        "over_cap_note": "1 contract \u2248 $3,532 = 118% of account, loss at stop \u2248 $1,766 = 59% of account (cap 15% = $450); cheaper variants: otm: still $1,913 > $450; short_dte: conviction 7 < 8",
-        "strategy": "momentum",
-        "entry_gap_sigma": 0.0,
-        "rs_vs_spy": 18.42
-      },
-      "verdict": {
-        "label": "SETUP OK",
-        "do_now": "Over your cap: Momentum setup OK -- Buy call 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $3,532 = 118% of account, loss at stop \u2248 $1,766 = 59% of account (cap 15% = $450); cheaper variants: otm: still $1,913 > $450; short_dte: conviction 7 < 8 -- your call",
-        "strategy": "momentum",
-        "direction": "call",
-        "levels": {
-          "entry": 720.89,
-          "stop": 687.92,
-          "target": 786.83
-        },
-        "rr": 2.0,
-        "reasons": [],
-        "flags": [
-          "over cap"
-        ]
-      },
-      "cautions": [
-        "13.4% above the 50MA on -47% volume \u2014 extended with weak participation",
-        "CPI (Oct 14) and PPI (Oct 15) next week \u2014 IV tends to rise into these, creating choppy price action",
-        "IV rank 60.1 \u2014 premiums are rich, compressing buyer edge"
-      ],
-      "model_vs_gate": {
-        "disagrees": true,
-        "note": "Model says WAIT vs gate SETUP OK: 13.4% above the 50MA on -47% volume \u2014 extended with weak participation",
-        "stance": "wait"
-      },
-      "evidence": {
-        "net": 3,
-        "direction": "bullish",
-        "factors": [
-          {
-            "name": "trend",
-            "score": 1,
-            "reason": "uptrend"
-          },
-          {
-            "name": "rs",
-            "score": 1,
-            "reason": "+18.42 pts vs SPY"
-          },
-          {
-            "name": "earnings",
-            "score": -1,
-            "reason": "miss -14.4% (71d ago)"
-          },
-          {
-            "name": "analysts",
-            "score": 1,
-            "reason": "17 up / 1 down (30d, firms, from headlines); Yahoo data stale, latest 2024-09-30"
-          },
-          {
-            "name": "news",
-            "score": 1,
-            "reason": "2+ / 0- headlines"
-          }
-        ]
-      },
-      "extension": {
-        "pct_above_50ma": 13.4,
-        "sigma": 1.5
-      },
-      "unsourced_numbers": [],
-      "fundamentals_note": "Trailing P/E 27.18, forward P/E 20.87, revenue $228.2B with 28% growth, profit margin 29.8%, P/S 8.05 \u2014 premium valuation backed by strong growth and profitability; analyst mean target $799.34.",
-      "researched_at": "2026-10-09T13:11:41.057064+08:00"
+      "fundamentals_note": "Forward P/E 37.09 and trailing P/E 88.85 reflect high growth expectations; revenue growth 0.365 with profit margin 0.279 support the premium but leave little room for execution missteps.",
+      "researched_at": "2026-10-09T22:03:07.780918+08:00"
     },
     {
       "ticker": "QCOM",
@@ -4394,103 +5507,6 @@
       "researched_at": "2026-09-30T21:06:42.773083+08:00"
     },
     {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corporation",
-      "sector": "Semiconductors / AI Infrastructure",
-      "bias": "bullish",
-      "conviction": 8,
-      "thesis": "NVDA trades in a confirmed uptrend at $230.26, just 6.2% above the 50MA at $216.90, with volume collapsing 41% \u2014 quiet strength, not exhaustion. Fundamentals are extraordinary: revenue $303B growing 105.9% YoY, profit margin 63.7%, forward P/E 14.7 vs trailing 29.1 implying massive earnings acceleration. News flow is supportive: Benzinga 09-29 reports a $150B buyback, Yahoo Finance 09-29 notes the stock is at its cheapest valuation since 2015, and Barron's 09-29 says technicals are flashing green with a record high possible. The risk/reward is asymmetric if growth re-accelerates.",
-      "moat_assessment": "CUDA software ecosystem and data-center GPU dominance create near-monopoly switching costs; durability is exceptional but hyperscaler capex concentration is the key structural risk.",
-      "macro_sensitivity": "Positive to AI capex cycle and low VIX (risk-on growth); negative to USD strength, China export restrictions, and any hyperscaler capex slowdown headlines.",
-      "key_catalysts": [
-        "Next earnings: 2026-11-18 (50 days away \u2014 well outside 14-day exclusion window)",
-        "Benzinga 09-29: $150B buyback announcement \u2014 substantial capital return supporting the stock"
-      ],
-      "disconfirming_evidence": "A hyperscaler capex pause or China export ban escalation would collapse the 105.9% rev growth narrative; forward P/E 14.7 leaves no room for deceleration.",
-      "bull_scenario": "Hyperscaler capex acceleration + Blackwell demand sends NVDA to $250 (+8.6%), single-leg call gains substantially on delta + low-IV tailwind",
-      "base_scenario": "NVDA consolidates $225-245, long call gains modestly on delta or scratches with residual theta",
-      "bear_scenario": "China export ban or capex pause headline drives NVDA to 50MA ($216.90, -5.8%), long call loses 50-60%",
-      "trade_plan": {
-        "structure": "Buy 0.45-0.60 delta single-leg call, 21-28 DTE (IV rank 2.2 < 30, premium is historically cheap)",
-        "entry_trigger": "NVDA holds above $225 on expanding daily volume in the uptrend",
-        "target": "$243-248 (within ~6.9% typical 10-day move); Python validates within 1-typical-move band",
-        "stop": "NVDA closes below 50MA at $216.90",
-        "position_size_note": "Full position (10% of portfolio); IV rank 2.2 is historically cheap and 50-day earnings distance allows time for thesis to play out",
-        "risk_reward": "Estimated 1:2.5 if target hits before expiry",
-        "avoid_if": "VIX >22 (regime break) or NVDA gaps below $225 pre-entry"
-      },
-      "gate": {
-        "verdict": "TRADE",
-        "reasons": [],
-        "rr": 2.0,
-        "levels": {
-          "entry": 223.53,
-          "stop": 215.82,
-          "target": 238.96
-        },
-        "current_price": 230.26,
-        "profile": "swing_21_28",
-        "rules": {
-          "min_rr": 2.0,
-          "min_conviction": 5,
-          "max_level_distance_pct": 30,
-          "stop_premium_pct": -50,
-          "target_premium_pct": 100,
-          "time_exit_dte": 10,
-          "entry_dte_min": 21,
-          "entry_dte_max": 28,
-          "allow_expiry_hold": false,
-          "hold_trading_days": 10,
-          "max_target_sigma": 1.0,
-          "spread_target_pct_of_max": 50,
-          "spread_stop_pct_of_debit": 50,
-          "momentum_require_rs": true,
-          "momentum_min_rs_pct": 0.0,
-          "strategies": {
-            "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
-            "pullback": {
-              "enabled": true,
-              "stop_buffer_pct": 0.5,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            },
-            "momentum": {
-              "enabled": true,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            }
-          }
-        },
-        "rule_warnings": [],
-        "reach": {
-          "iv": 0.3465,
-          "trading_days": 10,
-          "expected_move": 15.43,
-          "target_sigma": 1.0,
-          "stop_sigma": 0.5,
-          "breakeven_hit": 0.333,
-          "p_target_first": 0.255,
-          "p_stop_first": 0.555,
-          "p_neither": 0.19,
-          "mean_r_no_edge": 0.043
-        },
-        "exit_plan": "stop close below $215.82 or -50% premium \u00b7 target $238.96 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-        "strategy": "pullback",
-        "entry_gap_sigma": 0.42,
-        "rs_vs_spy": 1.85
-      },
-      "verdict": null,
-      "cautions": [],
-      "model_vs_gate": null,
-      "evidence": null,
-      "extension": null,
-      "unsourced_numbers": [
-        "$150B"
-      ],
-      "fundamentals_note": "Trailing P/E 29.1 vs forward 14.7 (massive earnings acceleration expected); revenue $303B, rev growth 105.9%, profit margin 63.7%; analyst target $327.7.",
-      "researched_at": "2026-09-30T00:20:31.881691+08:00"
-    },
-    {
       "ticker": "INTC",
       "company": "Intel Corporation",
       "sector": "Semiconductors",
@@ -4583,103 +5599,6 @@
       "unsourced_numbers": [],
       "fundamentals_note": "Forward P/E 56.3; revenue $57B, rev growth 25.4%, profit margin -19.8%; analyst target $116.37.",
       "researched_at": "2026-09-29T20:10:32.866059+08:00"
-    },
-    {
-      "ticker": "TSLA",
-      "company": "Tesla, Inc.",
-      "sector": "Electric Vehicles / Clean Energy",
-      "bias": "bullish",
-      "conviction": 3,
-      "thesis": "TSLA trades in a shallow uptrend at $357.45, just 2.8% above the 50MA at $347.80, with volume collapsing 70% \u2014 a quiet consolidation, not momentum. The 3M -14.33% drawdown (-18.14% vs SPY) signals structural weakness that an uptrend label alone doesn't capture. Fundamentals are extreme: trailing P/E 343.7, forward P/E 164.5, profit margin 3.7% on $103.6B revenue \u2014 the stock is priced for perfection with thin error margin.",
-      "moat_assessment": "Brand scale, Supercharger network, and data lead in autonomous driving provide real advantage, but Chinese OEM competition, margin compression, and Musk-concentrated risk erode durability.",
-      "macro_sensitivity": "Highly sensitive to rate moves (growth multiple compression), USD strength (global deliveries), and Musk/political headlines; VIX spikes amplify downside beta.",
-      "key_catalysts": [
-        "Next earnings: 2026-10-22 (23 days away \u2014 outside 14-day exclusion window)",
-        "Autonomous/Robotaxi timeline updates and margin recovery signals"
-      ],
-      "disconfirming_evidence": "A 3.7% margin in a rate-stable but competitive EV market cannot justify P/E 343.7; any miss vs the 25.5% rev growth or margin guidance would trigger aggressive de-rating.",
-      "bull_scenario": "Robotaxi/autonomy catalyst + margin inflection sends TSLA to analyst target $395.83 (+10.7%), long call gains substantially",
-      "base_scenario": "TSLA consolidates $350-375 into earnings, long call loses modest theta or scratches",
-      "bear_scenario": "Margin disappointment or macro risk-off drives TSLA to 50MA ($347.80, -2.7%) or below, long call loses 50-70%",
-      "trade_plan": {
-        "structure": "Buy 0.45-0.60 delta single-leg call, 21-28 DTE (IV rank 21.7 < 30, premium cheap enough to own outright)",
-        "entry_trigger": "TSLA holds above $350 on expanding daily volume in the uptrend",
-        "target": "$385-390 (within ~9.7% typical 10-day move); Python validates within 1-typical-move band",
-        "stop": "TSLA closes below 50MA at $347.80",
-        "position_size_note": "Half position (5% of portfolio); extreme P/E 343.7 and thin 3.7% margin warrant minimal exposure",
-        "risk_reward": "Estimated 1:2.0 if target hits before earnings",
-        "avoid_if": "VIX >22 (regime break) or TSLA gaps below $350 pre-entry"
-      },
-      "gate": {
-        "verdict": "NO TRADE",
-        "reasons": [
-          "conviction 3 < 5",
-          "TSLA is on the risk_rules blocklist"
-        ],
-        "rr": 3.06,
-        "levels": {
-          "entry": 357.45,
-          "stop": 346.06,
-          "target": 392.27
-        },
-        "current_price": 357.45,
-        "profile": "swing_21_28",
-        "rules": {
-          "min_rr": 2.0,
-          "min_conviction": 5,
-          "max_level_distance_pct": 30,
-          "stop_premium_pct": -50,
-          "target_premium_pct": 100,
-          "time_exit_dte": 10,
-          "entry_dte_min": 21,
-          "entry_dte_max": 28,
-          "allow_expiry_hold": false,
-          "hold_trading_days": 10,
-          "max_target_sigma": 1.0,
-          "spread_target_pct_of_max": 50,
-          "spread_stop_pct_of_debit": 50,
-          "strategies": {
-            "_comment": "2026-09-28: two TAGGED strategies scored side by side (Lee). Levels are computed in Python (levels.py), not by the model. stop_em/target_em are in typical moves over hold_trading_days; 0.5/1.0 = R:R 2.0 at a 1-sigma target.",
-            "pullback": {
-              "enabled": true,
-              "stop_buffer_pct": 0.5,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            },
-            "momentum": {
-              "enabled": true,
-              "stop_em": 0.5,
-              "target_em": 1.0
-            }
-          }
-        },
-        "rule_warnings": [],
-        "reach": {
-          "iv": 0.489,
-          "trading_days": 10,
-          "expected_move": 34.82,
-          "target_sigma": 1.0,
-          "stop_sigma": 0.33,
-          "breakeven_hit": 0.246,
-          "p_target_first": 0.224,
-          "p_stop_first": 0.677,
-          "p_neither": 0.099,
-          "mean_r_no_edge": 0.103
-        },
-        "exit_plan": "stop close below $346.06 or -50% premium \u00b7 target $392.27 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-        "strategy": "pullback",
-        "entry_gap_sigma": 0.0
-      },
-      "verdict": null,
-      "cautions": [],
-      "model_vs_gate": null,
-      "evidence": null,
-      "extension": null,
-      "unsourced_numbers": [
-        "$103.6B"
-      ],
-      "fundamentals_note": "Trailing P/E 343.7 vs forward 164.5; revenue $103.6B, rev growth 25.5%, profit margin 3.7%; analyst target $395.83.",
-      "researched_at": "2026-09-29T10:42:49.074432+08:00"
     },
     {
       "ticker": "AAPL",
@@ -4954,42 +5873,6 @@
       "researched_at": "2026-09-23T22:46:37.448882+08:00"
     },
     {
-      "ticker": "MSFT",
-      "company": "Microsoft Corporation",
-      "sector": "Technology / Cloud & AI Software",
-      "bias": "bullish",
-      "conviction": 6,
-      "thesis": "MSFT trades at $496.82, 13.5% above its 50MA of $437.70 in a strong uptrend, outperforming SPY by 10.15% over 3 months with revenue growth of 17.7% and a robust profit margin of 40.3%. However, volume has collapsed 82% during this advance, a significant divergence that suggests the move is driven by passive flows rather than active conviction. The forward P/E of 21.08 is reasonable for this growth profile, but the extended technical position and volume decay warrant discipline on entry.",
-      "moat_assessment": "Microsoft's enterprise moat is among the widest in tech \u2014 Azure's cloud ecosystem, Office 365's installed base, and the Copilot AI integration create high switching costs and recurring revenue durability that competitors cannot easily replicate.",
-      "macro_sensitivity": "Moderately sensitive to rate moves given its premium valuation, but MSFT's diversified revenue streams and pricing power provide more downside insulation than most mega-caps. A VIX spike above 20 would still pressure the multiple, but less than high-beta names.",
-      "key_catalysts": [
-        "Q1 FY2027 earnings on 2026-10-29",
-        "Azure revenue growth rate and Copilot monetization metrics in the upcoming earnings print"
-      ],
-      "disconfirming_evidence": "A daily close below the 50MA at $437.70 with expanding volume would invalidate the uptrend and suggest the call signal was a false breakout, potentially triggering a correction toward $410-420.",
-      "bull_scenario": "MSFT re-accelerates on AI monetization momentum, reclaims relative strength vs SPY, and runs toward $540-550, +9-11%.",
-      "base_scenario": "Choppy uptrend continuation between $480-510 as the market digests the high valuation and waits for the 2026-10-29 earnings catalyst, +2-5% over 3-21 days.",
-      "bear_scenario": "Failure at the 50MA triggers a growth-rotation selloff, dragging MSFT toward $440-450, -9-11%.",
-      "trade_plan": {
-        "structure": "Buy a call debit spread (e.g., 500/525) 21-28 DTE, or buy a 0.40 delta call on a pullback to the 50MA.",
-        "entry_trigger": "Pullback to $475-485 (toward the 50MA at $437.70) with volume stabilizing, or a breakout above $510 with above-average volume.",
-        "target": "$525-535 (approx. 6-8% upside).",
-        "stop": "Close below $470 (50MA breakdown).",
-        "position_size_note": "Half position given the extended technical position and volume divergence; full size only on volume confirmation.",
-        "risk_reward": "1:2",
-        "avoid_if": "VIX spikes above 18 or SPY breaks below its 50MA ($755.34), which would likely drag MSFT lower given its beta."
-      },
-      "gate": null,
-      "verdict": null,
-      "cautions": [],
-      "model_vs_gate": null,
-      "evidence": null,
-      "extension": null,
-      "unsourced_numbers": [],
-      "fundamentals_note": "trailing P/E 27.69, forward P/E 21.08, revenue growth 0.177 (17.7%), profit margin 0.40305 (40.3%), P/S 11.12, analyst target mean $571.38, next earnings 2026-10-29",
-      "researched_at": "2026-09-03T20:08:14.996740+08:00"
-    },
-    {
       "ticker": "MU",
       "company": "Micron Technology Inc.",
       "sector": "Semiconductors / Memory",
@@ -5072,7 +5955,49 @@
     {
       "date": "2026-10-09",
       "kind": "deepdive",
+      "id": "deepdive_ORCL_20261009T220202.294053_0800",
+      "summary": "ORCL [NEUTRAL] -- conviction 3/10"
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "deepdive",
+      "id": "deepdive_NVDA_20261009T221152.817039_0800",
+      "summary": "NVDA [BULLISH] -- conviction 7/10"
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "deepdive",
       "id": "deepdive_MRVL_20261009T131222.780039_0800",
+      "summary": "MRVL [BULLISH] -- conviction 6/10"
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "deepdive",
+      "id": "deepdive_TSLA_20261009T221606.713706_0800",
+      "summary": "TSLA [NEUTRAL] -- conviction 4/10"
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "deepdive",
+      "id": "deepdive_MSFT_20261009T221348.824795_0800",
+      "summary": "MSFT [BULLISH] -- conviction 7/10"
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "deepdive",
+      "id": "deepdive_META_20261009T220635.868586_0800",
+      "summary": "META [BULLISH] -- conviction 7/10"
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "deepdive",
+      "id": "deepdive_ORCL_20261009T221657.518693_0800",
+      "summary": "ORCL [BEARISH] -- conviction 6/10"
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "deepdive",
+      "id": "deepdive_MRVL_20261009T220307.780918_0800",
       "summary": "MRVL [BULLISH] -- conviction 6/10"
     },
     {
@@ -5584,48 +6509,6 @@
       "kind": "deepdive",
       "id": "deepdive_NVDA_20260929T233530.097014_0800",
       "summary": "NVDA [BULLISH] -- conviction 8/10"
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "deepdive",
-      "id": "deepdive_TSLA_20260929T104249.074432_0800",
-      "summary": "TSLA [BULLISH] -- conviction 3/10"
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "deepdive",
-      "id": "deepdive_META_20260929T233614.975192_0800",
-      "summary": "META [BULLISH] -- conviction 5/10"
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "deepdive",
-      "id": "deepdive_TSLA_20260929T000320.659855_0800",
-      "summary": "TSLA [NEUTRAL] -- conviction 3/10"
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "deepdive",
-      "id": "deepdive_AAPL_20260929T104103.688493_0800",
-      "summary": "AAPL [BULLISH] -- conviction 5/10"
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "analyst",
-      "id": "analyst_brief_20260928_212502_013f",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "analyst",
-      "id": "analyst_brief_20260928_195001_72b0",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "sector",
-      "id": "sector_brief_ev-automotive_20260928",
-      "summary": "EV/Automotive -- conviction 3"
     }
   ]
 }
