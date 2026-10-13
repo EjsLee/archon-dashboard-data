@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-13T20:10:02.031886+08:00",
+  "generated_at": "2026-10-13T21:45:01.748037+08:00",
   "regime": {
     "regime": "bull_low_vol",
-    "vix": 15.41,
+    "vix": 15.29,
     "spy_price": 778.1,
     "gates": {
       "allow_calls": true,
@@ -11,6 +11,1416 @@
     }
   },
   "sectors": [
+    {
+      "sector": "Technology",
+      "conviction": 6,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "MSFT strong outperformer +23.36 pts vs SPY with clean uptrend \u2014 best risk/reward profile in the group",
+        "VIX below its 30d average and BULL_LOW_VOL regime support call structures",
+        "AAPL showing steady uptrend with low RV20 of 17%, offering the most stable expression of bullish bias"
+      ],
+      "headwinds": [
+        "Volume is universally contracting across all four tickers (AAPL -71% down to META -58%), a divergence that often precedes trend exhaustion",
+        "META at 15.5% above 50MA and RV20 of 53% is statistically overbought and vulnerable to a sharp mean-reversion",
+        "AMZN is the only name in a downtrend and sits essentially on its 50MA at 0.3% above, dragging sector breadth lower"
+      ],
+      "risk_to_thesis": "SPY closes back below its 50MA at $766.94 or VIX sustains above its 30-day average of 15.63 \u2014 both would shift the regime and invalidate the low-vol call thesis across Tech",
+      "generated_at": "2026-10-13T21:26:08.209022+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "MSFT",
+        "best_structure": "MSFT: ATM calls, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $515.73 (0.73\u03c3 away) / stop $499.19 / target $548.81 \u00b7 R:R 2 \u00b7 Momentum: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $541.15 (now) / stop $523.79 / target $575.86 \u00b7 R:R 2 | Watch: MSFT 50MA at $501.7 as the pullback magnet; VIX must stay below its 30d avg of 15.63; sector breadth concern if AMZN downtrend deepens; volume recovery needed to confirm trend resumption",
+        "avoid": "META (too extended, RV20 53%) and AMZN (downtrend, no relative strength); QQQ is BLOCKLIST",
+        "gates": {
+          "pullback": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 515.73,
+              "stop": 499.19,
+              "target": 548.81
+            },
+            "current_price": 541.15,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": 1.5
+              },
+              "allowed_structures": [
+                "long_call",
+                "long_put"
+              ],
+              "max_entry_gap_sigma": 1.0,
+              "delta_band": [
+                0.45,
+                0.6
+              ],
+              "rich_delta_band": [
+                0.6,
+                0.7
+              ],
+              "risk_budget_usd": null,
+              "account_usd": 3000,
+              "stock": {
+                "enabled": true,
+                "risk_pct_of_account": 1.0,
+                "max_position_pct_of_account": 50
+              },
+              "max_premium_pct_of_account": 15,
+              "counter_trend_puts": {
+                "enabled": true,
+                "max_rs_pct": -10.0,
+                "min_evidence_net": -2,
+                "min_nonprice_neg": 1
+              },
+              "stretch": {
+                "enabled": true,
+                "otm": {
+                  "enabled": true,
+                  "delta": 0.35,
+                  "label": "0.30-0.40\u0394",
+                  "dte": 25,
+                  "min_conviction": 7
+                },
+                "short_dte": {
+                  "enabled": true,
+                  "delta": 0.525,
+                  "label": "0.45-0.60\u0394",
+                  "dte": 15,
+                  "dte_label": "14-17",
+                  "time_exit_dte": 5,
+                  "min_conviction": 8,
+                  "strategies": [
+                    "momentum"
+                  ]
+                }
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.322,
+              "trading_days": 10,
+              "expected_move": 33.08,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $499.19 or -50% premium \u00b7 target $548.81 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "option_cost": {
+              "valid": true,
+              "reason": "",
+              "iv": 0.322,
+              "rv": 0.22,
+              "iv_rv_ratio": 1.46,
+              "iv_label": "rich",
+              "premium_pct": 3.5,
+              "at_target_pct": 102,
+              "at_stop_pct": -67,
+              "option_rr": 1.53,
+              "iv_exit": 0.271,
+              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+            },
+            "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+            "structure_kind": "long_call",
+            "money": {
+              "premium": 1805,
+              "loss": 903,
+              "gain": 1805,
+              "loss_pct": 50,
+              "gain_pct": 100,
+              "contracts": null
+            },
+            "stock": {
+              "entry": 515.73,
+              "stop": 499.19,
+              "target": 548.81,
+              "risk_per_share": 16.54,
+              "gain_per_share": 33.08,
+              "shares": 1,
+              "cost": 516,
+              "risk": 17,
+              "gain": 33,
+              "cost_pct": 17,
+              "risk_pct": 0.6,
+              "risk_pct_cap": 1.0,
+              "one_share_risk_pct": 0.6,
+              "one_share_cost_pct": 17
+            },
+            "premium_cap": 450,
+            "affordable": false,
+            "stretch_tried": [
+              "otm: conviction 6 < 7",
+              "short_dte: conviction 6 < 8"
+            ],
+            "over_cap": true,
+            "over_cap_pct": 60,
+            "over_cap_loss_pct": 30,
+            "over_cap_note": "1 contract \u2248 $1,805 = 60% of account, loss at stop \u2248 $903 = 30% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
+            "iv": 0.322,
+            "rv": 0.22,
+            "profiles": [
+              {
+                "name": "core",
+                "delta": 0.65,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 502.4,
+                "premium": 25.43,
+                "cost": 2543,
+                "at_target_pct": 90,
+                "at_stop_pct": -57,
+                "option_rr": 1.58,
+                "ok": false,
+                "why": "$2,543 > cap $450"
+              },
+              {
+                "name": "fast",
+                "delta": 0.525,
+                "dte": 15,
+                "exit_day": 10,
+                "strike": 515.57,
+                "premium": 13.93,
+                "cost": 1393,
+                "at_target_pct": 146,
+                "at_stop_pct": -82,
+                "option_rr": 1.78,
+                "ok": false,
+                "why": "pullback not allowed"
+              },
+              {
+                "name": "otm",
+                "delta": 0.35,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 536.11,
+                "premium": 9.78,
+                "cost": 978,
+                "at_target_pct": 115,
+                "at_stop_pct": -80,
+                "option_rr": 1.43,
+                "ok": false,
+                "why": "conviction 6 < 7"
+              }
+            ],
+            "strategy": "pullback",
+            "entry_gap_sigma": 0.73,
+            "rs_vs_spy": 23.36
+          },
+          "momentum": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 2.0,
+            "levels": {
+              "entry": 541.15,
+              "stop": 523.79,
+              "target": 575.86
+            },
+            "current_price": 541.15,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": 1.5
+              },
+              "allowed_structures": [
+                "long_call",
+                "long_put"
+              ],
+              "max_entry_gap_sigma": 1.0,
+              "delta_band": [
+                0.45,
+                0.6
+              ],
+              "rich_delta_band": [
+                0.6,
+                0.7
+              ],
+              "risk_budget_usd": null,
+              "account_usd": 3000,
+              "stock": {
+                "enabled": true,
+                "risk_pct_of_account": 1.0,
+                "max_position_pct_of_account": 50
+              },
+              "max_premium_pct_of_account": 15,
+              "counter_trend_puts": {
+                "enabled": true,
+                "max_rs_pct": -10.0,
+                "min_evidence_net": -2,
+                "min_nonprice_neg": 1
+              },
+              "stretch": {
+                "enabled": true,
+                "otm": {
+                  "enabled": true,
+                  "delta": 0.35,
+                  "label": "0.30-0.40\u0394",
+                  "dte": 25,
+                  "min_conviction": 7
+                },
+                "short_dte": {
+                  "enabled": true,
+                  "delta": 0.525,
+                  "label": "0.45-0.60\u0394",
+                  "dte": 15,
+                  "dte_label": "14-17",
+                  "time_exit_dte": 5,
+                  "min_conviction": 8,
+                  "strategies": [
+                    "momentum"
+                  ]
+                }
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.322,
+              "trading_days": 10,
+              "expected_move": 34.71,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $523.79 or -50% premium \u00b7 target $575.86 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "option_cost": {
+              "valid": true,
+              "reason": "",
+              "iv": 0.322,
+              "rv": 0.22,
+              "iv_rv_ratio": 1.46,
+              "iv_label": "rich",
+              "premium_pct": 3.5,
+              "at_target_pct": 102,
+              "at_stop_pct": -67,
+              "option_rr": 1.53,
+              "iv_exit": 0.271,
+              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+            },
+            "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+            "structure_kind": "long_call",
+            "money": {
+              "premium": 1894,
+              "loss": 947,
+              "gain": 1894,
+              "loss_pct": 50,
+              "gain_pct": 100,
+              "contracts": null
+            },
+            "stock": {
+              "entry": 541.15,
+              "stop": 523.79,
+              "target": 575.86,
+              "risk_per_share": 17.36,
+              "gain_per_share": 34.71,
+              "shares": 1,
+              "cost": 541,
+              "risk": 17,
+              "gain": 35,
+              "cost_pct": 18,
+              "risk_pct": 0.6,
+              "risk_pct_cap": 1.0,
+              "one_share_risk_pct": 0.6,
+              "one_share_cost_pct": 18
+            },
+            "premium_cap": 450,
+            "affordable": false,
+            "stretch_tried": [
+              "otm: conviction 6 < 7",
+              "short_dte: conviction 6 < 8"
+            ],
+            "over_cap": true,
+            "over_cap_pct": 63,
+            "over_cap_loss_pct": 32,
+            "over_cap_note": "1 contract \u2248 $1,894 = 63% of account, loss at stop \u2248 $947 = 32% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
+            "iv": 0.322,
+            "rv": 0.22,
+            "profiles": [
+              {
+                "name": "core",
+                "delta": 0.65,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 527.17,
+                "premium": 26.69,
+                "cost": 2669,
+                "at_target_pct": 90,
+                "at_stop_pct": -57,
+                "option_rr": 1.58,
+                "ok": false,
+                "why": "$2,669 > cap $450"
+              },
+              {
+                "name": "fast",
+                "delta": 0.525,
+                "dte": 15,
+                "exit_day": 10,
+                "strike": 540.98,
+                "premium": 14.61,
+                "cost": 1461,
+                "at_target_pct": 146,
+                "at_stop_pct": -82,
+                "option_rr": 1.78,
+                "ok": false,
+                "why": "conviction 6 < 8"
+              },
+              {
+                "name": "otm",
+                "delta": 0.35,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 562.54,
+                "premium": 10.26,
+                "cost": 1026,
+                "at_target_pct": 115,
+                "at_stop_pct": -80,
+                "option_rr": 1.43,
+                "ok": false,
+                "why": "conviction 6 < 7"
+              }
+            ],
+            "strategy": "momentum",
+            "entry_gap_sigma": 0.0,
+            "rs_vs_spy": 23.36
+          },
+          "earnings": {
+            "status": "unknown",
+            "days": null,
+            "text": "Earnings: date unknown -- check before entry"
+          },
+          "primary": "momentum"
+        },
+        "gate": {
+          "verdict": "TRADE",
+          "reasons": [],
+          "rr": 2.0,
+          "levels": {
+            "entry": 541.15,
+            "stop": 523.79,
+            "target": 575.86
+          },
+          "current_price": 541.15,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "momentum_require_rs": true,
+            "momentum_min_rs_pct": 0.0,
+            "option_cost": {
+              "enabled": true,
+              "dte": 25,
+              "exit_trading_days": 5,
+              "iv_reversion": 0.5,
+              "rich_ratio": 1.3,
+              "cheap_ratio": 0.9,
+              "rate": 0.04,
+              "min_option_rr": 1.5
+            },
+            "allowed_structures": [
+              "long_call",
+              "long_put"
+            ],
+            "max_entry_gap_sigma": 1.0,
+            "delta_band": [
+              0.45,
+              0.6
+            ],
+            "rich_delta_band": [
+              0.6,
+              0.7
+            ],
+            "risk_budget_usd": null,
+            "account_usd": 3000,
+            "stock": {
+              "enabled": true,
+              "risk_pct_of_account": 1.0,
+              "max_position_pct_of_account": 50
+            },
+            "max_premium_pct_of_account": 15,
+            "counter_trend_puts": {
+              "enabled": true,
+              "max_rs_pct": -10.0,
+              "min_evidence_net": -2,
+              "min_nonprice_neg": 1
+            },
+            "stretch": {
+              "enabled": true,
+              "otm": {
+                "enabled": true,
+                "delta": 0.35,
+                "label": "0.30-0.40\u0394",
+                "dte": 25,
+                "min_conviction": 7
+              },
+              "short_dte": {
+                "enabled": true,
+                "delta": 0.525,
+                "label": "0.45-0.60\u0394",
+                "dte": 15,
+                "dte_label": "14-17",
+                "time_exit_dte": 5,
+                "min_conviction": 8,
+                "strategies": [
+                  "momentum"
+                ]
+              }
+            },
+            "strategies": {
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": {
+            "iv": 0.322,
+            "trading_days": 10,
+            "expected_move": 34.71,
+            "target_sigma": 1.0,
+            "stop_sigma": 0.5,
+            "breakeven_hit": 0.333,
+            "p_target_first": 0.255,
+            "p_stop_first": 0.555,
+            "p_neither": 0.19,
+            "mean_r_no_edge": 0.043
+          },
+          "exit_plan": "stop close below $523.79 or -50% premium \u00b7 target $575.86 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "option_cost": {
+            "valid": true,
+            "reason": "",
+            "iv": 0.322,
+            "rv": 0.22,
+            "iv_rv_ratio": 1.46,
+            "iv_label": "rich",
+            "premium_pct": 3.5,
+            "at_target_pct": 102,
+            "at_stop_pct": -67,
+            "option_rr": 1.53,
+            "iv_exit": 0.271,
+            "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+          },
+          "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+          "structure_kind": "long_call",
+          "money": {
+            "premium": 1894,
+            "loss": 947,
+            "gain": 1894,
+            "loss_pct": 50,
+            "gain_pct": 100,
+            "contracts": null
+          },
+          "stock": {
+            "entry": 541.15,
+            "stop": 523.79,
+            "target": 575.86,
+            "risk_per_share": 17.36,
+            "gain_per_share": 34.71,
+            "shares": 1,
+            "cost": 541,
+            "risk": 17,
+            "gain": 35,
+            "cost_pct": 18,
+            "risk_pct": 0.6,
+            "risk_pct_cap": 1.0,
+            "one_share_risk_pct": 0.6,
+            "one_share_cost_pct": 18
+          },
+          "premium_cap": 450,
+          "affordable": false,
+          "stretch_tried": [
+            "otm: conviction 6 < 7",
+            "short_dte: conviction 6 < 8"
+          ],
+          "over_cap": true,
+          "over_cap_pct": 63,
+          "over_cap_loss_pct": 32,
+          "over_cap_note": "1 contract \u2248 $1,894 = 63% of account, loss at stop \u2248 $947 = 32% of account (cap 15% = $450); cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8",
+          "iv": 0.322,
+          "rv": 0.22,
+          "profiles": [
+            {
+              "name": "core",
+              "delta": 0.65,
+              "dte": 25,
+              "exit_day": 15,
+              "strike": 527.17,
+              "premium": 26.69,
+              "cost": 2669,
+              "at_target_pct": 90,
+              "at_stop_pct": -57,
+              "option_rr": 1.58,
+              "ok": false,
+              "why": "$2,669 > cap $450"
+            },
+            {
+              "name": "fast",
+              "delta": 0.525,
+              "dte": 15,
+              "exit_day": 10,
+              "strike": 540.98,
+              "premium": 14.61,
+              "cost": 1461,
+              "at_target_pct": 146,
+              "at_stop_pct": -82,
+              "option_rr": 1.78,
+              "ok": false,
+              "why": "conviction 6 < 8"
+            },
+            {
+              "name": "otm",
+              "delta": 0.35,
+              "dte": 25,
+              "exit_day": 15,
+              "strike": 562.54,
+              "premium": 10.26,
+              "cost": 1026,
+              "at_target_pct": 115,
+              "at_stop_pct": -80,
+              "option_rr": 1.43,
+              "ok": false,
+              "why": "conviction 6 < 7"
+            }
+          ],
+          "strategy": "momentum",
+          "entry_gap_sigma": 0.0,
+          "rs_vs_spy": 23.36
+        },
+        "model_levels_to_watch": "MSFT 50MA at $501.7 as the pullback magnet; VIX must stay below its 30d avg of 15.63; sector breadth concern if AMZN downtrend deepens; volume recovery needed to confirm trend resumption"
+      },
+      "news_signal_vs_noise": {
+        "signal": "Regime data (SPY above MAs, VIX below 30d avg) and relative strength rankings (MSFT +23.36 pts, META +15.29 pts vs SPY) matter most \u2014 they confirm the bullish bias and rank conviction over the next 1-3 weeks",
+        "noise": "The universal volume decline across all four tickers is likely near-term noise within the BULL_LOW_VOL regime, but the magnitude (AAPL -71%) cannot be ignored if it persists into next week; no news feed supplied"
+      },
+      "notable_tickers": [
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "Strongest combination of trend, relative strength (+23.36 pts vs SPY), and reasonable distance from 50MA at 7.9% above",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "META",
+          "role": "watch",
+          "reason": "Strongest 3M return (+18.59%) but at 15.5% above 50MA with RV20 of 53%, it is the most overbought name",
+          "options_angle": "avoid"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "laggard",
+          "reason": "Only name in a downtrend, in-line with SPY at -1.04 pts, sitting just 0.3% above its 50MA",
+          "options_angle": "avoid"
+        },
+        {
+          "ticker": "AAPL",
+          "role": "leader",
+          "reason": "Clean uptrend with lowest RV20 at 17% and 5.6% above 50MA, offering the most balanced risk/reward",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY sits above its 50MA at $778.1 with VIX at 15.29 below its 30-day average of 15.63. This BULL_LOW_VOL regime favors long bias in rate-sensitive growth sectors like Tech. The sideways 3M trend in SPY (+3.3%) suggests stock-picking matters more than beta.",
+      "key_themes": [
+        "Mega-cap concentration: MSFT (+26.66%) and META (+18.59%) are driving the sector's SPY-relative outperformance while AMZN (+2.26%) lags in-line",
+        "Three of four watchlist names trending higher but all four show falling volume (AAPL -71% to META -58%), signaling waning conviction in the rally",
+        "META is extended at 15.5% above its 50MA with RV20 of 53%, making it the highest-risk/reward name in the group"
+      ],
+      "unsourced_numbers": [
+        "$515.73",
+        "0.73",
+        "$499.19",
+        "$548.81",
+        "$523.79",
+        "$575.86"
+      ]
+    },
+    {
+      "sector": "Semiconductors/AI",
+      "conviction": 5,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "BULL_LOW_VOL regime with VIX below its 30-day average (15.29 vs 15.63) reduces tail risk for long equity exposure in the sector",
+        "NVDA maintains an uptrend with price above its 50MA ($226.32 vs $222.50)",
+        "SPY above both 50MA and 200MA confirms a bullish intermediate-term structure"
+      ],
+      "headwinds": [
+        "NVDA volume has declined 34% during its uptrend, weakening the technical conviction of the rally",
+        "RV20 at 22% implies elevated short-term volatility that can produce sharp intraday swings in the name",
+        "SPY's 3-month trend is sideways (+3.3%), suggesting the broader market lacks a strong directional catalyst to drive semiconductors higher"
+      ],
+      "risk_to_thesis": "A break below NVDA's 50MA ($222.50) on expanding volume, or a VIX spike above its 30-day average (15.63) alongside SPY falling below its 50MA, would invalidate the bullish low-vol regime setup.",
+      "generated_at": "2026-10-13T21:25:30.461244+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "ticker": "NVDA",
+        "best_structure": "NVDA: ATM calls, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $226.32 (now) / stop $221.39 / target $241.74 \u00b7 R:R 3.13 \u00b7 Momentum: \u26d4 NO TRADE -- option R:R 1.48 < 1.5 (premium too rich for the move) | Watch: NVDA holding above its 50MA ($222.50) with stabilizing or expanding volume; VIX sustaining below its 30-day average (15.63); SPY maintaining position above its 50MA ($766.94)",
+        "avoid": "QQQ (blocklist); put structures (gated out); chasing NVDA without volume confirmation",
+        "gates": {
+          "pullback": {
+            "verdict": "TRADE",
+            "reasons": [],
+            "rr": 3.13,
+            "levels": {
+              "entry": 226.32,
+              "stop": 221.39,
+              "target": 241.74
+            },
+            "current_price": 226.32,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": 1.5
+              },
+              "allowed_structures": [
+                "long_call",
+                "long_put"
+              ],
+              "max_entry_gap_sigma": 1.0,
+              "delta_band": [
+                0.45,
+                0.6
+              ],
+              "rich_delta_band": [
+                0.6,
+                0.7
+              ],
+              "risk_budget_usd": null,
+              "account_usd": 3000,
+              "stock": {
+                "enabled": true,
+                "risk_pct_of_account": 1.0,
+                "max_position_pct_of_account": 50
+              },
+              "max_premium_pct_of_account": 15,
+              "counter_trend_puts": {
+                "enabled": true,
+                "max_rs_pct": -10.0,
+                "min_evidence_net": -2,
+                "min_nonprice_neg": 1
+              },
+              "stretch": {
+                "enabled": true,
+                "otm": {
+                  "enabled": true,
+                  "delta": 0.35,
+                  "label": "0.30-0.40\u0394",
+                  "dte": 25,
+                  "min_conviction": 7
+                },
+                "short_dte": {
+                  "enabled": true,
+                  "delta": 0.525,
+                  "label": "0.45-0.60\u0394",
+                  "dte": 15,
+                  "dte_label": "14-17",
+                  "time_exit_dte": 5,
+                  "min_conviction": 8,
+                  "strategies": [
+                    "momentum"
+                  ]
+                }
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.342,
+              "trading_days": 10,
+              "expected_move": 15.42,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.32,
+              "breakeven_hit": 0.242,
+              "p_target_first": 0.221,
+              "p_stop_first": 0.681,
+              "p_neither": 0.099,
+              "mean_r_no_edge": 0.111
+            },
+            "exit_plan": "stop close below $221.39 or -50% premium \u00b7 target $241.74 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "option_cost": {
+              "valid": true,
+              "reason": "",
+              "iv": 0.342,
+              "rv": 0.22,
+              "iv_rv_ratio": 1.55,
+              "iv_label": "rich",
+              "premium_pct": 3.7,
+              "at_target_pct": 102,
+              "at_stop_pct": -57,
+              "option_rr": 1.78,
+              "iv_exit": 0.281,
+              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+            },
+            "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+            "structure_kind": "long_call",
+            "money": {
+              "premium": 837,
+              "loss": 419,
+              "gain": 837,
+              "loss_pct": 50,
+              "gain_pct": 100,
+              "contracts": null
+            },
+            "stock": {
+              "entry": 226.32,
+              "stop": 221.39,
+              "target": 241.74,
+              "risk_per_share": 4.93,
+              "gain_per_share": 15.42,
+              "shares": 6,
+              "cost": 1358,
+              "risk": 30,
+              "gain": 93,
+              "cost_pct": 45,
+              "risk_pct": 1.0,
+              "risk_pct_cap": 1.0,
+              "one_share_risk_pct": 0.2,
+              "one_share_cost_pct": 8
+            },
+            "premium_cap": 450,
+            "affordable": false,
+            "stretch_tried": [
+              "otm: conviction 5 < 7",
+              "short_dte: conviction 5 < 8"
+            ],
+            "over_cap": true,
+            "over_cap_pct": 28,
+            "over_cap_loss_pct": 14,
+            "over_cap_note": "1 contract \u2248 $837 = 28% of account, loss at stop \u2248 $419 = 14% of account (cap 15% = $450); cheaper variants: otm: conviction 5 < 7; short_dte: conviction 5 < 8",
+            "iv": 0.342,
+            "rv": 0.22,
+            "profiles": [
+              {
+                "name": "core",
+                "delta": 0.65,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 220.13,
+                "premium": 11.81,
+                "cost": 1181,
+                "at_target_pct": 90,
+                "at_stop_pct": -46,
+                "option_rr": 1.96,
+                "ok": false,
+                "why": "$1,181 > cap $450"
+              },
+              {
+                "name": "fast",
+                "delta": 0.525,
+                "dte": 15,
+                "exit_day": 10,
+                "strike": 226.25,
+                "premium": 6.47,
+                "cost": 647,
+                "at_target_pct": 146,
+                "at_stop_pct": -72,
+                "option_rr": 2.03,
+                "ok": false,
+                "why": "pullback not allowed"
+              },
+              {
+                "name": "otm",
+                "delta": 0.35,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 235.85,
+                "premium": 4.55,
+                "cost": 455,
+                "at_target_pct": 112,
+                "at_stop_pct": -73,
+                "option_rr": 1.54,
+                "ok": false,
+                "why": "conviction 5 < 7"
+              }
+            ],
+            "strategy": "pullback",
+            "entry_gap_sigma": 0.0,
+            "rs_vs_spy": 0.32
+          },
+          "momentum": {
+            "verdict": "NO TRADE",
+            "reasons": [
+              "option R:R 1.48 < 1.5 (premium too rich for the move)"
+            ],
+            "rr": 2.0,
+            "levels": {
+              "entry": 226.32,
+              "stop": 218.61,
+              "target": 241.74
+            },
+            "current_price": 226.32,
+            "profile": "swing_21_28",
+            "rules": {
+              "min_rr": 2.0,
+              "min_conviction": 5,
+              "max_level_distance_pct": 30,
+              "stop_premium_pct": -50,
+              "target_premium_pct": 100,
+              "time_exit_dte": 10,
+              "entry_dte_min": 21,
+              "entry_dte_max": 28,
+              "allow_expiry_hold": false,
+              "hold_trading_days": 10,
+              "max_target_sigma": 1.0,
+              "spread_target_pct_of_max": 50,
+              "spread_stop_pct_of_debit": 50,
+              "momentum_require_rs": true,
+              "momentum_min_rs_pct": 0.0,
+              "option_cost": {
+                "enabled": true,
+                "dte": 25,
+                "exit_trading_days": 5,
+                "iv_reversion": 0.5,
+                "rich_ratio": 1.3,
+                "cheap_ratio": 0.9,
+                "rate": 0.04,
+                "min_option_rr": 1.5
+              },
+              "allowed_structures": [
+                "long_call",
+                "long_put"
+              ],
+              "max_entry_gap_sigma": 1.0,
+              "delta_band": [
+                0.45,
+                0.6
+              ],
+              "rich_delta_band": [
+                0.6,
+                0.7
+              ],
+              "risk_budget_usd": null,
+              "account_usd": 3000,
+              "stock": {
+                "enabled": true,
+                "risk_pct_of_account": 1.0,
+                "max_position_pct_of_account": 50
+              },
+              "max_premium_pct_of_account": 15,
+              "counter_trend_puts": {
+                "enabled": true,
+                "max_rs_pct": -10.0,
+                "min_evidence_net": -2,
+                "min_nonprice_neg": 1
+              },
+              "stretch": {
+                "enabled": true,
+                "otm": {
+                  "enabled": true,
+                  "delta": 0.35,
+                  "label": "0.30-0.40\u0394",
+                  "dte": 25,
+                  "min_conviction": 7
+                },
+                "short_dte": {
+                  "enabled": true,
+                  "delta": 0.525,
+                  "label": "0.45-0.60\u0394",
+                  "dte": 15,
+                  "dte_label": "14-17",
+                  "time_exit_dte": 5,
+                  "min_conviction": 8,
+                  "strategies": [
+                    "momentum"
+                  ]
+                }
+              },
+              "strategies": {
+                "pullback": {
+                  "enabled": true,
+                  "stop_buffer_pct": 0.5,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                },
+                "momentum": {
+                  "enabled": true,
+                  "stop_em": 0.5,
+                  "target_em": 1.0
+                }
+              }
+            },
+            "rule_warnings": [],
+            "reach": {
+              "iv": 0.342,
+              "trading_days": 10,
+              "expected_move": 15.42,
+              "target_sigma": 1.0,
+              "stop_sigma": 0.5,
+              "breakeven_hit": 0.333,
+              "p_target_first": 0.255,
+              "p_stop_first": 0.555,
+              "p_neither": 0.19,
+              "mean_r_no_edge": 0.043
+            },
+            "exit_plan": "stop close below $218.61 or -50% premium \u00b7 target $241.74 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+            "option_cost": {
+              "valid": true,
+              "reason": "",
+              "iv": 0.342,
+              "rv": 0.22,
+              "iv_rv_ratio": 1.55,
+              "iv_label": "rich",
+              "premium_pct": 3.7,
+              "at_target_pct": 102,
+              "at_stop_pct": -68,
+              "option_rr": 1.48,
+              "iv_exit": 0.281,
+              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+            },
+            "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+            "structure_kind": "long_call",
+            "money": {
+              "premium": 837,
+              "loss": 419,
+              "gain": 837,
+              "loss_pct": 50,
+              "gain_pct": 100,
+              "contracts": null
+            },
+            "stock": {
+              "entry": 226.32,
+              "stop": 218.61,
+              "target": 241.74,
+              "risk_per_share": 7.71,
+              "gain_per_share": 15.42,
+              "shares": 3,
+              "cost": 679,
+              "risk": 23,
+              "gain": 46,
+              "cost_pct": 23,
+              "risk_pct": 0.8,
+              "risk_pct_cap": 1.0,
+              "one_share_risk_pct": 0.3,
+              "one_share_cost_pct": 8
+            },
+            "iv": 0.342,
+            "rv": 0.22,
+            "profiles": [
+              {
+                "name": "core",
+                "delta": 0.65,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 220.13,
+                "premium": 11.81,
+                "cost": 1181,
+                "at_target_pct": 90,
+                "at_stop_pct": -58,
+                "option_rr": 1.54,
+                "ok": false,
+                "why": "$1,181 > cap $450"
+              },
+              {
+                "name": "fast",
+                "delta": 0.525,
+                "dte": 15,
+                "exit_day": 10,
+                "strike": 226.25,
+                "premium": 6.47,
+                "cost": 647,
+                "at_target_pct": 146,
+                "at_stop_pct": -83,
+                "option_rr": 1.76,
+                "ok": false,
+                "why": "conviction 5 < 8"
+              },
+              {
+                "name": "otm",
+                "delta": 0.35,
+                "dte": 25,
+                "exit_day": 15,
+                "strike": 235.85,
+                "premium": 4.55,
+                "cost": 455,
+                "at_target_pct": 112,
+                "at_stop_pct": -82,
+                "option_rr": 1.37,
+                "ok": false,
+                "why": "conviction 5 < 7"
+              }
+            ],
+            "strategy": "momentum",
+            "entry_gap_sigma": 0.0,
+            "rs_vs_spy": 0.32
+          },
+          "earnings": {
+            "status": "unknown",
+            "days": null,
+            "text": "Earnings: date unknown -- check before entry"
+          },
+          "primary": "pullback"
+        },
+        "gate": {
+          "verdict": "TRADE",
+          "reasons": [],
+          "rr": 3.13,
+          "levels": {
+            "entry": 226.32,
+            "stop": 221.39,
+            "target": 241.74
+          },
+          "current_price": 226.32,
+          "profile": "swing_21_28",
+          "rules": {
+            "min_rr": 2.0,
+            "min_conviction": 5,
+            "max_level_distance_pct": 30,
+            "stop_premium_pct": -50,
+            "target_premium_pct": 100,
+            "time_exit_dte": 10,
+            "entry_dte_min": 21,
+            "entry_dte_max": 28,
+            "allow_expiry_hold": false,
+            "hold_trading_days": 10,
+            "max_target_sigma": 1.0,
+            "spread_target_pct_of_max": 50,
+            "spread_stop_pct_of_debit": 50,
+            "momentum_require_rs": true,
+            "momentum_min_rs_pct": 0.0,
+            "option_cost": {
+              "enabled": true,
+              "dte": 25,
+              "exit_trading_days": 5,
+              "iv_reversion": 0.5,
+              "rich_ratio": 1.3,
+              "cheap_ratio": 0.9,
+              "rate": 0.04,
+              "min_option_rr": 1.5
+            },
+            "allowed_structures": [
+              "long_call",
+              "long_put"
+            ],
+            "max_entry_gap_sigma": 1.0,
+            "delta_band": [
+              0.45,
+              0.6
+            ],
+            "rich_delta_band": [
+              0.6,
+              0.7
+            ],
+            "risk_budget_usd": null,
+            "account_usd": 3000,
+            "stock": {
+              "enabled": true,
+              "risk_pct_of_account": 1.0,
+              "max_position_pct_of_account": 50
+            },
+            "max_premium_pct_of_account": 15,
+            "counter_trend_puts": {
+              "enabled": true,
+              "max_rs_pct": -10.0,
+              "min_evidence_net": -2,
+              "min_nonprice_neg": 1
+            },
+            "stretch": {
+              "enabled": true,
+              "otm": {
+                "enabled": true,
+                "delta": 0.35,
+                "label": "0.30-0.40\u0394",
+                "dte": 25,
+                "min_conviction": 7
+              },
+              "short_dte": {
+                "enabled": true,
+                "delta": 0.525,
+                "label": "0.45-0.60\u0394",
+                "dte": 15,
+                "dte_label": "14-17",
+                "time_exit_dte": 5,
+                "min_conviction": 8,
+                "strategies": [
+                  "momentum"
+                ]
+              }
+            },
+            "strategies": {
+              "pullback": {
+                "enabled": true,
+                "stop_buffer_pct": 0.5,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              },
+              "momentum": {
+                "enabled": true,
+                "stop_em": 0.5,
+                "target_em": 1.0
+              }
+            }
+          },
+          "rule_warnings": [],
+          "reach": {
+            "iv": 0.342,
+            "trading_days": 10,
+            "expected_move": 15.42,
+            "target_sigma": 1.0,
+            "stop_sigma": 0.32,
+            "breakeven_hit": 0.242,
+            "p_target_first": 0.221,
+            "p_stop_first": 0.681,
+            "p_neither": 0.099,
+            "mean_r_no_edge": 0.111
+          },
+          "exit_plan": "stop close below $221.39 or -50% premium \u00b7 target $241.74 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+          "option_cost": {
+            "valid": true,
+            "reason": "",
+            "iv": 0.342,
+            "rv": 0.22,
+            "iv_rv_ratio": 1.55,
+            "iv_label": "rich",
+            "premium_pct": 3.7,
+            "at_target_pct": 102,
+            "at_stop_pct": -57,
+            "option_rr": 1.78,
+            "iv_exit": 0.281,
+            "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
+          },
+          "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
+          "structure_kind": "long_call",
+          "money": {
+            "premium": 837,
+            "loss": 419,
+            "gain": 837,
+            "loss_pct": 50,
+            "gain_pct": 100,
+            "contracts": null
+          },
+          "stock": {
+            "entry": 226.32,
+            "stop": 221.39,
+            "target": 241.74,
+            "risk_per_share": 4.93,
+            "gain_per_share": 15.42,
+            "shares": 6,
+            "cost": 1358,
+            "risk": 30,
+            "gain": 93,
+            "cost_pct": 45,
+            "risk_pct": 1.0,
+            "risk_pct_cap": 1.0,
+            "one_share_risk_pct": 0.2,
+            "one_share_cost_pct": 8
+          },
+          "premium_cap": 450,
+          "affordable": false,
+          "stretch_tried": [
+            "otm: conviction 5 < 7",
+            "short_dte: conviction 5 < 8"
+          ],
+          "over_cap": true,
+          "over_cap_pct": 28,
+          "over_cap_loss_pct": 14,
+          "over_cap_note": "1 contract \u2248 $837 = 28% of account, loss at stop \u2248 $419 = 14% of account (cap 15% = $450); cheaper variants: otm: conviction 5 < 7; short_dte: conviction 5 < 8",
+          "iv": 0.342,
+          "rv": 0.22,
+          "profiles": [
+            {
+              "name": "core",
+              "delta": 0.65,
+              "dte": 25,
+              "exit_day": 15,
+              "strike": 220.13,
+              "premium": 11.81,
+              "cost": 1181,
+              "at_target_pct": 90,
+              "at_stop_pct": -46,
+              "option_rr": 1.96,
+              "ok": false,
+              "why": "$1,181 > cap $450"
+            },
+            {
+              "name": "fast",
+              "delta": 0.525,
+              "dte": 15,
+              "exit_day": 10,
+              "strike": 226.25,
+              "premium": 6.47,
+              "cost": 647,
+              "at_target_pct": 146,
+              "at_stop_pct": -72,
+              "option_rr": 2.03,
+              "ok": false,
+              "why": "pullback not allowed"
+            },
+            {
+              "name": "otm",
+              "delta": 0.35,
+              "dte": 25,
+              "exit_day": 15,
+              "strike": 235.85,
+              "premium": 4.55,
+              "cost": 455,
+              "at_target_pct": 112,
+              "at_stop_pct": -73,
+              "option_rr": 1.54,
+              "ok": false,
+              "why": "conviction 5 < 7"
+            }
+          ],
+          "strategy": "pullback",
+          "entry_gap_sigma": 0.0,
+          "rs_vs_spy": 0.32
+        },
+        "model_levels_to_watch": "NVDA holding above its 50MA ($222.50) with stabilizing or expanding volume; VIX sustaining below its 30-day average (15.63); SPY maintaining position above its 50MA ($766.94)"
+      },
+      "news_signal_vs_noise": {
+        "signal": "The BULL_LOW_VOL regime, VIX below its 30-day average, and NVDA's uptrend above the 50MA are the most actionable data points for the next 1-3 weeks.",
+        "noise": "NVDA's flat relative strength vs SPY (+0.32 pts) is a lagging indicator that offers little forward signal; the 3-month sideways market trend is also likely noise until it resolves."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "NVDA",
+          "role": "watch",
+          "reason": "The sole focus ticker is in an uptrend above its 50MA but with declining volume, making it a setup to monitor rather than chase.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY trades above both its 50MA ($778.1 vs $766.94) and 200MA ($720.14) in a BULL_LOW_VOL regime, with VIX at 15.29 sitting just below its 30-day average of 15.63. This low-vol bullish backdrop supports momentum continuation in rate-sensitive growth sectors like Semiconductors/AI, though the sideways 3-month market trend suggests selective opportunities rather than broad sector runs.",
+      "key_themes": [
+        "NVDA trades in an uptrend at $226.32, sitting 1.7% above its 50MA of $222.50 with 3-month returns of +3.62%, in-line with SPY's +3.3%",
+        "Relative strength of NVDA vs SPY is essentially flat at +0.32 pts over 3 months, indicating no meaningful leadership or underperformance vs the market",
+        "SPY's 3-month trend is sideways at +3.3% despite the bullish regime signal, reflecting consolidation rather than a strong directional impulse for the sector"
+      ],
+      "unsourced_numbers": [
+        "$241.74",
+        "3.13",
+        "1.48",
+        "1.5"
+      ]
+    },
     {
       "sector": "EV/Automotive",
       "conviction": 5,
@@ -2453,1986 +3863,682 @@
         "1.41",
         "1.5"
       ]
-    },
-    {
-      "sector": "Technology",
-      "conviction": 7,
-      "sentiment": "bullish",
-      "tailwinds": [
-        "VIX below its 30d average (15.47 vs 15.67) confirms low-vol regime, supportive of long equity/tech exposure",
-        "SPY above both 50MA and 200MA; MSFT and META showing strong relative strength and uptrends"
-      ],
-      "headwinds": [
-        "Volume declining across all four tickers (-53% to -72%), signaling weakening participation in the rally",
-        "META is 12.4% above its 50MA with RV20 at 52% \u2014 extended and volatile, high pullback risk",
-        "AMZN in a downtrend despite sitting only 1.3% above its 50MA"
-      ],
-      "risk_to_thesis": "SPY falling below its 50MA ($766.28) or the VIX rising above its 30-day average (15.67) would invalidate the BULL_LOW_VOL thesis and remove the tailwind for long tech exposure",
-      "generated_at": "2026-10-12T19:51:44.259605+08:00",
-      "swing_trade_setup": {
-        "bias": "bullish",
-        "ticker": "MSFT",
-        "best_structure": "MSFT: ATM calls, 21-28 DTE",
-        "key_levels_to_watch": "Pullback: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $514.56 (0.59\u03c3 away) / stop $497.7 / target $548.27 \u00b7 R:R 2 \u00b7 Momentum: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $535.07 (now) / stop $517.54 / target $570.13 \u00b7 R:R 2 | Watch: SPY holding above $766 50MA; VIX remaining below 30d avg; MSFT holding above $500 50MA; improvement in volume participation",
-        "avoid": "puts (gate blocked), QQQ (blocklist), AMZN (downtrend, laggard)",
-        "gates": {
-          "pullback": {
-            "verdict": "TRADE",
-            "reasons": [],
-            "rr": 2.0,
-            "levels": {
-              "entry": 514.56,
-              "stop": 497.7,
-              "target": 548.27
-            },
-            "current_price": 535.07,
-            "profile": "swing_21_28",
-            "rules": {
-              "min_rr": 2.0,
-              "min_conviction": 5,
-              "max_level_distance_pct": 30,
-              "stop_premium_pct": -50,
-              "target_premium_pct": 100,
-              "time_exit_dte": 10,
-              "entry_dte_min": 21,
-              "entry_dte_max": 28,
-              "allow_expiry_hold": false,
-              "hold_trading_days": 10,
-              "max_target_sigma": 1.0,
-              "spread_target_pct_of_max": 50,
-              "spread_stop_pct_of_debit": 50,
-              "momentum_require_rs": true,
-              "momentum_min_rs_pct": 0.0,
-              "option_cost": {
-                "enabled": true,
-                "dte": 25,
-                "exit_trading_days": 5,
-                "iv_reversion": 0.5,
-                "rich_ratio": 1.3,
-                "cheap_ratio": 0.9,
-                "rate": 0.04,
-                "min_option_rr": 1.5
-              },
-              "allowed_structures": [
-                "long_call",
-                "long_put"
-              ],
-              "max_entry_gap_sigma": 1.0,
-              "delta_band": [
-                0.45,
-                0.6
-              ],
-              "rich_delta_band": [
-                0.6,
-                0.7
-              ],
-              "risk_budget_usd": null,
-              "account_usd": 3000,
-              "stock": {
-                "enabled": true,
-                "risk_pct_of_account": 1.0,
-                "max_position_pct_of_account": 50
-              },
-              "max_premium_pct_of_account": 15,
-              "counter_trend_puts": {
-                "enabled": true,
-                "max_rs_pct": -10.0,
-                "min_evidence_net": -2,
-                "min_nonprice_neg": 1
-              },
-              "stretch": {
-                "enabled": true,
-                "otm": {
-                  "enabled": true,
-                  "delta": 0.35,
-                  "label": "0.30-0.40\u0394",
-                  "dte": 25,
-                  "min_conviction": 7
-                },
-                "short_dte": {
-                  "enabled": true,
-                  "delta": 0.525,
-                  "label": "0.45-0.60\u0394",
-                  "dte": 15,
-                  "dte_label": "14-17",
-                  "time_exit_dte": 5,
-                  "min_conviction": 8,
-                  "strategies": [
-                    "momentum"
-                  ]
-                }
-              },
-              "strategies": {
-                "pullback": {
-                  "enabled": true,
-                  "stop_buffer_pct": 0.5,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                },
-                "momentum": {
-                  "enabled": true,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                }
-              }
-            },
-            "rule_warnings": [],
-            "reach": {
-              "iv": 0.3289,
-              "trading_days": 10,
-              "expected_move": 33.71,
-              "target_sigma": 1.0,
-              "stop_sigma": 0.5,
-              "breakeven_hit": 0.333,
-              "p_target_first": 0.255,
-              "p_stop_first": 0.555,
-              "p_neither": 0.19,
-              "mean_r_no_edge": 0.043
-            },
-            "exit_plan": "stop close below $497.7 or -50% premium \u00b7 target $548.27 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-            "option_cost": {
-              "valid": true,
-              "reason": "",
-              "iv": 0.3289,
-              "rv": 0.23,
-              "iv_rv_ratio": 1.43,
-              "iv_label": "rich",
-              "premium_pct": 3.6,
-              "at_target_pct": 103,
-              "at_stop_pct": -66,
-              "option_rr": 1.54,
-              "iv_exit": 0.2795,
-              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
-            },
-            "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
-            "structure_kind": "long_call",
-            "money": {
-              "premium": 1852,
-              "loss": 926,
-              "gain": 1852,
-              "loss_pct": 50,
-              "gain_pct": 100,
-              "contracts": null
-            },
-            "stock": {
-              "entry": 514.56,
-              "stop": 497.7,
-              "target": 548.27,
-              "risk_per_share": 16.86,
-              "gain_per_share": 33.71,
-              "shares": 1,
-              "cost": 515,
-              "risk": 17,
-              "gain": 34,
-              "cost_pct": 17,
-              "risk_pct": 0.6,
-              "risk_pct_cap": 1.0,
-              "one_share_risk_pct": 0.6,
-              "one_share_cost_pct": 17
-            },
-            "premium_cap": 450,
-            "affordable": false,
-            "stretch_tried": [
-              "otm: still $996 > $450",
-              "short_dte: conviction 7 < 8"
-            ],
-            "over_cap": true,
-            "over_cap_pct": 62,
-            "over_cap_loss_pct": 31,
-            "over_cap_note": "1 contract \u2248 $1,852 = 62% of account, loss at stop \u2248 $926 = 31% of account (cap 15% = $450); cheaper variants: otm: still $996 > $450; short_dte: conviction 7 < 8",
-            "iv": 0.3289,
-            "rv": 0.23,
-            "profiles": [
-              {
-                "name": "core",
-                "delta": 0.65,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 500.99,
-                "premium": 25.89,
-                "cost": 2589,
-                "at_target_pct": 90,
-                "at_stop_pct": -57,
-                "option_rr": 1.59,
-                "ok": false,
-                "why": "$2,589 > cap $450"
-              },
-              {
-                "name": "fast",
-                "delta": 0.525,
-                "dte": 15,
-                "exit_day": 10,
-                "strike": 514.4,
-                "premium": 14.18,
-                "cost": 1418,
-                "at_target_pct": 146,
-                "at_stop_pct": -82,
-                "option_rr": 1.79,
-                "ok": false,
-                "why": "pullback not allowed"
-              },
-              {
-                "name": "otm",
-                "delta": 0.35,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 535.35,
-                "premium": 9.96,
-                "cost": 996,
-                "at_target_pct": 116,
-                "at_stop_pct": -80,
-                "option_rr": 1.46,
-                "ok": false,
-                "why": "option R:R 1.46 < 1.5"
-              }
-            ],
-            "strategy": "pullback",
-            "entry_gap_sigma": 0.59,
-            "rs_vs_spy": 21.7
-          },
-          "momentum": {
-            "verdict": "TRADE",
-            "reasons": [],
-            "rr": 2.0,
-            "levels": {
-              "entry": 535.07,
-              "stop": 517.54,
-              "target": 570.13
-            },
-            "current_price": 535.07,
-            "profile": "swing_21_28",
-            "rules": {
-              "min_rr": 2.0,
-              "min_conviction": 5,
-              "max_level_distance_pct": 30,
-              "stop_premium_pct": -50,
-              "target_premium_pct": 100,
-              "time_exit_dte": 10,
-              "entry_dte_min": 21,
-              "entry_dte_max": 28,
-              "allow_expiry_hold": false,
-              "hold_trading_days": 10,
-              "max_target_sigma": 1.0,
-              "spread_target_pct_of_max": 50,
-              "spread_stop_pct_of_debit": 50,
-              "momentum_require_rs": true,
-              "momentum_min_rs_pct": 0.0,
-              "option_cost": {
-                "enabled": true,
-                "dte": 25,
-                "exit_trading_days": 5,
-                "iv_reversion": 0.5,
-                "rich_ratio": 1.3,
-                "cheap_ratio": 0.9,
-                "rate": 0.04,
-                "min_option_rr": 1.5
-              },
-              "allowed_structures": [
-                "long_call",
-                "long_put"
-              ],
-              "max_entry_gap_sigma": 1.0,
-              "delta_band": [
-                0.45,
-                0.6
-              ],
-              "rich_delta_band": [
-                0.6,
-                0.7
-              ],
-              "risk_budget_usd": null,
-              "account_usd": 3000,
-              "stock": {
-                "enabled": true,
-                "risk_pct_of_account": 1.0,
-                "max_position_pct_of_account": 50
-              },
-              "max_premium_pct_of_account": 15,
-              "counter_trend_puts": {
-                "enabled": true,
-                "max_rs_pct": -10.0,
-                "min_evidence_net": -2,
-                "min_nonprice_neg": 1
-              },
-              "stretch": {
-                "enabled": true,
-                "otm": {
-                  "enabled": true,
-                  "delta": 0.35,
-                  "label": "0.30-0.40\u0394",
-                  "dte": 25,
-                  "min_conviction": 7
-                },
-                "short_dte": {
-                  "enabled": true,
-                  "delta": 0.525,
-                  "label": "0.45-0.60\u0394",
-                  "dte": 15,
-                  "dte_label": "14-17",
-                  "time_exit_dte": 5,
-                  "min_conviction": 8,
-                  "strategies": [
-                    "momentum"
-                  ]
-                }
-              },
-              "strategies": {
-                "pullback": {
-                  "enabled": true,
-                  "stop_buffer_pct": 0.5,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                },
-                "momentum": {
-                  "enabled": true,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                }
-              }
-            },
-            "rule_warnings": [],
-            "reach": {
-              "iv": 0.3289,
-              "trading_days": 10,
-              "expected_move": 35.06,
-              "target_sigma": 1.0,
-              "stop_sigma": 0.5,
-              "breakeven_hit": 0.333,
-              "p_target_first": 0.255,
-              "p_stop_first": 0.555,
-              "p_neither": 0.19,
-              "mean_r_no_edge": 0.043
-            },
-            "exit_plan": "stop close below $517.54 or -50% premium \u00b7 target $570.13 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-            "option_cost": {
-              "valid": true,
-              "reason": "",
-              "iv": 0.3289,
-              "rv": 0.23,
-              "iv_rv_ratio": 1.43,
-              "iv_label": "rich",
-              "premium_pct": 3.6,
-              "at_target_pct": 103,
-              "at_stop_pct": -66,
-              "option_rr": 1.55,
-              "iv_exit": 0.2795,
-              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
-            },
-            "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
-            "structure_kind": "long_call",
-            "money": {
-              "premium": 1926,
-              "loss": 963,
-              "gain": 1926,
-              "loss_pct": 50,
-              "gain_pct": 100,
-              "contracts": null
-            },
-            "stock": {
-              "entry": 535.07,
-              "stop": 517.54,
-              "target": 570.13,
-              "risk_per_share": 17.53,
-              "gain_per_share": 35.06,
-              "shares": 1,
-              "cost": 535,
-              "risk": 18,
-              "gain": 35,
-              "cost_pct": 18,
-              "risk_pct": 0.6,
-              "risk_pct_cap": 1.0,
-              "one_share_risk_pct": 0.6,
-              "one_share_cost_pct": 18
-            },
-            "premium_cap": 450,
-            "affordable": false,
-            "stretch_tried": [
-              "otm: still $1,035 > $450",
-              "short_dte: conviction 7 < 8"
-            ],
-            "over_cap": true,
-            "over_cap_pct": 64,
-            "over_cap_loss_pct": 32,
-            "over_cap_note": "1 contract \u2248 $1,926 = 64% of account, loss at stop \u2248 $963 = 32% of account (cap 15% = $450); cheaper variants: otm: still $1,035 > $450; short_dte: conviction 7 < 8",
-            "iv": 0.3289,
-            "rv": 0.23,
-            "profiles": [
-              {
-                "name": "core",
-                "delta": 0.65,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 520.96,
-                "premium": 26.92,
-                "cost": 2692,
-                "at_target_pct": 90,
-                "at_stop_pct": -57,
-                "option_rr": 1.59,
-                "ok": false,
-                "why": "$2,692 > cap $450"
-              },
-              {
-                "name": "fast",
-                "delta": 0.525,
-                "dte": 15,
-                "exit_day": 10,
-                "strike": 534.9,
-                "premium": 14.75,
-                "cost": 1475,
-                "at_target_pct": 146,
-                "at_stop_pct": -82,
-                "option_rr": 1.79,
-                "ok": false,
-                "why": "conviction 7 < 8"
-              },
-              {
-                "name": "otm",
-                "delta": 0.35,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 556.69,
-                "premium": 10.35,
-                "cost": 1035,
-                "at_target_pct": 116,
-                "at_stop_pct": -80,
-                "option_rr": 1.46,
-                "ok": false,
-                "why": "option R:R 1.46 < 1.5"
-              }
-            ],
-            "strategy": "momentum",
-            "entry_gap_sigma": 0.0,
-            "rs_vs_spy": 21.7
-          },
-          "earnings": {
-            "status": "unknown",
-            "days": null,
-            "text": "Earnings: date unknown -- check before entry"
-          },
-          "primary": "momentum"
-        },
-        "gate": {
-          "verdict": "TRADE",
-          "reasons": [],
-          "rr": 2.0,
-          "levels": {
-            "entry": 535.07,
-            "stop": 517.54,
-            "target": 570.13
-          },
-          "current_price": 535.07,
-          "profile": "swing_21_28",
-          "rules": {
-            "min_rr": 2.0,
-            "min_conviction": 5,
-            "max_level_distance_pct": 30,
-            "stop_premium_pct": -50,
-            "target_premium_pct": 100,
-            "time_exit_dte": 10,
-            "entry_dte_min": 21,
-            "entry_dte_max": 28,
-            "allow_expiry_hold": false,
-            "hold_trading_days": 10,
-            "max_target_sigma": 1.0,
-            "spread_target_pct_of_max": 50,
-            "spread_stop_pct_of_debit": 50,
-            "momentum_require_rs": true,
-            "momentum_min_rs_pct": 0.0,
-            "option_cost": {
-              "enabled": true,
-              "dte": 25,
-              "exit_trading_days": 5,
-              "iv_reversion": 0.5,
-              "rich_ratio": 1.3,
-              "cheap_ratio": 0.9,
-              "rate": 0.04,
-              "min_option_rr": 1.5
-            },
-            "allowed_structures": [
-              "long_call",
-              "long_put"
-            ],
-            "max_entry_gap_sigma": 1.0,
-            "delta_band": [
-              0.45,
-              0.6
-            ],
-            "rich_delta_band": [
-              0.6,
-              0.7
-            ],
-            "risk_budget_usd": null,
-            "account_usd": 3000,
-            "stock": {
-              "enabled": true,
-              "risk_pct_of_account": 1.0,
-              "max_position_pct_of_account": 50
-            },
-            "max_premium_pct_of_account": 15,
-            "counter_trend_puts": {
-              "enabled": true,
-              "max_rs_pct": -10.0,
-              "min_evidence_net": -2,
-              "min_nonprice_neg": 1
-            },
-            "stretch": {
-              "enabled": true,
-              "otm": {
-                "enabled": true,
-                "delta": 0.35,
-                "label": "0.30-0.40\u0394",
-                "dte": 25,
-                "min_conviction": 7
-              },
-              "short_dte": {
-                "enabled": true,
-                "delta": 0.525,
-                "label": "0.45-0.60\u0394",
-                "dte": 15,
-                "dte_label": "14-17",
-                "time_exit_dte": 5,
-                "min_conviction": 8,
-                "strategies": [
-                  "momentum"
-                ]
-              }
-            },
-            "strategies": {
-              "pullback": {
-                "enabled": true,
-                "stop_buffer_pct": 0.5,
-                "stop_em": 0.5,
-                "target_em": 1.0
-              },
-              "momentum": {
-                "enabled": true,
-                "stop_em": 0.5,
-                "target_em": 1.0
-              }
-            }
-          },
-          "rule_warnings": [],
-          "reach": {
-            "iv": 0.3289,
-            "trading_days": 10,
-            "expected_move": 35.06,
-            "target_sigma": 1.0,
-            "stop_sigma": 0.5,
-            "breakeven_hit": 0.333,
-            "p_target_first": 0.255,
-            "p_stop_first": 0.555,
-            "p_neither": 0.19,
-            "mean_r_no_edge": 0.043
-          },
-          "exit_plan": "stop close below $517.54 or -50% premium \u00b7 target $570.13 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-          "option_cost": {
-            "valid": true,
-            "reason": "",
-            "iv": 0.3289,
-            "rv": 0.23,
-            "iv_rv_ratio": 1.43,
-            "iv_label": "rich",
-            "premium_pct": 3.6,
-            "at_target_pct": 103,
-            "at_stop_pct": -66,
-            "option_rr": 1.55,
-            "iv_exit": 0.2795,
-            "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
-          },
-          "structure": "Buy call 0.60-0.70\u0394, 21-28 DTE \u00b7 IV rich: higher delta + size down",
-          "structure_kind": "long_call",
-          "money": {
-            "premium": 1926,
-            "loss": 963,
-            "gain": 1926,
-            "loss_pct": 50,
-            "gain_pct": 100,
-            "contracts": null
-          },
-          "stock": {
-            "entry": 535.07,
-            "stop": 517.54,
-            "target": 570.13,
-            "risk_per_share": 17.53,
-            "gain_per_share": 35.06,
-            "shares": 1,
-            "cost": 535,
-            "risk": 18,
-            "gain": 35,
-            "cost_pct": 18,
-            "risk_pct": 0.6,
-            "risk_pct_cap": 1.0,
-            "one_share_risk_pct": 0.6,
-            "one_share_cost_pct": 18
-          },
-          "premium_cap": 450,
-          "affordable": false,
-          "stretch_tried": [
-            "otm: still $1,035 > $450",
-            "short_dte: conviction 7 < 8"
-          ],
-          "over_cap": true,
-          "over_cap_pct": 64,
-          "over_cap_loss_pct": 32,
-          "over_cap_note": "1 contract \u2248 $1,926 = 64% of account, loss at stop \u2248 $963 = 32% of account (cap 15% = $450); cheaper variants: otm: still $1,035 > $450; short_dte: conviction 7 < 8",
-          "iv": 0.3289,
-          "rv": 0.23,
-          "profiles": [
-            {
-              "name": "core",
-              "delta": 0.65,
-              "dte": 25,
-              "exit_day": 15,
-              "strike": 520.96,
-              "premium": 26.92,
-              "cost": 2692,
-              "at_target_pct": 90,
-              "at_stop_pct": -57,
-              "option_rr": 1.59,
-              "ok": false,
-              "why": "$2,692 > cap $450"
-            },
-            {
-              "name": "fast",
-              "delta": 0.525,
-              "dte": 15,
-              "exit_day": 10,
-              "strike": 534.9,
-              "premium": 14.75,
-              "cost": 1475,
-              "at_target_pct": 146,
-              "at_stop_pct": -82,
-              "option_rr": 1.79,
-              "ok": false,
-              "why": "conviction 7 < 8"
-            },
-            {
-              "name": "otm",
-              "delta": 0.35,
-              "dte": 25,
-              "exit_day": 15,
-              "strike": 556.69,
-              "premium": 10.35,
-              "cost": 1035,
-              "at_target_pct": 116,
-              "at_stop_pct": -80,
-              "option_rr": 1.46,
-              "ok": false,
-              "why": "option R:R 1.46 < 1.5"
-            }
-          ],
-          "strategy": "momentum",
-          "entry_gap_sigma": 0.0,
-          "rs_vs_spy": 21.7
-        },
-        "model_levels_to_watch": "SPY holding above $766 50MA; VIX remaining below 30d avg; MSFT holding above $500 50MA; improvement in volume participation"
-      },
-      "news_signal_vs_noise": {
-        "signal": "BULL_LOW_VOL regime with VIX below its 30d average and SPY above both MAs; MSFT and META relative strength are the dominant signals for the next 1-3 weeks",
-        "noise": "META's 12.4% distance above its 50MA with RV20 at 52% is likely an overextended move prone to mean reversion, not a continuation signal; SPY's sideways 3M trend despite gains suggests the rally is aging"
-      },
-      "notable_tickers": [
-        {
-          "ticker": "MSFT",
-          "role": "leader",
-          "reason": "Strongest relative performer in the sector (+21.7 pts vs SPY) in an uptrend with moderate 50MA distance at 7.0%",
-          "options_angle": "call setup"
-        },
-        {
-          "ticker": "META",
-          "role": "leader",
-          "reason": "Strong outperformer (+11.81 pts) in an uptrend, but 12.4% above 50MA with RV20 at 52% makes it extended",
-          "options_angle": "call setup"
-        },
-        {
-          "ticker": "AAPL",
-          "role": "leader",
-          "reason": "Steady outperformer (+4.85 pts) in an uptrend, closest to its 50MA at 4.4% above",
-          "options_angle": "call setup"
-        },
-        {
-          "ticker": "AMZN",
-          "role": "laggard",
-          "reason": "In a downtrend, only +1.21 pts vs SPY, with elevated RV20 at 25%",
-          "options_angle": "avoid"
-        }
-      ],
-      "macro_backdrop": "BULL_LOW_VOL regime: SPY at $778.57 sits above both its 50MA ($766.28) and 200MA ($719.66), while the VIX at 15.47 is below its 30-day average of 15.67. This combination favors long equity exposure in rate/beta-sensitive sectors like Technology. However, SPY's 3M trend is described as sideways despite a +3.75% return, suggesting consolidation rather than a strong directional push.",
-      "key_themes": [
-        "MSFT (+21.7 pts rel to SPY) and META (+11.81 pts) are strong outperforming leaders in the BULL_LOW_VOL regime, both in confirmed uptrends",
-        "AAPL is a steady outperformer (+4.85 pts) in an uptrend but showing declining participation",
-        "AMZN is the laggard \u2014 in a downtrend, only +1.21 pts vs SPY, with RV20 at 25%"
-      ],
-      "unsourced_numbers": [
-        "$514.56",
-        "0.59",
-        "$548.27",
-        "$517.54",
-        "$570.13"
-      ]
-    },
-    {
-      "sector": "Semiconductors/AI",
-      "conviction": 7,
-      "sentiment": "bullish",
-      "tailwinds": [
-        "NVDA trend is uptrend with 3M return +7.01% vs SPY +3.75%, confirming relative outperformance",
-        "SPY is above its 50MA ($766.28) and 200MA ($719.66), keeping the broader market in a bull regime",
-        "VIX at 15.47 is below its 30d average of 15.67, supporting risk appetite for growth/AI names"
-      ],
-      "headwinds": [
-        "NVDA volume is down 27% while the price is uptrend and 3.3% above 50MA \u2014 a falling-volume advance is vulnerable to a pullback",
-        "NVDA RV20 is 25%, implying elevated realized volatility that can whipsaw a 21-28 DTE swing",
-        "200MA is unavailable for NVDA, removing a key long-term trend filter from the analysis"
-      ],
-      "risk_to_thesis": "NVDA closing below its 50MA ($221.9) on expanding volume, which would turn the uptrend into a mean-reversion setup and remove the leader status.",
-      "generated_at": "2026-10-12T19:50:38.782361+08:00",
-      "swing_trade_setup": {
-        "bias": "bullish",
-        "ticker": "NVDA",
-        "best_structure": "NVDA: ATM calls, 21-28 DTE",
-        "key_levels_to_watch": "Pullback: \u2705 SETUP OK \u00b7 entry $228.32 (0.06\u03c3 away) / stop $220.79 / target $243.39 \u00b7 R:R 2 \u00b7 Momentum: \u2705 SETUP OK \u00b7 entry $229.28 (now) / stop $221.72 / target $244.41 \u00b7 R:R 2 | Watch: NVDA holding above its 50MA ($221.9) on rising volume; VIX staying under 18; SPY holding its 50MA ($766.28)",
-        "avoid": "selling puts or credit spreads in semis/AI; any trade in QQQ (blocklist)",
-        "gates": {
-          "pullback": {
-            "verdict": "TRADE",
-            "reasons": [],
-            "rr": 2.0,
-            "levels": {
-              "entry": 228.32,
-              "stop": 220.79,
-              "target": 243.39
-            },
-            "current_price": 229.28,
-            "profile": "swing_21_28",
-            "rules": {
-              "min_rr": 2.0,
-              "min_conviction": 5,
-              "max_level_distance_pct": 30,
-              "stop_premium_pct": -50,
-              "target_premium_pct": 100,
-              "time_exit_dte": 10,
-              "entry_dte_min": 21,
-              "entry_dte_max": 28,
-              "allow_expiry_hold": false,
-              "hold_trading_days": 10,
-              "max_target_sigma": 1.0,
-              "spread_target_pct_of_max": 50,
-              "spread_stop_pct_of_debit": 50,
-              "momentum_require_rs": true,
-              "momentum_min_rs_pct": 0.0,
-              "option_cost": {
-                "enabled": true,
-                "dte": 25,
-                "exit_trading_days": 5,
-                "iv_reversion": 0.5,
-                "rich_ratio": 1.3,
-                "cheap_ratio": 0.9,
-                "rate": 0.04,
-                "min_option_rr": 1.5
-              },
-              "allowed_structures": [
-                "long_call",
-                "long_put"
-              ],
-              "max_entry_gap_sigma": 1.0,
-              "delta_band": [
-                0.45,
-                0.6
-              ],
-              "rich_delta_band": [
-                0.6,
-                0.7
-              ],
-              "risk_budget_usd": null,
-              "account_usd": 3000,
-              "stock": {
-                "enabled": true,
-                "risk_pct_of_account": 1.0,
-                "max_position_pct_of_account": 50
-              },
-              "max_premium_pct_of_account": 15,
-              "counter_trend_puts": {
-                "enabled": true,
-                "max_rs_pct": -10.0,
-                "min_evidence_net": -2,
-                "min_nonprice_neg": 1
-              },
-              "stretch": {
-                "enabled": true,
-                "otm": {
-                  "enabled": true,
-                  "delta": 0.35,
-                  "label": "0.30-0.40\u0394",
-                  "dte": 25,
-                  "min_conviction": 7
-                },
-                "short_dte": {
-                  "enabled": true,
-                  "delta": 0.525,
-                  "label": "0.45-0.60\u0394",
-                  "dte": 15,
-                  "dte_label": "14-17",
-                  "time_exit_dte": 5,
-                  "min_conviction": 8,
-                  "strategies": [
-                    "momentum"
-                  ]
-                }
-              },
-              "strategies": {
-                "pullback": {
-                  "enabled": true,
-                  "stop_buffer_pct": 0.5,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                },
-                "momentum": {
-                  "enabled": true,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                }
-              }
-            },
-            "rule_warnings": [],
-            "reach": {
-              "iv": 0.3312,
-              "trading_days": 10,
-              "expected_move": 15.06,
-              "target_sigma": 1.0,
-              "stop_sigma": 0.5,
-              "breakeven_hit": 0.333,
-              "p_target_first": 0.255,
-              "p_stop_first": 0.555,
-              "p_neither": 0.19,
-              "mean_r_no_edge": 0.043
-            },
-            "exit_plan": "stop close below $220.79 or -50% premium \u00b7 target $243.39 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-            "option_cost": {
-              "valid": true,
-              "reason": "",
-              "iv": 0.3312,
-              "rv": 0.25,
-              "iv_rv_ratio": 1.32,
-              "iv_label": "rich",
-              "premium_pct": 3.6,
-              "at_target_pct": 104,
-              "at_stop_pct": -64,
-              "option_rr": 1.61,
-              "iv_exit": 0.2906,
-              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
-            },
-            "structure": "\u26a0 stretch (unproven): Buy call 0.30-0.40\u0394, 21-28 DTE (further OTM)",
-            "structure_kind": "long_call_otm",
-            "money": {
-              "premium": 445,
-              "loss": 222,
-              "gain": 445,
-              "loss_pct": 50,
-              "gain_pct": 100,
-              "contracts": null
-            },
-            "stock": {
-              "entry": 228.32,
-              "stop": 220.79,
-              "target": 243.39,
-              "risk_per_share": 7.53,
-              "gain_per_share": 15.07,
-              "shares": 3,
-              "cost": 685,
-              "risk": 23,
-              "gain": 45,
-              "cost_pct": 23,
-              "risk_pct": 0.8,
-              "risk_pct_cap": 1.0,
-              "one_share_risk_pct": 0.3,
-              "one_share_cost_pct": 8
-            },
-            "premium_cap": 450,
-            "affordable": false,
-            "stretch_tried": [
-              "otm: ok",
-              "short_dte: conviction 7 < 8"
-            ],
-            "stretch": {
-              "variant": "otm",
-              "strike": 237.61,
-              "option_rr": 1.55,
-              "at_target_pct": 120,
-              "at_stop_pct": -78
-            },
-            "iv": 0.3312,
-            "rv": 0.25,
-            "profiles": [
-              {
-                "name": "core",
-                "delta": 0.65,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 222.26,
-                "premium": 11.56,
-                "cost": 1156,
-                "at_target_pct": 91,
-                "at_stop_pct": -55,
-                "option_rr": 1.65,
-                "ok": false,
-                "why": "$1,156 > cap $450"
-              },
-              {
-                "name": "fast",
-                "delta": 0.525,
-                "dte": 15,
-                "exit_day": 10,
-                "strike": 228.25,
-                "premium": 6.33,
-                "cost": 633,
-                "at_target_pct": 147,
-                "at_stop_pct": -80,
-                "option_rr": 1.83,
-                "ok": false,
-                "why": "pullback not allowed"
-              },
-              {
-                "name": "otm",
-                "delta": 0.35,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 237.61,
-                "premium": 4.45,
-                "cost": 445,
-                "at_target_pct": 120,
-                "at_stop_pct": -78,
-                "option_rr": 1.55,
-                "ok": true,
-                "why": "",
-                "best": true
-              }
-            ],
-            "strategy": "pullback",
-            "entry_gap_sigma": 0.06,
-            "rs_vs_spy": 3.26
-          },
-          "momentum": {
-            "verdict": "TRADE",
-            "reasons": [],
-            "rr": 2.0,
-            "levels": {
-              "entry": 229.28,
-              "stop": 221.72,
-              "target": 244.41
-            },
-            "current_price": 229.28,
-            "profile": "swing_21_28",
-            "rules": {
-              "min_rr": 2.0,
-              "min_conviction": 5,
-              "max_level_distance_pct": 30,
-              "stop_premium_pct": -50,
-              "target_premium_pct": 100,
-              "time_exit_dte": 10,
-              "entry_dte_min": 21,
-              "entry_dte_max": 28,
-              "allow_expiry_hold": false,
-              "hold_trading_days": 10,
-              "max_target_sigma": 1.0,
-              "spread_target_pct_of_max": 50,
-              "spread_stop_pct_of_debit": 50,
-              "momentum_require_rs": true,
-              "momentum_min_rs_pct": 0.0,
-              "option_cost": {
-                "enabled": true,
-                "dte": 25,
-                "exit_trading_days": 5,
-                "iv_reversion": 0.5,
-                "rich_ratio": 1.3,
-                "cheap_ratio": 0.9,
-                "rate": 0.04,
-                "min_option_rr": 1.5
-              },
-              "allowed_structures": [
-                "long_call",
-                "long_put"
-              ],
-              "max_entry_gap_sigma": 1.0,
-              "delta_band": [
-                0.45,
-                0.6
-              ],
-              "rich_delta_band": [
-                0.6,
-                0.7
-              ],
-              "risk_budget_usd": null,
-              "account_usd": 3000,
-              "stock": {
-                "enabled": true,
-                "risk_pct_of_account": 1.0,
-                "max_position_pct_of_account": 50
-              },
-              "max_premium_pct_of_account": 15,
-              "counter_trend_puts": {
-                "enabled": true,
-                "max_rs_pct": -10.0,
-                "min_evidence_net": -2,
-                "min_nonprice_neg": 1
-              },
-              "stretch": {
-                "enabled": true,
-                "otm": {
-                  "enabled": true,
-                  "delta": 0.35,
-                  "label": "0.30-0.40\u0394",
-                  "dte": 25,
-                  "min_conviction": 7
-                },
-                "short_dte": {
-                  "enabled": true,
-                  "delta": 0.525,
-                  "label": "0.45-0.60\u0394",
-                  "dte": 15,
-                  "dte_label": "14-17",
-                  "time_exit_dte": 5,
-                  "min_conviction": 8,
-                  "strategies": [
-                    "momentum"
-                  ]
-                }
-              },
-              "strategies": {
-                "pullback": {
-                  "enabled": true,
-                  "stop_buffer_pct": 0.5,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                },
-                "momentum": {
-                  "enabled": true,
-                  "stop_em": 0.5,
-                  "target_em": 1.0
-                }
-              }
-            },
-            "rule_warnings": [],
-            "reach": {
-              "iv": 0.3312,
-              "trading_days": 10,
-              "expected_move": 15.13,
-              "target_sigma": 1.0,
-              "stop_sigma": 0.5,
-              "breakeven_hit": 0.333,
-              "p_target_first": 0.255,
-              "p_stop_first": 0.555,
-              "p_neither": 0.19,
-              "mean_r_no_edge": 0.043
-            },
-            "exit_plan": "stop close below $221.72 or -50% premium \u00b7 target $244.41 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-            "option_cost": {
-              "valid": true,
-              "reason": "",
-              "iv": 0.3312,
-              "rv": 0.25,
-              "iv_rv_ratio": 1.32,
-              "iv_label": "rich",
-              "premium_pct": 3.6,
-              "at_target_pct": 104,
-              "at_stop_pct": -64,
-              "option_rr": 1.61,
-              "iv_exit": 0.2906,
-              "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
-            },
-            "structure": "\u26a0 stretch (unproven): Buy call 0.30-0.40\u0394, 21-28 DTE (further OTM)",
-            "structure_kind": "long_call_otm",
-            "money": {
-              "premium": 447,
-              "loss": 224,
-              "gain": 447,
-              "loss_pct": 50,
-              "gain_pct": 100,
-              "contracts": null
-            },
-            "stock": {
-              "entry": 229.28,
-              "stop": 221.72,
-              "target": 244.41,
-              "risk_per_share": 7.56,
-              "gain_per_share": 15.13,
-              "shares": 3,
-              "cost": 688,
-              "risk": 23,
-              "gain": 45,
-              "cost_pct": 23,
-              "risk_pct": 0.8,
-              "risk_pct_cap": 1.0,
-              "one_share_risk_pct": 0.3,
-              "one_share_cost_pct": 8
-            },
-            "premium_cap": 450,
-            "affordable": false,
-            "stretch_tried": [
-              "otm: ok",
-              "short_dte: conviction 7 < 8"
-            ],
-            "stretch": {
-              "variant": "otm",
-              "strike": 238.61,
-              "option_rr": 1.55,
-              "at_target_pct": 120,
-              "at_stop_pct": -78
-            },
-            "iv": 0.3312,
-            "rv": 0.25,
-            "profiles": [
-              {
-                "name": "core",
-                "delta": 0.65,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 223.19,
-                "premium": 11.61,
-                "cost": 1161,
-                "at_target_pct": 91,
-                "at_stop_pct": -55,
-                "option_rr": 1.65,
-                "ok": false,
-                "why": "$1,161 > cap $450"
-              },
-              {
-                "name": "fast",
-                "delta": 0.525,
-                "dte": 15,
-                "exit_day": 10,
-                "strike": 229.21,
-                "premium": 6.36,
-                "cost": 636,
-                "at_target_pct": 147,
-                "at_stop_pct": -80,
-                "option_rr": 1.83,
-                "ok": false,
-                "why": "conviction 7 < 8"
-              },
-              {
-                "name": "otm",
-                "delta": 0.35,
-                "dte": 25,
-                "exit_day": 15,
-                "strike": 238.61,
-                "premium": 4.47,
-                "cost": 447,
-                "at_target_pct": 120,
-                "at_stop_pct": -78,
-                "option_rr": 1.55,
-                "ok": true,
-                "why": "",
-                "best": true
-              }
-            ],
-            "strategy": "momentum",
-            "entry_gap_sigma": 0.0,
-            "rs_vs_spy": 3.26
-          },
-          "earnings": {
-            "status": "unknown",
-            "days": null,
-            "text": "Earnings: date unknown -- check before entry"
-          },
-          "primary": "momentum"
-        },
-        "gate": {
-          "verdict": "TRADE",
-          "reasons": [],
-          "rr": 2.0,
-          "levels": {
-            "entry": 229.28,
-            "stop": 221.72,
-            "target": 244.41
-          },
-          "current_price": 229.28,
-          "profile": "swing_21_28",
-          "rules": {
-            "min_rr": 2.0,
-            "min_conviction": 5,
-            "max_level_distance_pct": 30,
-            "stop_premium_pct": -50,
-            "target_premium_pct": 100,
-            "time_exit_dte": 10,
-            "entry_dte_min": 21,
-            "entry_dte_max": 28,
-            "allow_expiry_hold": false,
-            "hold_trading_days": 10,
-            "max_target_sigma": 1.0,
-            "spread_target_pct_of_max": 50,
-            "spread_stop_pct_of_debit": 50,
-            "momentum_require_rs": true,
-            "momentum_min_rs_pct": 0.0,
-            "option_cost": {
-              "enabled": true,
-              "dte": 25,
-              "exit_trading_days": 5,
-              "iv_reversion": 0.5,
-              "rich_ratio": 1.3,
-              "cheap_ratio": 0.9,
-              "rate": 0.04,
-              "min_option_rr": 1.5
-            },
-            "allowed_structures": [
-              "long_call",
-              "long_put"
-            ],
-            "max_entry_gap_sigma": 1.0,
-            "delta_band": [
-              0.45,
-              0.6
-            ],
-            "rich_delta_band": [
-              0.6,
-              0.7
-            ],
-            "risk_budget_usd": null,
-            "account_usd": 3000,
-            "stock": {
-              "enabled": true,
-              "risk_pct_of_account": 1.0,
-              "max_position_pct_of_account": 50
-            },
-            "max_premium_pct_of_account": 15,
-            "counter_trend_puts": {
-              "enabled": true,
-              "max_rs_pct": -10.0,
-              "min_evidence_net": -2,
-              "min_nonprice_neg": 1
-            },
-            "stretch": {
-              "enabled": true,
-              "otm": {
-                "enabled": true,
-                "delta": 0.35,
-                "label": "0.30-0.40\u0394",
-                "dte": 25,
-                "min_conviction": 7
-              },
-              "short_dte": {
-                "enabled": true,
-                "delta": 0.525,
-                "label": "0.45-0.60\u0394",
-                "dte": 15,
-                "dte_label": "14-17",
-                "time_exit_dte": 5,
-                "min_conviction": 8,
-                "strategies": [
-                  "momentum"
-                ]
-              }
-            },
-            "strategies": {
-              "pullback": {
-                "enabled": true,
-                "stop_buffer_pct": 0.5,
-                "stop_em": 0.5,
-                "target_em": 1.0
-              },
-              "momentum": {
-                "enabled": true,
-                "stop_em": 0.5,
-                "target_em": 1.0
-              }
-            }
-          },
-          "rule_warnings": [],
-          "reach": {
-            "iv": 0.3312,
-            "trading_days": 10,
-            "expected_move": 15.13,
-            "target_sigma": 1.0,
-            "stop_sigma": 0.5,
-            "breakeven_hit": 0.333,
-            "p_target_first": 0.255,
-            "p_stop_first": 0.555,
-            "p_neither": 0.19,
-            "mean_r_no_edge": 0.043
-          },
-          "exit_plan": "stop close below $221.72 or -50% premium \u00b7 target $244.41 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
-          "option_cost": {
-            "valid": true,
-            "reason": "",
-            "iv": 0.3312,
-            "rv": 0.25,
-            "iv_rv_ratio": 1.32,
-            "iv_label": "rich",
-            "premium_pct": 3.6,
-            "at_target_pct": 104,
-            "at_stop_pct": -64,
-            "option_rr": 1.61,
-            "iv_exit": 0.2906,
-            "hint": "IV rich vs realized -- skip, size down, or buy 0.60-0.70\u0394 (less time value to lose)"
-          },
-          "structure": "\u26a0 stretch (unproven): Buy call 0.30-0.40\u0394, 21-28 DTE (further OTM)",
-          "structure_kind": "long_call_otm",
-          "money": {
-            "premium": 447,
-            "loss": 224,
-            "gain": 447,
-            "loss_pct": 50,
-            "gain_pct": 100,
-            "contracts": null
-          },
-          "stock": {
-            "entry": 229.28,
-            "stop": 221.72,
-            "target": 244.41,
-            "risk_per_share": 7.56,
-            "gain_per_share": 15.13,
-            "shares": 3,
-            "cost": 688,
-            "risk": 23,
-            "gain": 45,
-            "cost_pct": 23,
-            "risk_pct": 0.8,
-            "risk_pct_cap": 1.0,
-            "one_share_risk_pct": 0.3,
-            "one_share_cost_pct": 8
-          },
-          "premium_cap": 450,
-          "affordable": false,
-          "stretch_tried": [
-            "otm: ok",
-            "short_dte: conviction 7 < 8"
-          ],
-          "stretch": {
-            "variant": "otm",
-            "strike": 238.61,
-            "option_rr": 1.55,
-            "at_target_pct": 120,
-            "at_stop_pct": -78
-          },
-          "iv": 0.3312,
-          "rv": 0.25,
-          "profiles": [
-            {
-              "name": "core",
-              "delta": 0.65,
-              "dte": 25,
-              "exit_day": 15,
-              "strike": 223.19,
-              "premium": 11.61,
-              "cost": 1161,
-              "at_target_pct": 91,
-              "at_stop_pct": -55,
-              "option_rr": 1.65,
-              "ok": false,
-              "why": "$1,161 > cap $450"
-            },
-            {
-              "name": "fast",
-              "delta": 0.525,
-              "dte": 15,
-              "exit_day": 10,
-              "strike": 229.21,
-              "premium": 6.36,
-              "cost": 636,
-              "at_target_pct": 147,
-              "at_stop_pct": -80,
-              "option_rr": 1.83,
-              "ok": false,
-              "why": "conviction 7 < 8"
-            },
-            {
-              "name": "otm",
-              "delta": 0.35,
-              "dte": 25,
-              "exit_day": 15,
-              "strike": 238.61,
-              "premium": 4.47,
-              "cost": 447,
-              "at_target_pct": 120,
-              "at_stop_pct": -78,
-              "option_rr": 1.55,
-              "ok": true,
-              "why": "",
-              "best": true
-            }
-          ],
-          "strategy": "momentum",
-          "entry_gap_sigma": 0.0,
-          "rs_vs_spy": 3.26
-        },
-        "model_levels_to_watch": "NVDA holding above its 50MA ($221.9) on rising volume; VIX staying under 18; SPY holding its 50MA ($766.28)"
-      },
-      "news_signal_vs_noise": {
-        "signal": "NVDA's uptrend above 50MA, +3.26pts relative strength vs SPY, and BULL_LOW_VOL regime with VIX below 30d avg are the actionable data points for the next 1-3 weeks.",
-        "noise": "The -27% volume change without a news feed is ambiguous \u2014 it could be normal digestion or early distribution, so it is treated as noise until price breaks the 50MA or volume expands on a move."
-      },
-      "notable_tickers": [
-        {
-          "ticker": "NVDA",
-          "role": "leader",
-          "reason": "Only focus ticker with an uptrend, +7.01% 3M return and +3.26pts of relative strength vs SPY, sitting above its 50MA.",
-          "options_angle": "call setup"
-        }
-      ],
-      "macro_backdrop": "BULL_LOW_VOL regime with SPY at $778.57 holding above its 50MA ($766.28) and 200MA ($719.66), while VIX at 15.47 sits just below its 30d average of 15.67. The trend is sideways over 3 months, suggesting digestion rather than deterioration. For semis/AI this backdrop favors leaders with relative strength staying bid into mild dips.",
-      "key_themes": [
-        "NVDA is in an uptrend, 3.3% above its 50MA at $229.28 and beating SPY by +3.26pts over 3 months",
-        "SPY above both its 50MA and 200MA keeps the broader trend intact, supporting cyclical/tech exposure",
-        "VIX below its 30d average and a sideways 3M trend suggest low-vol digestion, a setup where relative strength leaders tend to keep outperforming"
-      ],
-      "unsourced_numbers": [
-        "0.06",
-        "$220.79",
-        "$243.39",
-        "$244.41"
-      ]
     }
   ],
-  "candidates_generated_at": "2026-10-13T20:01:00+08:00",
+  "candidates_generated_at": "2026-10-13T21:36:00+08:00",
   "candidates": [
+    {
+      "ticker": "SNPS",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 14.07,
+      "price": 499.55,
+      "priority": 14.07,
+      "iv_rank": 32.9,
+      "iv_regime": "LOW",
+      "days_to_earn": null,
+      "earnings_date": null,
+      "metrics_status": "ok"
+    },
     {
       "ticker": "HPE",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 11.63,
-      "price": 70.33,
-      "priority": 11.63,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 11.79,
+      "price": 68.63,
+      "priority": 11.79,
+      "iv_rank": 42.8,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 51,
+      "earnings_date": "2026-12-03",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "RIOT",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 11.57,
+      "price": 15.78,
+      "priority": 11.57,
+      "iv_rank": 6.0,
+      "iv_regime": "LOW",
+      "days_to_earn": 16,
+      "earnings_date": "2026-10-29",
+      "metrics_status": "ok"
     },
     {
       "ticker": "DKNG",
       "opt_action": "BUY_PUT",
       "trend_context": null,
       "signal": "SELL",
-      "ma_gap_pct": 11.46,
-      "price": 19.66,
-      "priority": 11.46,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "ALAB",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 10.42,
-      "price": 324.11,
-      "priority": 10.42,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "CDNS",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 10.3,
-      "price": 348.42,
-      "priority": 10.3,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 10.76,
+      "price": 19.76,
+      "priority": 10.76,
+      "iv_rank": 47.8,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 23,
+      "earnings_date": "2026-11-05",
+      "metrics_status": "ok"
     },
     {
       "ticker": "MRVL",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 10.25,
-      "price": 265.86,
-      "priority": 10.25,
-      "iv_rank": null,
-      "iv_regime": null,
+      "ma_gap_pct": 9.2,
+      "price": 251.84,
+      "priority": 9.2,
+      "iv_rank": 23.6,
+      "iv_regime": "LOW",
+      "days_to_earn": 49,
+      "earnings_date": "2026-12-01",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "CCL",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 9.11,
+      "price": 26.75,
+      "priority": 9.11,
+      "iv_rank": 17.6,
+      "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "unavailable"
+      "metrics_status": "ok"
     },
     {
       "ticker": "AMD",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 10.24,
-      "price": 594.24,
-      "priority": 10.24,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "AMAT",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 9.39,
-      "price": 497.53,
-      "priority": 9.39,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "TER",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 8.46,
-      "price": 383.85,
-      "priority": 8.46,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "CMCSA",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 8.2,
-      "price": 20.68,
-      "priority": 8.2,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "MPWR",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 7.91,
-      "price": 1319.23,
-      "priority": 7.91,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "LRCX",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 7.15,
-      "price": 309.56,
-      "priority": 7.15,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "ON",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 7.11,
-      "price": 76.0,
-      "priority": 7.11,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 8.97,
+      "price": 572.37,
+      "priority": 8.97,
+      "iv_rank": 20.3,
+      "iv_regime": "LOW",
+      "days_to_earn": 21,
+      "earnings_date": "2026-11-03",
+      "metrics_status": "ok"
     },
     {
       "ticker": "F",
       "opt_action": "BUY_PUT",
       "trend_context": null,
       "signal": "SELL",
-      "ma_gap_pct": 6.95,
-      "price": 12.0,
-      "priority": 6.95,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "KLAC",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 6.88,
-      "price": 190.12,
-      "priority": 6.88,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 6.66,
+      "price": 12.11,
+      "priority": 6.66,
+      "iv_rank": 49.2,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 15,
+      "earnings_date": "2026-10-28",
+      "metrics_status": "ok"
     },
     {
       "ticker": "ADI",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 6.6,
-      "price": 406.25,
-      "priority": 6.6,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "META",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 6.09,
-      "price": 742.96,
-      "priority": 6.09,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "GS",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 5.96,
-      "price": 893.95,
-      "priority": 5.96,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "MS",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 5.74,
-      "price": 190.02,
-      "priority": 5.74,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "TXN",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 5.64,
-      "price": 281.74,
-      "priority": 5.64,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 6.36,
+      "price": 404.74,
+      "priority": 6.36,
+      "iv_rank": 31.5,
+      "iv_regime": "LOW",
+      "days_to_earn": 42,
+      "earnings_date": "2026-11-24",
+      "metrics_status": "ok"
     },
     {
       "ticker": "SMCI",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 5.24,
-      "price": 39.98,
-      "priority": 5.24,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "TSM",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 4.94,
-      "price": 444.35,
-      "priority": 4.94,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "VALE",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 4.71,
-      "price": 13.52,
-      "priority": 4.71,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "ASML",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 4.69,
-      "price": 1750.24,
-      "priority": 4.69,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "BA",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 4.63,
-      "price": 189.5,
-      "priority": 4.63,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "GEV",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 4.02,
-      "price": 996.8,
-      "priority": 4.02,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "NKE",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 3.9,
-      "price": 35.35,
-      "priority": 3.9,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 4.57,
+      "price": 38.92,
+      "priority": 4.57,
+      "iv_rank": 48.8,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 21,
+      "earnings_date": "2026-11-03",
+      "metrics_status": "ok"
     },
     {
       "ticker": "VST",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 3.81,
-      "price": 158.13,
-      "priority": 3.81,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 4.5,
+      "price": 158.19,
+      "priority": 4.5,
+      "iv_rank": 47.1,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 24,
+      "earnings_date": "2026-11-06",
+      "metrics_status": "ok"
     },
     {
-      "ticker": "MU",
+      "ticker": "GEV",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 3.61,
-      "price": 989.04,
-      "priority": 3.61,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 3.93,
+      "price": 983.5,
+      "priority": 3.93,
+      "iv_rank": 42.3,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 15,
+      "earnings_date": "2026-10-28",
+      "metrics_status": "ok"
     },
     {
-      "ticker": "NEE",
+      "ticker": "NKE",
       "opt_action": "BUY_PUT",
       "trend_context": null,
       "signal": "SELL",
-      "ma_gap_pct": 3.21,
-      "price": 78.51,
-      "priority": 3.21,
-      "iv_rank": null,
-      "iv_regime": null,
+      "ma_gap_pct": 3.68,
+      "price": 35.7,
+      "priority": 3.68,
+      "iv_rank": 28.7,
+      "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "unavailable"
+      "metrics_status": "ok"
     },
     {
       "ticker": "MSFT",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 3.11,
-      "price": 541.15,
-      "priority": 3.11,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 3.61,
+      "price": 548.73,
+      "priority": 3.61,
+      "iv_rank": 43.3,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 15,
+      "earnings_date": "2026-10-28",
+      "metrics_status": "ok"
     },
     {
       "ticker": "NVDA",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 2.95,
-      "price": 226.32,
-      "priority": 2.95,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 2.74,
+      "price": 223.68,
+      "priority": 2.74,
+      "iv_rank": 8.5,
+      "iv_regime": "LOW",
+      "days_to_earn": 36,
+      "earnings_date": "2026-11-18",
+      "metrics_status": "ok"
     },
     {
-      "ticker": "TMO",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 2.88,
-      "price": 662.24,
-      "priority": 2.88,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "CSCO",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 2.8,
-      "price": 115.34,
-      "priority": 2.8,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "ETN",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 2.72,
-      "price": 426.69,
-      "priority": 2.72,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
-    },
-    {
-      "ticker": "SRE",
+      "ticker": "D",
       "opt_action": "BUY_PUT",
       "trend_context": null,
       "signal": "SELL",
-      "ma_gap_pct": 1.66,
-      "price": 81.88,
-      "priority": 1.66,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 2.18,
+      "price": 62.4,
+      "priority": 2.18,
+      "iv_rank": 32.4,
+      "iv_regime": "LOW",
+      "days_to_earn": 17,
+      "earnings_date": "2026-10-30",
+      "metrics_status": "ok"
     },
     {
       "ticker": "CEG",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 1.09,
-      "price": 293.89,
-      "priority": 1.09,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 1.84,
+      "price": 290.39,
+      "priority": 1.84,
+      "iv_rank": 37.5,
+      "iv_regime": "LOW",
+      "days_to_earn": 24,
+      "earnings_date": "2026-11-06",
+      "metrics_status": "ok"
     },
     {
-      "ticker": "XOM",
+      "ticker": "DUK",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 1.22,
+      "price": 117.99,
+      "priority": 1.22,
+      "iv_rank": 46.3,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 23,
+      "earnings_date": "2026-11-05",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "SRE",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 1.22,
+      "price": 82.03,
+      "priority": 1.22,
+      "iv_rank": 45.9,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 22,
+      "earnings_date": "2026-11-04",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "KMI",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 1.07,
-      "price": 172.15,
-      "priority": 1.07,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 1.16,
+      "price": 33.15,
+      "priority": 1.16,
+      "iv_rank": 41.5,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 15,
+      "earnings_date": "2026-10-28",
+      "metrics_status": "ok"
     },
     {
-      "ticker": "TSLA",
+      "ticker": "AAPL",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 0.8,
-      "price": 378.03,
-      "priority": 0.8,
-      "iv_rank": null,
-      "iv_regime": null,
-      "days_to_earn": null,
-      "earnings_date": null,
-      "metrics_status": "unavailable"
+      "ma_gap_pct": 1.13,
+      "price": 347.77,
+      "priority": 1.13,
+      "iv_rank": 49.3,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 20,
+      "earnings_date": "2026-11-02",
+      "metrics_status": "ok"
     },
     {
       "ticker": "SPY",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 0.72,
-      "price": 778.1,
-      "priority": 0.72,
-      "iv_rank": null,
-      "iv_regime": null,
+      "ma_gap_pct": 0.84,
+      "price": 777.53,
+      "priority": 0.84,
+      "iv_rank": 28.3,
+      "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "unavailable"
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "ETR",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 0.79,
+      "price": 104.19,
+      "priority": 0.79,
+      "iv_rank": 40.1,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 22,
+      "earnings_date": "2026-11-04",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "XEL",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 0.54,
+      "price": 74.34,
+      "priority": 0.54,
+      "iv_rank": null,
+      "iv_regime": null,
+      "days_to_earn": 16,
+      "earnings_date": "2026-10-29",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "BRK-B",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 0.1,
+      "price": 521.74,
+      "priority": 0.1,
+      "iv_rank": 30.3,
+      "iv_regime": "LOW",
+      "days_to_earn": 24,
+      "earnings_date": "2026-11-06",
+      "metrics_status": "ok"
     }
   ],
   "deep_dives": [
+    {
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "sector": "Technology \u2014 Enterprise Infrastructure / IT Hardware",
+      "bias": "bullish",
+      "conviction": 6,
+      "thesis": "HPE is in a confirmed uptrend (+31.71% 3M) with strong relative strength (+28.41 pts vs SPY) and broad bullish evidence across trend, RS, earnings beat (+18.4% 40d ago), analyst sentiment (8 up / 1 down), and neutral news. Fundamentals support the move: forward P/E 14.94 is reasonable vs trailing P/E 34.65, signaling expected margin expansion from a low 6.67% profit margin on $41.87B revenue. The stock is extended 20.2% above the 50MA on declining volume (-30%), and CEO Neri sold $17.1M in stock (Oct 8), introducing near-term risk.",
+      "moat_assessment": "Moderate moat \u2014 HPE benefits from enterprise switching costs, long-term service contracts, and brand recognition in data center infrastructure, but faces intense competition from Dell, Lenovo, and hyperscaler in-house designs that compress pricing power over time.",
+      "macro_sensitivity": "Positive sensitivity to rate cuts and easing financial conditions (enterprise IT capex); negative sensitivity to stronger USD (international revenue exposure) and VIX spikes (risk-off pressure on hardware multiples); CPI/PPI this week and FOMC Oct 28 are near-term volatility sources.",
+      "key_catalysts": [
+        "Next earnings: 2026-12-03 (~51 days) \u2014 not in hold window, so no earnings overhang",
+        "Trump Administration's $5B Genesis Mission expansion (Oct 12, Stocktwits) \u2014 HPE mentioned alongside INFQ/WLY as beneficiary"
+      ],
+      "disconfirming_evidence": "A daily close below the 50-day trendline on rising volume would invalidate the uptrench; hot CPI/PPI prints this week triggering rate-hike fears would pressure growth/hardware multiples; further insider selling or a downgrade among the 8 covering analysts.",
+      "bull_scenario": "Trend continues with RS leadership; HPE reaches $78-80 (+11-14%) within 10-14 days as enterprise IT spending narrative strengthens post-CPI.",
+      "base_scenario": null,
+      "bear_scenario": "Hot CPI/PPI prints trigger macro risk-off; HPE breaks below $65 (-7.5%) on volume as hardware multiples compress, with IV expansion accelerating premium decay.",
+      "trade_plan": {
+        "structure": "Buy 0.60-0.65 delta call, 21-28 DTE",
+        "entry_trigger": "Wait for a pullback to $66-67 (near recent short-term support) or a volume-backed bounce off the 5-day MA; if neither, momentum entry above $70.50 on volume recovery",
+        "target": "$78 (\u2248 +11%, within the 11.6% typical 10-day move implied by 58% IV)",
+        "stop": "Close below the 20-day MA or a daily close under $65 (\u2248 -7.5%)",
+        "position_size_note": "Half size (5% max) \u2014 IV rank 42.8 demands smaller position and higher delta; full size only if entry triggers on volume",
+        "risk_reward": "1:2",
+        "avoid_if": "a daily close below the stop level, IV rank jumps above 50 before entry, or another insider sale is disclosed"
+      },
+      "gate": {
+        "verdict": "WAIT",
+        "reasons": [
+          "limit $61.8 is 1.04\u03c3 away (> 1\u03c3) -- set an alert, not an order"
+        ],
+        "rr": 2.0,
+        "levels": {
+          "entry": 61.8,
+          "stop": 58.21,
+          "target": 68.98
+        },
+        "current_price": 70.33,
+        "profile": "swing_21_28",
+        "rules": {
+          "min_rr": 2.0,
+          "min_conviction": 5,
+          "max_level_distance_pct": 30,
+          "stop_premium_pct": -50,
+          "target_premium_pct": 100,
+          "time_exit_dte": 10,
+          "entry_dte_min": 21,
+          "entry_dte_max": 28,
+          "allow_expiry_hold": false,
+          "hold_trading_days": 10,
+          "max_target_sigma": 1.0,
+          "spread_target_pct_of_max": 50,
+          "spread_stop_pct_of_debit": 50,
+          "momentum_require_rs": true,
+          "momentum_min_rs_pct": 0.0,
+          "option_cost": {
+            "enabled": true,
+            "dte": 25,
+            "exit_trading_days": 5,
+            "iv_reversion": 0.5,
+            "rich_ratio": 1.3,
+            "cheap_ratio": 0.9,
+            "rate": 0.04,
+            "min_option_rr": 1.5
+          },
+          "allowed_structures": [
+            "long_call",
+            "long_put"
+          ],
+          "max_entry_gap_sigma": 1.0,
+          "delta_band": [
+            0.45,
+            0.6
+          ],
+          "rich_delta_band": [
+            0.6,
+            0.7
+          ],
+          "risk_budget_usd": null,
+          "account_usd": 3000,
+          "stock": {
+            "enabled": true,
+            "risk_pct_of_account": 1.0,
+            "max_position_pct_of_account": 50
+          },
+          "max_premium_pct_of_account": 15,
+          "counter_trend_puts": {
+            "enabled": true,
+            "max_rs_pct": -10.0,
+            "min_evidence_net": -2,
+            "min_nonprice_neg": 1
+          },
+          "stretch": {
+            "enabled": true,
+            "otm": {
+              "enabled": true,
+              "delta": 0.35,
+              "label": "0.30-0.40\u0394",
+              "dte": 25,
+              "min_conviction": 7
+            },
+            "short_dte": {
+              "enabled": true,
+              "delta": 0.525,
+              "label": "0.45-0.60\u0394",
+              "dte": 15,
+              "dte_label": "14-17",
+              "time_exit_dte": 5,
+              "min_conviction": 8,
+              "strategies": [
+                "momentum"
+              ]
+            }
+          },
+          "strategies": {
+            "pullback": {
+              "enabled": true,
+              "stop_buffer_pct": 0.5,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            },
+            "momentum": {
+              "enabled": true,
+              "stop_em": 0.5,
+              "target_em": 1.0
+            }
+          }
+        },
+        "rule_warnings": [],
+        "reach": {
+          "iv": 0.5836,
+          "trading_days": 10,
+          "expected_move": 7.18,
+          "target_sigma": 1.0,
+          "stop_sigma": 0.5,
+          "breakeven_hit": 0.333,
+          "p_target_first": 0.258,
+          "p_stop_first": 0.558,
+          "p_neither": 0.184,
+          "mean_r_no_edge": 0.038
+        },
+        "exit_plan": "stop close below $58.21 or -50% premium \u00b7 target $68.98 or +100% premium \u00b7 close by 10 DTE \u00b7 no expiry hold",
+        "option_cost": {
+          "valid": true,
+          "reason": "",
+          "iv": 0.5836,
+          "rv": 0.47,
+          "iv_rv_ratio": 1.24,
+          "iv_label": "fair",
+          "premium_pct": 6.2,
+          "at_target_pct": 108,
+          "at_stop_pct": -64,
+          "option_rr": 1.7,
+          "iv_exit": 0.5268,
+          "hint": "IV fair vs realized"
+        },
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "money": {
+          "premium": 383,
+          "loss": 192,
+          "gain": 383,
+          "loss_pct": 50,
+          "gain_pct": 100,
+          "contracts": null
+        },
+        "stock": {
+          "entry": 61.8,
+          "stop": 58.21,
+          "target": 68.98,
+          "risk_per_share": 3.59,
+          "gain_per_share": 7.18,
+          "shares": 8,
+          "cost": 494,
+          "risk": 29,
+          "gain": 57,
+          "cost_pct": 16,
+          "risk_pct": 1.0,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 0.1,
+          "one_share_cost_pct": 2
+        },
+        "premium_cap": 450,
+        "affordable": true,
+        "iv": 0.5836,
+        "rv": 0.47,
+        "profiles": [
+          {
+            "name": "core",
+            "delta": 0.525,
+            "dte": 25,
+            "exit_day": 15,
+            "strike": 62.1,
+            "premium": 3.7,
+            "cost": 370,
+            "at_target_pct": 109,
+            "at_stop_pct": -65,
+            "option_rr": 1.69,
+            "ok": true,
+            "why": "",
+            "best": true
+          },
+          {
+            "name": "fast",
+            "delta": 0.525,
+            "dte": 15,
+            "exit_day": 10,
+            "strike": 61.88,
+            "premium": 2.93,
+            "cost": 293,
+            "at_target_pct": 151,
+            "at_stop_pct": -80,
+            "option_rr": 1.89,
+            "ok": false,
+            "why": "pullback not allowed"
+          },
+          {
+            "name": "otm",
+            "delta": 0.35,
+            "dte": 25,
+            "exit_day": 15,
+            "strike": 66.5,
+            "premium": 2.05,
+            "cost": 205,
+            "at_target_pct": 126,
+            "at_stop_pct": -77,
+            "option_rr": 1.65,
+            "ok": false,
+            "why": "conviction 6 < 7"
+          }
+        ],
+        "strategy": "pullback",
+        "entry_gap_sigma": 1.04,
+        "rs_vs_spy": 28.41
+      },
+      "verdict": {
+        "label": "WAIT",
+        "do_now": "nothing yet -- alert at $61.8 (pullback limit)",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": {
+          "entry": 61.8,
+          "stop": 58.21,
+          "target": 68.98
+        },
+        "rr": 2.0,
+        "reasons": [
+          "limit $61.8 is 1.04\u03c3 away (> 1\u03c3) -- set an alert, not an order"
+        ],
+        "limit": true,
+        "flags": [],
+        "stock": {
+          "entry": 61.8,
+          "stop": 58.21,
+          "target": 68.98,
+          "risk_per_share": 3.59,
+          "gain_per_share": 7.18,
+          "shares": 8,
+          "cost": 494,
+          "risk": 29,
+          "gain": 57,
+          "cost_pct": 16,
+          "risk_pct": 1.0,
+          "risk_pct_cap": 1.0,
+          "one_share_risk_pct": 0.1,
+          "one_share_cost_pct": 2
+        }
+      },
+      "cautions": [
+        "20.2% extended above the 50MA on -30% volume \u2014 trend intact but participation is fading",
+        "CEO Antonio Neri sold $17.1M in stock (Oct 8) \u2014 large insider disposal signals near-term caution",
+        "IV rank 42.8 \u2014 premium is elevated, reducing edge on entry timing",
+        "Trailing P/E 34.65 is elevated vs forward 14.94 \u2014 depends on margin execution that has not yet materialized in revenue growth (0.34%)"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": 4,
+        "direction": "bullish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": 1,
+            "reason": "+28.41 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": 1,
+            "reason": "beat +18.4% (40d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 1,
+            "reason": "8 up / 1 down (30d, Yahoo)"
+          },
+          {
+            "name": "news",
+            "score": 0,
+            "reason": "no directional headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": 20.2,
+        "sigma": 1.7
+      },
+      "unsourced_numbers": [
+        "0.34%"
+      ],
+      "fundamentals_note": "Trailing P/E 34.65 vs forward P/E 14.94 signals expected margin expansion; profit margin 6.67% on $41.87B revenue with 0.34% rev growth; analyst mean target $72.03 (vs $70.33 current).",
+      "researched_at": "2026-10-13T21:16:09.338898+08:00"
+    },
     {
       "ticker": "NVDA",
       "company": "NVIDIA Corporation",
@@ -7266,8 +7372,26 @@
     {
       "date": "2026-10-13",
       "kind": "analyst",
+      "id": "analyst_brief_20261013_212501_69df",
+      "summary": "0 deep-dive(s), regime bull_low_vol"
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "analyst",
       "id": "analyst_brief_20261013_195002_7221",
       "summary": "0 deep-dive(s), regime bull_low_vol"
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "sector",
+      "id": "sector_brief_semiconductors-ai_20261013",
+      "summary": "Semiconductors/AI -- conviction 5"
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "sector",
+      "id": "sector_brief_technology_20261013",
+      "summary": "Technology -- conviction 6"
     },
     {
       "date": "2026-10-13",
@@ -7298,6 +7422,12 @@
       "kind": "deepdive",
       "id": "deepdive_ORCL_20261013T174557.962661_0800",
       "summary": "ORCL [BULLISH] -- conviction 6/10"
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "deepdive",
+      "id": "deepdive_HPE_20261013T211609.338898_0800",
+      "summary": "HPE [BULLISH] -- conviction 6/10"
     },
     {
       "date": "2026-10-13",
@@ -7838,30 +7968,6 @@
       "kind": "deepdive",
       "id": "deepdive_MRVL_20260930T214616.583108_0800",
       "summary": "MRVL [BULLISH] -- conviction 6/10"
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "deepdive",
-      "id": "deepdive_NVDA_20260930T002031.881691_0800",
-      "summary": "NVDA [BULLISH] -- conviction 8/10"
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "deepdive",
-      "id": "deepdive_AMD_20260930T210555.344207_0800",
-      "summary": "AMD [BULLISH] -- conviction 7/10"
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "deepdive",
-      "id": "deepdive_QCOM_20260930T210731.378487_0800",
-      "summary": "QCOM [NEUTRAL] -- conviction 5/10"
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "analyst",
-      "id": "analyst_brief_20260929_195002_041a",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
     }
   ]
 }
