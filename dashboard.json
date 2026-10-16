@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T14:39:33.156386+08:00",
+  "generated_at": "2026-10-16T20:10:02.531568+08:00",
   "regime": {
     "regime": "bull_low_vol",
-    "vix": 17.49,
-    "spy_price": 769.6,
+    "vix": 16.15,
+    "spy_price": 771.79,
     "gates": {
       "allow_calls": true,
       "allow_puts": false,
@@ -11,6 +11,67 @@
     }
   },
   "sectors": [
+    {
+      "sector": "EV/Automotive",
+      "conviction": 4,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "BULL_LOW_VOL regime with SPY above both MAs supports directional call exposure",
+        "TSLA is in an uptrend and trading above its 50MA, providing a near-term technical floor"
+      ],
+      "headwinds": [
+        "TSLA underperformed SPY by 13.87 points over the past 3 months \u2014 a strong underperformer in a bull market",
+        "Volume has declined 57%, signaling weak participation in the current uptrend",
+        "TSLA is only 1.0% above its 50MA, leaving minimal margin before a trend break"
+      ],
+      "risk_to_thesis": "TSLA closes below its 50MA on above-average volume, which would break the uptrend and invalidate the bullish structure entirely.",
+      "generated_at": "2026-10-16T19:52:02.003594+08:00",
+      "swing_trade_setup": {
+        "bias": "neutral",
+        "best_structure": "TSLA: ATM calls, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE -- no directional view ('neutral'); conviction 4 < 5 \u00b7 Momentum: \u26d4 NO TRADE -- no directional view ('neutral'); conviction 4 < 5 | Watch: Volume recovery needed to confirm the uptrend; a close below the 50MA ($358.80) on expanding volume would invalidate the setup; VIX rising above its 30d average of 15.81 would pressure the bullish regime.",
+        "avoid": "Aggressive call positions or oversized sizing \u2014 TSLA's 13.87-point underperformance vs SPY and 57% volume decline warrant restrained exposure.",
+        "ticker": "TSLA",
+        "gate": {
+          "verdict": "NO TRADE",
+          "strategy": "pullback",
+          "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+          "structure_kind": "long_call",
+          "current_price": 362.44,
+          "rr": null,
+          "iv": 0.4828,
+          "rv": 0.31,
+          "rs_vs_spy": -13.87,
+          "entry_gap_sigma": null,
+          "levels": null,
+          "reasons": [
+            "no directional view ('neutral')",
+            "conviction 4 < 5"
+          ]
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "TSLA's proximity to its 50MA in a BULL_LOW_VOL regime with calls allowed \u2014 the uptrend and MA support are the most actionable inputs for a 1-3 week horizon.",
+        "noise": "The -8.63% 3-month return may be noise given the current uptrend is intact and TSLA sits above its 50MA; without news data, the magnitude of the prior decline cannot be confirmed as a persistent trend."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "TSLA",
+          "role": "watch",
+          "reason": "EV sector leader trading in an uptrend just above its 50MA, but severe relative underperformance vs SPY and collapsing volume raise conviction questions.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY trades above both its 50MA ($767.47) and 200MA ($721.47) in a BULL_LOW_VOL regime, with VIX at 16.15 \u2014 just 0.34 pts above its 30d average of 15.81. This supports risk-on positioning for growth sectors like EV. However, SPY's 3-month trend is sideways (+5.24%) rather than strongly directional, suggesting selective participation rather than broad momentum.",
+      "key_themes": [
+        "TSLA in an uptrend but has underperformed SPY by 13.87 points over the past 3 months \u2014 a significant divergence in a bull market",
+        "TSLA sits just 1.0% above its 50MA ($358.80) with volume down 57%, indicating the uptrend lacks strong participation",
+        "BULL_LOW_VOL regime with calls ALLOWED favors long call structures, but TSLA's relative weakness and falling volume demand caution"
+      ],
+      "unsourced_numbers": [
+        "0.34"
+      ]
+    },
     {
       "sector": "Broad Market (Nasdaq-100)",
       "conviction": 5,
@@ -214,66 +275,6 @@
       "unsourced_numbers": []
     },
     {
-      "sector": "EV/Automotive",
-      "conviction": 4,
-      "sentiment": "neutral",
-      "tailwinds": [
-        "BULL_LOW_VOL regime with SPY above both its 50MA and 200MA supports risk assets broadly",
-        "TSLA maintains an uptrend and trades 5.1% above its 50MA, with RV20 at 30% manageable for swing structures",
-        "VIX at 15.76 near its 30-day average (15.64) implies no imminent volatility spike"
-      ],
-      "headwinds": [
-        "TSLA volume has declined 56% during its uptrend, suggesting waning participation and weak conviction",
-        "TSLA has underperformed SPY by 10.05 points over three months (-4.03% vs SPY +6.02%), indicating structural sector weakness",
-        "TSLA is 5.1% extended above its 50MA, leaving it vulnerable to mean reversion"
-      ],
-      "risk_to_thesis": "TSLA closing below its 50MA ($357.1) or SPY losing its 50MA ($767.39), which would invalidate the bull regime thesis for EV/Automotive",
-      "generated_at": "2026-10-14T21:26:29.091821+08:00",
-      "swing_trade_setup": {
-        "bias": "mixed",
-        "best_structure": "TSLA: ATM calls, 21-28 DTE",
-        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE -- no directional view ('mixed'); conviction 4 < 5 \u00b7 Momentum: \u26d4 NO TRADE -- no directional view ('mixed'); conviction 4 < 5 | Watch: TSLA vs 50MA ($357.1) for trend integrity, volume recovery to confirm participation, SPY holding above its 50MA ($767.39), RV20 at 30% for vol regime",
-        "avoid": "QQQ (blocklist), put structures (blocked by signal gate)",
-        "ticker": "TSLA",
-        "gate": {
-          "verdict": "NO TRADE",
-          "strategy": "pullback",
-          "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-          "structure_kind": "long_call",
-          "current_price": 375.23,
-          "rr": null,
-          "iv": 0.454,
-          "rv": 0.3,
-          "rs_vs_spy": -10.05,
-          "entry_gap_sigma": null,
-          "levels": null,
-          "reasons": [
-            "no directional view ('mixed')",
-            "conviction 4 < 5"
-          ]
-        }
-      },
-      "news_signal_vs_noise": {
-        "signal": "TSLA's uptrend above the 50MA and the BULL_LOW_VOL regime with SPY above both MAs matter most for 1-3 weeks",
-        "noise": "TSLA's 3M underperformance (-4.03%) may be consolidation noise within a sideways SPY context rather than structural breakdown, but the volume decline (-56%) warrants monitoring"
-      },
-      "notable_tickers": [
-        {
-          "ticker": "TSLA",
-          "role": "leader",
-          "reason": "Largest EV/Automotive name in the watchlist with a confirmed uptrend above its 50MA",
-          "options_angle": "call setup"
-        }
-      ],
-      "macro_backdrop": "SPY trades above both its 50MA ($767.39) and 200MA ($720.6), confirming a bull market structure. VIX at 15.76 sits near its 30-day average of 15.64, implying low-vol complacency. The BULL_LOW_VOL regime is broadly supportive for equities, but TSLA has underperformed SPY by 10.05 points over three months, signaling sector-specific weakness.",
-      "key_themes": [
-        "TSLA is in an uptrend and above its 50MA ($357.1), but has underperformed SPY by 10.05 points over the past three months",
-        "TSLA's uptrend is on declining volume (-56%), raising sustainability concerns despite the bull regime",
-        "SPY sideways trend (+6.02% 3M) above both MAs with VIX near average provides a low-vol backdrop but no strong directional impulse"
-      ],
-      "unsourced_numbers": []
-    },
-    {
       "sector": "Broad Market (S&P 500)",
       "conviction": 6,
       "sentiment": "bullish",
@@ -331,62 +332,20 @@
       "unsourced_numbers": []
     }
   ],
-  "candidates_generated_at": "2026-10-15T21:36:00+08:00",
+  "candidates_generated_at": "2026-10-16T20:01:00+08:00",
   "candidates": [
-    {
-      "ticker": "RIOT",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 15.41,
-      "price": 14.04,
-      "priority": 15.41,
-      "iv_rank": 40.1,
-      "iv_regime": "MEDIUM",
-      "days_to_earn": 14,
-      "earnings_date": "2026-10-29",
-      "metrics_status": "ok"
-    },
-    {
-      "ticker": "CLSK",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 14.0,
-      "price": 8.52,
-      "priority": 14.0,
-      "iv_rank": 14.4,
-      "iv_regime": "LOW",
-      "days_to_earn": 40,
-      "earnings_date": "2026-11-24",
-      "metrics_status": "ok"
-    },
     {
       "ticker": "SNPS",
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 13.36,
-      "price": 459.02,
-      "priority": 13.36,
-      "iv_rank": 28.0,
+      "ma_gap_pct": 13.49,
+      "price": 468.11,
+      "priority": 13.49,
+      "iv_rank": 32.2,
       "iv_regime": "LOW",
-      "days_to_earn": 55,
+      "days_to_earn": 54,
       "earnings_date": "2026-12-09",
-      "metrics_status": "ok"
-    },
-    {
-      "ticker": "HPE",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 9.52,
-      "price": 58.04,
-      "priority": 9.52,
-      "iv_rank": 49.5,
-      "iv_regime": "MEDIUM",
-      "days_to_earn": 49,
-      "earnings_date": "2026-12-03",
       "metrics_status": "ok"
     },
     {
@@ -394,13 +353,55 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 9.36,
-      "price": 26.11,
-      "priority": 9.36,
-      "iv_rank": 16.1,
+      "ma_gap_pct": 9.45,
+      "price": 26.46,
+      "priority": 9.45,
+      "iv_rank": 16.9,
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "MPC",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 8.78,
+      "price": 476.92,
+      "priority": 8.78,
+      "iv_rank": null,
+      "iv_regime": null,
+      "days_to_earn": 18,
+      "earnings_date": "2026-11-03",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "RGTI",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 8.1,
+      "price": 12.63,
+      "priority": 8.1,
+      "iv_rank": 18.1,
+      "iv_regime": "LOW",
+      "days_to_earn": 24,
+      "earnings_date": "2026-11-09",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "MRVL",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 6.8,
+      "price": 241.24,
+      "priority": 6.8,
+      "iv_rank": 28.9,
+      "iv_regime": "LOW",
+      "days_to_earn": 46,
+      "earnings_date": "2026-12-01",
       "metrics_status": "ok"
     },
     {
@@ -408,13 +409,27 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 6.02,
-      "price": 534.8,
-      "priority": 6.02,
+      "ma_gap_pct": 6.33,
+      "price": 562.23,
+      "priority": 6.33,
       "iv_rank": 31.8,
       "iv_regime": "LOW",
-      "days_to_earn": 19,
+      "days_to_earn": 18,
       "earnings_date": "2026-11-03",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "VST",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 5.99,
+      "price": 154.17,
+      "priority": 5.99,
+      "iv_rank": 48.3,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 21,
+      "earnings_date": "2026-11-06",
       "metrics_status": "ok"
     },
     {
@@ -422,27 +437,13 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 5.74,
-      "price": 400.39,
-      "priority": 5.74,
-      "iv_rank": 39.6,
-      "iv_regime": "LOW",
-      "days_to_earn": 40,
+      "ma_gap_pct": 5.8,
+      "price": 403.95,
+      "priority": 5.8,
+      "iv_rank": 40.8,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 39,
       "earnings_date": "2026-11-24",
-      "metrics_status": "ok"
-    },
-    {
-      "ticker": "GS",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 5.44,
-      "price": 870.51,
-      "priority": 5.44,
-      "iv_rank": 34.1,
-      "iv_regime": "LOW",
-      "days_to_earn": null,
-      "earnings_date": null,
       "metrics_status": "ok"
     },
     {
@@ -450,10 +451,38 @@
       "opt_action": "BUY_PUT",
       "trend_context": null,
       "signal": "SELL",
-      "ma_gap_pct": 5.4,
-      "price": 179.87,
-      "priority": 5.4,
-      "iv_rank": 20.9,
+      "ma_gap_pct": 5.32,
+      "price": 182.1,
+      "priority": 5.32,
+      "iv_rank": 19.2,
+      "iv_regime": "LOW",
+      "days_to_earn": null,
+      "earnings_date": null,
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "GS",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 5.29,
+      "price": 891.28,
+      "priority": 5.29,
+      "iv_rank": 31.4,
+      "iv_regime": "LOW",
+      "days_to_earn": null,
+      "earnings_date": null,
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "C",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 3.46,
+      "price": 123.21,
+      "priority": 3.46,
+      "iv_rank": 8.5,
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
@@ -464,27 +493,13 @@
       "opt_action": "BUY_PUT",
       "trend_context": null,
       "signal": "SELL",
-      "ma_gap_pct": 3.77,
-      "price": 30.41,
-      "priority": 3.77,
-      "iv_rank": 30.9,
+      "ma_gap_pct": 3.1,
+      "price": 34.35,
+      "priority": 3.1,
+      "iv_rank": 33.0,
       "iv_regime": "LOW",
-      "days_to_earn": 20,
+      "days_to_earn": 19,
       "earnings_date": "2026-11-04",
-      "metrics_status": "ok"
-    },
-    {
-      "ticker": "C",
-      "opt_action": "BUY_PUT",
-      "trend_context": null,
-      "signal": "SELL",
-      "ma_gap_pct": 3.54,
-      "price": 121.74,
-      "priority": 3.54,
-      "iv_rank": 11.0,
-      "iv_regime": "LOW",
-      "days_to_earn": null,
-      "earnings_date": null,
       "metrics_status": "ok"
     },
     {
@@ -492,10 +507,10 @@
       "opt_action": "BUY_PUT",
       "trend_context": null,
       "signal": "SELL",
-      "ma_gap_pct": 2.97,
-      "price": 36.6,
-      "priority": 2.97,
-      "iv_rank": 29.1,
+      "ma_gap_pct": 2.87,
+      "price": 37.14,
+      "priority": 2.87,
+      "iv_rank": 35.1,
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
@@ -507,26 +522,12 @@
       "trend_context": null,
       "signal": "BUY",
       "ma_gap_pct": 1.45,
-      "price": 141.68,
+      "price": 141.73,
       "priority": 1.45,
-      "iv_rank": 40.9,
+      "iv_rank": 44.6,
       "iv_regime": "MEDIUM",
-      "days_to_earn": 21,
+      "days_to_earn": 20,
       "earnings_date": "2026-11-05",
-      "metrics_status": "ok"
-    },
-    {
-      "ticker": "BRK-B",
-      "opt_action": "BUY_CALL",
-      "trend_context": null,
-      "signal": "BUY",
-      "ma_gap_pct": 0.94,
-      "price": 532.79,
-      "priority": 0.94,
-      "iv_rank": 48.5,
-      "iv_regime": "MEDIUM",
-      "days_to_earn": 22,
-      "earnings_date": "2026-11-06",
       "metrics_status": "ok"
     },
     {
@@ -534,13 +535,41 @@
       "opt_action": "BUY_CALL",
       "trend_context": null,
       "signal": "BUY",
-      "ma_gap_pct": 0.9,
-      "price": 765.67,
-      "priority": 0.9,
-      "iv_rank": 35.9,
+      "ma_gap_pct": 0.96,
+      "price": 771.79,
+      "priority": 0.96,
+      "iv_rank": 34.2,
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "BRK-B",
+      "opt_action": "BUY_CALL",
+      "trend_context": null,
+      "signal": "BUY",
+      "ma_gap_pct": 0.85,
+      "price": 525.68,
+      "priority": 0.85,
+      "iv_rank": 44.0,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 21,
+      "earnings_date": "2026-11-06",
+      "metrics_status": "ok"
+    },
+    {
+      "ticker": "SRE",
+      "opt_action": "BUY_PUT",
+      "trend_context": null,
+      "signal": "SELL",
+      "ma_gap_pct": 0.1,
+      "price": 81.93,
+      "priority": 0.1,
+      "iv_rank": 40.9,
+      "iv_regime": "MEDIUM",
+      "days_to_earn": 19,
+      "earnings_date": "2026-11-04",
       "metrics_status": "ok"
     }
   ],
@@ -2254,6 +2283,18 @@
   "history": [
     {
       "date": "2026-10-16",
+      "kind": "analyst",
+      "id": "analyst_brief_20261016_195001_44b0",
+      "summary": "0 deep-dive(s), regime bull_low_vol"
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "sector",
+      "id": "sector_brief_ev-automotive_20261016",
+      "summary": "EV/Automotive -- conviction 4"
+    },
+    {
+      "date": "2026-10-16",
       "kind": "deepdive",
       "id": "deepdive_HPE_20261016T002542.701238_0800",
       "summary": "HPE [BULLISH] -- conviction 7/10"
@@ -2839,24 +2880,12 @@
       "kind": "sector",
       "id": "sector_brief_semiconductors-ai_20261005",
       "summary": "Semiconductors/AI -- conviction 7"
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "analyst",
-      "id": "analyst_brief_20261002_195001_5c1e",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "analyst",
-      "id": "analyst_brief_20261002_212501_1bb3",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
     }
   ],
   "home": {
     "fresh_hours": 72,
     "headline": "1 setup today: HPE",
-    "sub": "9 fresh deep dives (last 3 days) \u00b7 1 pass the gate",
+    "sub": "8 fresh deep dives (last 3 days) \u00b7 1 pass the gate",
     "calls_on": true,
     "puts_on": false,
     "setups": [
@@ -3090,41 +3119,17 @@
         "rr": null,
         "flags": [],
         "researched_at": "2026-10-13T23:42:11.670576+08:00"
-      },
-      {
-        "ticker": "ORCL",
-        "bias": "bullish",
-        "conviction": 6,
-        "label": "NO TRADE",
-        "direction": "call",
-        "why": "Below support $144.67 (now $137.39)",
-        "category": "trend broken",
-        "n_blockers": 1,
-        "evidence": [
-          -1,
-          -1,
-          1,
-          0,
-          0
-        ],
-        "net": -1,
-        "price": 137.39,
-        "level": 144.67,
-        "levels": null,
-        "rr": null,
-        "flags": [],
-        "researched_at": "2026-10-13T17:45:57.962661+08:00"
       }
     ],
     "counts": {
-      "trend broken": 3,
+      "trend broken": 2,
       "no clear direction": 2,
       "option too expensive": 1,
       "earnings inside hold": 1,
       "low conviction": 1
     },
     "closest": null,
-    "older_count": 13,
+    "older_count": 14,
     "since_24h": {
       "dives": 7,
       "setups": 1
