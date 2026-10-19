@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T23:00:02.225301+08:00",
+  "generated_at": "2026-10-19T18:54:07.855927+08:00",
   "regime": {
     "regime": "bull_low_vol",
     "vix": 15.89,
@@ -8,7 +8,52 @@
       "allow_calls": true,
       "allow_puts": false,
       "size_scalar": 1.0
-    }
+    },
+    "trend": "uptrend",
+    "vol_regime": "low_vol",
+    "spy_ma_gap_pct": 6.38,
+    "trend_flip": "SPY 50-day MA +6.4% vs 200-day; uptrend ends below +1%",
+    "vix_avg30": 15.8,
+    "vol_flip": "VIX 30-day avg 15.8; low-vol ends at 20",
+    "reference": [
+      {
+        "regime": "bull_low_vol",
+        "calls": true,
+        "puts": false,
+        "size": 1.0
+      },
+      {
+        "regime": "bull_high_vol",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "bear_low_vol",
+        "calls": false,
+        "puts": true,
+        "size": 0.75
+      },
+      {
+        "regime": "bear_high_vol",
+        "calls": false,
+        "puts": false,
+        "size": 0.0
+      },
+      {
+        "regime": "ranging",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "neutral",
+        "calls": true,
+        "puts": true,
+        "size": 0.75
+      }
+    ],
+    "reference_note": "Trend = SPY 50-day vs 200-day MA (\u00b11%). Vol = VIX 30-day average (<20 low, >30 high). VIX 20-30 ('elevated') has no rule of its own and uses the neutral row."
   },
   "sectors": [
     {
@@ -669,7 +714,156 @@
       },
       "unsourced_numbers": [],
       "fundamentals_note": "Trailing P/E 341.28 vs forward P/E 169.98, profit margin 0.03671, revenue $103.6B with minimal growth 0.255, analyst mean target $397.83 vs current $368.64.",
-      "researched_at": "2026-10-16T21:41:05.305152+08:00"
+      "researched_at": "2026-10-16T21:41:05.305152+08:00",
+      "fundamentals": {
+        "label": "mixed",
+        "net": -1,
+        "line": "Fundamentals: mixed (\u2212 industry)",
+        "parts": [
+          {
+            "name": "revisions",
+            "score": 0,
+            "text": "EPS est. this qtr -0.2% in 30d, next yr -1.3% \u00b7 4 up / 7 down"
+          },
+          {
+            "name": "surprises",
+            "score": 0,
+            "text": "Beat 2 of 4 \u274c\u2705\u2705\u274c \u00b7 last -39.2%"
+          },
+          {
+            "name": "target",
+            "score": 0,
+            "text": "Mean target $398 (+12%) \u00b7 38 analysts"
+          },
+          {
+            "name": "industry",
+            "score": -1,
+            "text": "CARZ -6.6% 1M vs SPY +0.3% (lagging)"
+          }
+        ],
+        "pe": {
+          "trailing": 328.4,
+          "forward": 163.6,
+          "peer_median": null,
+          "peers_n": 0
+        },
+        "earnings": {
+          "next": "2026-10-22",
+          "days": 3,
+          "before_exit": true,
+          "history": [
+            {
+              "quarter": "2025-09-30",
+              "surprise_pct": -10.5,
+              "beat": false
+            },
+            {
+              "quarter": "2025-12-31",
+              "surprise_pct": 11.0,
+              "beat": true
+            },
+            {
+              "quarter": "2026-03-31",
+              "surprise_pct": 17.2,
+              "beat": true
+            },
+            {
+              "quarter": "2026-06-30",
+              "surprise_pct": -39.2,
+              "beat": false
+            }
+          ]
+        },
+        "revisions": {
+          "q_30d_pct": -0.2,
+          "y_30d_pct": -1.3,
+          "up_30d": 4.0,
+          "down_30d": 7.0
+        },
+        "target": {
+          "mean": 397.83212,
+          "upside_pct": 12.2,
+          "analysts": 38,
+          "rec": "buy",
+          "low": null,
+          "high": null
+        },
+        "reaction": {
+          "last": [],
+          "typical_move_pct": null,
+          "normal_day_move_pct": 3.0,
+          "event_multiple": null
+        },
+        "actions_30d": {
+          "up": 0,
+          "down": 0,
+          "items": [
+            {
+              "date": "2026-10-15",
+              "firm": "GLJ Research",
+              "action": "reit",
+              "to": "Sell",
+              "from": "Sell",
+              "target": 24.86
+            },
+            {
+              "date": "2026-10-12",
+              "firm": "Jefferies",
+              "action": "main",
+              "to": "Hold",
+              "from": "Hold",
+              "target": 400.0
+            },
+            {
+              "date": "2026-10-08",
+              "firm": "Tigress Financial",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 550.0
+            },
+            {
+              "date": "2026-10-07",
+              "firm": "UBS",
+              "action": "main",
+              "to": "Neutral",
+              "from": "Neutral",
+              "target": 391.0
+            },
+            {
+              "date": "2026-09-28",
+              "firm": "JP Morgan",
+              "action": "main",
+              "to": "Neutral",
+              "from": "Neutral",
+              "target": 415.0
+            },
+            {
+              "date": "2026-09-25",
+              "firm": "StoneX",
+              "action": "reit",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 475.0
+            }
+          ]
+        },
+        "industry": {
+          "name": "Auto Manufacturers",
+          "etf": "CARZ",
+          "etf_1m": -6.58,
+          "etf_3m": -6.83,
+          "vs_spy_1m": -6.9
+        },
+        "price": {
+          "last": 354.72,
+          "chg_1d": -2.13,
+          "chg_5d": -7.31,
+          "chg_1m": -3.13
+        },
+        "digest": null,
+        "n_errors": 0
+      }
     },
     {
       "ticker": "NVDA",
@@ -2868,199 +3062,20 @@
   ],
   "home": {
     "fresh_hours": 72,
-    "headline": "1 setup today: HPE",
-    "sub": "9 fresh deep dives (last 3 days) \u00b7 1 pass the gate",
+    "headline": "No setup today",
+    "sub": "1 fresh deep dive (last 3 days) \u00b7 0 pass the gate",
     "calls_on": true,
     "puts_on": false,
-    "setups": [
-      {
-        "ticker": "HPE",
-        "bias": "bullish",
-        "conviction": 7,
-        "label": "SETUP OK",
-        "direction": "call",
-        "why": "Pullback -- Buy call 0.45-0.60\u0394, 21-28 DTE, at market",
-        "category": "setup",
-        "n_blockers": 0,
-        "evidence": [
-          1,
-          1,
-          1,
-          1,
-          -1
-        ],
-        "net": 3,
-        "price": 59.02,
-        "level": null,
-        "levels": {
-          "entry": 59.02,
-          "stop": 57.01,
-          "target": 67.07
-        },
-        "rr": 4.0,
-        "flags": [],
-        "researched_at": "2026-10-16T00:25:42.701238+08:00"
-      }
-    ],
+    "setups": [],
     "waits": [],
     "rows": [
-      {
-        "ticker": "HPE",
-        "bias": "bullish",
-        "conviction": 7,
-        "label": "SETUP OK",
-        "direction": "call",
-        "why": "Pullback -- Buy call 0.45-0.60\u0394, 21-28 DTE, at market",
-        "category": "setup",
-        "n_blockers": 0,
-        "evidence": [
-          1,
-          1,
-          1,
-          1,
-          -1
-        ],
-        "net": 3,
-        "price": 59.02,
-        "level": null,
-        "levels": {
-          "entry": 59.02,
-          "stop": 57.01,
-          "target": 67.07
-        },
-        "rr": 4.0,
-        "flags": [],
-        "researched_at": "2026-10-16T00:25:42.701238+08:00"
-      },
-      {
-        "ticker": "MSFT",
-        "bias": "bullish",
-        "conviction": 7,
-        "label": "NO TRADE",
-        "direction": "call",
-        "why": "Option too expensive for the move (R:R 1.46)",
-        "category": "option too expensive",
-        "n_blockers": 1,
-        "evidence": [
-          1,
-          1,
-          1,
-          1,
-          -1
-        ],
-        "net": 3,
-        "price": 536.93,
-        "level": null,
-        "levels": null,
-        "rr": null,
-        "flags": [],
-        "researched_at": "2026-10-15T23:06:44.279979+08:00"
-      },
-      {
-        "ticker": "META",
-        "bias": "bullish",
-        "conviction": 6,
-        "label": "NO TRADE",
-        "direction": "call",
-        "why": "Earnings 21 Oct falls inside the hold",
-        "category": "earnings inside hold",
-        "n_blockers": 1,
-        "evidence": [
-          1,
-          1,
-          -1,
-          1,
-          1
-        ],
-        "net": 3,
-        "price": 731.97,
-        "level": null,
-        "levels": null,
-        "rr": null,
-        "flags": [
-          "over cap"
-        ],
-        "researched_at": "2026-10-15T22:54:55.539691+08:00"
-      },
-      {
-        "ticker": "NVDA",
-        "bias": "bullish",
-        "conviction": 7,
-        "label": "NO TRADE",
-        "direction": "call",
-        "why": "Below support $221.98 (now $217.23)",
-        "category": "trend broken",
-        "n_blockers": 1,
-        "evidence": [
-          1,
-          0,
-          1,
-          0,
-          0
-        ],
-        "net": 2,
-        "price": 217.23,
-        "level": 221.98,
-        "levels": null,
-        "rr": null,
-        "flags": [],
-        "researched_at": "2026-10-16T14:26:23.763498+08:00"
-      },
-      {
-        "ticker": "MRVL",
-        "bias": "bullish",
-        "conviction": 6,
-        "label": "NO TRADE",
-        "direction": "call",
-        "why": "Below support $239.3 (now $235.05) \u00b7 Reward/risk 1.5 is below 2",
-        "category": "trend broken",
-        "n_blockers": 2,
-        "evidence": [
-          1,
-          -1,
-          0,
-          1,
-          1
-        ],
-        "net": 2,
-        "price": 235.05,
-        "level": 239.3,
-        "levels": null,
-        "rr": null,
-        "flags": [],
-        "researched_at": "2026-10-15T22:51:03.374303+08:00"
-      },
-      {
-        "ticker": "IONQ",
-        "bias": "bearish",
-        "conviction": 4,
-        "label": "NO TRADE",
-        "direction": "put",
-        "why": "Conviction 4 is below 5 \u00b7 Levels too far from price",
-        "category": "low conviction",
-        "n_blockers": 2,
-        "evidence": [
-          0,
-          -1,
-          -1,
-          0,
-          0
-        ],
-        "net": -2,
-        "price": 31.12,
-        "level": null,
-        "levels": null,
-        "rr": null,
-        "flags": [
-          "counter-trend"
-        ],
-        "researched_at": "2026-10-15T22:29:31.411535+08:00"
-      },
       {
         "ticker": "TSLA",
         "bias": "bullish",
         "conviction": 5,
         "label": "NO TRADE",
+        "regime_only": false,
+        "regime_note": null,
         "direction": "call",
         "why": "Lagging SPY (-10.31%) -- momentum needs strength",
         "category": "weak vs SPY",
@@ -3078,71 +3093,96 @@
         "levels": null,
         "rr": null,
         "flags": [],
-        "researched_at": "2026-10-16T21:41:05.305152+08:00"
-      },
-      {
-        "ticker": "INTC",
-        "bias": "neutral",
-        "conviction": 5,
-        "label": "NO TRADE",
-        "direction": "call",
-        "why": "No clear direction \u00b7 Levels too far from price",
-        "category": "no clear direction",
-        "n_blockers": 2,
-        "evidence": [
-          1,
-          -1,
-          1,
-          1,
-          -1
-        ],
-        "net": 1,
-        "price": 92.89,
-        "level": null,
-        "levels": null,
-        "rr": null,
-        "flags": [],
-        "researched_at": "2026-10-15T22:52:48.956882+08:00"
-      },
-      {
-        "ticker": "F",
-        "bias": "neutral",
-        "conviction": 3,
-        "label": "NO TRADE",
-        "direction": "call",
-        "why": "No clear direction \u00b7 Conviction 3 is below 5",
-        "category": "no clear direction",
-        "n_blockers": 2,
-        "evidence": [
-          -1,
-          -1,
-          1,
-          -1,
-          1
-        ],
-        "net": -1,
-        "price": 12.07,
-        "level": null,
-        "levels": null,
-        "rr": null,
-        "flags": [],
-        "researched_at": "2026-10-13T23:42:11.670576+08:00"
+        "researched_at": "2026-10-16T21:41:05.305152+08:00",
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (\u2212 industry)",
+        "earnings_before_exit": true
       }
     ],
     "counts": {
-      "trend broken": 2,
-      "no clear direction": 2,
-      "option too expensive": 1,
-      "earnings inside hold": 1,
-      "low conviction": 1,
       "weak vs SPY": 1
     },
     "closest": null,
-    "older_count": 13,
+    "older_count": 21,
     "since_24h": {
-      "dives": 4,
-      "setups": 1
+      "dives": 0,
+      "setups": 0
     },
+    "regime_blocked": [],
     "next_events": []
+  },
+  "market": {
+    "indices": [
+      {
+        "symbol": "SPY",
+        "name": "S&P 500",
+        "chg_1d": -1.11,
+        "chg_5d": -1.97,
+        "chg_1m": 0.33,
+        "chg_3m": 2.25,
+        "last": 763.25
+      },
+      {
+        "symbol": "QQQ",
+        "name": "Nasdaq-100",
+        "chg_1d": -2.5,
+        "chg_5d": -5.52,
+        "chg_1m": -0.89,
+        "chg_3m": 0.22,
+        "last": 709.7999877929688
+      },
+      {
+        "symbol": "IWM",
+        "name": "Russell 2000",
+        "chg_1d": -1.69,
+        "chg_5d": -3.05,
+        "chg_1m": -5.25,
+        "chg_3m": -8.56,
+        "last": 270.44000244140625
+      },
+      {
+        "symbol": "^VIX",
+        "name": "VIX",
+        "chg_1d": -7.0,
+        "chg_5d": 22.22,
+        "chg_1m": 25.52,
+        "chg_3m": -0.59,
+        "last": 18.59000015258789
+      },
+      {
+        "symbol": "^TNX",
+        "name": "10Y yield",
+        "chg_1d": 0.18,
+        "chg_5d": -2.78,
+        "chg_1m": 3.05,
+        "chg_3m": 10.16,
+        "last": 5.0980000495910645,
+        "unit": "yield"
+      },
+      {
+        "symbol": "DX-Y.NYB",
+        "name": "Dollar",
+        "chg_1d": 0.19,
+        "chg_5d": -0.54,
+        "chg_1m": 1.81,
+        "chg_3m": 0.88,
+        "last": 102.02899932861328
+      }
+    ],
+    "events": [],
+    "earnings_week": [
+      {
+        "ticker": "TSLA",
+        "date": "2026-10-22",
+        "days": 3
+      }
+    ],
+    "movers": [
+      {
+        "ticker": "TSLA",
+        "chg_1d": -2.13
+      }
+    ],
+    "analyst_actions_3d": []
   }
 }
