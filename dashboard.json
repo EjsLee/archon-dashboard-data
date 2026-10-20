@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T23:00:02.005420+08:00",
+  "generated_at": "2026-10-20T15:59:36.931432+08:00",
   "regime": {
     "regime": "bull_low_vol",
     "vix": 18.38,
@@ -388,7 +388,11 @@
       "iv_regime": "LOW",
       "days_to_earn": 21,
       "earnings_date": "2026-11-09",
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "momentum",
+      "counter_trend": true,
+      "rs_vs_spy": -46.88,
+      "evidence_net": -3
     },
     {
       "ticker": "SNPS",
@@ -402,7 +406,11 @@
       "iv_regime": "LOW",
       "days_to_earn": 51,
       "earnings_date": "2026-12-09",
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "pullback",
+      "counter_trend": false,
+      "rs_vs_spy": -4.39,
+      "evidence_net": 2
     },
     {
       "ticker": "CCL",
@@ -416,7 +424,11 @@
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "pullback",
+      "counter_trend": false,
+      "rs_vs_spy": -11.43,
+      "evidence_net": -1
     },
     {
       "ticker": "IONQ",
@@ -430,7 +442,11 @@
       "iv_regime": "LOW",
       "days_to_earn": 16,
       "earnings_date": "2026-11-04",
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "momentum",
+      "counter_trend": true,
+      "rs_vs_spy": -50.79,
+      "evidence_net": -3
     },
     {
       "ticker": "NU",
@@ -444,7 +460,11 @@
       "iv_regime": null,
       "days_to_earn": 24,
       "earnings_date": "2026-11-12",
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "pullback",
+      "counter_trend": false,
+      "rs_vs_spy": 18.46,
+      "evidence_net": 1
     },
     {
       "ticker": "BAC",
@@ -458,7 +478,11 @@
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "momentum",
+      "counter_trend": true,
+      "rs_vs_spy": -11.19,
+      "evidence_net": -4
     },
     {
       "ticker": "MS",
@@ -472,7 +496,11 @@
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "momentum",
+      "counter_trend": true,
+      "rs_vs_spy": -19.05,
+      "evidence_net": -3
     },
     {
       "ticker": "GS",
@@ -486,7 +514,11 @@
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "momentum",
+      "counter_trend": true,
+      "rs_vs_spy": -19.01,
+      "evidence_net": -2
     },
     {
       "ticker": "ADI",
@@ -500,7 +532,11 @@
       "iv_regime": "MEDIUM",
       "days_to_earn": 36,
       "earnings_date": "2026-11-24",
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "pullback",
+      "counter_trend": false,
+      "rs_vs_spy": -5.94,
+      "evidence_net": 0
     },
     {
       "ticker": "C",
@@ -514,7 +550,11 @@
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "momentum",
+      "counter_trend": true,
+      "rs_vs_spy": -14.69,
+      "evidence_net": -2
     },
     {
       "ticker": "AMD",
@@ -528,7 +568,11 @@
       "iv_regime": "LOW",
       "days_to_earn": 15,
       "earnings_date": "2026-11-03",
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "pullback",
+      "counter_trend": false,
+      "rs_vs_spy": 7.39,
+      "evidence_net": 3
     },
     {
       "ticker": "BRK-B",
@@ -542,7 +586,11 @@
       "iv_regime": "MEDIUM",
       "days_to_earn": 18,
       "earnings_date": "2026-11-06",
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "pullback",
+      "counter_trend": false,
+      "rs_vs_spy": 4.65,
+      "evidence_net": 2
     },
     {
       "ticker": "NKE",
@@ -556,10 +604,859 @@
       "iv_regime": "LOW",
       "days_to_earn": null,
       "earnings_date": null,
-      "metrics_status": "ok"
+      "metrics_status": "ok",
+      "strategy": "momentum",
+      "counter_trend": true,
+      "rs_vs_spy": -22.95,
+      "evidence_net": -2
     }
   ],
   "deep_dives": [
+    {
+      "ticker": "MRVL",
+      "company": "Marvell Technology, Inc.",
+      "sector": "Technology / Semiconductors",
+      "bias": "bullish",
+      "conviction": 5,
+      "thesis": "Marvell has strong fundamental momentum with 36.5% revenue growth and a raised 2028 revenue target of $20B, supported by 16 analyst upgrades against 0 downgrades in the past 30 days. The stock has pulled back 1.8% below its 50MA ($241.4) in an uptrend, offering a textbook pullback setup. However, declining volume (-45% vs average) and significant underperformance vs SPY (-19.92 pts) suggest institutional conviction remains weak at current levels.",
+      "moat_assessment": "Marvell's custom AI accelerator and data center networking positions create switching costs and design-win lock-in, but the moat is narrowing as hyperscalers develop in-house silicon and networking competitors proliferate.",
+      "macro_sensitivity": "Highly rate-sensitive (high multiple tech stock vulnerable to rising yields); USD strength impacts international semiconductor demand; VIX spikes typically trigger de-risking in high-beta tech names like MRVL.",
+      "key_catalysts": [
+        "FOMC decision Oct 28 \u2014 rate outlook directly impacts growth stock valuations",
+        "Next earnings Dec 2 \u2014 custom AI accelerator revenue and margin guidance will drive the next leg",
+        "Continued analyst target revisions following the $20B 2028 revenue target raise"
+      ],
+      "disconfirming_evidence": "A daily close below recent swing lows on expanding volume would confirm the 50MA has flipped to resistance and the uptrend is stalling. Alternatively, if the Dec 2 earnings show custom AI revenue deceleration or margin compression, the growth premium unwinds rapidly.",
+      "bull_scenario": "Stock reclaims 50MA with volume, runs to $265-275 as AI sentiment drives multiple expansion ahead of Dec earnings, +12-16%",
+      "base_scenario": "Stock oscillates between $235-250, digesting recent gains and awaiting FOMC plus earnings clarity, +0-5%",
+      "bear_scenario": "Stock breaks below $230 on continued low volume, extends decline toward $215-220 as tech rotation accelerates, -8-11%",
+      "trade_plan": {
+        "structure": "Buy 0.60-0.65 delta call, 21-28 DTE",
+        "entry_trigger": "Daily close back above 50MA $241.4 with volume exceeding 20-day average",
+        "target": "$258 (approx 9% gain, within the 13.2% typical 10-day move)",
+        "stop": "Daily close below 50MA by more than one average true range",
+        "position_size_note": "half size \u2014 IV rank 32.6 means premium is rich; higher delta reduces vega exposure",
+        "risk_reward": "approx 1:2",
+        "avoid_if": "FOMC decision is hawkish and triggers tech sector selloff, or volume continues declining on any bounce attempt"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "strategy": "pullback",
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "current_price": 237.09,
+        "rr": null,
+        "iv": 0.6643,
+        "rv": 0.56,
+        "rs_vs_spy": -19.92,
+        "entry_gap_sigma": null,
+        "levels": null,
+        "reasons": [
+          "price 237.09 already beyond support/resistance 240.19 (trend broken)"
+        ]
+      },
+      "verdict": {
+        "label": "NO TRADE",
+        "do_now": "no trade",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": null,
+        "rr": null,
+        "reasons": [
+          "price 237.09 already beyond support/resistance 240.19 (trend broken)"
+        ],
+        "limit": false,
+        "flags": []
+      },
+      "cautions": [
+        "Volume down 45% suggests weak buying interest despite bullish news flow",
+        "FOMC Oct 28 inside hold window could spike IV and pressure tech multiples",
+        "Trading below the 50MA rather than above it \u2014 may indicate further downside",
+        "Trailing P/E 75.27 leaves significant room for multiple compression if growth disappoints"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": 2,
+        "direction": "bullish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": -1,
+            "reason": "-19.92 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": 0,
+            "reason": "beat +1.0% (53d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 1,
+            "reason": "16 up / 0 down (30d, Yahoo)"
+          },
+          {
+            "name": "news",
+            "score": 1,
+            "reason": "2+ / 0- headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": -1.8,
+        "sigma": -0.1
+      },
+      "unsourced_numbers": [
+        "44%"
+      ],
+      "fundamentals_note": "Trailing P/E 75.27 vs forward P/E 32.55 \u2014 the market prices in sustained 30%+ growth. Revenue growth of 36.5% supports the premium, but margin for error is thin. Analyst mean target $341.63 implies 44% upside from current levels.",
+      "researched_at": "2026-10-20T15:54:35.491305+08:00",
+      "fundamentals": {
+        "label": "mixed",
+        "net": -1,
+        "line": "Fundamentals: mixed (+ surprises, target; \u2212 valuation, industry, reaction)",
+        "parts": [
+          {
+            "name": "revisions",
+            "score": 0,
+            "text": "EPS est. this qtr +0.1% in 30d, next yr +8.4% \u00b7 2 up / 1 down"
+          },
+          {
+            "name": "surprises",
+            "score": 1,
+            "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +1.0%"
+          },
+          {
+            "name": "valuation",
+            "score": -1,
+            "text": "Fwd P/E 32.6 vs peers 23.9 (rich)"
+          },
+          {
+            "name": "target",
+            "score": 1,
+            "text": "Mean target $342 (+44%), range $230\u2013450 \u00b7 44 analysts"
+          },
+          {
+            "name": "industry",
+            "score": -1,
+            "text": "SMH -4.3% 1M vs SPY +0.6% (lagging)"
+          },
+          {
+            "name": "reaction",
+            "score": -1,
+            "text": "Last moves on earnings +8% +18% +3% -10% \u00b7 typical \u00b19.9% (a normal day \u2248 \u00b14.2%) \u00b7 beat but fell"
+          }
+        ],
+        "pe": {
+          "trailing": 75.3,
+          "forward": 32.6,
+          "peer_median": 23.940945,
+          "peers_n": 3
+        },
+        "earnings": {
+          "next": "2026-12-02",
+          "days": 43,
+          "before_exit": false,
+          "history": [
+            {
+              "quarter": "2025-10-31",
+              "surprise_pct": 3.0,
+              "beat": true
+            },
+            {
+              "quarter": "2026-01-31",
+              "surprise_pct": 1.1,
+              "beat": true
+            },
+            {
+              "quarter": "2026-04-30",
+              "surprise_pct": 0.6,
+              "beat": true
+            },
+            {
+              "quarter": "2026-07-31",
+              "surprise_pct": 1.0,
+              "beat": true
+            }
+          ]
+        },
+        "revisions": {
+          "q_30d_pct": 0.1,
+          "y_30d_pct": 8.4,
+          "up_30d": 2.0,
+          "down_30d": 1.0
+        },
+        "target": {
+          "mean": 341.63016,
+          "upside_pct": 44.1,
+          "analysts": 44,
+          "rec": "strong_buy",
+          "low": 229.95,
+          "high": 450.0
+        },
+        "reaction": {
+          "last": [
+            {
+              "date": "2025-12-02",
+              "move_pct": 7.9,
+              "surprise_pct": 3.0,
+              "flag": null
+            },
+            {
+              "date": "2026-03-05",
+              "move_pct": 18.4,
+              "surprise_pct": 1.1,
+              "flag": null
+            },
+            {
+              "date": "2026-05-27",
+              "move_pct": 3.1,
+              "surprise_pct": 0.6,
+              "flag": null
+            },
+            {
+              "date": "2026-08-27",
+              "move_pct": -10.3,
+              "surprise_pct": 1.0,
+              "flag": "beat but fell"
+            }
+          ],
+          "typical_move_pct": 9.9,
+          "normal_day_move_pct": 4.2,
+          "event_multiple": 2.4
+        },
+        "actions_30d": {
+          "up": 1,
+          "down": 0,
+          "items": [
+            {
+              "date": "2026-10-07",
+              "firm": "UBS",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 350.0
+            },
+            {
+              "date": "2026-10-07",
+              "firm": "Jefferies",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 450.0
+            },
+            {
+              "date": "2026-10-07",
+              "firm": "JP Morgan",
+              "action": "main",
+              "to": "Overweight",
+              "from": "Overweight",
+              "target": 360.0
+            },
+            {
+              "date": "2026-10-07",
+              "firm": "Wells Fargo",
+              "action": "main",
+              "to": "Overweight",
+              "from": "Overweight",
+              "target": 365.0
+            },
+            {
+              "date": "2026-10-07",
+              "firm": "Wolfe Research",
+              "action": "main",
+              "to": "Outperform",
+              "from": "Outperform",
+              "target": 375.0
+            },
+            {
+              "date": "2026-10-07",
+              "firm": "Morgan Stanley",
+              "action": "main",
+              "to": "Equal-Weight",
+              "from": "Equal-Weight",
+              "target": 300.0
+            }
+          ]
+        },
+        "industry": {
+          "name": "Semiconductors",
+          "etf": "SMH",
+          "etf_1m": -4.28,
+          "etf_3m": -6.55,
+          "vs_spy_1m": -4.9
+        },
+        "price": {
+          "last": 237.09,
+          "chg_1d": 4.06,
+          "chg_5d": -10.82,
+          "chg_1m": -2.91,
+          "vs_sma50_pct": -1.8,
+          "vs_ema200_pct": 23.7
+        },
+        "digest": null,
+        "n_errors": 0
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "sector": "Semiconductors",
+      "bias": "bullish",
+      "conviction": 6,
+      "thesis": "NVDA is in an uptrend, trading 2.6% below its 50MA on declining volume (-34%), a classic healthy pullback. Forward P/E of 13.64 against 105.9% revenue growth and 63.66% profit margins is remarkably cheap for a company with NVIDIA's moat; analyst mean target of $328.72 implies ~51% upside. Recent earnings beat of +6.2% and Barron's 10-17 'buy ahead of tech earnings' headline support the bull case into the Nov 18 print.",
+      "moat_assessment": "CUDA's installed base of millions of developers creates deep switching costs and network effects \u2014 each new library and framework built on CUDA reinforces the moat, making it the de facto standard for AI/ML compute.",
+      "macro_sensitivity": "Highly rate-sensitive as a long-duration growth asset \u2014 rising real rates compress the forward multiple. USD strength hurts international revenue. VIX spikes trigger tech risk-off and multiple compression. FOMC decisions are the dominant near-term macro driver.",
+      "key_catalysts": [
+        "FOMC decision Wed Oct 28 (day 8 of hold) \u2014 rate guidance and press conference",
+        "Q3 earnings Nov 18 (29 days out) \u2014 revenue and datacenter guidance vs consensus",
+        "AI market sentiment \u2014 CEO Huang's 10-16 comment that turmoil 'is going to pass' and CoreWeave improving"
+      ],
+      "disconfirming_evidence": "A daily close below the 50MA on rising volume would break the pullback thesis. A hawkish FOMC that pushes real rates higher would compress the forward multiple. Resurfacing AI capex concerns or a negative pre-earnings analyst note would undermine the bull case.",
+      "bull_scenario": "Post-FOMC rally continues, stock reclaims 50MA and grinds toward $235+; +8-10% over 3-4 weeks.",
+      "base_scenario": "Stock oscillates around the 50MA, FOMC creates chop, ends near current levels; +2-4% over 3 weeks.",
+      "bear_scenario": "Hawkish FOMC or AI sentiment shift pushes stock below 50MA on volume; -8-10% over 2-3 weeks.",
+      "trade_plan": {
+        "structure": "Buy 0.65 delta call, 21-28 DTE",
+        "entry_trigger": "NVDA touches or bounces off the 50MA at $222.80, or a post-FOMC dip to that level",
+        "target": "$235 (within one typical 8.4% move)",
+        "stop": "Daily close below the 50MA",
+        "position_size_note": "Half size \u2014 IV rank 36.4 and FOMC inside the hold warrant reduced exposure",
+        "risk_reward": "1:2",
+        "avoid_if": "IV spikes above 50 before entry, or a daily close below the 50MA"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "strategy": "pullback",
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "current_price": 217.09,
+        "rr": null,
+        "iv": 0.4197,
+        "rv": 0.24,
+        "rs_vs_spy": 1.66,
+        "entry_gap_sigma": null,
+        "levels": null,
+        "reasons": [
+          "price 217.09 already beyond support/resistance 221.69 (trend broken)"
+        ]
+      },
+      "verdict": {
+        "label": "NO TRADE",
+        "do_now": "no trade",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": null,
+        "rr": null,
+        "reasons": [
+          "price 217.09 already beyond support/resistance 221.69 (trend broken)"
+        ],
+        "limit": false,
+        "flags": []
+      },
+      "cautions": [
+        "FOMC on Oct 28 (day 8 of hold) \u2014 IV tends to spike into the event, creating a better entry or a stop-out risk",
+        "IV rank 36.4 \u2014 premium is rich, less margin of safety on the long call",
+        "Stock is only 2.6% below 50MA, not a deep pullback \u2014 may not reach support without a catalyst",
+        "Volume down 34% \u2014 declining participation could signal institutional disinterest"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": 2,
+        "direction": "bullish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": 0,
+            "reason": "+1.66 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": 1,
+            "reason": "beat +6.2% (54d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 0,
+            "reason": "0 up / 0 down (30d, Yahoo, too few)"
+          },
+          {
+            "name": "news",
+            "score": 0,
+            "reason": "no directional headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": -2.6,
+        "sigma": -0.3
+      },
+      "unsourced_numbers": [
+        "51%"
+      ],
+      "fundamentals_note": "Forward P/E 13.64 vs trailing P/E 27.45 \u2014 the forward multiple is less than half the trailing, reflecting 105.9% revenue growth and 63.66% profit margins; analyst mean target $328.72 vs current $217.09.",
+      "researched_at": "2026-10-20T15:52:45.789411+08:00",
+      "fundamentals": {
+        "label": "mixed",
+        "net": 1,
+        "line": "Fundamentals: mixed (+ surprises, valuation, target; \u2212 industry, reaction)",
+        "parts": [
+          {
+            "name": "revisions",
+            "score": 0,
+            "text": "EPS est. this qtr +0.0% in 30d, next yr +2.2% \u00b7 0 up / 1 down"
+          },
+          {
+            "name": "surprises",
+            "score": 1,
+            "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +6.2%"
+          },
+          {
+            "name": "valuation",
+            "score": 1,
+            "text": "Fwd P/E 13.6 vs peers 32.6 (cheap)"
+          },
+          {
+            "name": "target",
+            "score": 1,
+            "text": "Mean target $329 (+51%), range $180\u2013515 \u00b7 59 analysts"
+          },
+          {
+            "name": "industry",
+            "score": -1,
+            "text": "SMH -4.3% 1M vs SPY +0.6% (lagging)"
+          },
+          {
+            "name": "reaction",
+            "score": -1,
+            "text": "Last moves on earnings -3% -6% -2% +9% \u00b7 typical \u00b14.8% (a normal day \u2248 \u00b12.6%) \u00b7 beat but fell"
+          }
+        ],
+        "pe": {
+          "trailing": 27.4,
+          "forward": 13.6,
+          "peer_median": 32.55492,
+          "peers_n": 3
+        },
+        "earnings": {
+          "next": "2026-11-18",
+          "days": 29,
+          "before_exit": false,
+          "history": [
+            {
+              "quarter": "2025-10-31",
+              "surprise_pct": 3.5,
+              "beat": true
+            },
+            {
+              "quarter": "2026-01-31",
+              "surprise_pct": 5.3,
+              "beat": true
+            },
+            {
+              "quarter": "2026-04-30",
+              "surprise_pct": 5.5,
+              "beat": true
+            },
+            {
+              "quarter": "2026-07-31",
+              "surprise_pct": 6.2,
+              "beat": true
+            }
+          ]
+        },
+        "revisions": {
+          "q_30d_pct": 0.0,
+          "y_30d_pct": 2.2,
+          "up_30d": 0.0,
+          "down_30d": 1.0
+        },
+        "target": {
+          "mean": 328.71695,
+          "upside_pct": 51.4,
+          "analysts": 59,
+          "rec": "strong_buy",
+          "low": 180.0,
+          "high": 515.0
+        },
+        "reaction": {
+          "last": [
+            {
+              "date": "2025-11-19",
+              "move_pct": -3.2,
+              "surprise_pct": 3.5,
+              "flag": "beat but fell"
+            },
+            {
+              "date": "2026-02-25",
+              "move_pct": -5.5,
+              "surprise_pct": 5.3,
+              "flag": "beat but fell"
+            },
+            {
+              "date": "2026-05-20",
+              "move_pct": -1.8,
+              "surprise_pct": 5.5,
+              "flag": "beat but fell"
+            },
+            {
+              "date": "2026-08-26",
+              "move_pct": 8.7,
+              "surprise_pct": 6.2,
+              "flag": null
+            }
+          ],
+          "typical_move_pct": 4.8,
+          "normal_day_move_pct": 2.6,
+          "event_multiple": 1.8
+        },
+        "actions_30d": {
+          "up": 0,
+          "down": 0,
+          "items": [
+            {
+              "date": "2026-10-01",
+              "firm": "Cantor Fitzgerald",
+              "action": "reit",
+              "to": "Overweight",
+              "from": "Overweight",
+              "target": 350.0
+            },
+            {
+              "date": "2026-09-29",
+              "firm": "Rosenblatt",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 390.0
+            }
+          ]
+        },
+        "industry": {
+          "name": "Semiconductors",
+          "etf": "SMH",
+          "etf_1m": -4.28,
+          "etf_3m": -6.55,
+          "vs_spy_1m": -4.9
+        },
+        "price": {
+          "last": 217.09,
+          "chg_1d": 1.38,
+          "chg_5d": -4.08,
+          "chg_1m": -2.33,
+          "vs_sma50_pct": -2.6,
+          "vs_ema200_pct": 6.0
+        },
+        "digest": null,
+        "n_errors": 0
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla, Inc.",
+      "sector": "Automotive & EV",
+      "bias": "neutral",
+      "conviction": 3,
+      "thesis": "TSLA is in an uptrend but only 2.2% above its 50MA with volume down 52%, suggesting weak conviction. The stock has underperformed SPY by 12.21 points over 3 months, carries a trailing P/E of 328 and forward P/E of 170 with a thin 3.67% profit margin, and faces Q3 earnings with a recent history of large EPS misses (-39.1% surprise 89 days ago). Two negative headlines (SpaceX merger doubt, bullish sentiment risk) tilt news flow bearish despite two analyst upgrades in the last 30 days.",
+      "moat_assessment": "Tesla's brand and supercharger network provide some moat, but Chinese EV competition and eroding pricing power undermine durability \u2014 the competitive advantage is narrowing.",
+      "macro_sensitivity": "TSLA is high-beta and rate-sensitive via its growth multiple; rising rates compress the forward P/E. A VIX spike from 18.59 would hit TSLA harder than the market given its RV20 of 32%.",
+      "key_catalysts": [
+        "Q3 earnings on 2026-10-22 \u2014 recent history of large EPS misses (-39.1% surprise 89 days ago)",
+        "FOMC decision Wed 28 Oct (day 8 of hold) \u2014 rate path affects growth multiple",
+        "Jobs report Fri 06 Nov (day 17)"
+      ],
+      "disconfirming_evidence": "A strong Q3 EPS and revenue beat with positive margin guidance would invalidate the bearish fundamental case and could force a short-covering rally given the current negative sentiment.",
+      "bull_scenario": "Post-earnings beat with strong margin guidance could rally 10-15% toward analyst target $397.83, but this is speculative given the recent -39.1% miss history.",
+      "base_scenario": "Earnings disappointment sends TSLA down 8-12% given the 49% IV and thin margin buffer; the 50MA at $360.30 could provide temporary support.",
+      "bear_scenario": "A miss combined with negative guidance could break the 50MA and extend the 3M downtrend toward the mid-$340s.",
+      "trade_plan": {
+        "structure": "none \u2014 avoid entry due to earnings prohibition",
+        "entry_trigger": "none \u2014 entry is blocked by 14-day earnings window",
+        "target": "none",
+        "stop": "none",
+        "position_size_note": "avoid",
+        "risk_reward": "n/a",
+        "avoid_if": "always \u2014 entry inside 14 days of earnings is prohibited by constraint"
+      },
+      "gate": {
+        "verdict": "NO TRADE",
+        "strategy": "pullback",
+        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_call",
+        "current_price": 368.06,
+        "rr": null,
+        "iv": 0.4889,
+        "rv": 0.32,
+        "rs_vs_spy": -12.21,
+        "entry_gap_sigma": null,
+        "levels": null,
+        "reasons": [
+          "no directional view ('neutral')",
+          "conviction 3 < 5"
+        ]
+      },
+      "verdict": {
+        "label": "NO TRADE",
+        "do_now": "no trade",
+        "strategy": "pullback",
+        "direction": "call",
+        "levels": null,
+        "rr": null,
+        "reasons": [
+          "no directional view ('neutral')",
+          "conviction 3 < 5"
+        ],
+        "limit": false,
+        "flags": []
+      },
+      "cautions": [
+        "Earnings in 1 day \u2014 entry prohibited within 14 days by watchlist constraint",
+        "Forward P/E of 170 with 3.67% profit margin leaves no valuation cushion",
+        "Relative strength -12.21 pts vs SPY signals institutional disinterest",
+        "Volume down 52% on the uptrend suggests weak participation"
+      ],
+      "model_vs_gate": {
+        "disagrees": false,
+        "note": null,
+        "stance": "avoid"
+      },
+      "evidence": {
+        "net": -1,
+        "direction": "mixed",
+        "factors": [
+          {
+            "name": "trend",
+            "score": 1,
+            "reason": "uptrend"
+          },
+          {
+            "name": "rs",
+            "score": -1,
+            "reason": "-12.21 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": -1,
+            "reason": "miss -39.1% (89d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": 1,
+            "reason": "2 up / 1 down (30d, Yahoo)"
+          },
+          {
+            "name": "news",
+            "score": -1,
+            "reason": "0+ / 2- headlines"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": 2.2,
+        "sigma": 0.2
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "Trailing P/E 328, forward P/E 170, P/S 14.0 \u2014 extreme valuation multiples; profit margin 3.67% on $103.6B revenue with 25.5% growth is decelerating.",
+      "researched_at": "2026-10-20T15:51:14.303855+08:00",
+      "fundamentals": {
+        "label": "weak",
+        "net": -2,
+        "line": "Fundamentals: weak (\u2212 industry, reaction)",
+        "parts": [
+          {
+            "name": "revisions",
+            "score": 0,
+            "text": "EPS est. this qtr -0.2% in 30d, next yr -1.3% \u00b7 4 up / 7 down"
+          },
+          {
+            "name": "surprises",
+            "score": 0,
+            "text": "Beat 2 of 4 \u274c\u2705\u2705\u274c \u00b7 last -39.2%"
+          },
+          {
+            "name": "target",
+            "score": 0,
+            "text": "Mean target $398 (+8%), range $128\u2013600 \u00b7 38 analysts"
+          },
+          {
+            "name": "industry",
+            "score": -1,
+            "text": "CARZ -5.5% 1M vs SPY +0.6% (lagging)"
+          },
+          {
+            "name": "reaction",
+            "score": -1,
+            "text": "Last moves on earnings +2% -4% -4% -14% \u00b7 typical \u00b16.0% (a normal day \u2248 \u00b13.1%) \u00b7 beat but fell"
+          }
+        ],
+        "pe": {
+          "trailing": 328.6,
+          "forward": 169.7,
+          "peer_median": null,
+          "peers_n": 0
+        },
+        "earnings": {
+          "next": "2026-10-22",
+          "days": 2,
+          "before_exit": true,
+          "history": [
+            {
+              "quarter": "2025-09-30",
+              "surprise_pct": -10.5,
+              "beat": false
+            },
+            {
+              "quarter": "2025-12-31",
+              "surprise_pct": 11.0,
+              "beat": true
+            },
+            {
+              "quarter": "2026-03-31",
+              "surprise_pct": 17.2,
+              "beat": true
+            },
+            {
+              "quarter": "2026-06-30",
+              "surprise_pct": -39.2,
+              "beat": false
+            }
+          ]
+        },
+        "revisions": {
+          "q_30d_pct": -0.2,
+          "y_30d_pct": -1.3,
+          "up_30d": 4.0,
+          "down_30d": 7.0
+        },
+        "target": {
+          "mean": 397.83212,
+          "upside_pct": 8.1,
+          "analysts": 38,
+          "rec": "buy",
+          "low": 128.11,
+          "high": 600.0
+        },
+        "reaction": {
+          "last": [
+            {
+              "date": "2025-10-22",
+              "move_pct": 2.3,
+              "surprise_pct": -10.5,
+              "flag": "missed but rose"
+            },
+            {
+              "date": "2026-01-28",
+              "move_pct": -3.5,
+              "surprise_pct": 11.0,
+              "flag": "beat but fell"
+            },
+            {
+              "date": "2026-04-22",
+              "move_pct": -3.6,
+              "surprise_pct": 17.1,
+              "flag": "beat but fell"
+            },
+            {
+              "date": "2026-07-22",
+              "move_pct": -14.5,
+              "surprise_pct": -39.1,
+              "flag": null
+            }
+          ],
+          "typical_move_pct": 6.0,
+          "normal_day_move_pct": 3.1,
+          "event_multiple": 1.9
+        },
+        "actions_30d": {
+          "up": 0,
+          "down": 0,
+          "items": [
+            {
+              "date": "2026-10-15",
+              "firm": "GLJ Research",
+              "action": "reit",
+              "to": "Sell",
+              "from": "Sell",
+              "target": 24.86
+            },
+            {
+              "date": "2026-10-12",
+              "firm": "Jefferies",
+              "action": "main",
+              "to": "Hold",
+              "from": "Hold",
+              "target": 400.0
+            },
+            {
+              "date": "2026-10-08",
+              "firm": "Tigress Financial",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 550.0
+            },
+            {
+              "date": "2026-10-07",
+              "firm": "UBS",
+              "action": "main",
+              "to": "Neutral",
+              "from": "Neutral",
+              "target": 391.0
+            },
+            {
+              "date": "2026-09-28",
+              "firm": "JP Morgan",
+              "action": "main",
+              "to": "Neutral",
+              "from": "Neutral",
+              "target": 415.0
+            },
+            {
+              "date": "2026-09-25",
+              "firm": "StoneX",
+              "action": "reit",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 475.0
+            }
+          ]
+        },
+        "industry": {
+          "name": "Auto Manufacturers",
+          "etf": "CARZ",
+          "etf_1m": -5.47,
+          "etf_3m": -5.6,
+          "vs_spy_1m": -6.1
+        },
+        "price": {
+          "last": 368.06,
+          "chg_1d": 3.76,
+          "chg_5d": -2.64,
+          "chg_1m": 1.04,
+          "vs_sma50_pct": 2.2,
+          "vs_ema200_pct": -2.4
+        },
+        "digest": null,
+        "n_errors": 0
+      }
+    },
     {
       "ticker": "HPE",
       "company": "Hewlett Packard Enterprise Company",
@@ -684,12 +1581,12 @@
           {
             "name": "target",
             "score": 1,
-            "text": "Mean target $72 (+26%), range $53\u201392 \u00b7 21 analysts"
+            "text": "Mean target $72 (+28%), range $53\u201392 \u00b7 21 analysts"
           },
           {
             "name": "industry",
             "score": -1,
-            "text": "XLK -2.3% 1M vs SPY +0.9% (lagging)"
+            "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
           },
           {
             "name": "reaction",
@@ -703,14 +1600,14 @@
           }
         ],
         "pe": {
-          "trailing": 29.4,
-          "forward": 12.1,
+          "trailing": 28.8,
+          "forward": 11.9,
           "peer_median": null,
-          "peers_n": 1
+          "peers_n": 2
         },
         "earnings": {
           "next": "2026-09-03",
-          "days": -46,
+          "days": -47,
           "before_exit": false,
           "history": [
             {
@@ -743,7 +1640,7 @@
         },
         "target": {
           "mean": 71.74238,
-          "upside_pct": 26.0,
+          "upside_pct": 28.4,
           "analysts": 21,
           "rec": "buy",
           "low": 52.59,
@@ -837,15 +1734,17 @@
         "industry": {
           "name": "Communication Equipment",
           "etf": "XLK",
-          "etf_1m": -2.33,
-          "etf_3m": 1.61,
-          "vs_spy_1m": -3.2
+          "etf_1m": -1.81,
+          "etf_3m": 3.28,
+          "vs_spy_1m": -2.4
         },
         "price": {
-          "last": 56.94,
-          "chg_1d": 3.28,
-          "chg_5d": -19.04,
-          "chg_1m": -6.29
+          "last": 55.87,
+          "chg_1d": 1.34,
+          "chg_5d": -20.56,
+          "chg_1m": -8.05,
+          "vs_sma50_pct": -5.9,
+          "vs_ema200_pct": 27.5
         },
         "digest": {
           "guidance": "raised",
@@ -859,548 +1758,6 @@
           "filed": "2026-09-02",
           "accession": "0001645590-26-000078"
         },
-        "n_errors": 0
-      }
-    },
-    {
-      "ticker": "TSLA",
-      "company": "Tesla, Inc.",
-      "sector": "Automotive / EV / Technology",
-      "bias": "neutral",
-      "conviction": 4,
-      "thesis": "TSLA trades exactly at its 50MA ($360.18 vs $360.1) in an uptrend, but severe relative weakness (-14.24 pts vs SPY over 3M) and a recent earnings miss (-39.1%) undermine the trend's credibility. With forward P/E at 166.1 and earnings due in 2 days, valuation leaves no room for disappointment. The market regime is bullish, but TSLA is a stark underperformer within it.",
-      "moat_assessment": "Tesla's EV brand dominance and manufacturing scale provide a durable cost moat, but increasing competition from Chinese OEMs and legacy automakers is eroding its early-mover advantage, narrowing the moat faster than the market prices.",
-      "macro_sensitivity": "TSLA is highly sensitive to VIX spikes (high beta), rising rates (long-duration growth exposure), and USD strength (international revenue); oil is ambiguous \u2014 cheaper oil hurts EV demand but aids consumer spending.",
-      "key_catalysts": [
-        "Q3 earnings on 2026-10-22 \u2014 within the no-entry window, will set near-term direction",
-        "FOMC decision on 28 Oct (d9 of hold) \u2014 IV tends to rise into FOMC and drop after"
-      ],
-      "disconfirming_evidence": "A significant earnings beat with raised guidance that triggers a gap above the 50MA on surging volume and reclaims relative strength vs SPY would invalidate the neutral/avoid thesis.",
-      "bull_scenario": "Earnings beat with raised guidance \u2192 TSLA rallies 10-15% toward analyst target of $397.83, reclaiming relative strength.",
-      "base_scenario": "Earnings produce a muted reaction, TSLA drifts near the 50MA with low volume, SPY continues sideways \u2192 flat to -5% over 3-21 days.",
-      "bear_scenario": "Earnings miss or weak guidance \u2192 TSLA breaks below 50MA, high IV amplifies losses \u2192 -10 to -15% toward next support.",
-      "trade_plan": {
-        "structure": "Buy 0.60 delta call, 21-28 DTE (after earnings window clears)",
-        "entry_trigger": "Price holding above the 50MA with volume recovery post-earnings",
-        "target": "~10% gain (within 1 typical 10-day move of 10.3%)",
-        "stop": "Daily close below the 50MA with weak volume",
-        "position_size_note": "half (max 5% given IV rank 37 and earnings risk)",
-        "risk_reward": "~1:2",
-        "avoid_if": "IV expands further before entry or earnings gap below the 50MA"
-      },
-      "gate": {
-        "verdict": "NO TRADE",
-        "strategy": "pullback",
-        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-        "structure_kind": "long_call",
-        "current_price": 360.18,
-        "rr": null,
-        "iv": 0.518,
-        "rv": 0.3,
-        "rs_vs_spy": -14.24,
-        "entry_gap_sigma": null,
-        "levels": null,
-        "reasons": [
-          "no directional view ('neutral')",
-          "conviction 4 < 5"
-        ]
-      },
-      "verdict": {
-        "label": "NO TRADE",
-        "do_now": "no trade",
-        "strategy": "pullback",
-        "direction": "call",
-        "levels": null,
-        "rr": null,
-        "reasons": [
-          "no directional view ('neutral')",
-          "conviction 4 < 5"
-        ],
-        "limit": false,
-        "flags": []
-      },
-      "cautions": [
-        "Earnings in 2 days (2026-10-22) \u2014 hard constraint forbids entry inside 14-day window",
-        "Volume down 51% \u2014 trend participation is weak and declining",
-        "Relative strength -14.24 pts vs SPY \u2014 severe underperformance despite uptrend",
-        "Forward P/E 166.1 \u2014 extreme valuation leaves no margin of safety"
-      ],
-      "model_vs_gate": {
-        "disagrees": false,
-        "note": null,
-        "stance": "avoid"
-      },
-      "evidence": {
-        "net": -1,
-        "direction": "mixed",
-        "factors": [
-          {
-            "name": "trend",
-            "score": 1,
-            "reason": "uptrend"
-          },
-          {
-            "name": "rs",
-            "score": -1,
-            "reason": "-14.24 pts vs SPY"
-          },
-          {
-            "name": "earnings",
-            "score": -1,
-            "reason": "miss -39.1% (88d ago)"
-          },
-          {
-            "name": "analysts",
-            "score": 1,
-            "reason": "2 up / 1 down (30d, Yahoo)"
-          },
-          {
-            "name": "news",
-            "score": -1,
-            "reason": "0+ / 1- headlines"
-          }
-        ]
-      },
-      "extension": {
-        "pct_above_50ma": 0.0,
-        "sigma": 0.0
-      },
-      "unsourced_numbers": [
-        "0.26%"
-      ],
-      "fundamentals_note": "Trailing P/E 333.5 vs forward P/E 166.1 signals extreme growth pricing; revenue growth at just 0.26% with 3.7% profit margin leaves no room for disappointment at current valuation.",
-      "researched_at": "2026-10-19T21:48:31.776676+08:00",
-      "fundamentals": {
-        "label": "weak",
-        "net": -2,
-        "line": "Fundamentals: weak (\u2212 industry, reaction)",
-        "parts": [
-          {
-            "name": "revisions",
-            "score": 0,
-            "text": "EPS est. this qtr -0.2% in 30d, next yr -1.3% \u00b7 4 up / 7 down"
-          },
-          {
-            "name": "surprises",
-            "score": 0,
-            "text": "Beat 2 of 4 \u274c\u2705\u2705\u274c \u00b7 last -39.2%"
-          },
-          {
-            "name": "target",
-            "score": 0,
-            "text": "Mean target $398 (+9%), range $128\u2013600 \u00b7 38 analysts"
-          },
-          {
-            "name": "industry",
-            "score": -1,
-            "text": "CARZ -6.6% 1M vs SPY +0.9% (lagging)"
-          },
-          {
-            "name": "reaction",
-            "score": -1,
-            "text": "Last moves on earnings +2% -4% -4% -14% \u00b7 typical \u00b16.0% (a normal day \u2248 \u00b13.3%) \u00b7 beat but fell"
-          }
-        ],
-        "pe": {
-          "trailing": 339.4,
-          "forward": 169.0,
-          "peer_median": null,
-          "peers_n": 0
-        },
-        "earnings": {
-          "next": "2026-10-22",
-          "days": 3,
-          "before_exit": true,
-          "history": [
-            {
-              "quarter": "2025-09-30",
-              "surprise_pct": -10.5,
-              "beat": false
-            },
-            {
-              "quarter": "2025-12-31",
-              "surprise_pct": 11.0,
-              "beat": true
-            },
-            {
-              "quarter": "2026-03-31",
-              "surprise_pct": 17.2,
-              "beat": true
-            },
-            {
-              "quarter": "2026-06-30",
-              "surprise_pct": -39.2,
-              "beat": false
-            }
-          ]
-        },
-        "revisions": {
-          "q_30d_pct": -0.2,
-          "y_30d_pct": -1.3,
-          "up_30d": 4.0,
-          "down_30d": 7.0
-        },
-        "target": {
-          "mean": 397.83212,
-          "upside_pct": 8.6,
-          "analysts": 38,
-          "rec": "buy",
-          "low": 128.11,
-          "high": 600.0
-        },
-        "reaction": {
-          "last": [
-            {
-              "date": "2025-10-22",
-              "move_pct": 2.3,
-              "surprise_pct": -10.5,
-              "flag": "missed but rose"
-            },
-            {
-              "date": "2026-01-28",
-              "move_pct": -3.5,
-              "surprise_pct": 11.0,
-              "flag": "beat but fell"
-            },
-            {
-              "date": "2026-04-22",
-              "move_pct": -3.6,
-              "surprise_pct": 17.1,
-              "flag": "beat but fell"
-            },
-            {
-              "date": "2026-07-22",
-              "move_pct": -14.5,
-              "surprise_pct": -39.1,
-              "flag": null
-            }
-          ],
-          "typical_move_pct": 6.0,
-          "normal_day_move_pct": 3.3,
-          "event_multiple": 1.8
-        },
-        "actions_30d": {
-          "up": 0,
-          "down": 0,
-          "items": [
-            {
-              "date": "2026-10-15",
-              "firm": "GLJ Research",
-              "action": "reit",
-              "to": "Sell",
-              "from": "Sell",
-              "target": 24.86
-            },
-            {
-              "date": "2026-10-12",
-              "firm": "Jefferies",
-              "action": "main",
-              "to": "Hold",
-              "from": "Hold",
-              "target": 400.0
-            },
-            {
-              "date": "2026-10-08",
-              "firm": "Tigress Financial",
-              "action": "main",
-              "to": "Buy",
-              "from": "Buy",
-              "target": 550.0
-            },
-            {
-              "date": "2026-10-07",
-              "firm": "UBS",
-              "action": "main",
-              "to": "Neutral",
-              "from": "Neutral",
-              "target": 391.0
-            },
-            {
-              "date": "2026-09-28",
-              "firm": "JP Morgan",
-              "action": "main",
-              "to": "Neutral",
-              "from": "Neutral",
-              "target": 415.0
-            },
-            {
-              "date": "2026-09-25",
-              "firm": "StoneX",
-              "action": "reit",
-              "to": "Buy",
-              "from": "Buy",
-              "target": 475.0
-            }
-          ]
-        },
-        "industry": {
-          "name": "Auto Manufacturers",
-          "etf": "CARZ",
-          "etf_1m": -6.58,
-          "etf_3m": -6.83,
-          "vs_spy_1m": -7.4
-        },
-        "price": {
-          "last": 366.48,
-          "chg_1d": 3.34,
-          "chg_5d": -3.04,
-          "chg_1m": 0.63
-        },
-        "digest": null,
-        "n_errors": 0
-      }
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corporation",
-      "sector": "Semiconductors",
-      "bias": "bullish",
-      "conviction": 7,
-      "thesis": "NVIDIA remains in a structural uptrend with exceptional fundamentals: trailing P/E 27.24 and forward P/E 13.54 on 105.9% revenue growth and 63.7% profit margins. The stock is in a mild 3.3% pullback below its 50MA, offering a potential entry into the prevailing uptrend. Yahoo Finance 10-19 reports a $108 billion revenue target ahead, reinforcing the top-line growth narrative; market regime is BULL_LOW_VOL with SPY trending sideways +4.5% and NVDA relative strength in-line at +0.81 pts.",
-      "moat_assessment": "NVIDIA CUDA ecosystem and datacenter GPU dominance create deep platform lock-in with high switching costs \u2014 a classic Porter moat reinforced by scale advantages, proprietary architecture, and a self-reinforcing developer/enterprise network effect.",
-      "macro_sensitivity": "NVDA is a long-duration growth asset: negatively sensitive to rate hikes (higher discount rate compresses forward earnings multiples) and USD strength (international revenue exposure); benefits from AI capex cycle and low VIX regimes; a VIX spike above 25 typically correlates with tech/growth de-rating.",
-      "key_catalysts": [
-        "FOMC decision 28 Oct 2026 \u2014 inside the hold window; expect IV expansion into the event and potential IV crush after",
-        "Next earnings 2026-11-18 \u2014 30 days out; last beat +6.2% (53d ago)"
-      ],
-      "disconfirming_evidence": "A daily close below the 50MA with accelerating volume would break the uptrend structure and invalidate the pullback thesis; a hawkish FOMC surprise could de-rate the entire tech/growth complex; if forward P/E compression begins, the bull case loses its fundamental anchor even if revenue growth persists.",
-      "bull_scenario": "NVDA bounces off the 50MA, reclaims it with volume, and runs higher as the AI capex narrative resumes post-FOMC \u2014 ~10-12% upside.",
-      "base_scenario": "NVDA consolidates near current levels over the coming weeks, grinding toward the 50MA as FOMC creates a temporary ceiling; modest 3-6% gain if entered near current levels with patience.",
-      "bear_scenario": "A hawkish FOMC or breakdown below 50MA support triggers a tech-wide de-rating; NVDA could sell off 8-10% as growth multiples compress and IV spikes then crushes long premium.",
-      "trade_plan": {
-        "structure": "Buy 0.60-0.65 delta call, 21-28 DTE",
-        "entry_trigger": "Daily close above the 50MA with volume above the declining trend, OR a confirmed bullish reversal candle off the 50MA with a close back above it",
-        "target": "8-9% (within one typical 8.4% IV move)",
-        "stop": "Daily close below the 50MA with conviction (bearish engulfing or high-volume breakdown)",
-        "position_size_note": "Half size \u2014 IV rank 37.9 just above the 30 premium threshold, FOMC inside the hold window, and falling volume warrant a reduced position; max 10% portfolio, use 5%",
-        "risk_reward": "1:2",
-        "avoid_if": "IV spikes above 50% before entry, or a daily close below the 50MA with volume"
-      },
-      "gate": {
-        "verdict": "NO TRADE",
-        "strategy": "pullback",
-        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-        "structure_kind": "long_call",
-        "current_price": 215.51,
-        "rr": null,
-        "iv": 0.4213,
-        "rv": 0.23,
-        "rs_vs_spy": 0.81,
-        "entry_gap_sigma": null,
-        "levels": null,
-        "reasons": [
-          "price 215.51 already beyond support/resistance 221.69 (trend broken)"
-        ]
-      },
-      "verdict": {
-        "label": "NO TRADE",
-        "do_now": "no trade",
-        "strategy": "pullback",
-        "direction": "call",
-        "levels": null,
-        "rr": null,
-        "reasons": [
-          "price 215.51 already beyond support/resistance 221.69 (trend broken)"
-        ],
-        "limit": false,
-        "flags": []
-      },
-      "cautions": [
-        "FOMC decision in 9 days (28 Oct) \u2014 IV tends to expand into FOMC, inflating premium and creating post-event IV crush risk",
-        "Volume declining 33% \u2014 weak participation in the pullback; no confirmation yet that 50MA support is holding",
-        "IV rank 37.9 \u2014 premiums are at/above the 30 threshold; rich options pricing erodes expected value",
-        "Price currently below the 50MA rather than bouncing off it \u2014 thesis requires confirmation of support"
-      ],
-      "model_vs_gate": {
-        "disagrees": false,
-        "note": null,
-        "stance": "wait"
-      },
-      "evidence": {
-        "net": 2,
-        "direction": "bullish",
-        "factors": [
-          {
-            "name": "trend",
-            "score": 1,
-            "reason": "uptrend"
-          },
-          {
-            "name": "rs",
-            "score": 0,
-            "reason": "+0.81 pts vs SPY"
-          },
-          {
-            "name": "earnings",
-            "score": 1,
-            "reason": "beat +6.2% (53d ago)"
-          },
-          {
-            "name": "analysts",
-            "score": 0,
-            "reason": "0 up / 0 down (30d, Yahoo, too few)"
-          },
-          {
-            "name": "news",
-            "score": 0,
-            "reason": "1+ / 1-"
-          }
-        ]
-      },
-      "extension": {
-        "pct_above_50ma": -3.3,
-        "sigma": -0.4
-      },
-      "unsourced_numbers": [
-        "52%"
-      ],
-      "fundamentals_note": "Trailing P/E 27.24 vs forward P/E 13.54 implies ~50% earnings growth already priced; revenue $302.97B with 105.9% growth and 63.7% profit margins; analyst mean target $328.72 represents ~52% upside \u2014 premium multiples are justified by exceptional profitability but leave no room for execution miss.",
-      "researched_at": "2026-10-19T21:46:49.922110+08:00",
-      "fundamentals": {
-        "label": "mixed",
-        "net": 0,
-        "line": "Fundamentals: mixed (+ surprises, target; \u2212 industry, reaction)",
-        "parts": [
-          {
-            "name": "revisions",
-            "score": 0,
-            "text": "EPS est. this qtr +0.0% in 30d, next yr +2.2% \u00b7 0 up / 1 down"
-          },
-          {
-            "name": "surprises",
-            "score": 1,
-            "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +6.2%"
-          },
-          {
-            "name": "target",
-            "score": 1,
-            "text": "Mean target $329 (+54%), range $180\u2013515 \u00b7 59 analysts"
-          },
-          {
-            "name": "industry",
-            "score": -1,
-            "text": "SMH -3.7% 1M vs SPY +0.9% (lagging)"
-          },
-          {
-            "name": "reaction",
-            "score": -1,
-            "text": "Last moves on earnings -3% -6% -2% +9% \u00b7 typical \u00b14.8% (a normal day \u2248 \u00b12.7%) \u00b7 beat but fell"
-          }
-        ],
-        "pe": {
-          "trailing": 27.1,
-          "forward": 13.5,
-          "peer_median": null,
-          "peers_n": 2
-        },
-        "earnings": {
-          "next": "2026-11-18",
-          "days": 30,
-          "before_exit": false,
-          "history": [
-            {
-              "quarter": "2025-10-31",
-              "surprise_pct": 3.5,
-              "beat": true
-            },
-            {
-              "quarter": "2026-01-31",
-              "surprise_pct": 5.3,
-              "beat": true
-            },
-            {
-              "quarter": "2026-04-30",
-              "surprise_pct": 5.5,
-              "beat": true
-            },
-            {
-              "quarter": "2026-07-31",
-              "surprise_pct": 6.2,
-              "beat": true
-            }
-          ]
-        },
-        "revisions": {
-          "q_30d_pct": 0.0,
-          "y_30d_pct": 2.2,
-          "up_30d": 0.0,
-          "down_30d": 1.0
-        },
-        "target": {
-          "mean": 328.71695,
-          "upside_pct": 53.5,
-          "analysts": 59,
-          "rec": "strong_buy",
-          "low": 180.0,
-          "high": 515.0
-        },
-        "reaction": {
-          "last": [
-            {
-              "date": "2025-11-19",
-              "move_pct": -3.2,
-              "surprise_pct": 3.5,
-              "flag": "beat but fell"
-            },
-            {
-              "date": "2026-02-25",
-              "move_pct": -5.5,
-              "surprise_pct": 5.3,
-              "flag": "beat but fell"
-            },
-            {
-              "date": "2026-05-20",
-              "move_pct": -1.8,
-              "surprise_pct": 5.5,
-              "flag": "beat but fell"
-            },
-            {
-              "date": "2026-08-26",
-              "move_pct": 8.7,
-              "surprise_pct": 6.2,
-              "flag": null
-            }
-          ],
-          "typical_move_pct": 4.8,
-          "normal_day_move_pct": 2.7,
-          "event_multiple": 1.8
-        },
-        "actions_30d": {
-          "up": 0,
-          "down": 0,
-          "items": [
-            {
-              "date": "2026-10-01",
-              "firm": "Cantor Fitzgerald",
-              "action": "reit",
-              "to": "Overweight",
-              "from": "Overweight",
-              "target": 350.0
-            },
-            {
-              "date": "2026-09-29",
-              "firm": "Rosenblatt",
-              "action": "main",
-              "to": "Buy",
-              "from": "Buy",
-              "target": 390.0
-            }
-          ]
-        },
-        "industry": {
-          "name": "Semiconductors",
-          "etf": "SMH",
-          "etf_1m": -3.71,
-          "etf_3m": -7.58,
-          "vs_spy_1m": -4.6
-        },
-        "price": {
-          "last": 214.13,
-          "chg_1d": -1.43,
-          "chg_5d": -6.61,
-          "chg_1m": -2.38
-        },
-        "digest": null,
         "n_errors": 0
       }
     },
@@ -1528,12 +1885,12 @@
           {
             "name": "target",
             "score": 1,
-            "text": "Mean target $1,179 (+43%), range $820\u20131,500 \u00b7 26 analysts"
+            "text": "Mean target $1,179 (+41%), range $820\u20131,500 \u00b7 26 analysts"
           },
           {
             "name": "industry",
             "score": -1,
-            "text": "XLK -2.3% 1M vs SPY +0.9% (lagging)"
+            "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
           },
           {
             "name": "reaction",
@@ -1543,13 +1900,13 @@
         ],
         "pe": {
           "trailing": null,
-          "forward": 22.9,
+          "forward": 23.2,
           "peer_median": null,
-          "peers_n": 1
+          "peers_n": 2
         },
         "earnings": {
           "next": "2026-11-06",
-          "days": 18,
+          "days": 17,
           "before_exit": false,
           "history": [
             {
@@ -1582,7 +1939,7 @@
         },
         "target": {
           "mean": 1179.071,
-          "upside_pct": 43.1,
+          "upside_pct": 41.3,
           "analysts": 26,
           "rec": "strong_buy",
           "low": 820.0,
@@ -1668,15 +2025,17 @@
         "industry": {
           "name": "Communication Equipment",
           "etf": "XLK",
-          "etf_1m": -2.33,
-          "etf_3m": 1.61,
-          "vs_spy_1m": -3.2
+          "etf_1m": -1.81,
+          "etf_3m": 3.28,
+          "vs_spy_1m": -2.4
         },
         "price": {
-          "last": 824.13,
-          "chg_1d": -5.22,
-          "chg_5d": -25.31,
-          "chg_1m": -7.78
+          "last": 834.51,
+          "chg_1d": 1.26,
+          "chg_5d": -16.16,
+          "chg_1m": -10.36,
+          "vs_sma50_pct": -10.3,
+          "vs_ema200_pct": 10.0
         },
         "digest": null,
         "n_errors": 0
@@ -2018,117 +2377,6 @@
       ],
       "fundamentals_note": "forward P/E 44.18, revenue growth 0.25%, profit margin -19.79%, analyst mean target $118.05",
       "researched_at": "2026-10-15T22:52:48.956882+08:00"
-    },
-    {
-      "ticker": "MRVL",
-      "company": "Marvell Technology, Inc.",
-      "sector": "Semiconductors",
-      "bias": "bullish",
-      "conviction": 6,
-      "thesis": "MRVL is in an uptrend with positive news flow \u2014 Seeking Alpha upgraded to Buy on 10-10 and Yahoo Finance reported management raised its 2028 revenue target to $20B on 10-13, signaling confidence in the AI-driven data center custom ASIC and networking pipeline. Forward P/E of 32.3 vs trailing P/E of 74.6 implies the market is pricing in a sharp earnings ramp. The stock sits just 2.3% below the 50-day MA at $240.50, a classic pullback zone. (no live fundamental data \u2014 technical/regime/sector only)",
-      "moat_assessment": "Specialized moat in data-center connectivity (SerDes, PAM4 DSPs) and custom hyperscaler ASIC design services, with high switching costs and design-in stickiness; faces long-term competitive pressure from Broadcom and potential in-house silicon at major cloud customers.",
-      "macro_sensitivity": "High sensitivity to rate moves (growth-multiple compression on a trailing P/E 74.6) and VIX spikes (high-beta tech sells off sharply on risk-off); moderate USD sensitivity from international revenue mix.",
-      "key_catalysts": [
-        "Next earnings date: 2026-12-02",
-        "2028 revenue target raised to $20B (Yahoo Finance 2026-10-13)",
-        "Seeking Alpha rating upgrade to Buy (2026-10-10)"
-      ],
-      "disconfirming_evidence": "A daily close below the $230 zone that breaks the uptrend structure, combined with continued SPY strength that MRVL fails to participate in (RS deteriorating further), or a broad-market correction that compresses semiconductor multiples.",
-      "bull_scenario": "Stock reclaims the 50MA, RS turns positive vs SPY, and the stock rallies toward the analyst target of $339 \u2014 a 45% swing upside if the $20B revenue narrative gains traction.",
-      "base_scenario": null,
-      "bear_scenario": "RS continues to deteriorate, the uptrend breaks, and the stock slides toward $215-220 \u2014 a -6 to -8% move as the premium valuation gets de-rated.",
-      "trade_plan": {
-        "structure": "Buy 0.60 delta call, 21-28 DTE, half size",
-        "entry_trigger": "Daily close above $240 (back above the 50MA) with volume improving from the -54% baseline, or a confirmed intraday bounce off $238-240",
-        "target": "$255 (+8.5%)",
-        "stop": "$230 (-2.2%)",
-        "position_size_note": "Half position (5% of portfolio) \u2014 trailing P/E 74.6 and declining volume warrant sizing down",
-        "risk_reward": "1:3.5",
-        "avoid_if": "A daily close below the stop at $230, or if VIX spikes above 20 before entry"
-      },
-      "gate": {
-        "verdict": "NO TRADE",
-        "strategy": "pullback",
-        "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
-        "structure_kind": "long_call",
-        "current_price": 235.05,
-        "rr": 1.5,
-        "iv": 0.6701,
-        "rv": 0.56,
-        "rs_vs_spy": -16.74,
-        "entry_gap_sigma": null,
-        "levels": {
-          "entry": 240.0,
-          "stop": 230.0,
-          "target": 255.0
-        },
-        "reasons": [
-          "price 235.05 already beyond support/resistance 239.30 (trend broken)",
-          "R:R 1.5 < 2"
-        ]
-      },
-      "verdict": {
-        "label": "NO TRADE",
-        "do_now": "no trade",
-        "strategy": "pullback",
-        "direction": "call",
-        "levels": null,
-        "rr": null,
-        "reasons": [
-          "price 235.05 already beyond support/resistance 239.30 (trend broken)",
-          "R:R 1.5 < 2"
-        ],
-        "limit": false,
-        "flags": []
-      },
-      "cautions": [
-        "Volume declining 54% \u2014 lack of buying interest to confirm a bounce off the 50MA",
-        "Strong relative underperformance vs SPY (-16.74 pts, 3M) suggests the stock may lag even if the market holds",
-        "Trailing P/E 74.6 leaves little room for disappointment on execution"
-      ],
-      "model_vs_gate": {
-        "disagrees": false,
-        "note": null,
-        "stance": "wait"
-      },
-      "evidence": {
-        "net": 2,
-        "direction": "bullish",
-        "factors": [
-          {
-            "name": "trend",
-            "score": 1,
-            "reason": "uptrend"
-          },
-          {
-            "name": "rs",
-            "score": -1,
-            "reason": "-16.74 pts vs SPY"
-          },
-          {
-            "name": "earnings",
-            "score": 0,
-            "reason": "beat +1.0% (48d ago)"
-          },
-          {
-            "name": "analysts",
-            "score": 1,
-            "reason": "16 up / 0 down (30d, Yahoo)"
-          },
-          {
-            "name": "news",
-            "score": 1,
-            "reason": "2+ / 0- headlines"
-          }
-        ]
-      },
-      "extension": {
-        "pct_above_50ma": -2.3,
-        "sigma": -0.2
-      },
-      "unsourced_numbers": [],
-      "fundamentals_note": "Trailing P/E 74.6 vs forward P/E 32.3 implies sharp earnings growth is priced in; revenue growth 36.5%, profit margin 27.9%, analyst mean target $339.36 vs current $235.05.",
-      "researched_at": "2026-10-15T22:51:03.374303+08:00"
     },
     {
       "ticker": "IONQ",
@@ -3060,6 +3308,24 @@
   ],
   "history": [
     {
+      "date": "2026-10-20",
+      "kind": "deepdive",
+      "id": "deepdive_MRVL_20261020T155435.491305_0800",
+      "summary": "MRVL [BULLISH] -- conviction 5/10"
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "deepdive",
+      "id": "deepdive_NVDA_20261020T155245.789411_0800",
+      "summary": "NVDA [BULLISH] -- conviction 6/10"
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "deepdive",
+      "id": "deepdive_TSLA_20261020T155114.303855_0800",
+      "summary": "TSLA [NEUTRAL] -- conviction 3/10"
+    },
+    {
       "date": "2026-10-19",
       "kind": "analyst",
       "id": "analyst_brief_20261019_195001_43ae",
@@ -3640,30 +3906,12 @@
       "kind": "deepdive",
       "id": "deepdive_DE_20261007T205709.837040_0800",
       "summary": "DE [BULLISH] -- conviction 6/10"
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "deepdive",
-      "id": "deepdive_QCOM_20261007T215614.639738_0800",
-      "summary": "QCOM [NEUTRAL] -- conviction 5/10"
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "deepdive",
-      "id": "deepdive_MRVL_20261007T205615.599128_0800",
-      "summary": "MRVL [BULLISH] -- conviction 6/10"
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "analyst",
-      "id": "analyst_brief_20261006_212501_2b76",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
     }
   ],
   "home": {
     "fresh_hours": 72,
     "headline": "No setup today",
-    "sub": "4 fresh deep dives (last 3 days) \u00b7 0 pass the gate",
+    "sub": "5 fresh deep dives (last 3 days) \u00b7 0 pass the gate",
     "calls_on": true,
     "puts_on": false,
     "setups": [],
@@ -3699,14 +3947,43 @@
         "earnings_before_exit": false
       },
       {
-        "ticker": "NVDA",
+        "ticker": "MRVL",
         "bias": "bullish",
-        "conviction": 7,
+        "conviction": 5,
         "label": "NO TRADE",
         "regime_only": false,
         "regime_note": null,
         "direction": "call",
-        "why": "Below support $221.69 (now $215.51)",
+        "why": "Below support $240.19 (now $237.09)",
+        "category": "trend broken",
+        "n_blockers": 1,
+        "evidence": [
+          1,
+          -1,
+          0,
+          1,
+          1
+        ],
+        "net": 2,
+        "price": 237.09,
+        "level": 240.19,
+        "levels": null,
+        "rr": null,
+        "flags": [],
+        "researched_at": "2026-10-20T15:54:35.491305+08:00",
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ surprises, target; \u2212 valuation, industry, reaction)",
+        "earnings_before_exit": false
+      },
+      {
+        "ticker": "NVDA",
+        "bias": "bullish",
+        "conviction": 6,
+        "label": "NO TRADE",
+        "regime_only": false,
+        "regime_note": null,
+        "direction": "call",
+        "why": "Below support $221.69 (now $217.09)",
         "category": "trend broken",
         "n_blockers": 1,
         "evidence": [
@@ -3717,25 +3994,25 @@
           0
         ],
         "net": 2,
-        "price": 215.51,
+        "price": 217.09,
         "level": 221.69,
         "levels": null,
         "rr": null,
         "flags": [],
-        "researched_at": "2026-10-19T21:46:49.922110+08:00",
+        "researched_at": "2026-10-20T15:52:45.789411+08:00",
         "fund_label": "mixed",
-        "fund_line": "Fundamentals: mixed (+ surprises, target; \u2212 industry, reaction)",
+        "fund_line": "Fundamentals: mixed (+ surprises, valuation, target; \u2212 industry, reaction)",
         "earnings_before_exit": false
       },
       {
         "ticker": "TSLA",
         "bias": "neutral",
-        "conviction": 4,
+        "conviction": 3,
         "label": "NO TRADE",
         "regime_only": false,
         "regime_note": null,
         "direction": "call",
-        "why": "No clear direction \u00b7 Conviction 4 is below 5",
+        "why": "No clear direction \u00b7 Conviction 3 is below 5",
         "category": "no clear direction",
         "n_blockers": 2,
         "evidence": [
@@ -3746,12 +4023,12 @@
           -1
         ],
         "net": -1,
-        "price": 360.18,
+        "price": 368.06,
         "level": null,
         "levels": null,
         "rr": null,
         "flags": [],
-        "researched_at": "2026-10-19T21:48:31.776676+08:00",
+        "researched_at": "2026-10-20T15:51:14.303855+08:00",
         "fund_label": "weak",
         "fund_line": "Fundamentals: weak (\u2212 industry, reaction)",
         "earnings_before_exit": true
@@ -3787,43 +4064,202 @@
       }
     ],
     "counts": {
-      "trend broken": 3,
+      "trend broken": 4,
       "no clear direction": 1
     },
     "closest": {
-      "ticker": "NVDA",
+      "ticker": "MRVL",
       "bias": "bullish",
-      "conviction": 7,
+      "conviction": 5,
       "label": "NO TRADE",
       "regime_only": false,
       "regime_note": null,
       "direction": "call",
-      "why": "Below support $221.69 (now $215.51)",
+      "why": "Below support $240.19 (now $237.09)",
       "category": "trend broken",
       "n_blockers": 1,
       "evidence": [
         1,
+        -1,
         0,
         1,
-        0,
-        0
+        1
       ],
       "net": 2,
-      "price": 215.51,
-      "level": 221.69,
+      "price": 237.09,
+      "level": 240.19,
       "levels": null,
       "rr": null,
       "flags": [],
-      "researched_at": "2026-10-19T21:46:49.922110+08:00",
-      "trigger": "A close back above $221.69 re-opens the setup."
+      "researched_at": "2026-10-20T15:54:35.491305+08:00",
+      "trigger": "A close back above $240.19 re-opens the setup."
     },
-    "older_count": 19,
+    "older_count": 18,
     "since_24h": {
-      "dives": 4,
+      "dives": 5,
       "setups": 0
     },
     "regime_blocked": [],
     "next_events": []
+  },
+  "watchlist": {
+    "tickers": [
+      "TSLA",
+      "NVDA",
+      "MRVL",
+      "AAOI",
+      "LITE",
+      "HPE",
+      "META",
+      "AAPL"
+    ],
+    "rows": [
+      {
+        "ticker": "TSLA",
+        "price": 368.06,
+        "chg_1d": 3.76,
+        "chg_5d": -2.64,
+        "vs_sma50_pct": 2.2,
+        "vs_ema200_pct": -2.4,
+        "earn_days": 2,
+        "earn_date": "2026-10-22",
+        "earnings_before_exit": true,
+        "fund_label": "weak",
+        "fund_line": "Fundamentals: weak (\u2212 industry, reaction)",
+        "verdict": "NO TRADE",
+        "bias": "neutral",
+        "conviction": 3,
+        "researched_at": "2026-10-20T15:51:14.303855+08:00",
+        "in_scan": null
+      },
+      {
+        "ticker": "NVDA",
+        "price": 217.09,
+        "chg_1d": 1.38,
+        "chg_5d": -4.08,
+        "vs_sma50_pct": -2.6,
+        "vs_ema200_pct": 6.0,
+        "earn_days": 29,
+        "earn_date": "2026-11-18",
+        "earnings_before_exit": false,
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ surprises, valuation, target; \u2212 industry, reaction)",
+        "verdict": "NO TRADE",
+        "bias": "bullish",
+        "conviction": 6,
+        "researched_at": "2026-10-20T15:52:45.789411+08:00",
+        "in_scan": null
+      },
+      {
+        "ticker": "MRVL",
+        "price": 237.09,
+        "chg_1d": 4.06,
+        "chg_5d": -10.82,
+        "vs_sma50_pct": -1.8,
+        "vs_ema200_pct": 23.7,
+        "earn_days": 43,
+        "earn_date": "2026-12-02",
+        "earnings_before_exit": false,
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ surprises, target; \u2212 valuation, industry, reaction)",
+        "verdict": "NO TRADE",
+        "bias": "bullish",
+        "conviction": 5,
+        "researched_at": "2026-10-20T15:54:35.491305+08:00",
+        "in_scan": null
+      },
+      {
+        "ticker": "AAOI",
+        "price": 78.2,
+        "chg_1d": 3.48,
+        "chg_5d": -22.33,
+        "vs_sma50_pct": -28.8,
+        "vs_ema200_pct": -25.6,
+        "earn_days": 17,
+        "earn_date": "2026-11-06",
+        "earnings_before_exit": false,
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ target; \u2212 industry)",
+        "verdict": null,
+        "bias": "bearish",
+        "conviction": 4,
+        "researched_at": "2026-10-07T17:08:41.543034+08:00",
+        "in_scan": null
+      },
+      {
+        "ticker": "LITE",
+        "price": 834.51,
+        "chg_1d": 1.26,
+        "chg_5d": -16.16,
+        "vs_sma50_pct": -10.3,
+        "vs_ema200_pct": 10.0,
+        "earn_days": 17,
+        "earn_date": "2026-11-06",
+        "earnings_before_exit": false,
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ surprises, target; \u2212 industry, reaction)",
+        "verdict": "NO TRADE",
+        "bias": "bullish",
+        "conviction": 5,
+        "researched_at": "2026-10-19T19:49:50.124901+08:00",
+        "in_scan": null
+      },
+      {
+        "ticker": "HPE",
+        "price": 55.87,
+        "chg_1d": 1.34,
+        "chg_5d": -20.56,
+        "vs_sma50_pct": -5.9,
+        "vs_ema200_pct": 27.5,
+        "earn_days": -47,
+        "earn_date": "2026-09-03",
+        "earnings_before_exit": false,
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ surprises, target, guidance; \u2212 industry, reaction)",
+        "verdict": "NO TRADE",
+        "bias": "bullish",
+        "conviction": 7,
+        "researched_at": "2026-10-19T21:49:22.290313+08:00",
+        "in_scan": null
+      },
+      {
+        "ticker": "META",
+        "price": 705.44,
+        "chg_1d": -0.55,
+        "chg_5d": -5.05,
+        "vs_sma50_pct": 7.3,
+        "vs_ema200_pct": 9.8,
+        "earn_days": 2,
+        "earn_date": "2026-10-22",
+        "earnings_before_exit": true,
+        "fund_label": "weak",
+        "fund_line": "Fundamentals: weak (\u2212 revisions, reaction)",
+        "verdict": "NO TRADE",
+        "bias": "bullish",
+        "conviction": 6,
+        "researched_at": "2026-10-15T22:54:55.539691+08:00",
+        "in_scan": null
+      },
+      {
+        "ticker": "AAPL",
+        "price": 342.94,
+        "chg_1d": -0.15,
+        "chg_5d": 0.58,
+        "vs_sma50_pct": 5.1,
+        "vs_ema200_pct": 14.7,
+        "earn_days": 14,
+        "earn_date": "2026-11-03",
+        "earnings_before_exit": true,
+        "fund_label": "weak",
+        "fund_line": "Fundamentals: weak (+ surprises; \u2212 target, industry, reaction)",
+        "verdict": null,
+        "bias": "bullish",
+        "conviction": 5,
+        "researched_at": "2026-09-29T10:41:03.688493+08:00",
+        "in_scan": null
+      }
+    ],
+    "how_to_edit": "Send 'watch add NVDA' / 'watch rm NVDA' to the SA bot"
   },
   "fundamentals_by_ticker": {
     "HPE": {
@@ -3844,12 +4280,12 @@
         {
           "name": "target",
           "score": 1,
-          "text": "Mean target $72 (+26%), range $53\u201392 \u00b7 21 analysts"
+          "text": "Mean target $72 (+28%), range $53\u201392 \u00b7 21 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "XLK -2.3% 1M vs SPY +0.9% (lagging)"
+          "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
@@ -3863,14 +4299,14 @@
         }
       ],
       "pe": {
-        "trailing": 29.4,
-        "forward": 12.1,
+        "trailing": 28.8,
+        "forward": 11.9,
         "peer_median": null,
-        "peers_n": 1
+        "peers_n": 2
       },
       "earnings": {
         "next": "2026-09-03",
-        "days": -46,
+        "days": -47,
         "before_exit": false,
         "history": [
           {
@@ -3903,7 +4339,7 @@
       },
       "target": {
         "mean": 71.74238,
-        "upside_pct": 26.0,
+        "upside_pct": 28.4,
         "analysts": 21,
         "rec": "buy",
         "low": 52.59,
@@ -3997,15 +4433,17 @@
       "industry": {
         "name": "Communication Equipment",
         "etf": "XLK",
-        "etf_1m": -2.33,
-        "etf_3m": 1.61,
-        "vs_spy_1m": -3.2
+        "etf_1m": -1.81,
+        "etf_3m": 3.28,
+        "vs_spy_1m": -2.4
       },
       "price": {
-        "last": 56.94,
-        "chg_1d": 3.28,
-        "chg_5d": -19.04,
-        "chg_1m": -6.29
+        "last": 55.87,
+        "chg_1d": 1.34,
+        "chg_5d": -20.56,
+        "chg_1m": -8.05,
+        "vs_sma50_pct": -5.9,
+        "vs_ema200_pct": 27.5
       },
       "digest": {
         "guidance": "raised",
@@ -4021,10 +4459,196 @@
       },
       "n_errors": 0
     },
+    "MRVL": {
+      "label": "mixed",
+      "net": -1,
+      "line": "Fundamentals: mixed (+ surprises, target; \u2212 valuation, industry, reaction)",
+      "parts": [
+        {
+          "name": "revisions",
+          "score": 0,
+          "text": "EPS est. this qtr +0.1% in 30d, next yr +8.4% \u00b7 2 up / 1 down"
+        },
+        {
+          "name": "surprises",
+          "score": 1,
+          "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +1.0%"
+        },
+        {
+          "name": "valuation",
+          "score": -1,
+          "text": "Fwd P/E 32.6 vs peers 23.9 (rich)"
+        },
+        {
+          "name": "target",
+          "score": 1,
+          "text": "Mean target $342 (+44%), range $230\u2013450 \u00b7 44 analysts"
+        },
+        {
+          "name": "industry",
+          "score": -1,
+          "text": "SMH -4.3% 1M vs SPY +0.6% (lagging)"
+        },
+        {
+          "name": "reaction",
+          "score": -1,
+          "text": "Last moves on earnings +8% +18% +3% -10% \u00b7 typical \u00b19.9% (a normal day \u2248 \u00b14.2%) \u00b7 beat but fell"
+        }
+      ],
+      "pe": {
+        "trailing": 75.3,
+        "forward": 32.6,
+        "peer_median": 23.940945,
+        "peers_n": 3
+      },
+      "earnings": {
+        "next": "2026-12-02",
+        "days": 43,
+        "before_exit": false,
+        "history": [
+          {
+            "quarter": "2025-10-31",
+            "surprise_pct": 3.0,
+            "beat": true
+          },
+          {
+            "quarter": "2026-01-31",
+            "surprise_pct": 1.1,
+            "beat": true
+          },
+          {
+            "quarter": "2026-04-30",
+            "surprise_pct": 0.6,
+            "beat": true
+          },
+          {
+            "quarter": "2026-07-31",
+            "surprise_pct": 1.0,
+            "beat": true
+          }
+        ]
+      },
+      "revisions": {
+        "q_30d_pct": 0.1,
+        "y_30d_pct": 8.4,
+        "up_30d": 2.0,
+        "down_30d": 1.0
+      },
+      "target": {
+        "mean": 341.63016,
+        "upside_pct": 44.1,
+        "analysts": 44,
+        "rec": "strong_buy",
+        "low": 229.95,
+        "high": 450.0
+      },
+      "reaction": {
+        "last": [
+          {
+            "date": "2025-12-02",
+            "move_pct": 7.9,
+            "surprise_pct": 3.0,
+            "flag": null
+          },
+          {
+            "date": "2026-03-05",
+            "move_pct": 18.4,
+            "surprise_pct": 1.1,
+            "flag": null
+          },
+          {
+            "date": "2026-05-27",
+            "move_pct": 3.1,
+            "surprise_pct": 0.6,
+            "flag": null
+          },
+          {
+            "date": "2026-08-27",
+            "move_pct": -10.3,
+            "surprise_pct": 1.0,
+            "flag": "beat but fell"
+          }
+        ],
+        "typical_move_pct": 9.9,
+        "normal_day_move_pct": 4.2,
+        "event_multiple": 2.4
+      },
+      "actions_30d": {
+        "up": 1,
+        "down": 0,
+        "items": [
+          {
+            "date": "2026-10-07",
+            "firm": "UBS",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 350.0
+          },
+          {
+            "date": "2026-10-07",
+            "firm": "Jefferies",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 450.0
+          },
+          {
+            "date": "2026-10-07",
+            "firm": "JP Morgan",
+            "action": "main",
+            "to": "Overweight",
+            "from": "Overweight",
+            "target": 360.0
+          },
+          {
+            "date": "2026-10-07",
+            "firm": "Wells Fargo",
+            "action": "main",
+            "to": "Overweight",
+            "from": "Overweight",
+            "target": 365.0
+          },
+          {
+            "date": "2026-10-07",
+            "firm": "Wolfe Research",
+            "action": "main",
+            "to": "Outperform",
+            "from": "Outperform",
+            "target": 375.0
+          },
+          {
+            "date": "2026-10-07",
+            "firm": "Morgan Stanley",
+            "action": "main",
+            "to": "Equal-Weight",
+            "from": "Equal-Weight",
+            "target": 300.0
+          }
+        ]
+      },
+      "industry": {
+        "name": "Semiconductors",
+        "etf": "SMH",
+        "etf_1m": -4.28,
+        "etf_3m": -6.55,
+        "vs_spy_1m": -4.9
+      },
+      "price": {
+        "last": 237.09,
+        "chg_1d": 4.06,
+        "chg_5d": -10.82,
+        "chg_1m": -2.91,
+        "vs_sma50_pct": -1.8,
+        "vs_ema200_pct": 23.7
+      },
+      "digest": null,
+      "n_errors": 0
+    },
     "NVDA": {
       "label": "mixed",
-      "net": 0,
-      "line": "Fundamentals: mixed (+ surprises, target; \u2212 industry, reaction)",
+      "net": 1,
+      "line": "Fundamentals: mixed (+ surprises, valuation, target; \u2212 industry, reaction)",
       "parts": [
         {
           "name": "revisions",
@@ -4037,30 +4661,35 @@
           "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +6.2%"
         },
         {
+          "name": "valuation",
+          "score": 1,
+          "text": "Fwd P/E 13.6 vs peers 32.6 (cheap)"
+        },
+        {
           "name": "target",
           "score": 1,
-          "text": "Mean target $329 (+54%), range $180\u2013515 \u00b7 59 analysts"
+          "text": "Mean target $329 (+51%), range $180\u2013515 \u00b7 59 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "SMH -3.7% 1M vs SPY +0.9% (lagging)"
+          "text": "SMH -4.3% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
           "score": -1,
-          "text": "Last moves on earnings -3% -6% -2% +9% \u00b7 typical \u00b14.8% (a normal day \u2248 \u00b12.7%) \u00b7 beat but fell"
+          "text": "Last moves on earnings -3% -6% -2% +9% \u00b7 typical \u00b14.8% (a normal day \u2248 \u00b12.6%) \u00b7 beat but fell"
         }
       ],
       "pe": {
-        "trailing": 27.1,
-        "forward": 13.5,
-        "peer_median": null,
-        "peers_n": 2
+        "trailing": 27.4,
+        "forward": 13.6,
+        "peer_median": 32.55492,
+        "peers_n": 3
       },
       "earnings": {
         "next": "2026-11-18",
-        "days": 30,
+        "days": 29,
         "before_exit": false,
         "history": [
           {
@@ -4093,7 +4722,7 @@
       },
       "target": {
         "mean": 328.71695,
-        "upside_pct": 53.5,
+        "upside_pct": 51.4,
         "analysts": 59,
         "rec": "strong_buy",
         "low": 180.0,
@@ -4127,7 +4756,7 @@
           }
         ],
         "typical_move_pct": 4.8,
-        "normal_day_move_pct": 2.7,
+        "normal_day_move_pct": 2.6,
         "event_multiple": 1.8
       },
       "actions_30d": {
@@ -4155,15 +4784,17 @@
       "industry": {
         "name": "Semiconductors",
         "etf": "SMH",
-        "etf_1m": -3.71,
-        "etf_3m": -7.58,
-        "vs_spy_1m": -4.6
+        "etf_1m": -4.28,
+        "etf_3m": -6.55,
+        "vs_spy_1m": -4.9
       },
       "price": {
-        "last": 214.13,
-        "chg_1d": -1.43,
-        "chg_5d": -6.61,
-        "chg_1m": -2.38
+        "last": 217.09,
+        "chg_1d": 1.38,
+        "chg_5d": -4.08,
+        "chg_1m": -2.33,
+        "vs_sma50_pct": -2.6,
+        "vs_ema200_pct": 6.0
       },
       "digest": null,
       "n_errors": 0
@@ -4186,28 +4817,28 @@
         {
           "name": "target",
           "score": 0,
-          "text": "Mean target $398 (+9%), range $128\u2013600 \u00b7 38 analysts"
+          "text": "Mean target $398 (+8%), range $128\u2013600 \u00b7 38 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "CARZ -6.6% 1M vs SPY +0.9% (lagging)"
+          "text": "CARZ -5.5% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
           "score": -1,
-          "text": "Last moves on earnings +2% -4% -4% -14% \u00b7 typical \u00b16.0% (a normal day \u2248 \u00b13.3%) \u00b7 beat but fell"
+          "text": "Last moves on earnings +2% -4% -4% -14% \u00b7 typical \u00b16.0% (a normal day \u2248 \u00b13.1%) \u00b7 beat but fell"
         }
       ],
       "pe": {
-        "trailing": 339.4,
-        "forward": 169.0,
+        "trailing": 328.6,
+        "forward": 169.7,
         "peer_median": null,
         "peers_n": 0
       },
       "earnings": {
         "next": "2026-10-22",
-        "days": 3,
+        "days": 2,
         "before_exit": true,
         "history": [
           {
@@ -4240,7 +4871,7 @@
       },
       "target": {
         "mean": 397.83212,
-        "upside_pct": 8.6,
+        "upside_pct": 8.1,
         "analysts": 38,
         "rec": "buy",
         "low": 128.11,
@@ -4274,8 +4905,8 @@
           }
         ],
         "typical_move_pct": 6.0,
-        "normal_day_move_pct": 3.3,
-        "event_multiple": 1.8
+        "normal_day_move_pct": 3.1,
+        "event_multiple": 1.9
       },
       "actions_30d": {
         "up": 0,
@@ -4334,15 +4965,17 @@
       "industry": {
         "name": "Auto Manufacturers",
         "etf": "CARZ",
-        "etf_1m": -6.58,
-        "etf_3m": -6.83,
-        "vs_spy_1m": -7.4
+        "etf_1m": -5.47,
+        "etf_3m": -5.6,
+        "vs_spy_1m": -6.1
       },
       "price": {
-        "last": 366.48,
-        "chg_1d": 3.34,
-        "chg_5d": -3.04,
-        "chg_1m": 0.63
+        "last": 368.06,
+        "chg_1d": 3.76,
+        "chg_5d": -2.64,
+        "chg_1m": 1.04,
+        "vs_sma50_pct": 2.2,
+        "vs_ema200_pct": -2.4
       },
       "digest": null,
       "n_errors": 0
@@ -4365,12 +4998,12 @@
         {
           "name": "target",
           "score": 1,
-          "text": "Mean target $1,179 (+43%), range $820\u20131,500 \u00b7 26 analysts"
+          "text": "Mean target $1,179 (+41%), range $820\u20131,500 \u00b7 26 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "XLK -2.3% 1M vs SPY +0.9% (lagging)"
+          "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
@@ -4380,13 +5013,13 @@
       ],
       "pe": {
         "trailing": null,
-        "forward": 22.9,
+        "forward": 23.2,
         "peer_median": null,
-        "peers_n": 1
+        "peers_n": 2
       },
       "earnings": {
         "next": "2026-11-06",
-        "days": 18,
+        "days": 17,
         "before_exit": false,
         "history": [
           {
@@ -4419,7 +5052,7 @@
       },
       "target": {
         "mean": 1179.071,
-        "upside_pct": 43.1,
+        "upside_pct": 41.3,
         "analysts": 26,
         "rec": "strong_buy",
         "low": 820.0,
@@ -4505,15 +5138,512 @@
       "industry": {
         "name": "Communication Equipment",
         "etf": "XLK",
-        "etf_1m": -2.33,
-        "etf_3m": 1.61,
-        "vs_spy_1m": -3.2
+        "etf_1m": -1.81,
+        "etf_3m": 3.28,
+        "vs_spy_1m": -2.4
       },
       "price": {
-        "last": 824.13,
-        "chg_1d": -5.22,
-        "chg_5d": -25.31,
-        "chg_1m": -7.78
+        "last": 834.51,
+        "chg_1d": 1.26,
+        "chg_5d": -16.16,
+        "chg_1m": -10.36,
+        "vs_sma50_pct": -10.3,
+        "vs_ema200_pct": 10.0
+      },
+      "digest": null,
+      "n_errors": 0
+    },
+    "AAOI": {
+      "label": "mixed",
+      "net": 0,
+      "line": "Fundamentals: mixed (+ target; \u2212 industry)",
+      "parts": [
+        {
+          "name": "revisions",
+          "score": 0,
+          "text": "EPS est. this qtr +0.0% in 30d, next yr +0.0% \u00b7 0 up / 6 down"
+        },
+        {
+          "name": "surprises",
+          "score": 0,
+          "text": "Beat 2 of 4 \u274c\u2705\u274c\u2705 \u00b7 last +3.0%"
+        },
+        {
+          "name": "target",
+          "score": 1,
+          "text": "Mean target $160 (+105%), range $92\u2013220 \u00b7 5 analysts"
+        },
+        {
+          "name": "industry",
+          "score": -1,
+          "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
+        },
+        {
+          "name": "reaction",
+          "score": 0,
+          "text": "Last moves on earnings -2% +57% -6% +9% \u00b7 typical \u00b118.3%"
+        }
+      ],
+      "pe": {
+        "trailing": null,
+        "forward": 17.0,
+        "peer_median": null,
+        "peers_n": 2
+      },
+      "earnings": {
+        "next": "2026-11-06",
+        "days": 17,
+        "before_exit": false,
+        "history": [
+          {
+            "quarter": "2025-09-30",
+            "surprise_pct": -2.3,
+            "beat": false
+          },
+          {
+            "quarter": "2025-12-31",
+            "surprise_pct": 91.1,
+            "beat": true
+          },
+          {
+            "quarter": "2026-03-31",
+            "surprise_pct": -44.8,
+            "beat": false
+          },
+          {
+            "quarter": "2026-06-30",
+            "surprise_pct": 3.0,
+            "beat": true
+          }
+        ]
+      },
+      "revisions": {
+        "q_30d_pct": 0.0,
+        "y_30d_pct": 0.0,
+        "up_30d": 0.0,
+        "down_30d": 6.0
+      },
+      "target": {
+        "mean": 160.0,
+        "upside_pct": 104.6,
+        "analysts": 5,
+        "rec": "buy",
+        "low": 92.0,
+        "high": 220.0
+      },
+      "reaction": {
+        "last": [
+          {
+            "date": "2025-11-06",
+            "move_pct": -1.8,
+            "surprise_pct": -2.3,
+            "flag": null
+          },
+          {
+            "date": "2026-02-26",
+            "move_pct": 56.9,
+            "surprise_pct": 91.1,
+            "flag": null
+          },
+          {
+            "date": "2026-05-07",
+            "move_pct": -5.5,
+            "surprise_pct": -44.8,
+            "flag": null
+          },
+          {
+            "date": "2026-08-06",
+            "move_pct": 9.2,
+            "surprise_pct": 300.0,
+            "flag": null
+          }
+        ],
+        "typical_move_pct": 18.3,
+        "normal_day_move_pct": null,
+        "event_multiple": null
+      },
+      "actions_30d": {
+        "up": 0,
+        "down": 0,
+        "items": [
+          {
+            "date": "2026-10-15",
+            "firm": "B. Riley Securities",
+            "action": "main",
+            "to": "Neutral",
+            "from": "Neutral",
+            "target": 92.0
+          }
+        ]
+      },
+      "industry": {
+        "name": "Communication Equipment",
+        "etf": "XLK",
+        "etf_1m": -1.81,
+        "etf_3m": 3.28,
+        "vs_spy_1m": -2.4
+      },
+      "price": {
+        "last": 78.2,
+        "chg_1d": 3.48,
+        "chg_5d": -22.33,
+        "chg_1m": -25.64,
+        "vs_sma50_pct": -28.8,
+        "vs_ema200_pct": -25.6
+      },
+      "digest": null,
+      "n_errors": 0
+    },
+    "META": {
+      "label": "weak",
+      "net": -2,
+      "line": "Fundamentals: weak (\u2212 revisions, reaction)",
+      "parts": [
+        {
+          "name": "revisions",
+          "score": -1,
+          "text": "EPS est. this qtr -14.8% in 30d, next yr -0.1% \u00b7 0 up / 3 down"
+        },
+        {
+          "name": "surprises",
+          "score": 0,
+          "text": "Beat 2 of 4 \u274c\u2705\u2705\u274c \u00b7 last -14.4%"
+        },
+        {
+          "name": "target",
+          "score": 0,
+          "text": "Mean target $819 (+16%), range $580\u20131,050 \u00b7 58 analysts"
+        },
+        {
+          "name": "industry",
+          "score": 0,
+          "text": "XLC -0.3% 1M vs SPY +0.6% (in line)"
+        },
+        {
+          "name": "reaction",
+          "score": -1,
+          "text": "Last moves on earnings -11% +10% -9% -8% \u00b7 typical \u00b19.6% (a normal day \u2248 \u00b12.9%) \u00b7 beat but fell"
+        }
+      ],
+      "pe": {
+        "trailing": 26.7,
+        "forward": 20.4,
+        "peer_median": null,
+        "peers_n": 0
+      },
+      "earnings": {
+        "next": "2026-10-22",
+        "days": 2,
+        "before_exit": true,
+        "history": [
+          {
+            "quarter": "2025-09-30",
+            "surprise_pct": -84.3,
+            "beat": false
+          },
+          {
+            "quarter": "2025-12-31",
+            "surprise_pct": 8.0,
+            "beat": true
+          },
+          {
+            "quarter": "2026-03-31",
+            "surprise_pct": 56.8,
+            "beat": true
+          },
+          {
+            "quarter": "2026-06-30",
+            "surprise_pct": -14.4,
+            "beat": false
+          }
+        ]
+      },
+      "revisions": {
+        "q_30d_pct": -14.8,
+        "y_30d_pct": -0.1,
+        "up_30d": 0.0,
+        "down_30d": 3.0
+      },
+      "target": {
+        "mean": 818.9952,
+        "upside_pct": 16.1,
+        "analysts": 58,
+        "rec": "strong_buy",
+        "low": 580.0,
+        "high": 1050.0
+      },
+      "reaction": {
+        "last": [
+          {
+            "date": "2025-10-29",
+            "move_pct": -11.3,
+            "surprise_pct": 8.7,
+            "flag": "beat but fell"
+          },
+          {
+            "date": "2026-01-28",
+            "move_pct": 10.4,
+            "surprise_pct": 8.0,
+            "flag": null
+          },
+          {
+            "date": "2026-04-29",
+            "move_pct": -8.6,
+            "surprise_pct": 7.2,
+            "flag": "beat but fell"
+          },
+          {
+            "date": "2026-07-29",
+            "move_pct": -8.0,
+            "surprise_pct": -14.4,
+            "flag": null
+          }
+        ],
+        "typical_move_pct": 9.6,
+        "normal_day_move_pct": 2.9,
+        "event_multiple": 3.3
+      },
+      "actions_30d": {
+        "up": 0,
+        "down": 0,
+        "items": [
+          {
+            "date": "2026-10-13",
+            "firm": "Pivotal Research",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 930.0
+          },
+          {
+            "date": "2026-10-13",
+            "firm": "Truist Securities",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 1000.0
+          },
+          {
+            "date": "2026-10-13",
+            "firm": "Keybanc",
+            "action": "reit",
+            "to": "Overweight",
+            "from": "Overweight",
+            "target": 900.0
+          },
+          {
+            "date": "2026-10-13",
+            "firm": "Rosenblatt",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 886.0
+          },
+          {
+            "date": "2026-10-12",
+            "firm": "Cantor Fitzgerald",
+            "action": "main",
+            "to": "Overweight",
+            "from": "Overweight",
+            "target": 840.0
+          },
+          {
+            "date": "2026-10-08",
+            "firm": "TD Cowen",
+            "action": "reit",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 865.0
+          }
+        ]
+      },
+      "industry": {
+        "name": "Internet Content & Information",
+        "etf": "XLC",
+        "etf_1m": -0.32,
+        "etf_3m": 1.15,
+        "vs_spy_1m": -0.9
+      },
+      "price": {
+        "last": 705.44,
+        "chg_1d": -0.55,
+        "chg_5d": -5.05,
+        "chg_1m": 6.05,
+        "vs_sma50_pct": 7.3,
+        "vs_ema200_pct": 9.8
+      },
+      "digest": null,
+      "n_errors": 0
+    },
+    "AAPL": {
+      "label": "weak",
+      "net": -2,
+      "line": "Fundamentals: weak (+ surprises; \u2212 target, industry, reaction)",
+      "parts": [
+        {
+          "name": "revisions",
+          "score": 0,
+          "text": "EPS est. this qtr +0.0% in 30d, next yr -0.1% \u00b7 1 up / 1 down"
+        },
+        {
+          "name": "surprises",
+          "score": 1,
+          "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +6.7%"
+        },
+        {
+          "name": "target",
+          "score": -1,
+          "text": "Mean target $329 (-4%), range $215\u2013405 \u00b7 39 analysts"
+        },
+        {
+          "name": "industry",
+          "score": -1,
+          "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
+        },
+        {
+          "name": "reaction",
+          "score": -1,
+          "text": "Last moves on earnings -0% +0% +3% -7% \u00b7 typical \u00b12.9% \u00b7 beat but fell"
+        }
+      ],
+      "pe": {
+        "trailing": 39.3,
+        "forward": 35.8,
+        "peer_median": null,
+        "peers_n": 0
+      },
+      "earnings": {
+        "next": "2026-11-03",
+        "days": 14,
+        "before_exit": true,
+        "history": [
+          {
+            "quarter": "2025-09-30",
+            "surprise_pct": 4.5,
+            "beat": true
+          },
+          {
+            "quarter": "2025-12-31",
+            "surprise_pct": 6.3,
+            "beat": true
+          },
+          {
+            "quarter": "2026-03-31",
+            "surprise_pct": 3.5,
+            "beat": true
+          },
+          {
+            "quarter": "2026-06-30",
+            "surprise_pct": 6.7,
+            "beat": true
+          }
+        ]
+      },
+      "revisions": {
+        "q_30d_pct": 0.0,
+        "y_30d_pct": -0.1,
+        "up_30d": 1.0,
+        "down_30d": 1.0
+      },
+      "target": {
+        "mean": 329.3759,
+        "upside_pct": -4.0,
+        "analysts": 39,
+        "rec": "buy",
+        "low": 215.0,
+        "high": 405.0
+      },
+      "reaction": {
+        "last": [
+          {
+            "date": "2025-10-30",
+            "move_pct": -0.4,
+            "surprise_pct": 4.5,
+            "flag": null
+          },
+          {
+            "date": "2026-01-29",
+            "move_pct": 0.5,
+            "surprise_pct": 6.2,
+            "flag": null
+          },
+          {
+            "date": "2026-04-30",
+            "move_pct": 3.2,
+            "surprise_pct": 3.5,
+            "flag": null
+          },
+          {
+            "date": "2026-07-30",
+            "move_pct": -7.4,
+            "surprise_pct": 6.7,
+            "flag": "beat but fell"
+          }
+        ],
+        "typical_move_pct": 2.9,
+        "normal_day_move_pct": null,
+        "event_multiple": null
+      },
+      "actions_30d": {
+        "up": 0,
+        "down": 0,
+        "items": [
+          {
+            "date": "2026-10-12",
+            "firm": "JP Morgan",
+            "action": "main",
+            "to": "Overweight",
+            "from": "Overweight",
+            "target": 360.0
+          },
+          {
+            "date": "2026-10-01",
+            "firm": "Morgan Stanley",
+            "action": "main",
+            "to": "Overweight",
+            "from": "Overweight",
+            "target": 355.0
+          },
+          {
+            "date": "2026-10-01",
+            "firm": "Needham",
+            "action": "reit",
+            "to": "Hold",
+            "from": "Hold",
+            "target": 0.0
+          },
+          {
+            "date": "2026-09-29",
+            "firm": "Morgan Stanley",
+            "action": "reit",
+            "to": "Overweight",
+            "from": "Overweight",
+            "target": 360.0
+          },
+          {
+            "date": "2026-09-23",
+            "firm": "B of A Securities",
+            "action": "reit",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 370.0
+          }
+        ]
+      },
+      "industry": {
+        "name": "Consumer Electronics",
+        "etf": "XLK",
+        "etf_1m": -1.81,
+        "etf_3m": 3.28,
+        "vs_spy_1m": -2.4
+      },
+      "price": {
+        "last": 342.94,
+        "chg_1d": -0.15,
+        "chg_5d": 0.58,
+        "chg_1m": 2.03,
+        "vs_sma50_pct": 5.1,
+        "vs_ema200_pct": 14.7
       },
       "digest": null,
       "n_errors": 0
@@ -4536,12 +5666,12 @@
         {
           "name": "target",
           "score": 1,
-          "text": "Mean target $29 (+142%), range $17\u201340 \u00b7 12 analysts"
+          "text": "Mean target $29 (+144%), range $17\u201340 \u00b7 12 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "XLK -2.3% 1M vs SPY +0.9% (lagging)"
+          "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
@@ -4551,13 +5681,13 @@
       ],
       "pe": {
         "trailing": null,
-        "forward": -57.3,
+        "forward": -56.7,
         "peer_median": null,
         "peers_n": 0
       },
       "earnings": {
         "next": "2026-11-11",
-        "days": 23,
+        "days": 22,
         "before_exit": false,
         "history": [
           {
@@ -4590,7 +5720,7 @@
       },
       "target": {
         "mean": 28.525,
-        "upside_pct": 141.7,
+        "upside_pct": 144.4,
         "analysts": 12,
         "rec": "none",
         "low": 17.3,
@@ -4635,23 +5765,25 @@
       "industry": {
         "name": "Computer Hardware",
         "etf": "XLK",
-        "etf_1m": -2.33,
-        "etf_3m": 1.61,
-        "vs_spy_1m": -3.2
+        "etf_1m": -1.81,
+        "etf_3m": 3.28,
+        "vs_spy_1m": -2.4
       },
       "price": {
-        "last": 11.8,
-        "chg_1d": -6.57,
-        "chg_5d": -15.89,
-        "chg_1m": -26.2
+        "last": 11.67,
+        "chg_1d": -1.1,
+        "chg_5d": -11.92,
+        "chg_1m": -25.95,
+        "vs_sma50_pct": -25.4,
+        "vs_ema200_pct": -33.5
       },
       "digest": null,
       "n_errors": 0
     },
     "SNPS": {
       "label": "mixed",
-      "net": 0,
-      "line": "Fundamentals: mixed (+ surprises, target; \u2212 industry, reaction)",
+      "net": 1,
+      "line": "Fundamentals: mixed (+ surprises, target; \u2212 reaction)",
       "parts": [
         {
           "name": "revisions",
@@ -4670,8 +5802,8 @@
         },
         {
           "name": "industry",
-          "score": -1,
-          "text": "IGV -1.4% 1M vs SPY +0.9% (lagging)"
+          "score": 0,
+          "text": "IGV +1.6% 1M vs SPY +0.6% (in line)"
         },
         {
           "name": "reaction",
@@ -4687,7 +5819,7 @@
       },
       "earnings": {
         "next": "2026-08-27",
-        "days": -53,
+        "days": -54,
         "before_exit": false,
         "history": [
           {
@@ -4814,23 +5946,25 @@
       "industry": {
         "name": "Software - Infrastructure",
         "etf": "IGV",
-        "etf_1m": -1.36,
-        "etf_3m": 13.64,
-        "vs_spy_1m": -2.2
+        "etf_1m": 1.57,
+        "etf_3m": 19.06,
+        "vs_spy_1m": 0.9
       },
       "price": {
-        "last": 454.63,
-        "chg_1d": -2.88,
-        "chg_5d": -10.86,
-        "chg_1m": 19.27
+        "last": 454.58,
+        "chg_1d": -0.01,
+        "chg_5d": -9.54,
+        "chg_1m": 18.08,
+        "vs_sma50_pct": 6.0,
+        "vs_ema200_pct": 2.0
       },
       "digest": null,
       "n_errors": 0
     },
     "CCL": {
       "label": "mixed",
-      "net": 0,
-      "line": "Fundamentals: mixed (+ surprises, target; \u2212 revisions, reaction)",
+      "net": 1,
+      "line": "Fundamentals: mixed (+ surprises, target, industry; \u2212 revisions, reaction)",
       "parts": [
         {
           "name": "revisions",
@@ -4845,12 +5979,12 @@
         {
           "name": "target",
           "score": 1,
-          "text": "Mean target $34 (+31%), range $29\u201343 \u00b7 26 analysts"
+          "text": "Mean target $34 (+28%), range $29\u201343 \u00b7 26 analysts"
         },
         {
           "name": "industry",
-          "score": 0,
-          "text": "XLY +1.2% 1M vs SPY +0.9% (in line)"
+          "score": 1,
+          "text": "XLY +3.3% 1M vs SPY +0.6% (leading)"
         },
         {
           "name": "reaction",
@@ -4859,14 +5993,14 @@
         }
       ],
       "pe": {
-        "trailing": 11.4,
-        "forward": 10.1,
+        "trailing": 11.7,
+        "forward": 10.3,
         "peer_median": null,
         "peers_n": 0
       },
       "earnings": {
         "next": "2026-12-18",
-        "days": 60,
+        "days": 59,
         "before_exit": false,
         "history": [
           {
@@ -4899,7 +6033,7 @@
       },
       "target": {
         "mean": 33.89231,
-        "upside_pct": 30.9,
+        "upside_pct": 28.1,
         "analysts": 26,
         "rec": "buy",
         "low": 28.7,
@@ -4993,15 +6127,17 @@
       "industry": {
         "name": "Travel Services",
         "etf": "XLY",
-        "etf_1m": 1.18,
-        "etf_3m": -1.88,
-        "vs_spy_1m": 0.3
+        "etf_1m": 3.32,
+        "etf_3m": 0.61,
+        "vs_spy_1m": 2.7
       },
       "price": {
-        "last": 25.9,
-        "chg_1d": -2.12,
-        "chg_5d": -1.71,
-        "chg_1m": 16.82
+        "last": 26.45,
+        "chg_1d": 2.12,
+        "chg_5d": -0.11,
+        "chg_1m": 21.11,
+        "vs_sma50_pct": 6.5,
+        "vs_ema200_pct": 0.5
       },
       "digest": null,
       "n_errors": 0
@@ -5024,12 +6160,12 @@
         {
           "name": "target",
           "score": 1,
-          "text": "Mean target $64 (+105%), range $42\u2013100 \u00b7 14 analysts"
+          "text": "Mean target $64 (+108%), range $42\u2013100 \u00b7 14 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "XLK -2.3% 1M vs SPY +0.9% (lagging)"
+          "text": "XLK -1.8% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
@@ -5039,13 +6175,13 @@
       ],
       "pe": {
         "trailing": null,
-        "forward": -23.3,
+        "forward": -22.9,
         "peer_median": null,
         "peers_n": 0
       },
       "earnings": {
         "next": "2026-11-05",
-        "days": 17,
+        "days": 16,
         "before_exit": false,
         "history": [
           {
@@ -5078,7 +6214,7 @@
       },
       "target": {
         "mean": 64.06071,
-        "upside_pct": 104.8,
+        "upside_pct": 108.1,
         "analysts": 14,
         "rec": "strong_buy",
         "low": 41.85,
@@ -5148,15 +6284,17 @@
       "industry": {
         "name": "Computer Hardware",
         "etf": "XLK",
-        "etf_1m": -2.33,
-        "etf_3m": 1.61,
-        "vs_spy_1m": -3.2
+        "etf_1m": -1.81,
+        "etf_3m": 3.28,
+        "vs_spy_1m": -2.4
       },
       "price": {
-        "last": 31.28,
-        "chg_1d": -8.94,
-        "chg_5d": -21.58,
-        "chg_1m": -22.46
+        "last": 30.78,
+        "chg_1d": -1.6,
+        "chg_5d": -15.14,
+        "chg_1m": -21.34,
+        "vs_sma50_pct": -24.0,
+        "vs_ema200_pct": -28.6
       },
       "digest": null,
       "n_errors": 0
@@ -5184,7 +6322,7 @@
         {
           "name": "industry",
           "score": -1,
-          "text": "KRE -3.5% 1M vs SPY +0.9% (lagging)"
+          "text": "KRE -4.3% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
@@ -5200,7 +6338,7 @@
       },
       "earnings": {
         "next": "2026-11-13",
-        "days": 25,
+        "days": 24,
         "before_exit": false,
         "history": [
           {
@@ -5233,7 +6371,7 @@
       },
       "target": {
         "mean": 18.77273,
-        "upside_pct": 28.9,
+        "upside_pct": 29.4,
         "analysts": 22,
         "rec": "buy",
         "low": 12.0,
@@ -5295,28 +6433,30 @@
       "industry": {
         "name": "Banks - Regional",
         "etf": "KRE",
-        "etf_1m": -3.48,
-        "etf_3m": -7.6,
-        "vs_spy_1m": -4.3
+        "etf_1m": -4.26,
+        "etf_3m": -7.86,
+        "vs_spy_1m": -4.9
       },
       "price": {
-        "last": 14.56,
-        "chg_1d": -1.15,
-        "chg_5d": -9.68,
-        "chg_1m": 5.2
+        "last": 14.51,
+        "chg_1d": -0.34,
+        "chg_5d": -9.37,
+        "chg_1m": 6.3,
+        "vs_sma50_pct": 0.3,
+        "vs_ema200_pct": 1.0
       },
       "digest": null,
       "n_errors": 0
     },
     "BAC": {
       "label": "mixed",
-      "net": -1,
-      "line": "Fundamentals: mixed (+ surprises; \u2212 revisions, reaction)",
+      "net": 0,
+      "line": "Fundamentals: mixed (+ surprises, target; \u2212 revisions, reaction)",
       "parts": [
         {
           "name": "revisions",
           "score": -1,
-          "text": "EPS est. this qtr -3.5% in 30d, next yr -2.5% \u00b7 2 up / 8 down"
+          "text": "EPS est. this qtr -3.4% in 30d, next yr -2.5% \u00b7 2 up / 8 down"
         },
         {
           "name": "surprises",
@@ -5325,13 +6465,13 @@
         },
         {
           "name": "target",
-          "score": 0,
-          "text": "Mean target $63 (+24%), range $56\u201371 \u00b7 22 analysts"
+          "score": 1,
+          "text": "Mean target $63 (+26%), range $56\u201371 \u00b7 22 analysts"
         },
         {
           "name": "industry",
           "score": 0,
-          "text": "XLF -0.3% 1M vs SPY +0.9% (in line)"
+          "text": "XLF -1.1% 1M vs SPY +0.6% (in line)"
         },
         {
           "name": "reaction",
@@ -5340,14 +6480,14 @@
         }
       ],
       "pe": {
-        "trailing": 12.2,
-        "forward": 9.9,
+        "trailing": 12.0,
+        "forward": 9.7,
         "peer_median": null,
         "peers_n": 1
       },
       "earnings": {
         "next": "2027-01-15",
-        "days": 88,
+        "days": 87,
         "before_exit": false,
         "history": [
           {
@@ -5373,14 +6513,14 @@
         ]
       },
       "revisions": {
-        "q_30d_pct": -3.5,
+        "q_30d_pct": -3.4,
         "y_30d_pct": -2.5,
         "up_30d": 2.0,
         "down_30d": 8.0
       },
       "target": {
         "mean": 63.45455,
-        "upside_pct": 23.9,
+        "upside_pct": 25.9,
         "analysts": 22,
         "rec": "strong_buy",
         "low": 56.0,
@@ -5474,15 +6614,17 @@
       "industry": {
         "name": "Banks - Diversified",
         "etf": "XLF",
-        "etf_1m": -0.29,
-        "etf_3m": -0.7,
-        "vs_spy_1m": -1.1
+        "etf_1m": -1.08,
+        "etf_3m": -1.42,
+        "vs_spy_1m": -1.7
       },
       "price": {
-        "last": 51.23,
-        "chg_1d": -0.91,
-        "chg_5d": -5.69,
-        "chg_1m": -11.95
+        "last": 50.39,
+        "chg_1d": -1.64,
+        "chg_5d": -7.68,
+        "chg_1m": -12.71,
+        "vs_sma50_pct": -14.1,
+        "vs_ema200_pct": -8.7
       },
       "digest": null,
       "n_errors": 0
@@ -5505,12 +6647,12 @@
         {
           "name": "target",
           "score": 0,
-          "text": "Mean target $213 (+18%), range $185\u2013262 \u00b7 22 analysts"
+          "text": "Mean target $214 (+20%), range $185\u2013262 \u00b7 22 analysts"
         },
         {
           "name": "industry",
           "score": 0,
-          "text": "XLF -0.3% 1M vs SPY +0.9% (in line)"
+          "text": "XLF -1.1% 1M vs SPY +0.6% (in line)"
         },
         {
           "name": "reaction",
@@ -5520,13 +6662,13 @@
       ],
       "pe": {
         "trailing": 14.3,
-        "forward": 13.2,
+        "forward": 13.1,
         "peer_median": null,
         "peers_n": 1
       },
       "earnings": {
         "next": "2027-01-14",
-        "days": 87,
+        "days": 86,
         "before_exit": false,
         "history": [
           {
@@ -5558,8 +6700,8 @@
         "down_30d": 7.0
       },
       "target": {
-        "mean": 213.27274,
-        "upside_pct": 18.1,
+        "mean": 213.59091,
+        "upside_pct": 19.7,
         "analysts": 22,
         "rec": "buy",
         "low": 185.0,
@@ -5601,6 +6743,14 @@
         "down": 0,
         "items": [
           {
+            "date": "2026-10-19",
+            "firm": "BMO Capital",
+            "action": "main",
+            "to": "Outperform",
+            "from": "Outperform",
+            "target": 210.0
+          },
+          {
             "date": "2026-10-16",
             "firm": "JP Morgan",
             "action": "main",
@@ -5639,29 +6789,23 @@
             "to": "Equal-Weight",
             "from": "Equal-Weight",
             "target": 217.0
-          },
-          {
-            "date": "2026-10-15",
-            "firm": "Evercore ISI Group",
-            "action": "main",
-            "to": "Outperform",
-            "from": "Outperform",
-            "target": 205.0
           }
         ]
       },
       "industry": {
         "name": "Capital Markets",
         "etf": "XLF",
-        "etf_1m": -0.29,
-        "etf_3m": -0.7,
-        "vs_spy_1m": -1.1
+        "etf_1m": -1.08,
+        "etf_3m": -1.42,
+        "vs_spy_1m": -1.7
       },
       "price": {
-        "last": 180.57,
-        "chg_1d": -0.84,
-        "chg_5d": -4.97,
-        "chg_1m": -11.28
+        "last": 178.47,
+        "chg_1d": -1.16,
+        "chg_5d": -6.08,
+        "chg_1m": -11.9,
+        "vs_sma50_pct": -12.3,
+        "vs_ema200_pct": -7.1
       },
       "digest": null,
       "n_errors": 0
@@ -5689,7 +6833,7 @@
         {
           "name": "industry",
           "score": 0,
-          "text": "XLF -0.3% 1M vs SPY +0.9% (in line)"
+          "text": "XLF -1.1% 1M vs SPY +0.6% (in line)"
         },
         {
           "name": "reaction",
@@ -5699,13 +6843,13 @@
       ],
       "pe": {
         "trailing": 12.7,
-        "forward": 12.0,
+        "forward": 11.9,
         "peer_median": null,
         "peers_n": 1
       },
       "earnings": {
-        "next": "2026-10-13",
-        "days": -6,
+        "next": "2027-01-19",
+        "days": 91,
         "before_exit": false,
         "history": [
           {
@@ -5738,7 +6882,7 @@
       },
       "target": {
         "mean": 1037.9048,
-        "upside_pct": 17.8,
+        "upside_pct": 18.5,
         "analysts": 21,
         "rec": "hold",
         "low": 730.0,
@@ -5780,6 +6924,14 @@
         "down": 0,
         "items": [
           {
+            "date": "2026-10-19",
+            "firm": "BMO Capital",
+            "action": "main",
+            "to": "Market Perform",
+            "from": "Market Perform",
+            "target": 950.0
+          },
+          {
             "date": "2026-10-16",
             "firm": "JP Morgan",
             "action": "main",
@@ -5818,42 +6970,36 @@
             "to": "Buy",
             "from": "",
             "target": 1050.0
-          },
-          {
-            "date": "2026-10-06",
-            "firm": "BMO Capital",
-            "action": "main",
-            "to": "Market Perform",
-            "from": "Market Perform",
-            "target": 970.0
           }
         ]
       },
       "industry": {
         "name": "Capital Markets",
         "etf": "XLF",
-        "etf_1m": -0.29,
-        "etf_3m": -0.7,
-        "vs_spy_1m": -1.1
+        "etf_1m": -1.08,
+        "etf_3m": -1.42,
+        "vs_spy_1m": -1.7
       },
       "price": {
-        "last": 881.26,
-        "chg_1d": -1.12,
-        "chg_5d": -1.57,
-        "chg_1m": -7.38
+        "last": 875.78,
+        "chg_1d": -0.62,
+        "chg_5d": -2.03,
+        "chg_1m": -7.03,
+        "vs_sma50_pct": -9.7,
+        "vs_ema200_pct": -6.3
       },
       "digest": null,
       "n_errors": 0
     },
     "ADI": {
       "label": "mixed",
-      "net": -1,
-      "line": "Fundamentals: mixed (+ surprises; \u2212 industry, reaction)",
+      "net": 0,
+      "line": "Fundamentals: mixed (+ surprises, valuation; \u2212 industry, reaction)",
       "parts": [
         {
           "name": "revisions",
           "score": 0,
-          "text": "EPS est. this qtr +0.9% in 30d, next yr +1.0% \u00b7 21 up / 1 down"
+          "text": "EPS est. this qtr +0.8% in 30d, next yr +0.8% \u00b7 21 up / 1 down"
         },
         {
           "name": "surprises",
@@ -5861,14 +7007,19 @@
           "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +3.3%"
         },
         {
+          "name": "valuation",
+          "score": 1,
+          "text": "Fwd P/E 23.9 vs peers 32.6 (cheap)"
+        },
+        {
           "name": "target",
           "score": 0,
-          "text": "Mean target $471 (+19%), range $365\u2013675 \u00b7 32 analysts"
+          "text": "Mean target $472 (+20%), range $365\u2013675 \u00b7 32 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "SMH -3.7% 1M vs SPY +0.9% (lagging)"
+          "text": "SMH -4.3% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
@@ -5877,14 +7028,14 @@
         }
       ],
       "pe": {
-        "trailing": 47.0,
-        "forward": 24.0,
-        "peer_median": null,
-        "peers_n": 2
+        "trailing": 46.8,
+        "forward": 23.9,
+        "peer_median": 32.55492,
+        "peers_n": 3
       },
       "earnings": {
         "next": "2026-11-24",
-        "days": 36,
+        "days": 35,
         "before_exit": false,
         "history": [
           {
@@ -5910,14 +7061,14 @@
         ]
       },
       "revisions": {
-        "q_30d_pct": 0.9,
-        "y_30d_pct": 1.0,
+        "q_30d_pct": 0.8,
+        "y_30d_pct": 0.8,
         "up_30d": 21.0,
         "down_30d": 1.0
       },
       "target": {
-        "mean": 471.34375,
-        "upside_pct": 19.2,
+        "mean": 472.4375,
+        "upside_pct": 19.8,
         "analysts": 32,
         "rec": "strong_buy",
         "low": 365.0,
@@ -5962,15 +7113,17 @@
       "industry": {
         "name": "Semiconductors",
         "etf": "SMH",
-        "etf_1m": -3.71,
-        "etf_3m": -7.58,
-        "vs_spy_1m": -4.6
+        "etf_1m": -4.28,
+        "etf_3m": -6.55,
+        "vs_spy_1m": -4.9
       },
       "price": {
-        "last": 395.44,
-        "chg_1d": -2.11,
-        "chg_5d": -2.65,
-        "chg_1m": 9.04
+        "last": 394.35,
+        "chg_1d": -0.28,
+        "chg_5d": -2.93,
+        "chg_1m": 4.96,
+        "vs_sma50_pct": 3.0,
+        "vs_ema200_pct": 9.9
       },
       "digest": null,
       "n_errors": 0
@@ -5993,12 +7146,12 @@
         {
           "name": "target",
           "score": 0,
-          "text": "Mean target $151 (+21%), range $127\u2013170 \u00b7 21 analysts"
+          "text": "Mean target $151 (+24%), range $127\u2013170 \u00b7 21 analysts"
         },
         {
           "name": "industry",
           "score": 0,
-          "text": "XLF -0.3% 1M vs SPY +0.9% (in line)"
+          "text": "XLF -1.1% 1M vs SPY +0.6% (in line)"
         },
         {
           "name": "reaction",
@@ -6007,14 +7160,14 @@
         }
       ],
       "pe": {
-        "trailing": 12.1,
-        "forward": 9.5,
+        "trailing": 11.9,
+        "forward": 9.3,
         "peer_median": null,
         "peers_n": 1
       },
       "earnings": {
         "next": "2027-01-14",
-        "days": 87,
+        "days": 86,
         "before_exit": false,
         "history": [
           {
@@ -6047,7 +7200,7 @@
       },
       "target": {
         "mean": 150.7143,
-        "upside_pct": 21.3,
+        "upside_pct": 23.9,
         "analysts": 21,
         "rec": "buy",
         "low": 127.0,
@@ -6141,23 +7294,25 @@
       "industry": {
         "name": "Banks - Diversified",
         "etf": "XLF",
-        "etf_1m": -0.29,
-        "etf_3m": -0.7,
-        "vs_spy_1m": -1.1
+        "etf_1m": -1.08,
+        "etf_3m": -1.42,
+        "vs_spy_1m": -1.7
       },
       "price": {
-        "last": 124.26,
-        "chg_1d": 0.85,
-        "chg_5d": -4.15,
-        "chg_1m": -6.36
+        "last": 121.69,
+        "chg_1d": -2.07,
+        "chg_5d": -7.75,
+        "chg_1m": -7.65,
+        "vs_sma50_pct": -8.1,
+        "vs_ema200_pct": -2.0
       },
       "digest": null,
       "n_errors": 0
     },
     "AMD": {
-      "label": "mixed",
-      "net": -1,
-      "line": "Fundamentals: mixed (+ surprises; \u2212 industry, reaction)",
+      "label": "weak",
+      "net": -2,
+      "line": "Fundamentals: weak (+ surprises; \u2212 valuation, industry, reaction)",
       "parts": [
         {
           "name": "revisions",
@@ -6170,14 +7325,19 @@
           "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +3.2%"
         },
         {
+          "name": "valuation",
+          "score": -1,
+          "text": "Fwd P/E 34.1 vs peers 23.9 (rich)"
+        },
+        {
           "name": "target",
           "score": 0,
-          "text": "Mean target $628 (+19%), range $200\u20131,250 \u00b7 51 analysts"
+          "text": "Mean target $628 (+17%), range $200\u20131,250 \u00b7 51 analysts"
         },
         {
           "name": "industry",
           "score": -1,
-          "text": "SMH -3.7% 1M vs SPY +0.9% (lagging)"
+          "text": "SMH -4.3% 1M vs SPY +0.6% (lagging)"
         },
         {
           "name": "reaction",
@@ -6186,15 +7346,15 @@
         }
       ],
       "pe": {
-        "trailing": 134.9,
-        "forward": 33.6,
-        "peer_median": null,
-        "peers_n": 2
+        "trailing": 134.8,
+        "forward": 34.1,
+        "peer_median": 23.940945,
+        "peers_n": 3
       },
       "earnings": {
         "next": "2026-11-04",
-        "days": 16,
-        "before_exit": false,
+        "days": 15,
+        "before_exit": true,
         "history": [
           {
             "quarter": "2025-09-30",
@@ -6226,7 +7386,7 @@
       },
       "target": {
         "mean": 627.6549,
-        "upside_pct": 18.7,
+        "upside_pct": 16.7,
         "analysts": 51,
         "rec": "strong_buy",
         "low": 200.0,
@@ -6320,15 +7480,17 @@
       "industry": {
         "name": "Semiconductors",
         "etf": "SMH",
-        "etf_1m": -3.71,
-        "etf_3m": -7.58,
-        "vs_spy_1m": -4.6
+        "etf_1m": -4.28,
+        "etf_3m": -6.55,
+        "vs_spy_1m": -4.9
       },
       "price": {
-        "last": 528.75,
-        "chg_1d": -5.95,
-        "chg_5d": -13.05,
-        "chg_1m": -3.0
+        "last": 538.05,
+        "chg_1d": 1.76,
+        "chg_5d": -9.46,
+        "chg_1m": -3.89,
+        "vs_sma50_pct": -0.0,
+        "vs_ema200_pct": 25.7
       },
       "digest": null,
       "n_errors": 0
@@ -6356,7 +7518,7 @@
         {
           "name": "industry",
           "score": 0,
-          "text": "XLF -0.3% 1M vs SPY +0.9% (in line)"
+          "text": "XLF -1.1% 1M vs SPY +0.6% (in line)"
         },
         {
           "name": "reaction",
@@ -6366,13 +7528,13 @@
       ],
       "pe": {
         "trailing": 13.4,
-        "forward": 23.9,
+        "forward": 24.0,
         "peer_median": null,
         "peers_n": 0
       },
       "earnings": {
         "next": "2026-11-08",
-        "days": 20,
+        "days": 19,
         "before_exit": false,
         "history": [
           {
@@ -6450,15 +7612,17 @@
       "industry": {
         "name": "Insurance - Diversified",
         "etf": "XLF",
-        "etf_1m": -0.29,
-        "etf_3m": -0.7,
-        "vs_spy_1m": -1.1
+        "etf_1m": -1.08,
+        "etf_3m": -1.42,
+        "vs_spy_1m": -1.7
       },
       "price": {
-        "last": 532.02,
-        "chg_1d": 1.21,
-        "chg_5d": 3.18,
-        "chg_1m": 4.48
+        "last": 532.23,
+        "chg_1d": 0.04,
+        "chg_5d": 2.83,
+        "chg_1m": 4.41,
+        "vs_sma50_pct": 4.6,
+        "vs_ema200_pct": 6.9
       },
       "digest": null,
       "n_errors": 0
@@ -6469,60 +7633,60 @@
       {
         "symbol": "SPY",
         "name": "S&P 500",
-        "chg_1d": 0.65,
-        "chg_5d": -1.27,
-        "chg_1m": 0.86,
-        "chg_3m": 3.04,
-        "last": 768.2100219726562
+        "chg_1d": 0.42,
+        "chg_5d": -1.49,
+        "chg_1m": 0.63,
+        "chg_3m": 2.81,
+        "last": 766.47998046875
       },
       {
         "symbol": "QQQ",
         "name": "Nasdaq-100",
-        "chg_1d": 1.6,
-        "chg_5d": -3.33,
-        "chg_1m": 0.06,
-        "chg_3m": 2.35,
-        "last": 721.1649780273438
+        "chg_1d": 1.21,
+        "chg_5d": -3.71,
+        "chg_1m": -0.32,
+        "chg_3m": 1.95,
+        "last": 718.3599853515625
       },
       {
         "symbol": "IWM",
         "name": "Russell 2000",
-        "chg_1d": 0.35,
-        "chg_5d": -2.34,
-        "chg_1m": -4.47,
-        "chg_3m": -7.38,
-        "last": 271.3900146484375
+        "chg_1d": 0.31,
+        "chg_5d": -2.38,
+        "chg_1m": -4.51,
+        "chg_3m": -7.42,
+        "last": 271.2799987792969
       },
       {
         "symbol": "^VIX",
         "name": "VIX",
-        "chg_1d": -10.46,
-        "chg_5d": 17.69,
-        "chg_1m": 20.86,
-        "chg_3m": -4.28,
-        "last": 17.899999618530273
+        "chg_1d": 0.81,
+        "chg_5d": 21.74,
+        "chg_1m": 25.02,
+        "chg_3m": 0.05,
+        "last": 18.59000015258789
       },
       {
         "symbol": "^TNX",
         "name": "10Y yield",
-        "chg_1d": 0.53,
-        "chg_5d": -2.19,
-        "chg_1m": 2.54,
-        "chg_3m": 10.05,
-        "last": 5.125,
+        "chg_1d": 0.75,
+        "chg_5d": -1.98,
+        "chg_1m": 2.76,
+        "chg_3m": 10.29,
+        "last": 5.136000156402588,
         "unit": "yield",
-        "level": 5.12,
-        "chg_1d_bp": 3,
-        "chg_5d_bp": -11
+        "level": 5.14,
+        "chg_1d_bp": 4,
+        "chg_5d_bp": -10
       },
       {
         "symbol": "DX-Y.NYB",
         "name": "Dollar",
-        "chg_1d": 0.1,
-        "chg_5d": -0.62,
-        "chg_1m": 1.72,
-        "chg_3m": 0.79,
-        "last": 101.94000244140625
+        "chg_1d": -0.2,
+        "chg_5d": -0.4,
+        "chg_1m": 1.34,
+        "chg_3m": 0.34,
+        "last": 101.77400207519531
       }
     ],
     "events": [],
@@ -6530,21 +7694,26 @@
       {
         "ticker": "TSLA",
         "date": "2026-10-22",
-        "days": 3
+        "days": 2
+      },
+      {
+        "ticker": "META",
+        "date": "2026-10-22",
+        "days": 2
       }
     ],
     "movers": [
       {
-        "ticker": "IONQ",
-        "chg_1d": -8.94
+        "ticker": "MRVL",
+        "chg_1d": 4.06
       },
       {
-        "ticker": "RGTI",
-        "chg_1d": -6.57
+        "ticker": "TSLA",
+        "chg_1d": 3.76
       },
       {
-        "ticker": "AMD",
-        "chg_1d": -5.95
+        "ticker": "AAOI",
+        "chg_1d": 3.48
       }
     ],
     "analyst_actions_3d": []
