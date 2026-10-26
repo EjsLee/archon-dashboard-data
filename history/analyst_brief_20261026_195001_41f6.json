@@ -1,0 +1,184 @@
+{
+  "run_id": "analyst_brief_20261026_195001_41f6",
+  "generated_at": "2026-10-26 19:50 UTC+08:00",
+  "regime": {
+    "regime": "bull_low_vol",
+    "vix": 19.54,
+    "spy_price": 759.97,
+    "gates": {
+      "allow_calls": true,
+      "allow_puts": false,
+      "size_scalar": 1.0
+    },
+    "trend": "uptrend",
+    "vol_regime": "low_vol",
+    "spy_ma_gap_pct": 5.93,
+    "trend_flip": "SPY 50-day MA +5.9% vs 200-day; uptrend ends below +1%",
+    "vix_avg30": 16.3,
+    "vol_flip": "VIX 30-day avg 16.3; low-vol ends at 20",
+    "reference": [
+      {
+        "regime": "bull_low_vol",
+        "calls": true,
+        "puts": false,
+        "size": 1.0
+      },
+      {
+        "regime": "bull_high_vol",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "bear_low_vol",
+        "calls": false,
+        "puts": true,
+        "size": 0.75
+      },
+      {
+        "regime": "bear_high_vol",
+        "calls": false,
+        "puts": false,
+        "size": 0.0
+      },
+      {
+        "regime": "ranging",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "neutral",
+        "calls": true,
+        "puts": true,
+        "size": 0.75
+      }
+    ],
+    "reference_note": "Trend = SPY 50-day vs 200-day MA (\u00b11%). Vol = VIX 30-day average (<20 low, >30 high). VIX 20-30 ('elevated') has no rule of its own and uses the neutral row."
+  },
+  "sectors": [
+    {
+      "sector": "Broad Market (Nasdaq-100)",
+      "conviction": 4,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "QQQ trend is classified as uptrend with rising volume (+6%), showing underlying demand",
+        "SPY remains above its 200MA ($724.0), confirming the broader bull market is intact",
+        "QQQ RV20 at 19% is manageable for swing sizing and does not signal crisis-level volatility"
+      ],
+      "headwinds": [
+        "QQQ sits 2.9% below its 50MA, indicating short-term momentum is weak despite the uptrend label",
+        "VIX at 19.54 exceeds its 30d average of 16.34 by ~20%, pressuring growth/tech valuations",
+        "QQQ's 3M return of -2.3% lags SPY's +3.09%, showing systematic Nasdaq underperformance"
+      ],
+      "risk_to_thesis": null,
+      "generated_at": "2026-10-26T19:50:39.622878+08:00",
+      "swing_trade_setup": {
+        "bias": "neutral",
+        "best_structure": "QQQ: avoid \u2014 QQQ is on the BLOCKLIST and cannot be traded regardless of the calls-allowed gate",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE -- no directional view ('neutral'); conviction 4 < 5; QQQ is on the risk_rules blocklist \u00b7 Momentum: \u26d4 NO TRADE -- no directional view ('neutral'); conviction 4 < 5; QQQ is on the risk_rules blocklist | Watch: QQQ reclaiming its 50MA ($725.4) with sustained volume; VIX closing back below its 30d average (16.34); SPY holding above 200MA ($724.0)",
+        "avoid": "QQQ per blocklist; no call or put structures are actionable on the focus ticker",
+        "ticker": "QQQ",
+        "gate": {
+          "verdict": "NO TRADE",
+          "strategy": "pullback",
+          "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+          "structure_kind": "long_call",
+          "current_price": 704.4,
+          "rr": null,
+          "iv": 0.2826,
+          "rv": 0.19,
+          "rs_vs_spy": -5.39,
+          "entry_gap_sigma": null,
+          "levels": null,
+          "reasons": [
+            "no directional view ('neutral')",
+            "conviction 4 < 5",
+            "QQQ is on the risk_rules blocklist"
+          ]
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "QQQ's uptrend classification combined with +6% volume change is the highest-conviction near-term signal; SPY above 200MA confirms the macro floor remains intact.",
+        "noise": "The 5.39-point QQQ-vs-SPY gap is a lagging 3M relative-strength metric and may already be pricing in the current rotation; VIX's elevation above its 30d average could normalize quickly and is not a directional catalyst."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "QQQ",
+          "role": "watch",
+          "reason": "QQQ is the sole focus ticker and shows a constructive uptrend with rising volume, but trades below its 50MA and is the Nasdaq-100 benchmark for regime confirmation.",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $759.97 sits below its 50MA ($766.9) but well above its 200MA ($724.0), with a sideways 3M trend (+3.09%). VIX at 19.54 is elevated versus its 30-day average of 16.34, signaling rising complacency erosion despite the BULL_LOW_VOL regime label. For Nasdaq-100, this mix suggests a fragile uptrend with increasing near-term volatility risk.",
+      "key_themes": [
+        "QQQ is in an uptrend yet trades 2.9% below its 50MA at $725.4, with positive volume momentum (+6%)",
+        "QQQ has underperformed SPY by 5.39 points over three months, lagging the broad market",
+        "VIX above its 30d average contradicts the LOW_VOL regime, implying hedging demand is building"
+      ],
+      "unsourced_numbers": [
+        "20%"
+      ]
+    },
+    {
+      "sector": "EV/Automotive",
+      "conviction": 5,
+      "sentiment": "neutral",
+      "tailwinds": [
+        "TSLA trend is uptrend and holds above its 50MA at $372.22",
+        "SPY remains above its 200MA at $724.0, supporting a bullish regime classification",
+        "SIGNAL GATES permit calls, aligning with the TSLA uptrend above the 50MA"
+      ],
+      "headwinds": [
+        "TSLA volume change is -43% \u2014 sharply declining participation undermines trend conviction",
+        "TSLA 3-month return is -6.1% while SPY is +3.09%, a meaningful underperformance spread",
+        "VIX at 19.54 is elevated above its 30-day average of 16.34, raising the risk of volatility spikes that hit high-beta EV names hardest"
+      ],
+      "risk_to_thesis": "TSLA breaking below its 50MA on expanding volume, coupled with VIX sustaining above its 30-day average, would invalidate the uptrend-bullish case and render call structures unattractive.",
+      "generated_at": "2026-10-26T19:51:11.044841+08:00",
+      "swing_trade_setup": {
+        "bias": "mixed",
+        "best_structure": "TSLA: ATM calls, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE -- no directional view ('mixed') \u00b7 Momentum: \u26d4 NO TRADE -- no directional view ('mixed') | Watch: TSLA maintaining above its 50MA at $363.8 with recovering volume; VIX declining back toward its 30-day average of 16.34; SPY reclaiming its 50MA at $766.9 to remove the short-term macro overhang",
+        "avoid": "QQQ (BLOCKLISTED), any put structures (puts BLOCKED by signal gates), and any spread or premium-selling structure \u2014 this brief allows only long calls",
+        "ticker": "TSLA",
+        "gate": {
+          "verdict": "NO TRADE",
+          "strategy": "pullback",
+          "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+          "structure_kind": "long_call",
+          "current_price": 372.22,
+          "rr": null,
+          "iv": 0.4315,
+          "rv": 0.36,
+          "rs_vs_spy": -9.19,
+          "entry_gap_sigma": null,
+          "levels": null,
+          "reasons": [
+            "no directional view ('mixed')"
+          ]
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "TSLA holding above its 50MA in an uptrend and the elevated VIX versus its 30-day average are the two data points most relevant for the next 1-3 weeks \u2014 trend integrity and volatility regime.",
+        "noise": "No news data supplied; the TSLA 3-month -6.1% drawdown against a sideways SPY is a lagging indicator and likely already priced, so it should not drive near-term positioning without a fresh catalyst."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "TSLA",
+          "role": "watch",
+          "reason": "Only EV focus ticker on the watchlist; in an uptrend above its 50MA but with collapsing volume and sustained SPY underperformance, making it a setup to monitor rather than commit.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY at $759.97 sits below its 50MA ($766.9) but well above its 200MA ($724.0), suggesting a short-term hesitation within a longer-term bullish posture. VIX at 19.54 is elevated versus its 30-day average of 16.34, signaling elevated uncertainty. For EV/Automotive this backdrop favors selective, high-conviction exposure rather than broad risk-on positioning.",
+      "key_themes": [
+        "TSLA in an uptrend 2.3% above its 50MA ($363.8) but with volume collapsing 43% \u2014 momentum with weak participation",
+        "TSLA has underperformed SPY by 9.19 points over 3 months despite a positive trend, suggesting sector-specific headwinds",
+        "SPY trading below its 50MA in a sideways pattern limits momentum tailwatches for the EV/automotive cohort"
+      ],
+      "unsourced_numbers": []
+    }
+  ],
+  "deep_dives": []
+}
