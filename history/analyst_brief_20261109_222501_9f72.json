@@ -1,0 +1,239 @@
+{
+  "run_id": "analyst_brief_20261109_222501_9f72",
+  "generated_at": "2026-11-09 22:25 UTC+08:00",
+  "regime": {
+    "regime": "bull_low_vol",
+    "vix": 23.19,
+    "spy_price": 735.29,
+    "gates": {
+      "allow_calls": true,
+      "allow_puts": false,
+      "size_scalar": 1.0
+    },
+    "trend": "uptrend",
+    "vol_regime": "low_vol",
+    "spy_ma_gap_pct": 5.15,
+    "trend_flip": "SPY 50-day MA +5.2% vs 200-day; uptrend ends below +1%",
+    "vix_avg30": 18.0,
+    "vol_flip": "VIX 30-day avg 18.0; low-vol ends at 20",
+    "reference": [
+      {
+        "regime": "bull_low_vol",
+        "calls": true,
+        "puts": false,
+        "size": 1.0
+      },
+      {
+        "regime": "bull_high_vol",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "bear_low_vol",
+        "calls": false,
+        "puts": true,
+        "size": 0.75
+      },
+      {
+        "regime": "bear_high_vol",
+        "calls": false,
+        "puts": false,
+        "size": 0.0
+      },
+      {
+        "regime": "ranging",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "neutral",
+        "calls": true,
+        "puts": true,
+        "size": 0.75
+      }
+    ],
+    "reference_note": "Trend = SPY 50-day vs 200-day MA (\u00b11%). Vol = VIX 30-day average (<20 low, >30 high). VIX 20-30 ('elevated') has no rule of its own and uses the neutral row."
+  },
+  "sectors": [
+    {
+      "sector": "Technology",
+      "conviction": 6,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "Three of four focus names (AAPL, MSFT, AMZN) sit above their 50MAs, with MSFT and AAPL both tagged as strong outperformers vs SPY",
+        "MSFT shows the cleanest trend setup: uptrend, 2.7% above 50MA, best 3M momentum in the group (+36.14%)",
+        "AMZN is the only ticker with volume confirmation (+17% volume change) alongside its +7.88 pt relative-strength edge"
+      ],
+      "headwinds": [
+        "SPY is below its 50MA and VIX (23.19) is well above its 30d average (17.99) \u2014 the low-vol regime label is not being confirmed by realized price action",
+        "Volume is contracting on the leaders: AAPL -67%, MSFT -47%, META -21% \u2014 upside moves lack participation",
+        "META's downtrend and 9.6% gap below its 50MA show sector breadth is not uniform; AMZN and META carry the sector's highest RV20 (41%), so swings will be wide"
+      ],
+      "risk_to_thesis": "A close of SPY below its 200MA ($727.65) with VIX pushing further above its 30d average would invalidate the bullish tech view and likely drag even the relative-strength leaders (MSFT, AAPL) lower.",
+      "generated_at": "2026-11-09T22:25:49.716339+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "best_structure": "MSFT: ATM calls, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $530.61 (now) / stop $514.02 / target $565.72 \u00b7 R:R 2.12 \u00b7 Momentum: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $530.61 (now) / stop $513.05 / target $565.72 \u00b7 R:R 2 | Watch: MSFT holding above its 50MA ($516.60) with volume recovering from the current -47% reading; SPY defending its 200MA ($727.65) rather than its 50MA ($765.15); VIX cooling back toward its 30d average (17.99) from 23.19; no earnings dates supplied, so calendar risk is unknown",
+        "avoid": "META (downtrend, below 50MA, puts blocked so no way to trade it), QQQ (blocklist), and any put structures in this sector (blocked by signal gates)",
+        "ticker": "MSFT",
+        "gate": {
+          "verdict": "TRADE",
+          "strategy": "pullback",
+          "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+          "structure_kind": "long_call",
+          "current_price": 530.61,
+          "rr": 2.12,
+          "iv": 0.3322,
+          "rv": 0.35,
+          "rs_vs_spy": 37.17,
+          "entry_gap_sigma": 0.0,
+          "affordable": false,
+          "over_cap": true,
+          "levels": {
+            "entry": 530.61,
+            "stop": 514.02,
+            "target": 565.72
+          },
+          "reasons": []
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "For the next 1-3 weeks, the highest-signal supplied data are: MSFT/AAPL relative strength vs SPY and their position above the 50MA, AMZN's +17% volume change, and the SPY 200MA ($727.65) as the regime line while VIX (23.19) sits above its 30d average (17.99).",
+        "noise": "The single-day SPY -1.03% print is likely noise in a market that is sideways over 3 months; no news feed, earnings guidance, or macro data is supplied, so none of the move can be attributed to fundamentals and it should not drive positioning."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "Strongest 3M momentum (+36.14%) and widest relative strength vs SPY (+37.17 pts) while holding above its 50MA in an uptrend.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "AAPL",
+          "role": "leader",
+          "reason": "Uptrend with +11.03% 3M return and +12.06 pts of relative strength, but volume fell 67% into the move.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "watch",
+          "reason": "Sideways above its 50MA with the group's only positive volume change (+17%), suggesting accumulation, but RV20 of 41% demands wider risk tolerance.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "META",
+          "role": "laggard",
+          "reason": "The only downtrend name in the group, 9.6% below its 50MA with shrinking volume (-21%), and puts are blocked so the downside cannot be traded.",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $735.29 sits 4.0% below its 50MA ($765.15) but 1.0% above its 200MA ($727.65), a sideways/higher-low market. The regime label is BULL_LOW_VOL, yet VIX at 23.19 is 29% above its 30d average (17.99), so volatility is already drifting higher despite the calm label. For technology, that argues for selectively bullish positioning (calls allowed) but with tight structure and smaller size, not aggressive beta chasing.",
+      "key_themes": [
+        "MSFT (+37.17 pts rel. to SPY, +36.14% 3M) and AAPL (+12.06 pts, +11.03%) are both above their 50MAs in uptrends, making mega-cap tech the clear relative-strength core of this sector",
+        "AMZN is the only focus name with positive volume change (+17%) but trades sideways just 2.1% above its 50MA with elevated RV20 (41%)",
+        "META is the outlier: downtrend, 9.6% below its 50MA, 21% below its recent volume \u2014 and with puts blocked, its weakness cannot be monetized, only avoided"
+      ],
+      "unsourced_numbers": [
+        "29%",
+        "$565.72",
+        "2.12",
+        "$513.05"
+      ]
+    },
+    {
+      "sector": "Technology/E-commerce",
+      "conviction": 6,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "Universal relative strength: every focus ticker is outperforming SPY on a 3-month basis.",
+        "AAPL and MSFT are in uptrends with prices above their 50MAs, confirming bullish structure.",
+        "AMZN's +17% volume change during sideways price action is a constructive accumulation signal.",
+        "Signal gates allow calls, aligning with the bullish regime."
+      ],
+      "headwinds": [
+        "VIX at 23.19 is 28.9% above its 30-day average (17.99), contradicting the low-volatility regime label.",
+        "SPY is below its 50MA and trending sideways, so the broader market is not confirming sector strength.",
+        "AAPL's uptrend is on -67% volume and MSFT's on -47%, indicating declining participation in the rallies.",
+        "META's downtrend and 9.6% gap below its 50MA are a persistent drag on the sector."
+      ],
+      "risk_to_thesis": "A sustained rise in VIX above 23.19 would signal the bull regime is failing and likely drag all four tickers lower despite their relative strength.",
+      "generated_at": "2026-11-09T22:27:46.571021+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "best_structure": "AMZN: ATM calls, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $259.3 (now) / stop $252.73 / target $280.02 \u00b7 R:R 3.15 \u00b7 Momentum: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $259.3 (now) / stop $248.94 / target $280.02 \u00b7 R:R 2 | Watch: AMZN must break out of its sideways trend on sustained rising volume; VIX must not accelerate materially above 23.19; SPY must hold above its 200MA ($727.65) to keep the bull regime intact; AMZN's RV20 of 41% implies larger expected swings than AAPL (26%) or MSFT (35%).",
+        "avoid": "META (downtrend, 9.6% below 50MA), QQQ (blocklisted), and chasing AAPL/MSFT calls on falling volume.",
+        "ticker": "AMZN",
+        "gate": {
+          "verdict": "TRADE",
+          "strategy": "pullback",
+          "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+          "structure_kind": "long_call",
+          "current_price": 259.3,
+          "rr": 3.15,
+          "iv": 0.4012,
+          "rv": 0.41,
+          "rs_vs_spy": 7.88,
+          "entry_gap_sigma": 0.0,
+          "affordable": false,
+          "over_cap": true,
+          "levels": {
+            "entry": 259.3,
+            "stop": 252.73,
+            "target": 280.02
+          },
+          "reasons": []
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "VIX at 23.19 vs its 17.99 30-day average is the most important data point for the next 1-3 weeks, as it signals whether the bull regime is holding. AMZN's +17% volume during sideways consolidation is the second key signal, suggesting institutional accumulation. The relative strength of all four tickers vs SPY confirms sector leadership.",
+        "noise": "SPY's -1.03% daily move is likely noise within a sideways trend. The -67% and -47% volume declines on AAPL and MSFT are ambiguous without news data -- they could be profit-taking or a warning sign. META's underperformance is persistent enough (9.6% below 50MA) to be signal rather than noise."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "MSFT",
+          "role": "leader",
+          "reason": "Strongest relative strength in the group (+37.17 pts vs SPY) with a confirmed uptrend, though falling volume (-47%) tempers the signal.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "AAPL",
+          "role": "watch",
+          "reason": "Uptrend and strong outperformer (+12.06 pts), but the -67% volume decline is the weakest participation in the group.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "AMZN",
+          "role": "watch",
+          "reason": "The only ticker with rising volume (+17%) during sideways consolidation near its 50MA, offering a potential accumulation entry.",
+          "options_angle": "call setup"
+        },
+        {
+          "ticker": "META",
+          "role": "laggard",
+          "reason": "Downtrend with price 9.6% below its 50MA and falling volume (-21%), making it the weakest name in the sector.",
+          "options_angle": "avoid"
+        }
+      ],
+      "macro_backdrop": "SPY at $735.29 sits below its 50MA ($765.15) but above its 200MA ($727.65) with a sideways trend, while the VIX at 23.19 is 5.20 points (28.9%) above its 30-day average of 17.99. The BULL_LOW_VOL label is therefore being tested: the trend is intact above the 200MA but the rising VIX signals growing unease. For mega-cap tech and e-commerce, this favors selective long exposure over aggressive positioning.",
+      "key_themes": [
+        "All four focus tickers show positive relative strength vs SPY: MSFT +37.17 pts, AAPL +12.06 pts, AMZN +7.88 pts, META +5.79 pts.",
+        "AAPL and MSFT are in confirmed uptrends just above their 50MAs (1.9% and 2.7% respectively), but both are rallying on sharply falling volume (-67% and -47%).",
+        "AMZN is the only ticker with rising volume (+17%) during sideways consolidation near its 50MA, suggesting accumulation.",
+        "META is the clear laggard: downtrend, 9.6% below its 50MA, and falling volume (-21%)."
+      ],
+      "unsourced_numbers": [
+        "5.20",
+        "28.9%",
+        "$252.73",
+        "$280.02",
+        "3.15",
+        "$248.94"
+      ]
+    }
+  ],
+  "deep_dives": []
+}
