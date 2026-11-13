@@ -1,0 +1,188 @@
+{
+  "run_id": "analyst_brief_20261113_222501_fae6",
+  "generated_at": "2026-11-13 22:25 UTC+08:00",
+  "regime": {
+    "regime": "bull_low_vol",
+    "vix": 18.03,
+    "spy_price": 757.12,
+    "gates": {
+      "allow_calls": true,
+      "allow_puts": true,
+      "size_scalar": 1.0
+    },
+    "trend": "uptrend",
+    "vol_regime": "low_vol",
+    "spy_ma_gap_pct": 4.86,
+    "trend_flip": "SPY 50-day MA +4.9% vs 200-day; uptrend ends below +1%",
+    "vix_avg30": 18.2,
+    "vol_flip": "VIX 30-day avg 18.2; low-vol ends at 20",
+    "reference": [
+      {
+        "regime": "bull_low_vol",
+        "calls": true,
+        "puts": false,
+        "size": 1.0
+      },
+      {
+        "regime": "bull_high_vol",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "bear_low_vol",
+        "calls": false,
+        "puts": true,
+        "size": 0.75
+      },
+      {
+        "regime": "bear_high_vol",
+        "calls": false,
+        "puts": false,
+        "size": 0.0
+      },
+      {
+        "regime": "ranging",
+        "calls": true,
+        "puts": true,
+        "size": 0.5
+      },
+      {
+        "regime": "neutral",
+        "calls": true,
+        "puts": true,
+        "size": 0.75
+      }
+    ],
+    "reference_note": "Trend = SPY 50-day vs 200-day MA (\u00b11%). Vol = VIX 30-day average (<20 low, >30 high). VIX 20-30 ('elevated') has no rule of its own and uses the neutral row."
+  },
+  "sectors": [
+    {
+      "sector": "Broad Market (S&P 500)",
+      "conviction": 6,
+      "sentiment": "bullish",
+      "tailwinds": [
+        "Regime is explicitly BULL_LOW_VOL, favoring call structures",
+        "SPY remains approximately 3.9% above its 200MA, confirming the primary uptrend is intact",
+        "VIX at 18.03 is below its 30d average of 18.2, indicating stable volatility expectations"
+      ],
+      "headwinds": [
+        "SPY is below its 50MA at $764.43, showing near-term momentum has stalled",
+        "The 3-month trend is labeled sideways, suggesting a range-bound market without clear directional impulse",
+        "No volume data supplied to confirm whether the pullback is on declining or rising participation"
+      ],
+      "risk_to_thesis": "A decisive break below the 200MA at $728.99 would invalidate the bullish pullback thesis and signal a regime change.",
+      "generated_at": "2026-11-13T22:25:53.287500+08:00",
+      "swing_trade_setup": {
+        "bias": "bullish",
+        "best_structure": "SPY: ATM calls, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE -- price or volatility unavailable \u00b7 Momentum: \u26d4 NO TRADE -- price or volatility unavailable; relative strength vs SPY unavailable | Watch: SPY reclaiming its 50MA with volume confirmation; VIX remaining below its 30d average; the 200MA holding as support",
+        "avoid": "QQQ (blocklist); chasing puts given the bull regime; entering before SPY shows evidence of reclaiming the 50MA",
+        "ticker": "SPY",
+        "gate": {
+          "verdict": "NO TRADE",
+          "strategy": "pullback",
+          "structure": "Buy call 0.45-0.60\u0394, 21-28 DTE",
+          "structure_kind": "long_call",
+          "current_price": null,
+          "rr": null,
+          "iv": 0.1852,
+          "rv": null,
+          "rs_vs_spy": null,
+          "entry_gap_sigma": null,
+          "levels": null,
+          "reasons": [
+            "price or volatility unavailable"
+          ]
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "The regime classification (BULL_LOW_VOL), SPY's position relative to its 50MA and 200MA, and VIX below its 30d average are the key data points for the next 1-3 weeks.",
+        "noise": "The single-day +0.97% move is likely noise given the sideways 3-month trend; no news feed is supplied, so no headlines or events can be cited to explain it."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "SPY",
+          "role": "leader",
+          "reason": "As the benchmark and sole focus ticker, SPY defines the broad market setup with both calls and puts allowed.",
+          "options_angle": "call setup"
+        }
+      ],
+      "macro_backdrop": "SPY trades at $757.12, below its 50MA of $764.43 but well above its 200MA of $728.99, indicating a short-term pullback within an intact longer-term uptrend. VIX at 18.03 sits slightly below its 30d average of 18.2, confirming the BULL_LOW_VOL regime. This combination suggests a supportive but not euphoric backdrop for equities.",
+      "key_themes": [
+        "SPY is in a BULL_LOW_VOL regime but below its 50MA, signaling a pullback rather than a breakdown",
+        "The 200MA provides a wide cushion below spot, framing the current dip as a potential entry zone",
+        "VIX below its 30d average supports risk-on positioning without complacency extremes"
+      ],
+      "unsourced_numbers": [
+        "3.9%"
+      ]
+    },
+    {
+      "sector": "Semiconductors/AI",
+      "conviction": 6,
+      "sentiment": "bearish",
+      "tailwinds": [
+        "Broader market regime is BULL_LOW_VOL with VIX below its 30d average, a supportive backdrop for risk assets generally",
+        "SPY remains above its 200MA ($728.99), preserving the long-term uptrend for the market overall"
+      ],
+      "headwinds": [
+        "NVDA trades 23.0% below its 50MA, a severe extension that reflects persistent selling pressure",
+        "NVDA's 3-month relative performance vs SPY is -18.92 pts, indicating sustained outflows from the sector's dominant name",
+        "Volume rising +13% on a downtrend suggests distribution rather than accumulation"
+      ],
+      "risk_to_thesis": "A sustained reclaim of NVDA's 50MA or a broad market rally that forces short-covering in beaten-down names would invalidate the bearish view.",
+      "generated_at": "2026-11-13T22:26:47.875536+08:00",
+      "swing_trade_setup": {
+        "bias": "bearish",
+        "best_structure": "NVDA: ATM puts, 21-28 DTE",
+        "key_levels_to_watch": "Pullback: \u26d4 NO TRADE -- stop >30% from price $166.19 \u00b7 Momentum: \u2705 SETUP OK \u00b7 \ud83d\udcb8 over cap \u00b7 entry $166.19 (now) / stop $176.89 / target $144.79 \u00b7 R:R 2 | Watch: NVDA's ability to reclaim its 50MA, SPY's position relative to its 50MA, VIX direction vs its 30d average, and volume trends; a VIX break above its 30d average or a close below recent lows would reinforce downside, while a sustained move back above the 50MA would negate the bearish setup.",
+        "avoid": "Avoid long calls in NVDA given the confirmed downtrend; avoid QQQ entirely as it is blocklisted.",
+        "ticker": "NVDA",
+        "gate": {
+          "verdict": "TRADE",
+          "strategy": "momentum",
+          "structure": "Buy put 0.45-0.60\u0394, 21-28 DTE",
+          "structure_kind": "long_put",
+          "current_price": 166.19,
+          "rr": 2.0,
+          "iv": 0.6463,
+          "rv": 0.54,
+          "rs_vs_spy": -18.92,
+          "entry_gap_sigma": 0.0,
+          "affordable": false,
+          "over_cap": true,
+          "levels": {
+            "entry": 166.19,
+            "stop": 176.89,
+            "target": 144.79
+          },
+          "reasons": []
+        }
+      },
+      "news_signal_vs_noise": {
+        "signal": "NVDA's downtrend, 23.0% distance below its 50MA, and -18.92 pt relative weakness vs SPY are the primary signals; the +13% volume increase confirms active selling interest.",
+        "noise": "No news data supplied; day-to-day price oscillation within a well-defined downtrend is likely noise and does not alter the trajectory."
+      },
+      "notable_tickers": [
+        {
+          "ticker": "NVDA",
+          "role": "laggard",
+          "reason": "The only focus ticker supplied is the sector's dominant name and it is in a confirmed downtrend with severe underperformance vs SPY.",
+          "options_angle": "put setup"
+        }
+      ],
+      "macro_backdrop": "SPY trades at $757.12, below its 50MA of $764.43 but above its 200MA of $728.99, indicating a short-term pullback within an intact longer-term uptrend. VIX at 18.03 sits just below its 30d average of 18.2, confirming a low-volatility regime that is broadly supportive of risk assets but can mask weakness in individual names.",
+      "key_themes": [
+        "NVDA is in a confirmed downtrend, trading 23.0% below its 50MA of $215.9 and posting a 3-month return of -17.95%",
+        "NVDA's relative strength vs SPY is -18.92 pts, marking it as a severe underperformer with no sign of momentum stabilization",
+        "Volume has risen +13% on the decline with RV20 at 54%, indicating elevated volatility and possible distribution"
+      ],
+      "unsourced_numbers": [
+        "$176.89",
+        "$144.79"
+      ]
+    }
+  ],
+  "deep_dives": []
+}
