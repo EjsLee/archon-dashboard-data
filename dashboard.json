@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:06:20.049599+08:00",
+  "generated_at": "2026-11-18T23:08:31.148395+08:00",
   "regime": {
     "regime": "bull_low_vol",
     "vix": 23.94,
@@ -959,6 +959,322 @@
   ],
   "deep_dives": [
     {
+      "ticker": "RDDT",
+      "company": "Reddit, Inc.",
+      "sector": "Communication Services / Digital Advertising & Community Platform",
+      "bias": "bearish",
+      "conviction": 6,
+      "thesis": "RDDT is in a confirmed downtrend, 28.9% below its 50MA and 48.6 pts behind SPY over 3 months, with 16 analyst downgrades and 0 upgrades in 30 days despite an earnings beat \u2014 the path of least resistance is lower. The deep value (forward P/E 10.61, 53% revenue growth, 32.1% profit margin) is real but is being ignored while sellers control the tape. A put on continued weakness is the higher-probability side.",
+      "moat_assessment": "Community/network-effects moat (user-generated threads and niche communities) is genuine but ad pricing power is limited against Google/Meta/TikTok; data/AI licensing is a promising second pillar, though durability is unproven.",
+      "macro_sensitivity": "High-beta ad-tech: very sensitive to VIX spikes (IV 68%, RV20 138% \u2014 premium inflates and delta moves fast), to rates/growth expectations (ad budgets), and to USD (international ad revenue); oil is indirect via ad-spend/consumer.",
+      "key_catalysts": [
+        "Most recent earnings 2026-10-30 (beat +5.6%, 19d ago); next earnings date unknown \u2014 no live data",
+        "Jobs report (Nov) Fri 04 Dec, d16, 21:30 SGT \u2014 IV tends to rise into it",
+        "Analyst target resets/downgrades (16 down / 0 up over 30d)"
+      ],
+      "disconfirming_evidence": "A high-volume reversal that closes back above the 50MA and holds, or a fresh wave of analyst upgrades, would invalidate the bearish momentum thesis; a positive AI/data-licensing announcement would also contradict it.",
+      "bull_scenario": "Oversold relief rally on forward P/E 10.61 value buying and an AI/data-licensing catalyst: +10-15%.",
+      "base_scenario": "Continued grind lower/sideways over 3-21 days: -5% to -10%.",
+      "bear_scenario": "Another leg down as downgrades catch up to the tape: -15-20%.",
+      "trade_plan": {
+        "structure": "Buy 0.60-0.70 delta long put, 21-28 DTE, single leg",
+        "entry_trigger": "Weakness at market below $96.58 (current price) after the 11-17 bounce fails; a rally toward the 50MA ($135.9) is not expected",
+        "target": "~$83.50 (about -13.5%, within one typical 10-day move of ~13.6%)",
+        "stop": "A daily close back above the 50MA (downtrend invalidated)",
+        "position_size_note": "Half size or less \u2014 rich IV (68%) and high event risk; max 10% of portfolio",
+        "risk_reward": "1:2.5",
+        "avoid_if": "A daily close above the 50MA, or IV collapsing before entry"
+      },
+      "gate": {
+        "verdict": "TRADE",
+        "strategy": "momentum",
+        "structure": "Buy put 0.45-0.60\u0394, 21-28 DTE",
+        "structure_kind": "long_put",
+        "current_price": 96.58,
+        "rr": 2.0,
+        "iv": 0.6842,
+        "rv": 1.38,
+        "rs_vs_spy": -48.6,
+        "entry_gap_sigma": 0.0,
+        "affordable": false,
+        "over_cap": true,
+        "levels": {
+          "entry": 96.58,
+          "stop": 103.16,
+          "target": 83.42
+        },
+        "reasons": []
+      },
+      "verdict": {
+        "label": "SETUP OK",
+        "do_now": "Over your cap: Momentum setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $676, loss at stop \u2248 $338; cheaper variants: otm: conviction 6 < 7; short_dte: conviction 6 < 8 -- your call",
+        "strategy": "momentum",
+        "direction": "put",
+        "levels": {
+          "entry": 96.58,
+          "stop": 103.16,
+          "target": 83.42
+        },
+        "rr": 2.0,
+        "reasons": [],
+        "limit": false,
+        "flags": [
+          "over cap"
+        ],
+        "plan_status": "current"
+      },
+      "cautions": [
+        "Falling knife: -51.23% in 3M, no 200MA or visible support, downtrend intact",
+        "Rich premium: IV 68% / IV rank 38.3 \u2014 high theta cost on a long put",
+        "Stock just bounced +4.1% (11-17) \u2014 poor timing to initiate",
+        "Jobs report Fri 04 Dec (d16) inside the hold window \u2014 event risk and IV swing"
+      ],
+      "model_vs_gate": {
+        "disagrees": true,
+        "note": "Model says WAIT vs gate SETUP OK: Falling knife: -51.23% in 3M, no 200MA or visible support, downtrend intact",
+        "stance": "wait"
+      },
+      "evidence": {
+        "net": -2,
+        "direction": "bearish",
+        "factors": [
+          {
+            "name": "trend",
+            "score": -1,
+            "reason": "downtrend"
+          },
+          {
+            "name": "rs",
+            "score": -1,
+            "reason": "-48.6 pts vs SPY"
+          },
+          {
+            "name": "earnings",
+            "score": 1,
+            "reason": "beat +5.6% (19d ago)"
+          },
+          {
+            "name": "analysts",
+            "score": -1,
+            "reason": "0 up / 16 down (30d, Yahoo)"
+          },
+          {
+            "name": "news",
+            "score": 0,
+            "reason": "1+ / 1-"
+          }
+        ]
+      },
+      "extension": {
+        "pct_above_50ma": -28.9,
+        "sigma": -2.1
+      },
+      "unsourced_numbers": [],
+      "fundamentals_note": "Live: trailing P/E 19.71, forward P/E 10.61, P/S 6.04, revenue $3.089B with 53% growth, profit margin 32.1%, analyst mean target $148.46 vs $96.58 price. Listed next-earnings date 2026-10-30 is stale (already reported, beat +5.6%).",
+      "researched_at": "2026-11-18T23:08:28.573983+08:00",
+      "fundamentals": {
+        "label": "mixed",
+        "net": 1,
+        "line": "Fundamentals: mixed (+ surprises, target; \u2212 reaction)",
+        "parts": [
+          {
+            "name": "revisions",
+            "score": 0,
+            "text": "EPS est. this qtr -0.0% in 30d, next yr -4.0% \u00b7 8 up / 13 down"
+          },
+          {
+            "name": "surprises",
+            "score": 1,
+            "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +5.6%"
+          },
+          {
+            "name": "target",
+            "score": 1,
+            "text": "Mean target $148 (+57%), range $85\u2013272 \u00b7 29 analysts"
+          },
+          {
+            "name": "industry",
+            "score": 0,
+            "text": "XLC -4.4% 1M vs SPY -4.4% (in line)"
+          },
+          {
+            "name": "reaction",
+            "score": -1,
+            "text": "Last moves on earnings -7% +13% -21% -29% \u00b7 typical \u00b117.7% (a normal day \u2248 \u00b14.3%) \u00b7 beat but fell"
+          }
+        ],
+        "pe": {
+          "trailing": 19.3,
+          "forward": 10.4,
+          "peer_median": null,
+          "peers_n": 2
+        },
+        "earnings": {
+          "next": null,
+          "days": null,
+          "before_exit": false,
+          "history": [
+            {
+              "quarter": "2025-12-31",
+              "surprise_pct": 33.1,
+              "beat": true
+            },
+            {
+              "quarter": "2026-03-31",
+              "surprise_pct": 79.1,
+              "beat": true
+            },
+            {
+              "quarter": "2026-06-30",
+              "surprise_pct": 29.6,
+              "beat": true
+            },
+            {
+              "quarter": "2026-09-30",
+              "surprise_pct": 5.6,
+              "beat": true
+            }
+          ]
+        },
+        "revisions": {
+          "q_30d_pct": -0.0,
+          "y_30d_pct": -4.0,
+          "up_30d": 8.0,
+          "down_30d": 13.0
+        },
+        "target": {
+          "mean": 148.46207,
+          "upside_pct": 57.1,
+          "analysts": 29,
+          "rec": "buy",
+          "low": 85.0,
+          "high": 272.0
+        },
+        "reaction": {
+          "last": [
+            {
+              "date": "2026-02-05",
+              "move_pct": -7.4,
+              "surprise_pct": 16.4,
+              "flag": "beat but fell"
+            },
+            {
+              "date": "2026-04-30",
+              "move_pct": 13.1,
+              "surprise_pct": 26.1,
+              "flag": null
+            },
+            {
+              "date": "2026-07-30",
+              "move_pct": -21.0,
+              "surprise_pct": 29.6,
+              "flag": "beat but fell"
+            },
+            {
+              "date": "2026-10-29",
+              "move_pct": -29.2,
+              "surprise_pct": 5.6,
+              "flag": "beat but fell"
+            }
+          ],
+          "typical_move_pct": 17.7,
+          "normal_day_move_pct": 4.3,
+          "event_multiple": 4.1
+        },
+        "actions_30d": {
+          "up": 0,
+          "down": 4,
+          "items": [
+            {
+              "date": "2026-11-12",
+              "firm": "Argus Research",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 150.0,
+              "prior_target": 225.0,
+              "target_action": "Lowers"
+            },
+            {
+              "date": "2026-11-10",
+              "firm": "Guggenheim",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 140.0,
+              "prior_target": 170.0,
+              "target_action": "Lowers"
+            },
+            {
+              "date": "2026-11-02",
+              "firm": "DA Davidson",
+              "action": "main",
+              "to": "Buy",
+              "from": "Buy",
+              "target": 125.0,
+              "prior_target": 185.0,
+              "target_action": "Lowers"
+            },
+            {
+              "date": "2026-11-02",
+              "firm": "Evercore ISI Group",
+              "action": "down",
+              "to": "In-Line",
+              "from": "Outperform",
+              "target": 120.0,
+              "prior_target": 265.0,
+              "target_action": "Lowers"
+            },
+            {
+              "date": "2026-11-02",
+              "firm": "Loop Capital",
+              "action": "down",
+              "to": "Hold",
+              "from": "Buy",
+              "target": 0.0,
+              "prior_target": 0.0,
+              "target_action": ""
+            },
+            {
+              "date": "2026-10-31",
+              "firm": "JP Morgan",
+              "action": "main",
+              "to": "Neutral",
+              "from": "Neutral",
+              "target": 150.0,
+              "prior_target": 185.0,
+              "target_action": "Lowers"
+            }
+          ]
+        },
+        "industry": {
+          "name": "Internet Content & Information",
+          "etf": "XLC",
+          "etf_1m": -4.39,
+          "etf_3m": -4.58,
+          "vs_spy_1m": 0.1
+        },
+        "price": {
+          "last": 96.295,
+          "chg_1d": 1.92,
+          "chg_5d": -8.86,
+          "chg_1m": -39.1,
+          "chg_3m": -37.72,
+          "vs_sma50_pct": -29.7,
+          "vs_ema200_pct": -38.0,
+          "as_of": "2026-11-18T15:08:35+00:00"
+        },
+        "profile": {
+          "name": "Reddit, Inc.",
+          "sector": "Communication Services",
+          "summary": "Reddit, Inc. operates a digital community in the United States and internationally."
+        },
+        "digest": null,
+        "tv_symbol": "NYSE:RDDT",
+        "n_errors": 0
+      }
+    },
+    {
       "ticker": "GOOGL",
       "company": "Alphabet Inc.",
       "sector": "Communication Services \u2014 Interactive Media & Services",
@@ -1252,14 +1568,14 @@
           "vs_spy_1m": 0.1
         },
         "price": {
-          "last": 283.81,
-          "chg_1d": 1.29,
-          "chg_5d": -3.29,
+          "last": 283.61,
+          "chg_1d": 1.22,
+          "chg_5d": -3.35,
           "chg_1m": -16.63,
           "chg_3m": -16.67,
           "vs_sma50_pct": -12.7,
-          "vs_ema200_pct": -12.5,
-          "as_of": "2026-11-18T15:06:24+00:00"
+          "vs_ema200_pct": -12.6,
+          "as_of": "2026-11-18T15:08:35+00:00"
         },
         "profile": {
           "name": "Alphabet Inc.",
@@ -1563,14 +1879,14 @@
           "vs_spy_1m": -8.0
         },
         "price": {
-          "last": 383.9306,
-          "chg_1d": 1.01,
-          "chg_5d": -1.77,
+          "last": 382.83,
+          "chg_1d": 0.72,
+          "chg_5d": -2.05,
           "chg_1m": 3.27,
           "chg_3m": 8.26,
-          "vs_sma50_pct": 2.2,
-          "vs_ema200_pct": 1.2,
-          "as_of": "2026-11-18T15:06:24+00:00"
+          "vs_sma50_pct": 2.0,
+          "vs_ema200_pct": 0.9,
+          "as_of": "2026-11-18T15:08:35+00:00"
         },
         "profile": {
           "name": "Tesla, Inc.",
@@ -1880,14 +2196,14 @@
           "vs_spy_1m": 0.1
         },
         "price": {
-          "last": 619.295,
-          "chg_1d": 0.07,
-          "chg_5d": -1.51,
+          "last": 618.37,
+          "chg_1d": -0.08,
+          "chg_5d": -1.65,
           "chg_1m": -12.27,
           "chg_3m": 13.43,
-          "vs_sma50_pct": -8.9,
-          "vs_ema200_pct": -3.3,
-          "as_of": "2026-11-18T15:06:24+00:00"
+          "vs_sma50_pct": -9.1,
+          "vs_ema200_pct": -3.4,
+          "as_of": "2026-11-18T15:08:35+00:00"
         },
         "profile": {
           "name": "Meta Platforms, Inc.",
@@ -2207,14 +2523,14 @@
           "vs_spy_1m": -11.7
         },
         "price": {
-          "last": 155.245,
-          "chg_1d": -0.14,
-          "chg_5d": -10.64,
+          "last": 154.865,
+          "chg_1d": -0.38,
+          "chg_5d": -10.86,
           "chg_1m": -28.39,
           "chg_3m": -28.46,
-          "vs_sma50_pct": -26.7,
-          "vs_ema200_pct": -23.3,
-          "as_of": "2026-11-18T15:06:24+00:00"
+          "vs_sma50_pct": -26.9,
+          "vs_ema200_pct": -23.5,
+          "as_of": "2026-11-18T15:08:35+00:00"
         },
         "profile": {
           "name": "NVIDIA Corporation",
@@ -2599,7 +2915,7 @@
       },
       "verdict": {
         "label": "RE-CHECK",
-        "do_now": "Price has moved -12.7% from the plan's entry (now $147.14 vs $168.48 on 04 Nov) \u2014 entry no longer valid; re-check levels. Original: Over your cap: Momentum setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $1,398, loss at stop \u2248 $699; cheaper variants: otm: conviction 5 < 7; short_dte: conviction 5 < 8 -- your call",
+        "do_now": "Price has moved -13.1% from the plan's entry (now $146.36 vs $168.48 on 04 Nov) \u2014 entry no longer valid; re-check levels. Original: Over your cap: Momentum setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $1,398, loss at stop \u2248 $699; cheaper variants: otm: conviction 5 < 7; short_dte: conviction 5 < 8 -- your call",
         "strategy": "momentum",
         "direction": "put",
         "levels": {
@@ -3878,6 +4194,12 @@
     {
       "date": "2026-11-18",
       "kind": "deepdive",
+      "id": "deepdive_RDDT_20261118T230828.573983_0800",
+      "summary": "RDDT [BEARISH] -- conviction 6/10"
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "deepdive",
       "id": "deepdive_NVDA_20261118T225825.436105_0800",
       "summary": "NVDA [BEARISH] -- conviction 5/10"
     },
@@ -4420,23 +4742,92 @@
       "kind": "analyst",
       "id": "analyst_brief_20261027_212502_c3ff",
       "summary": "0 deep-dive(s), regime bull_low_vol"
-    },
-    {
-      "date": "2026-10-27",
-      "kind": "analyst",
-      "id": "analyst_brief_20261027_195001_c00d",
-      "summary": "0 deep-dive(s), regime bull_low_vol"
     }
   ],
   "home": {
     "fresh_hours": 72,
-    "headline": "No setup today",
-    "sub": "4 fresh deep dives (last 3 days) \u00b7 0 pass the gate",
+    "headline": "1 setup today: RDDT",
+    "sub": "5 fresh deep dives (last 3 days) \u00b7 1 pass the gate",
     "calls_on": true,
     "puts_on": true,
-    "setups": [],
+    "setups": [
+      {
+        "ticker": "RDDT",
+        "bias": "bearish",
+        "conviction": 6,
+        "label": "SETUP OK",
+        "regime_only": false,
+        "regime_note": null,
+        "direction": "put",
+        "why": "Over your cap: Momentum setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE",
+        "category": "setup",
+        "n_blockers": 0,
+        "evidence": [
+          -1,
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "net": -2,
+        "price": 96.58,
+        "level": null,
+        "levels": {
+          "entry": 96.58,
+          "stop": 103.16,
+          "target": 83.42
+        },
+        "rr": 2.0,
+        "flags": [
+          "over cap"
+        ],
+        "researched_at": "2026-11-18T23:08:28.573983+08:00",
+        "verdict": "SETUP OK",
+        "plan_status": "current",
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ surprises, target; \u2212 reaction)",
+        "earnings_before_exit": false
+      }
+    ],
     "waits": [],
     "rows": [
+      {
+        "ticker": "RDDT",
+        "bias": "bearish",
+        "conviction": 6,
+        "label": "SETUP OK",
+        "regime_only": false,
+        "regime_note": null,
+        "direction": "put",
+        "why": "Over your cap: Momentum setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE",
+        "category": "setup",
+        "n_blockers": 0,
+        "evidence": [
+          -1,
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "net": -2,
+        "price": 96.58,
+        "level": null,
+        "levels": {
+          "entry": 96.58,
+          "stop": 103.16,
+          "target": 83.42
+        },
+        "rr": 2.0,
+        "flags": [
+          "over cap"
+        ],
+        "researched_at": "2026-11-18T23:08:28.573983+08:00",
+        "verdict": "SETUP OK",
+        "plan_status": "current",
+        "fund_label": "mixed",
+        "fund_line": "Fundamentals: mixed (+ surprises, target; \u2212 reaction)",
+        "earnings_before_exit": false
+      },
       {
         "ticker": "TSLA",
         "bias": "bullish",
@@ -4561,8 +4952,8 @@
     "closest": null,
     "older_count": 20,
     "since_24h": {
-      "dives": 4,
-      "setups": 0
+      "dives": 5,
+      "setups": 1
     },
     "regime_blocked": [],
     "next_events": []
@@ -4581,9 +4972,9 @@
     "rows": [
       {
         "ticker": "TSLA",
-        "price": 383.9306,
-        "chg_1d": 1.01,
-        "chg_5d": -1.77,
+        "price": 382.83,
+        "chg_1d": 0.72,
+        "chg_5d": -2.05,
         "chg_1m": 3.27,
         "chg_3m": 8.26,
         "name": "Tesla, Inc.",
@@ -4591,8 +4982,8 @@
         "theme": "AI robotics / automation",
         "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States\u2026",
         "tv_symbol": "NASDAQ:TSLA",
-        "vs_sma50_pct": 2.2,
-        "vs_ema200_pct": 1.2,
+        "vs_sma50_pct": 2.0,
+        "vs_ema200_pct": 0.9,
         "earn_days": 71,
         "earn_date": "2027-01-28",
         "earnings_before_exit": false,
@@ -4606,9 +4997,9 @@
       },
       {
         "ticker": "NVDA",
-        "price": 155.245,
-        "chg_1d": -0.14,
-        "chg_5d": -10.64,
+        "price": 154.865,
+        "chg_1d": -0.38,
+        "chg_5d": -10.86,
         "chg_1m": -28.39,
         "chg_3m": -28.46,
         "name": "NVIDIA Corporation",
@@ -4616,8 +5007,8 @@
         "theme": "AI compute chips",
         "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and\u2026",
         "tv_symbol": "NASDAQ:NVDA",
-        "vs_sma50_pct": -26.7,
-        "vs_ema200_pct": -23.3,
+        "vs_sma50_pct": -26.9,
+        "vs_ema200_pct": -23.5,
         "earn_days": 0,
         "earn_date": "2026-11-18",
         "earnings_before_exit": true,
@@ -4631,9 +5022,9 @@
       },
       {
         "ticker": "MRVL",
-        "price": 147.14,
-        "chg_1d": -1.08,
-        "chg_5d": -12.83,
+        "price": 146.36,
+        "chg_1d": -1.6,
+        "chg_5d": -13.29,
         "chg_1m": -37.26,
         "chg_3m": -37.3,
         "name": "Marvell Technology, Inc.",
@@ -4641,8 +5032,8 @@
         "theme": "Photonics / optical",
         "summary": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to\u2026",
         "tv_symbol": "NASDAQ:MRVL",
-        "vs_sma50_pct": -34.9,
-        "vs_ema200_pct": -22.8,
+        "vs_sma50_pct": -35.3,
+        "vs_ema200_pct": -23.3,
         "earn_days": 14,
         "earn_date": "2026-12-02",
         "earnings_before_exit": true,
@@ -4656,9 +5047,9 @@
       },
       {
         "ticker": "AAOI",
-        "price": 39.8,
-        "chg_1d": -11.99,
-        "chg_5d": -28.75,
+        "price": 39.8371,
+        "chg_1d": -11.9,
+        "chg_5d": -28.68,
         "chg_1m": -42.17,
         "chg_3m": -62.99,
         "name": "Applied Optoelectronics, Inc.",
@@ -4666,7 +5057,7 @@
         "theme": "Photonics / optical",
         "summary": "Applied Optoelectronics, Inc. engages in the design, manufacture, and sale of fiber-optic networking products in the United States, Taiwan, and China.",
         "tv_symbol": "NASDAQ:AAOI",
-        "vs_sma50_pct": -53.3,
+        "vs_sma50_pct": -53.2,
         "vs_ema200_pct": -58.9,
         "earn_days": null,
         "earn_date": null,
@@ -4681,9 +5072,9 @@
       },
       {
         "ticker": "LITE",
-        "price": 553.91,
-        "chg_1d": -1.08,
-        "chg_5d": -14.53,
+        "price": 551.645,
+        "chg_1d": -1.49,
+        "chg_5d": -14.88,
         "chg_1m": -32.9,
         "chg_3m": -32.34,
         "name": "Lumentum Holdings Inc.",
@@ -4691,8 +5082,8 @@
         "theme": "Photonics / optical",
         "summary": "Lumentum Holdings Inc. manufactures and sells optical and photonic products in the Americas, the Asia-Pacific, Europe, the Middle East, and Africa.",
         "tv_symbol": "NASDAQ:LITE",
-        "vs_sma50_pct": -35.0,
-        "vs_ema200_pct": -25.8,
+        "vs_sma50_pct": -35.3,
+        "vs_ema200_pct": -26.1,
         "earn_days": 76,
         "earn_date": "2027-02-02",
         "earnings_before_exit": false,
@@ -4706,9 +5097,9 @@
       },
       {
         "ticker": "HPE",
-        "price": 46.41,
-        "chg_1d": 0.69,
-        "chg_5d": -7.64,
+        "price": 46.23,
+        "chg_1d": 0.3,
+        "chg_5d": -8.0,
         "chg_1m": -17.5,
         "chg_3m": -13.03,
         "name": "Hewlett Packard Enterprise Comp",
@@ -4716,8 +5107,8 @@
         "theme": "AI servers",
         "summary": "Hewlett Packard Enterprise Company, together with its subsidiaries, develops intelligent solutions in the United States, the Americas, Europe, the\u2026",
         "tv_symbol": "NYSE:HPE",
-        "vs_sma50_pct": -20.7,
-        "vs_ema200_pct": 2.2,
+        "vs_sma50_pct": -21.0,
+        "vs_ema200_pct": 1.8,
         "earn_days": 6,
         "earn_date": "2026-11-24",
         "earnings_before_exit": true,
@@ -4731,9 +5122,9 @@
       },
       {
         "ticker": "META",
-        "price": 619.295,
-        "chg_1d": 0.07,
-        "chg_5d": -1.51,
+        "price": 618.37,
+        "chg_1d": -0.08,
+        "chg_5d": -1.65,
         "chg_1m": -12.27,
         "chg_3m": 13.43,
         "name": "Meta Platforms, Inc.",
@@ -4741,8 +5132,8 @@
         "theme": "Hyperscalers",
         "summary": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices\u2026",
         "tv_symbol": "NASDAQ:META",
-        "vs_sma50_pct": -8.9,
-        "vs_ema200_pct": -3.3,
+        "vs_sma50_pct": -9.1,
+        "vs_ema200_pct": -3.4,
         "earn_days": 71,
         "earn_date": "2027-01-28",
         "earnings_before_exit": false,
@@ -4756,9 +5147,9 @@
       },
       {
         "ticker": "AAPL",
-        "price": 354.98,
-        "chg_1d": 0.87,
-        "chg_5d": -0.11,
+        "price": 354.65,
+        "chg_1d": 0.78,
+        "chg_5d": -0.2,
         "chg_1m": 2.69,
         "chg_3m": 11.16,
         "name": "Apple Inc.",
@@ -4766,8 +5157,8 @@
         "theme": null,
         "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories.",
         "tv_symbol": "NASDAQ:AAPL",
-        "vs_sma50_pct": 4.4,
-        "vs_ema200_pct": 15.3,
+        "vs_sma50_pct": 4.3,
+        "vs_ema200_pct": 15.2,
         "earn_days": 72,
         "earn_date": "2027-01-29",
         "earnings_before_exit": false,
@@ -4785,38 +5176,39 @@
   "ladders": {
     "RDDT": {
       "kind": "plan",
-      "source": "scan",
+      "source": "deep dive",
       "direction": "bearish",
-      "researched_at": null,
-      "price": 96.58,
+      "researched_at": "2026-11-18T23:08:28.573983+08:00",
+      "price": 96.295,
       "price_is_live": true,
-      "entry": 95.6,
-      "stop": 102.18,
-      "target": 82.45,
-      "sma50": 136.99,
+      "entry": 96.58,
+      "stop": 103.16,
+      "target": 83.42,
+      "sma50": 136.98,
       "pct": {
-        "entry": -1.0,
-        "stop": 5.8,
-        "target": -14.6,
-        "sma50": 41.8
-      }
+        "entry": 0.3,
+        "stop": 7.1,
+        "target": -13.4,
+        "sma50": 42.3
+      },
+      "plan_status": "current"
     },
     "LRCX": {
       "kind": "plan",
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 210.91,
+      "price": 209.66,
       "price_is_live": true,
       "entry": 209.55,
       "stop": 225.12,
       "target": 178.41,
-      "sma50": 273.55,
+      "sma50": 273.35,
       "pct": {
-        "entry": -0.6,
-        "stop": 6.7,
-        "target": -15.4,
-        "sma50": 29.7
+        "entry": -0.1,
+        "stop": 7.4,
+        "target": -14.9,
+        "sma50": 30.4
       }
     },
     "BKR": {
@@ -4824,17 +5216,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 47.925,
+      "price": 47.835,
       "price_is_live": true,
       "entry": 47.24,
       "stop": 49.16,
       "target": 43.41,
-      "sma50": 54.58,
+      "sma50": 54.54,
       "pct": {
-        "entry": -1.4,
-        "stop": 2.6,
-        "target": -9.4,
-        "sma50": 13.9
+        "entry": -1.2,
+        "stop": 2.8,
+        "target": -9.3,
+        "sma50": 14.0
       }
     },
     "VST": {
@@ -4842,16 +5234,16 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 127.67,
+      "price": 127.63,
       "price_is_live": true,
       "entry": 127.01,
       "stop": 133.56,
       "target": 113.91,
-      "sma50": 142.33,
+      "sma50": 142.29,
       "pct": {
         "entry": -0.5,
         "stop": 4.6,
-        "target": -10.8,
+        "target": -10.7,
         "sma50": 11.5
       }
     },
@@ -4860,17 +5252,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 68.11,
+      "price": 67.78,
       "price_is_live": true,
       "entry": 67.5,
       "stop": 72.39,
       "target": 57.7,
-      "sma50": 73.87,
+      "sma50": 73.83,
       "pct": {
-        "entry": -0.9,
-        "stop": 6.3,
-        "target": -15.3,
-        "sma50": 8.5
+        "entry": -0.4,
+        "stop": 6.8,
+        "target": -14.9,
+        "sma50": 8.9
       }
     },
     "BA": {
@@ -4878,17 +5270,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 163.235,
+      "price": 162.985,
       "price_is_live": true,
       "entry": 162.99,
       "stop": 168.88,
       "target": 151.23,
-      "sma50": 186.98,
+      "sma50": 186.91,
       "pct": {
-        "entry": -0.2,
-        "stop": 3.5,
-        "target": -7.4,
-        "sma50": 14.5
+        "entry": 0.0,
+        "stop": 3.6,
+        "target": -7.2,
+        "sma50": 14.7
       }
     },
     "STM": {
@@ -4896,17 +5288,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 44.88,
+      "price": 44.69,
       "price_is_live": true,
       "entry": 44.32,
       "stop": 47.25,
       "target": 38.46,
       "sma50": 49.0,
       "pct": {
-        "entry": -1.2,
-        "stop": 5.3,
-        "target": -14.3,
-        "sma50": 9.2
+        "entry": -0.8,
+        "stop": 5.7,
+        "target": -13.9,
+        "sma50": 9.6
       }
     },
     "NEE": {
@@ -4914,16 +5306,16 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 84.31,
+      "price": 84.36,
       "price_is_live": true,
       "entry": 82.54,
       "stop": 80.49,
       "target": 86.65,
-      "sma50": 80.83,
+      "sma50": 80.88,
       "pct": {
-        "entry": -2.1,
-        "stop": -4.5,
-        "target": 2.8,
+        "entry": -2.2,
+        "stop": -4.6,
+        "target": 2.7,
         "sma50": -4.1
       }
     },
@@ -4932,17 +5324,17 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 129.61,
+      "price": 129.626,
       "price_is_live": true,
       "entry": 129.78,
       "stop": 127.24,
       "target": 134.86,
-      "sma50": 120.12,
+      "sma50": 120.02,
       "pct": {
         "entry": 0.1,
         "stop": -1.8,
-        "target": 4.1,
-        "sma50": -7.3
+        "target": 4.0,
+        "sma50": -7.4
       }
     },
     "MA": {
@@ -4950,17 +5342,17 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 639.1325,
+      "price": 638.42,
       "price_is_live": true,
       "entry": 616.76,
       "stop": 601.4,
       "target": 647.46,
-      "sma50": 602.96,
+      "sma50": 602.85,
       "pct": {
-        "entry": -3.5,
-        "stop": -5.9,
-        "target": 1.3,
-        "sma50": -5.7
+        "entry": -3.4,
+        "stop": -5.8,
+        "target": 1.4,
+        "sma50": -5.6
       }
     },
     "V": {
@@ -4968,17 +5360,17 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 413.225,
+      "price": 412.86,
       "price_is_live": true,
       "entry": 400.97,
       "stop": 390.77,
       "target": 421.37,
-      "sma50": 391.68,
+      "sma50": 391.71,
       "pct": {
-        "entry": -3.0,
+        "entry": -2.9,
         "stop": -5.4,
-        "target": 2.0,
-        "sma50": -5.2
+        "target": 2.1,
+        "sma50": -5.1
       }
     },
     "ETR": {
@@ -4986,17 +5378,17 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 108.655,
+      "price": 108.81,
       "price_is_live": true,
       "entry": 106.99,
       "stop": 104.24,
       "target": 112.49,
-      "sma50": 104.78,
+      "sma50": 104.73,
       "pct": {
-        "entry": -1.5,
-        "stop": -4.1,
-        "target": 3.5,
-        "sma50": -3.6
+        "entry": -1.7,
+        "stop": -4.2,
+        "target": 3.4,
+        "sma50": -3.7
       }
     },
     "AMZN": {
@@ -5220,16 +5612,16 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-18T23:06:17.949783+08:00",
-      "price": 283.81,
+      "price": 283.61,
       "price_is_live": true,
       "entry": 314.45,
       "stop": 326.62,
       "target": 290.11,
-      "sma50": 325.1,
+      "sma50": 324.87,
       "pct": {
-        "entry": 10.8,
-        "stop": 15.1,
-        "target": 2.2,
+        "entry": 10.9,
+        "stop": 15.2,
+        "target": 2.3,
         "sma50": 14.5
       }
     },
@@ -5238,17 +5630,17 @@
       "source": "deep dive",
       "direction": "bullish",
       "researched_at": "2026-11-18T23:02:26.346003+08:00",
-      "price": 383.9306,
+      "price": 382.83,
       "price_is_live": true,
       "entry": 385.71,
       "stop": 374.02,
       "target": 429.8,
-      "sma50": 375.67,
+      "sma50": 375.32,
       "pct": {
-        "entry": 0.5,
-        "stop": -2.6,
-        "target": 11.9,
-        "sma50": -2.2
+        "entry": 0.8,
+        "stop": -2.3,
+        "target": 12.3,
+        "sma50": -2.0
       }
     },
     "META": {
@@ -5256,17 +5648,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-18T23:00:50.560571+08:00",
-      "price": 619.295,
+      "price": 618.37,
       "price_is_live": true,
       "entry": 653.23,
       "stop": 682.7,
       "target": 594.3,
-      "sma50": 679.8,
+      "sma50": 680.28,
       "pct": {
-        "entry": 5.5,
-        "stop": 10.2,
-        "target": -4.0,
-        "sma50": 9.8
+        "entry": 5.6,
+        "stop": 10.4,
+        "target": -3.9,
+        "sma50": 10.0
       }
     },
     "NVDA": {
@@ -5274,17 +5666,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-18T22:58:25.436105+08:00",
-      "price": 155.245,
+      "price": 154.865,
       "price_is_live": true,
       "entry": 199.82,
       "stop": 211.45,
       "target": 176.57,
-      "sma50": 211.79,
+      "sma50": 211.85,
       "pct": {
-        "entry": 28.7,
-        "stop": 36.2,
-        "target": 13.7,
-        "sma50": 36.4
+        "entry": 29.0,
+        "stop": 36.5,
+        "target": 14.0,
+        "sma50": 36.8
       }
     },
     "AAOI": {
@@ -5292,17 +5684,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-10T22:39:29.166290+08:00",
-      "price": 39.8,
+      "price": 39.8371,
       "price_is_live": true,
       "entry": 49.7,
       "stop": 55.24,
       "target": 38.61,
-      "sma50": 85.22,
+      "sma50": 85.12,
       "pct": {
-        "entry": 24.9,
-        "stop": 38.8,
-        "target": -3.0,
-        "sma50": 114.1
+        "entry": 24.8,
+        "stop": 38.7,
+        "target": -3.1,
+        "sma50": 113.7
       }
     },
     "MRVL": {
@@ -5310,17 +5702,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-04T00:58:31.516324+08:00",
-      "price": 147.14,
+      "price": 146.36,
       "price_is_live": true,
       "entry": 168.48,
       "stop": 182.05,
       "target": 141.35,
-      "sma50": 226.02,
+      "sma50": 226.21,
       "pct": {
-        "entry": 14.5,
-        "stop": 23.7,
-        "target": -3.9,
-        "sma50": 53.6
+        "entry": 15.1,
+        "stop": 24.4,
+        "target": -3.4,
+        "sma50": 54.6
       },
       "plan_status": "moved"
     },
@@ -5329,17 +5721,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-04T00:53:29.554600+08:00",
-      "price": 553.91,
+      "price": 551.645,
       "price_is_live": true,
       "entry": 852.36,
       "stop": 920.68,
       "target": 715.73,
-      "sma50": 852.17,
+      "sma50": 852.62,
       "pct": {
-        "entry": 53.9,
-        "stop": 66.2,
-        "target": 29.2,
-        "sma50": 53.8
+        "entry": 54.5,
+        "stop": 66.9,
+        "target": 29.7,
+        "sma50": 54.6
       }
     },
     "MSFT": {
@@ -5455,17 +5847,17 @@
       "source": "deep dive",
       "direction": "bullish",
       "researched_at": "2026-09-29T10:41:03.688493+08:00",
-      "price": 354.98,
+      "price": 354.65,
       "price_is_live": true,
       "entry": 328.73,
       "stop": 320.19,
       "target": 345.8,
-      "sma50": 340.02,
+      "sma50": 340.03,
       "pct": {
-        "entry": -7.4,
-        "stop": -9.8,
-        "target": -2.6,
-        "sma50": -4.2
+        "entry": -7.3,
+        "stop": -9.7,
+        "target": -2.5,
+        "sma50": -4.1
       }
     },
     "INTL": {
@@ -5488,6 +5880,7 @@
     }
   },
   "tv_symbols": {
+    "RDDT": "NYSE:RDDT",
     "TSLA": "NASDAQ:TSLA",
     "GOOGL": "NASDAQ:GOOGL",
     "META": "NASDAQ:META",
@@ -5497,7 +5890,6 @@
     "LITE": "NASDAQ:LITE",
     "HPE": "NYSE:HPE",
     "AAPL": "NASDAQ:AAPL",
-    "RDDT": "NYSE:RDDT",
     "LRCX": "NASDAQ:LRCX",
     "BKR": "NASDAQ:BKR",
     "VST": "NYSE:VST",
@@ -5511,6 +5903,207 @@
     "ETR": "NYSE:ETR"
   },
   "fundamentals_by_ticker": {
+    "RDDT": {
+      "label": "mixed",
+      "net": 1,
+      "line": "Fundamentals: mixed (+ surprises, target; \u2212 reaction)",
+      "parts": [
+        {
+          "name": "revisions",
+          "score": 0,
+          "text": "EPS est. this qtr -0.0% in 30d, next yr -4.0% \u00b7 8 up / 13 down"
+        },
+        {
+          "name": "surprises",
+          "score": 1,
+          "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +5.6%"
+        },
+        {
+          "name": "target",
+          "score": 1,
+          "text": "Mean target $148 (+57%), range $85\u2013272 \u00b7 29 analysts"
+        },
+        {
+          "name": "industry",
+          "score": 0,
+          "text": "XLC -4.4% 1M vs SPY -4.4% (in line)"
+        },
+        {
+          "name": "reaction",
+          "score": -1,
+          "text": "Last moves on earnings -7% +13% -21% -29% \u00b7 typical \u00b117.7% (a normal day \u2248 \u00b14.3%) \u00b7 beat but fell"
+        }
+      ],
+      "pe": {
+        "trailing": 19.3,
+        "forward": 10.4,
+        "peer_median": null,
+        "peers_n": 2
+      },
+      "earnings": {
+        "next": null,
+        "days": null,
+        "before_exit": false,
+        "history": [
+          {
+            "quarter": "2025-12-31",
+            "surprise_pct": 33.1,
+            "beat": true
+          },
+          {
+            "quarter": "2026-03-31",
+            "surprise_pct": 79.1,
+            "beat": true
+          },
+          {
+            "quarter": "2026-06-30",
+            "surprise_pct": 29.6,
+            "beat": true
+          },
+          {
+            "quarter": "2026-09-30",
+            "surprise_pct": 5.6,
+            "beat": true
+          }
+        ]
+      },
+      "revisions": {
+        "q_30d_pct": -0.0,
+        "y_30d_pct": -4.0,
+        "up_30d": 8.0,
+        "down_30d": 13.0
+      },
+      "target": {
+        "mean": 148.46207,
+        "upside_pct": 57.1,
+        "analysts": 29,
+        "rec": "buy",
+        "low": 85.0,
+        "high": 272.0
+      },
+      "reaction": {
+        "last": [
+          {
+            "date": "2026-02-05",
+            "move_pct": -7.4,
+            "surprise_pct": 16.4,
+            "flag": "beat but fell"
+          },
+          {
+            "date": "2026-04-30",
+            "move_pct": 13.1,
+            "surprise_pct": 26.1,
+            "flag": null
+          },
+          {
+            "date": "2026-07-30",
+            "move_pct": -21.0,
+            "surprise_pct": 29.6,
+            "flag": "beat but fell"
+          },
+          {
+            "date": "2026-10-29",
+            "move_pct": -29.2,
+            "surprise_pct": 5.6,
+            "flag": "beat but fell"
+          }
+        ],
+        "typical_move_pct": 17.7,
+        "normal_day_move_pct": 4.3,
+        "event_multiple": 4.1
+      },
+      "actions_30d": {
+        "up": 0,
+        "down": 4,
+        "items": [
+          {
+            "date": "2026-11-12",
+            "firm": "Argus Research",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 150.0,
+            "prior_target": 225.0,
+            "target_action": "Lowers"
+          },
+          {
+            "date": "2026-11-10",
+            "firm": "Guggenheim",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 140.0,
+            "prior_target": 170.0,
+            "target_action": "Lowers"
+          },
+          {
+            "date": "2026-11-02",
+            "firm": "DA Davidson",
+            "action": "main",
+            "to": "Buy",
+            "from": "Buy",
+            "target": 125.0,
+            "prior_target": 185.0,
+            "target_action": "Lowers"
+          },
+          {
+            "date": "2026-11-02",
+            "firm": "Evercore ISI Group",
+            "action": "down",
+            "to": "In-Line",
+            "from": "Outperform",
+            "target": 120.0,
+            "prior_target": 265.0,
+            "target_action": "Lowers"
+          },
+          {
+            "date": "2026-11-02",
+            "firm": "Loop Capital",
+            "action": "down",
+            "to": "Hold",
+            "from": "Buy",
+            "target": 0.0,
+            "prior_target": 0.0,
+            "target_action": ""
+          },
+          {
+            "date": "2026-10-31",
+            "firm": "JP Morgan",
+            "action": "main",
+            "to": "Neutral",
+            "from": "Neutral",
+            "target": 150.0,
+            "prior_target": 185.0,
+            "target_action": "Lowers"
+          }
+        ]
+      },
+      "industry": {
+        "name": "Internet Content & Information",
+        "etf": "XLC",
+        "etf_1m": -4.39,
+        "etf_3m": -4.58,
+        "vs_spy_1m": 0.1
+      },
+      "price": {
+        "last": 96.295,
+        "chg_1d": 1.92,
+        "chg_5d": -8.86,
+        "chg_1m": -39.1,
+        "chg_3m": -37.72,
+        "vs_sma50_pct": -29.7,
+        "vs_ema200_pct": -38.0,
+        "as_of": "2026-11-18T15:08:35+00:00"
+      },
+      "profile": {
+        "name": "Reddit, Inc.",
+        "sector": "Communication Services",
+        "summary": "Reddit, Inc. operates a digital community in the United States and internationally."
+      },
+      "digest": null,
+      "tv_symbol": "NYSE:RDDT",
+      "n_errors": 0
+    },
     "TSLA": {
       "label": "mixed",
       "net": 0,
@@ -5694,14 +6287,14 @@
         "vs_spy_1m": -8.0
       },
       "price": {
-        "last": 383.9306,
-        "chg_1d": 1.01,
-        "chg_5d": -1.77,
+        "last": 382.83,
+        "chg_1d": 0.72,
+        "chg_5d": -2.05,
         "chg_1m": 3.27,
         "chg_3m": 8.26,
-        "vs_sma50_pct": 2.2,
-        "vs_ema200_pct": 1.2,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": 2.0,
+        "vs_ema200_pct": 0.9,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Tesla, Inc.",
@@ -5895,14 +6488,14 @@
         "vs_spy_1m": 0.1
       },
       "price": {
-        "last": 283.81,
-        "chg_1d": 1.29,
-        "chg_5d": -3.29,
+        "last": 283.61,
+        "chg_1d": 1.22,
+        "chg_5d": -3.35,
         "chg_1m": -16.63,
         "chg_3m": -16.67,
         "vs_sma50_pct": -12.7,
-        "vs_ema200_pct": -12.5,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_ema200_pct": -12.6,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Alphabet Inc.",
@@ -6101,14 +6694,14 @@
         "vs_spy_1m": 0.1
       },
       "price": {
-        "last": 619.295,
-        "chg_1d": 0.07,
-        "chg_5d": -1.51,
+        "last": 618.37,
+        "chg_1d": -0.08,
+        "chg_5d": -1.65,
         "chg_1m": -12.27,
         "chg_3m": 13.43,
-        "vs_sma50_pct": -8.9,
-        "vs_ema200_pct": -3.3,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -9.1,
+        "vs_ema200_pct": -3.4,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Meta Platforms, Inc.",
@@ -6318,14 +6911,14 @@
         "vs_spy_1m": -11.7
       },
       "price": {
-        "last": 155.245,
-        "chg_1d": -0.14,
-        "chg_5d": -10.64,
+        "last": 154.865,
+        "chg_1d": -0.38,
+        "chg_5d": -10.86,
         "chg_1m": -28.39,
         "chg_3m": -28.46,
-        "vs_sma50_pct": -26.7,
-        "vs_ema200_pct": -23.3,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -26.9,
+        "vs_ema200_pct": -23.5,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "NVIDIA Corporation",
@@ -6524,14 +7117,14 @@
         "vs_spy_1m": -11.7
       },
       "price": {
-        "last": 147.14,
-        "chg_1d": -1.08,
-        "chg_5d": -12.83,
+        "last": 146.36,
+        "chg_1d": -1.6,
+        "chg_5d": -13.29,
         "chg_1m": -37.26,
         "chg_3m": -37.3,
-        "vs_sma50_pct": -34.9,
-        "vs_ema200_pct": -22.8,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -35.3,
+        "vs_ema200_pct": -23.3,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Marvell Technology, Inc.",
@@ -6710,14 +7303,14 @@
         "vs_spy_1m": -7.8
       },
       "price": {
-        "last": 39.8,
-        "chg_1d": -11.99,
-        "chg_5d": -28.75,
+        "last": 39.8371,
+        "chg_1d": -11.9,
+        "chg_5d": -28.68,
         "chg_1m": -42.17,
         "chg_3m": -62.99,
-        "vs_sma50_pct": -53.3,
+        "vs_sma50_pct": -53.2,
         "vs_ema200_pct": -58.9,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Applied Optoelectronics, Inc.",
@@ -6927,14 +7520,14 @@
         "vs_spy_1m": -7.8
       },
       "price": {
-        "last": 553.91,
-        "chg_1d": -1.08,
-        "chg_5d": -14.53,
+        "last": 551.645,
+        "chg_1d": -1.49,
+        "chg_5d": -14.88,
         "chg_1m": -32.9,
         "chg_3m": -32.34,
-        "vs_sma50_pct": -35.0,
-        "vs_ema200_pct": -25.8,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -35.3,
+        "vs_ema200_pct": -26.1,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Lumentum Holdings Inc.",
@@ -7104,14 +7697,14 @@
         "vs_spy_1m": -7.8
       },
       "price": {
-        "last": 46.41,
-        "chg_1d": 0.69,
-        "chg_5d": -7.64,
+        "last": 46.23,
+        "chg_1d": 0.3,
+        "chg_5d": -8.0,
         "chg_1m": -17.5,
         "chg_3m": -13.03,
-        "vs_sma50_pct": -20.7,
-        "vs_ema200_pct": 2.2,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -21.0,
+        "vs_ema200_pct": 1.8,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Hewlett Packard Enterprise Comp",
@@ -7321,14 +7914,14 @@
         "vs_spy_1m": -7.8
       },
       "price": {
-        "last": 354.98,
-        "chg_1d": 0.87,
-        "chg_5d": -0.11,
+        "last": 354.65,
+        "chg_1d": 0.78,
+        "chg_5d": -0.2,
         "chg_1m": 2.69,
         "chg_3m": 11.16,
-        "vs_sma50_pct": 4.4,
-        "vs_ema200_pct": 15.3,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": 4.3,
+        "vs_ema200_pct": 15.2,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Apple Inc.",
@@ -7348,207 +7941,6 @@
         "accession": "0000320193-26-000024"
       },
       "tv_symbol": "NASDAQ:AAPL",
-      "n_errors": 0
-    },
-    "RDDT": {
-      "label": "mixed",
-      "net": 1,
-      "line": "Fundamentals: mixed (+ surprises, target; \u2212 reaction)",
-      "parts": [
-        {
-          "name": "revisions",
-          "score": 0,
-          "text": "EPS est. this qtr -0.0% in 30d, next yr -4.0% \u00b7 8 up / 13 down"
-        },
-        {
-          "name": "surprises",
-          "score": 1,
-          "text": "Beat 4 of 4 \u2705\u2705\u2705\u2705 \u00b7 last +5.6%"
-        },
-        {
-          "name": "target",
-          "score": 1,
-          "text": "Mean target $148 (+57%), range $85\u2013272 \u00b7 29 analysts"
-        },
-        {
-          "name": "industry",
-          "score": 0,
-          "text": "XLC -4.4% 1M vs SPY -4.4% (in line)"
-        },
-        {
-          "name": "reaction",
-          "score": -1,
-          "text": "Last moves on earnings -7% +13% -21% -29% \u00b7 typical \u00b117.7% \u00b7 beat but fell"
-        }
-      ],
-      "pe": {
-        "trailing": 19.3,
-        "forward": 10.4,
-        "peer_median": null,
-        "peers_n": 2
-      },
-      "earnings": {
-        "next": null,
-        "days": null,
-        "before_exit": false,
-        "history": [
-          {
-            "quarter": "2025-12-31",
-            "surprise_pct": 33.1,
-            "beat": true
-          },
-          {
-            "quarter": "2026-03-31",
-            "surprise_pct": 79.1,
-            "beat": true
-          },
-          {
-            "quarter": "2026-06-30",
-            "surprise_pct": 29.6,
-            "beat": true
-          },
-          {
-            "quarter": "2026-09-30",
-            "surprise_pct": 5.6,
-            "beat": true
-          }
-        ]
-      },
-      "revisions": {
-        "q_30d_pct": -0.0,
-        "y_30d_pct": -4.0,
-        "up_30d": 8.0,
-        "down_30d": 13.0
-      },
-      "target": {
-        "mean": 148.46207,
-        "upside_pct": 57.1,
-        "analysts": 29,
-        "rec": "buy",
-        "low": 85.0,
-        "high": 272.0
-      },
-      "reaction": {
-        "last": [
-          {
-            "date": "2026-02-05",
-            "move_pct": -7.4,
-            "surprise_pct": 16.4,
-            "flag": "beat but fell"
-          },
-          {
-            "date": "2026-04-30",
-            "move_pct": 13.1,
-            "surprise_pct": 26.1,
-            "flag": null
-          },
-          {
-            "date": "2026-07-30",
-            "move_pct": -21.0,
-            "surprise_pct": 29.6,
-            "flag": "beat but fell"
-          },
-          {
-            "date": "2026-10-29",
-            "move_pct": -29.2,
-            "surprise_pct": 5.6,
-            "flag": "beat but fell"
-          }
-        ],
-        "typical_move_pct": 17.7,
-        "normal_day_move_pct": null,
-        "event_multiple": null
-      },
-      "actions_30d": {
-        "up": 0,
-        "down": 4,
-        "items": [
-          {
-            "date": "2026-11-12",
-            "firm": "Argus Research",
-            "action": "main",
-            "to": "Buy",
-            "from": "Buy",
-            "target": 150.0,
-            "prior_target": 225.0,
-            "target_action": "Lowers"
-          },
-          {
-            "date": "2026-11-10",
-            "firm": "Guggenheim",
-            "action": "main",
-            "to": "Buy",
-            "from": "Buy",
-            "target": 140.0,
-            "prior_target": 170.0,
-            "target_action": "Lowers"
-          },
-          {
-            "date": "2026-11-02",
-            "firm": "DA Davidson",
-            "action": "main",
-            "to": "Buy",
-            "from": "Buy",
-            "target": 125.0,
-            "prior_target": 185.0,
-            "target_action": "Lowers"
-          },
-          {
-            "date": "2026-11-02",
-            "firm": "Evercore ISI Group",
-            "action": "down",
-            "to": "In-Line",
-            "from": "Outperform",
-            "target": 120.0,
-            "prior_target": 265.0,
-            "target_action": "Lowers"
-          },
-          {
-            "date": "2026-11-02",
-            "firm": "Loop Capital",
-            "action": "down",
-            "to": "Hold",
-            "from": "Buy",
-            "target": 0.0,
-            "prior_target": 0.0,
-            "target_action": ""
-          },
-          {
-            "date": "2026-10-31",
-            "firm": "JP Morgan",
-            "action": "main",
-            "to": "Neutral",
-            "from": "Neutral",
-            "target": 150.0,
-            "prior_target": 185.0,
-            "target_action": "Lowers"
-          }
-        ]
-      },
-      "industry": {
-        "name": "Internet Content & Information",
-        "etf": "XLC",
-        "etf_1m": -4.39,
-        "etf_3m": -4.58,
-        "vs_spy_1m": 0.1
-      },
-      "price": {
-        "last": 96.58,
-        "chg_1d": 2.22,
-        "chg_5d": -8.59,
-        "chg_1m": -39.1,
-        "chg_3m": -37.72,
-        "vs_sma50_pct": -29.5,
-        "vs_ema200_pct": -37.8,
-        "as_of": "2026-11-18T15:06:24+00:00"
-      },
-      "profile": {
-        "name": "Reddit, Inc.",
-        "sector": "Communication Services",
-        "summary": "Reddit, Inc. operates a digital community in the United States and internationally."
-      },
-      "digest": null,
-      "tv_symbol": "NYSE:RDDT",
       "n_errors": 0
     },
     "LRCX": {
@@ -7739,14 +8131,14 @@
         "vs_spy_1m": -11.7
       },
       "price": {
-        "last": 210.91,
-        "chg_1d": 0.1,
-        "chg_5d": -10.59,
+        "last": 209.66,
+        "chg_1d": -0.49,
+        "chg_5d": -11.12,
         "chg_1m": -22.6,
         "chg_3m": -31.34,
-        "vs_sma50_pct": -22.9,
-        "vs_ema200_pct": -20.9,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -23.3,
+        "vs_ema200_pct": -21.3,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Lam Research Corporation",
@@ -7940,14 +8332,14 @@
         "vs_spy_1m": -2.1
       },
       "price": {
-        "last": 47.925,
-        "chg_1d": 0.98,
-        "chg_5d": -3.01,
+        "last": 47.835,
+        "chg_1d": 0.79,
+        "chg_5d": -3.19,
         "chg_1m": -14.56,
         "chg_3m": -26.04,
-        "vs_sma50_pct": -12.2,
-        "vs_ema200_pct": -14.7,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -12.3,
+        "vs_ema200_pct": -14.9,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Baker Hughes Company",
@@ -8141,14 +8533,14 @@
         "vs_spy_1m": 9.4
       },
       "price": {
-        "last": 127.67,
-        "chg_1d": 0.41,
-        "chg_5d": -4.33,
+        "last": 127.63,
+        "chg_1d": 0.38,
+        "chg_5d": -4.36,
         "chg_1m": -15.06,
         "chg_3m": -10.75,
         "vs_sma50_pct": -10.3,
         "vs_ema200_pct": -15.3,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Vistra Corp.",
@@ -8347,14 +8739,14 @@
         "vs_spy_1m": -11.7
       },
       "price": {
-        "last": 68.11,
-        "chg_1d": 0.26,
-        "chg_5d": -7.48,
+        "last": 67.78,
+        "chg_1d": -0.22,
+        "chg_5d": -7.93,
         "chg_1m": -7.1,
         "chg_3m": -11.3,
-        "vs_sma50_pct": -7.8,
-        "vs_ema200_pct": -12.2,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -8.2,
+        "vs_ema200_pct": -12.7,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "ON Semiconductor Corporation",
@@ -8548,14 +8940,14 @@
         "vs_spy_1m": 4.9
       },
       "price": {
-        "last": 163.235,
-        "chg_1d": -0.41,
-        "chg_5d": -6.48,
+        "last": 162.985,
+        "chg_1d": -0.56,
+        "chg_5d": -6.62,
         "chg_1m": -14.37,
         "chg_3m": -26.23,
-        "vs_sma50_pct": -12.7,
-        "vs_ema200_pct": -20.4,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -12.8,
+        "vs_ema200_pct": -20.5,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Boeing Company (The)",
@@ -8704,14 +9096,14 @@
         "vs_spy_1m": -11.7
       },
       "price": {
-        "last": 44.88,
-        "chg_1d": 1.49,
-        "chg_5d": -2.98,
+        "last": 44.69,
+        "chg_1d": 1.06,
+        "chg_5d": -3.39,
         "chg_1m": -3.05,
         "chg_3m": -12.13,
-        "vs_sma50_pct": -8.4,
-        "vs_ema200_pct": -7.6,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": -8.8,
+        "vs_ema200_pct": -8.0,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "STMicroelectronics N.V.",
@@ -8890,14 +9282,14 @@
         "vs_spy_1m": 9.4
       },
       "price": {
-        "last": 84.31,
-        "chg_1d": -0.13,
-        "chg_5d": -1.95,
+        "last": 84.36,
+        "chg_1d": -0.07,
+        "chg_5d": -1.9,
         "chg_1m": 8.0,
         "chg_3m": -1.0,
         "vs_sma50_pct": 4.3,
-        "vs_ema200_pct": 1.0,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_ema200_pct": 1.1,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "NextEra Energy, Inc.",
@@ -9066,14 +9458,14 @@
         "vs_spy_1m": 9.4
       },
       "price": {
-        "last": 129.61,
-        "chg_1d": -0.18,
-        "chg_5d": 1.51,
+        "last": 129.626,
+        "chg_1d": -0.16,
+        "chg_5d": 1.52,
         "chg_1m": 9.79,
         "chg_3m": 5.94,
-        "vs_sma50_pct": 7.9,
+        "vs_sma50_pct": 8.0,
         "vs_ema200_pct": 7.1,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Duke Energy Corporation (Holdin",
@@ -9267,14 +9659,14 @@
         "vs_spy_1m": 8.1
       },
       "price": {
-        "last": 639.1325,
-        "chg_1d": -1.02,
-        "chg_5d": -3.27,
+        "last": 638.42,
+        "chg_1d": -1.13,
+        "chg_5d": -3.38,
         "chg_1m": 4.76,
         "chg_3m": 12.72,
-        "vs_sma50_pct": 6.0,
-        "vs_ema200_pct": 13.3,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": 5.9,
+        "vs_ema200_pct": 13.1,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Mastercard Incorporated",
@@ -9468,14 +9860,14 @@
         "vs_spy_1m": 8.1
       },
       "price": {
-        "last": 413.225,
-        "chg_1d": -0.85,
-        "chg_5d": -2.9,
+        "last": 412.86,
+        "chg_1d": -0.94,
+        "chg_5d": -2.98,
         "chg_1m": 3.63,
         "chg_3m": 14.23,
-        "vs_sma50_pct": 5.5,
-        "vs_ema200_pct": 14.3,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": 5.4,
+        "vs_ema200_pct": 14.2,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Visa Inc.",
@@ -9664,14 +10056,14 @@
         "vs_spy_1m": 9.4
       },
       "price": {
-        "last": 108.655,
-        "chg_1d": 1.01,
-        "chg_5d": -2.39,
+        "last": 108.81,
+        "chg_1d": 1.15,
+        "chg_5d": -2.25,
         "chg_1m": 3.96,
         "chg_3m": 1.85,
-        "vs_sma50_pct": 3.7,
-        "vs_ema200_pct": 4.1,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "vs_sma50_pct": 3.9,
+        "vs_ema200_pct": 4.2,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       "profile": {
         "name": "Entergy Corporation",
@@ -9688,42 +10080,42 @@
       {
         "symbol": "SPY",
         "name": "S&P 500",
-        "chg_1d": 0.07,
-        "chg_5d": -3.53,
+        "chg_1d": -0.01,
+        "chg_5d": -3.61,
         "chg_1m": -4.44,
         "chg_3m": -3.72,
-        "last": 732.975,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "last": 732.3944,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       {
         "symbol": "QQQ",
         "name": "Nasdaq-100",
-        "chg_1d": 0.57,
-        "chg_5d": -4.3,
+        "chg_1d": 0.45,
+        "chg_5d": -4.41,
         "chg_1m": -8.55,
         "chg_3m": -7.5,
-        "last": 660.67,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "last": 659.9,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       {
         "symbol": "IWM",
         "name": "Russell 2000",
-        "chg_1d": 0.67,
-        "chg_5d": -4.32,
+        "chg_1d": 0.6,
+        "chg_5d": -4.39,
         "chg_1m": -0.82,
         "chg_3m": -9.38,
-        "last": 270.85,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "last": 270.67,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       {
         "symbol": "^VIX",
         "name": "VIX",
-        "chg_1d": 2.2,
-        "chg_5d": 48.77,
+        "chg_1d": -0.82,
+        "chg_5d": 44.37,
         "chg_1m": 40.44,
         "chg_3m": 53.38,
-        "last": 26.02,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "last": 25.25,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       {
         "symbol": "^TNX",
@@ -9734,10 +10126,10 @@
         "chg_3m": 7.91,
         "last": 5.11299991607666,
         "unit": "yield",
-        "level": 5.07,
-        "chg_1d_bp": -3,
-        "chg_5d_bp": 7,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "level": 5.08,
+        "chg_1d_bp": -2,
+        "chg_5d_bp": 8,
+        "as_of": "2026-11-18T15:08:35+00:00"
       },
       {
         "symbol": "DX-Y.NYB",
@@ -9747,7 +10139,7 @@
         "chg_1m": 2.0,
         "chg_3m": 5.03,
         "last": 103.745,
-        "as_of": "2026-11-18T15:06:24+00:00"
+        "as_of": "2026-11-18T15:08:35+00:00"
       }
     ],
     "events": [],
@@ -9766,15 +10158,15 @@
     "movers": [
       {
         "ticker": "AAOI",
-        "chg_1d": -11.99
+        "chg_1d": -11.9
       },
       {
         "ticker": "RDDT",
-        "chg_1d": 2.22
+        "chg_1d": 1.92
       },
       {
-        "ticker": "STM",
-        "chg_1d": 1.49
+        "ticker": "MRVL",
+        "chg_1d": -1.6
       }
     ],
     "analyst_actions_3d": []
