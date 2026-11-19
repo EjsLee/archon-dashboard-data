@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T01:35:01.805996+08:00",
+  "generated_at": "2026-11-20T02:35:02.381525+08:00",
   "regime": {
     "regime": "bull_low_vol",
     "vix": 22.51,
@@ -19,41 +19,53 @@
       {
         "regime": "bull_low_vol",
         "calls": true,
-        "puts": false,
+        "puts": true,
+        "size": 1.0
+      },
+      {
+        "regime": "bull_elevated_vol",
+        "calls": true,
+        "puts": true,
         "size": 1.0
       },
       {
         "regime": "bull_high_vol",
         "calls": true,
         "puts": true,
-        "size": 0.5
+        "size": 1.0
       },
       {
         "regime": "bear_low_vol",
-        "calls": false,
+        "calls": true,
         "puts": true,
-        "size": 0.75
+        "size": 1.0
+      },
+      {
+        "regime": "bear_elevated_vol",
+        "calls": true,
+        "puts": true,
+        "size": 1.0
       },
       {
         "regime": "bear_high_vol",
-        "calls": false,
-        "puts": false,
-        "size": 0.0
+        "calls": true,
+        "puts": true,
+        "size": 1.0
       },
       {
         "regime": "ranging",
         "calls": true,
         "puts": true,
-        "size": 0.5
+        "size": 1.0
       },
       {
         "regime": "neutral",
         "calls": true,
         "puts": true,
-        "size": 0.75
+        "size": 1.0
       }
     ],
-    "reference_note": "Trend = SPY 50-day vs 200-day MA (\u00b11%). Vol = VIX 30-day average (<20 low, >30 high). VIX 20-30 ('elevated') has no rule of its own and uses the neutral row."
+    "reference_note": "Context only since 20 Nov 2026 \u2014 no label blocks calls or puts or changes size (the edge lab's read-out: this label pointed the wrong way, and the desk read flipped between tests; 25 dates, kept under test). Trend = SPY 50-day vs 200-day MA (\u00b11%). Vol = VIX 30-day average (<20 low, 20-30 elevated, >30 high)."
   },
   "sectors": [
     {
@@ -1404,14 +1416,14 @@
           "vs_spy_1m": -7.1
         },
         "price": {
-          "last": 381.1935,
-          "chg_1d": -0.66,
-          "chg_5d": -4.09,
+          "last": 379.395,
+          "chg_1d": -1.13,
+          "chg_5d": -4.54,
           "chg_1m": 2.68,
           "chg_3m": 11.18,
-          "vs_sma50_pct": 1.4,
-          "vs_ema200_pct": 0.4,
-          "as_of": "2026-11-19T17:35:08+00:00"
+          "vs_sma50_pct": 1.0,
+          "vs_ema200_pct": -0.1,
+          "as_of": "2026-11-19T18:35:07+00:00"
         },
         "profile": {
           "name": "Tesla, Inc.",
@@ -1722,14 +1734,14 @@
           "vs_spy_1m": 0.9
         },
         "price": {
-          "last": 286.04,
-          "chg_1d": 1.27,
-          "chg_5d": -4.24,
+          "last": 280.84,
+          "chg_1d": -0.57,
+          "chg_5d": -5.98,
           "chg_1m": -17.0,
           "chg_3m": -17.04,
-          "vs_sma50_pct": -12.0,
-          "vs_ema200_pct": -11.8,
-          "as_of": "2026-11-19T17:35:08+00:00"
+          "vs_sma50_pct": -13.6,
+          "vs_ema200_pct": -13.4,
+          "as_of": "2026-11-19T18:35:07+00:00"
         },
         "profile": {
           "name": "Alphabet Inc.",
@@ -2054,14 +2066,14 @@
           "vs_spy_1m": -10.8
         },
         "price": {
-          "last": 150.425,
-          "chg_1d": -0.35,
-          "chg_5d": -9.49,
+          "last": 149.29,
+          "chg_1d": -1.11,
+          "chg_5d": -10.17,
           "chg_1m": -30.26,
           "chg_3m": -30.31,
-          "vs_sma50_pct": -28.5,
-          "vs_ema200_pct": -25.5,
-          "as_of": "2026-11-19T17:35:08+00:00"
+          "vs_sma50_pct": -29.0,
+          "vs_ema200_pct": -26.1,
+          "as_of": "2026-11-19T18:35:07+00:00"
         },
         "profile": {
           "name": "NVIDIA Corporation",
@@ -2381,14 +2393,14 @@
           "vs_spy_1m": 0.9
         },
         "price": {
-          "last": 93.1525,
-          "chg_1d": -1.0,
-          "chg_5d": -6.43,
+          "last": 91.86,
+          "chg_1d": -2.37,
+          "chg_5d": -7.72,
           "chg_1m": -39.55,
           "chg_3m": -37.4,
-          "vs_sma50_pct": -31.4,
-          "vs_ema200_pct": -39.8,
-          "as_of": "2026-11-19T17:35:08+00:00"
+          "vs_sma50_pct": -32.4,
+          "vs_ema200_pct": -40.7,
+          "as_of": "2026-11-19T18:35:07+00:00"
         },
         "profile": {
           "name": "Reddit, Inc.",
@@ -2698,14 +2710,14 @@
           "vs_spy_1m": 0.9
         },
         "price": {
-          "last": 614.99,
-          "chg_1d": -0.23,
-          "chg_5d": -1.38,
+          "last": 604.741,
+          "chg_1d": -1.89,
+          "chg_5d": -3.03,
           "chg_1m": -11.22,
           "chg_3m": 13.01,
-          "vs_sma50_pct": -9.5,
-          "vs_ema200_pct": -3.9,
-          "as_of": "2026-11-19T17:35:08+00:00"
+          "vs_sma50_pct": -11.0,
+          "vs_ema200_pct": -5.5,
+          "as_of": "2026-11-19T18:35:07+00:00"
         },
         "profile": {
           "name": "Meta Platforms, Inc.",
@@ -3101,7 +3113,7 @@
       },
       "verdict": {
         "label": "RE-CHECK",
-        "do_now": "Price has moved -14.7% from the plan's entry (now $143.65 vs $168.48 on 04 Nov) \u2014 entry no longer valid; re-check levels. Original: Over your cap: Momentum setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $1,398, loss at stop \u2248 $699; cheaper variants: otm: conviction 5 < 7; short_dte: conviction 5 < 8 -- your call",
+        "do_now": "Price has moved -15.4% from the plan's entry (now $142.55 vs $168.48 on 04 Nov) \u2014 entry no longer valid; re-check levels. Original: Over your cap: Momentum setup OK -- Buy put 0.45-0.60\u0394, 21-28 DTE \u00b7 1 contract \u2248 $1,398, loss at stop \u2248 $699; cheaper variants: otm: conviction 5 < 7; short_dte: conviction 5 < 8 -- your call",
         "strategy": "momentum",
         "direction": "put",
         "levels": {
@@ -5203,9 +5215,9 @@
     "rows": [
       {
         "ticker": "TSLA",
-        "price": 381.1935,
-        "chg_1d": -0.66,
-        "chg_5d": -4.09,
+        "price": 379.395,
+        "chg_1d": -1.13,
+        "chg_5d": -4.54,
         "chg_1m": 2.68,
         "chg_3m": 11.18,
         "name": "Tesla, Inc.",
@@ -5213,8 +5225,8 @@
         "theme": "AI robotics / automation",
         "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States\u2026",
         "tv_symbol": "NASDAQ:TSLA",
-        "vs_sma50_pct": 1.4,
-        "vs_ema200_pct": 0.4,
+        "vs_sma50_pct": 1.0,
+        "vs_ema200_pct": -0.1,
         "earn_days": 69,
         "earn_date": "2027-01-28",
         "earnings_before_exit": false,
@@ -5228,9 +5240,9 @@
       },
       {
         "ticker": "NVDA",
-        "price": 150.425,
-        "chg_1d": -0.35,
-        "chg_5d": -9.49,
+        "price": 149.29,
+        "chg_1d": -1.11,
+        "chg_5d": -10.17,
         "chg_1m": -30.26,
         "chg_3m": -30.31,
         "name": "NVIDIA Corporation",
@@ -5238,8 +5250,8 @@
         "theme": "AI compute chips",
         "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and\u2026",
         "tv_symbol": "NASDAQ:NVDA",
-        "vs_sma50_pct": -28.5,
-        "vs_ema200_pct": -25.5,
+        "vs_sma50_pct": -29.0,
+        "vs_ema200_pct": -26.1,
         "earn_days": null,
         "earn_date": null,
         "earnings_before_exit": false,
@@ -5253,9 +5265,9 @@
       },
       {
         "ticker": "MRVL",
-        "price": 143.645,
-        "chg_1d": -1.3,
-        "chg_5d": -12.65,
+        "price": 142.5462,
+        "chg_1d": -2.06,
+        "chg_5d": -13.32,
         "chg_1m": -39.46,
         "chg_3m": -42.01,
         "name": "Marvell Technology, Inc.",
@@ -5263,8 +5275,8 @@
         "theme": "Photonics / optical",
         "summary": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to\u2026",
         "tv_symbol": "NASDAQ:MRVL",
-        "vs_sma50_pct": -36.0,
-        "vs_ema200_pct": -24.5,
+        "vs_sma50_pct": -36.4,
+        "vs_ema200_pct": -25.1,
         "earn_days": 12,
         "earn_date": "2026-12-02",
         "earnings_before_exit": true,
@@ -5278,9 +5290,9 @@
       },
       {
         "ticker": "AAOI",
-        "price": 40.93,
-        "chg_1d": 0.34,
-        "chg_5d": -22.55,
+        "price": 40.255,
+        "chg_1d": -1.31,
+        "chg_5d": -23.83,
         "chg_1m": -46.85,
         "chg_3m": -68.4,
         "name": "Applied Optoelectronics, Inc.",
@@ -5288,8 +5300,8 @@
         "theme": "Photonics / optical",
         "summary": "Applied Optoelectronics, Inc. engages in the design, manufacture, and sale of fiber-optic networking products in the United States, Taiwan, and China.",
         "tv_symbol": "NASDAQ:AAOI",
-        "vs_sma50_pct": -51.2,
-        "vs_ema200_pct": -57.5,
+        "vs_sma50_pct": -52.0,
+        "vs_ema200_pct": -58.2,
         "earn_days": null,
         "earn_date": null,
         "earnings_before_exit": false,
@@ -5303,9 +5315,9 @@
       },
       {
         "ticker": "LITE",
-        "price": 545.9872,
-        "chg_1d": -0.92,
-        "chg_5d": -12.59,
+        "price": 543.695,
+        "chg_1d": -1.34,
+        "chg_5d": -12.96,
         "chg_1m": -33.0,
         "chg_3m": -37.33,
         "name": "Lumentum Holdings Inc.",
@@ -5313,8 +5325,8 @@
         "theme": "Photonics / optical",
         "summary": "Lumentum Holdings Inc. manufactures and sells optical and photonic products in the Americas, the Asia-Pacific, Europe, the Middle East, and Africa.",
         "tv_symbol": "NASDAQ:LITE",
-        "vs_sma50_pct": -35.3,
-        "vs_ema200_pct": -26.7,
+        "vs_sma50_pct": -35.5,
+        "vs_ema200_pct": -27.0,
         "earn_days": 74,
         "earn_date": "2027-02-02",
         "earnings_before_exit": false,
@@ -5328,9 +5340,9 @@
       },
       {
         "ticker": "HPE",
-        "price": 46.725,
-        "chg_1d": 2.06,
-        "chg_5d": -6.85,
+        "price": 46.265,
+        "chg_1d": 1.06,
+        "chg_5d": -7.77,
         "chg_1m": -18.38,
         "chg_3m": -13.22,
         "name": "Hewlett Packard Enterprise Comp",
@@ -5338,8 +5350,8 @@
         "theme": "AI servers",
         "summary": "Hewlett Packard Enterprise Company, together with its subsidiaries, develops intelligent solutions in the United States, the Americas, Europe, the\u2026",
         "tv_symbol": "NYSE:HPE",
-        "vs_sma50_pct": -19.8,
-        "vs_ema200_pct": 2.9,
+        "vs_sma50_pct": -20.6,
+        "vs_ema200_pct": 1.9,
         "earn_days": 4,
         "earn_date": "2026-11-24",
         "earnings_before_exit": true,
@@ -5353,9 +5365,9 @@
       },
       {
         "ticker": "META",
-        "price": 614.99,
-        "chg_1d": -0.23,
-        "chg_5d": -1.38,
+        "price": 604.741,
+        "chg_1d": -1.89,
+        "chg_5d": -3.03,
         "chg_1m": -11.22,
         "chg_3m": 13.01,
         "name": "Meta Platforms, Inc.",
@@ -5363,8 +5375,8 @@
         "theme": "Hyperscalers",
         "summary": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices\u2026",
         "tv_symbol": "NASDAQ:META",
-        "vs_sma50_pct": -9.5,
-        "vs_ema200_pct": -3.9,
+        "vs_sma50_pct": -11.0,
+        "vs_ema200_pct": -5.5,
         "earn_days": 69,
         "earn_date": "2027-01-28",
         "earnings_before_exit": false,
@@ -5378,9 +5390,9 @@
       },
       {
         "ticker": "AAPL",
-        "price": 350.265,
-        "chg_1d": -0.62,
-        "chg_5d": -1.3,
+        "price": 350.01,
+        "chg_1d": -0.69,
+        "chg_5d": -1.37,
         "chg_1m": 3.89,
         "chg_3m": 13.3,
         "name": "Apple Inc.",
@@ -5389,7 +5401,7 @@
         "summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories.",
         "tv_symbol": "NASDAQ:AAPL",
         "vs_sma50_pct": 2.7,
-        "vs_ema200_pct": 13.6,
+        "vs_ema200_pct": 13.5,
         "earn_days": 70,
         "earn_date": "2027-01-29",
         "earnings_before_exit": false,
@@ -5410,17 +5422,17 @@
       "source": "deep dive",
       "direction": "bullish",
       "researched_at": "2026-10-15T22:52:48.956882+08:00",
-      "price": 57.0401,
+      "price": 56.7414,
       "price_is_live": true,
       "entry": 20.0,
       "stop": 50.0,
       "target": 10.0,
-      "sma50": 92.15,
+      "sma50": 92.11,
       "pct": {
-        "entry": -64.9,
-        "stop": -12.3,
-        "target": -82.5,
-        "sma50": 61.6
+        "entry": -64.8,
+        "stop": -11.9,
+        "target": -82.4,
+        "sma50": 62.3
       }
     },
     "RDDT": {
@@ -5428,17 +5440,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-18T23:09:45.980973+08:00",
-      "price": 93.1525,
+      "price": 91.86,
       "price_is_live": true,
       "entry": 96.29,
       "stop": 102.85,
       "target": 83.17,
-      "sma50": 135.79,
+      "sma50": 135.89,
       "pct": {
-        "entry": 3.4,
-        "stop": 10.4,
-        "target": -10.7,
-        "sma50": 45.8
+        "entry": 4.8,
+        "stop": 12.0,
+        "target": -9.5,
+        "sma50": 47.9
       },
       "plan_status": "current"
     },
@@ -5447,17 +5459,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 708.98,
+      "price": 706.42,
       "price_is_live": true,
       "entry": 746.71,
       "stop": 807.13,
       "target": 625.87,
-      "sma50": 925.56,
+      "sma50": 925.85,
       "pct": {
-        "entry": 5.3,
-        "stop": 13.8,
-        "target": -11.7,
-        "sma50": 30.5
+        "entry": 5.7,
+        "stop": 14.3,
+        "target": -11.4,
+        "sma50": 31.1
       }
     },
     "LRCX": {
@@ -5465,17 +5477,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 209.217,
+      "price": 208.44,
       "price_is_live": true,
       "entry": 220.65,
       "stop": 236.5,
       "target": 188.96,
-      "sma50": 271.36,
+      "sma50": 271.41,
       "pct": {
-        "entry": 5.5,
-        "stop": 13.0,
-        "target": -9.7,
-        "sma50": 29.7
+        "entry": 5.9,
+        "stop": 13.5,
+        "target": -9.3,
+        "sma50": 30.2
       }
     },
     "BKR": {
@@ -5483,17 +5495,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 47.0271,
+      "price": 47.185,
       "price_is_live": true,
       "entry": 48.08,
       "stop": 49.94,
       "target": 44.36,
       "sma50": 54.24,
       "pct": {
-        "entry": 2.2,
-        "stop": 6.2,
-        "target": -5.7,
-        "sma50": 15.3
+        "entry": 1.9,
+        "stop": 5.8,
+        "target": -6.0,
+        "sma50": 15.0
       }
     },
     "VST": {
@@ -5501,17 +5513,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 125.44,
+      "price": 125.095,
       "price_is_live": true,
       "entry": 128.84,
       "stop": 135.34,
       "target": 115.84,
-      "sma50": 141.74,
+      "sma50": 141.83,
       "pct": {
-        "entry": 2.7,
-        "stop": 7.9,
-        "target": -7.7,
-        "sma50": 13.0
+        "entry": 3.0,
+        "stop": 8.2,
+        "target": -7.4,
+        "sma50": 13.4
       }
     },
     "LLY": {
@@ -5519,12 +5531,12 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 1358.1801,
+      "price": 1357.91,
       "price_is_live": true,
       "entry": 1301.26,
       "stop": 1255.18,
       "target": 1393.41,
-      "sma50": 1256.41,
+      "sma50": 1256.16,
       "pct": {
         "entry": -4.2,
         "stop": -7.6,
@@ -5537,12 +5549,12 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 144.2,
+      "price": 144.27,
       "price_is_live": true,
       "entry": 149.72,
       "stop": 160.25,
       "target": 128.65,
-      "sma50": 170.25,
+      "sma50": 170.33,
       "pct": {
         "entry": 3.8,
         "stop": 11.1,
@@ -5555,17 +5567,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 161.6301,
+      "price": 161.8251,
       "price_is_live": true,
       "entry": 163.8,
       "stop": 169.6,
       "target": 152.19,
-      "sma50": 186.0,
+      "sma50": 186.01,
       "pct": {
-        "entry": 1.3,
-        "stop": 4.9,
-        "target": -5.8,
-        "sma50": 15.1
+        "entry": 1.2,
+        "stop": 4.8,
+        "target": -6.0,
+        "sma50": 14.9
       }
     },
     "ON": {
@@ -5573,17 +5585,17 @@
       "source": "scan",
       "direction": "bearish",
       "researched_at": null,
-      "price": 67.29,
+      "price": 67.32,
       "price_is_live": true,
       "entry": 69.11,
       "stop": 73.9,
       "target": 59.51,
-      "sma50": 73.78,
+      "sma50": 73.82,
       "pct": {
         "entry": 2.7,
         "stop": 9.8,
         "target": -11.6,
-        "sma50": 9.6
+        "sma50": 9.7
       }
     },
     "NEE": {
@@ -5591,17 +5603,17 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 83.76,
+      "price": 84.01,
       "price_is_live": true,
       "entry": 82.49,
       "stop": 80.53,
       "target": 86.43,
       "sma50": 80.93,
       "pct": {
-        "entry": -1.5,
-        "stop": -3.9,
-        "target": 3.2,
-        "sma50": -3.4
+        "entry": -1.8,
+        "stop": -4.1,
+        "target": 2.9,
+        "sma50": -3.7
       }
     },
     "MA": {
@@ -5609,17 +5621,17 @@
       "source": "scan",
       "direction": "bullish",
       "researched_at": null,
-      "price": 631.79,
+      "price": 629.79,
       "price_is_live": true,
       "entry": 617.87,
       "stop": 602.8,
       "target": 648.02,
-      "sma50": 605.74,
+      "sma50": 605.57,
       "pct": {
-        "entry": -2.2,
-        "stop": -4.6,
-        "target": 2.6,
-        "sma50": -4.1
+        "entry": -1.9,
+        "stop": -4.3,
+        "target": 2.9,
+        "sma50": -3.8
       }
     },
     "XEL": {
@@ -5735,16 +5747,16 @@
       "source": "deep dive",
       "direction": "bullish",
       "researched_at": "2026-09-29T10:41:03.688493+08:00",
-      "price": 350.265,
+      "price": 350.01,
       "price_is_live": true,
       "entry": 328.73,
       "stop": 320.19,
       "target": 345.8,
-      "sma50": 341.06,
+      "sma50": 340.81,
       "pct": {
         "entry": -6.1,
-        "stop": -8.6,
-        "target": -1.3,
+        "stop": -8.5,
+        "target": -1.2,
         "sma50": -2.6
       }
     },
@@ -5933,17 +5945,17 @@
       "source": "deep dive",
       "direction": "bullish",
       "researched_at": "2026-11-20T01:20:57.449799+08:00",
-      "price": 381.1935,
+      "price": 379.395,
       "price_is_live": true,
       "entry": 374.2,
       "stop": 364.16,
       "target": 414.36,
-      "sma50": 375.93,
+      "sma50": 375.64,
       "pct": {
-        "entry": -1.8,
-        "stop": -4.5,
-        "target": 8.7,
-        "sma50": -1.4
+        "entry": -1.4,
+        "stop": -4.0,
+        "target": 9.2,
+        "sma50": -1.0
       },
       "plan_status": "current"
     },
@@ -5970,17 +5982,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-20T01:19:15.028972+08:00",
-      "price": 286.04,
+      "price": 280.84,
       "price_is_live": true,
       "entry": 313.85,
       "stop": 325.62,
       "target": 290.3,
       "sma50": 325.05,
       "pct": {
-        "entry": 9.7,
-        "stop": 13.8,
-        "target": 1.5,
-        "sma50": 13.6
+        "entry": 11.8,
+        "stop": 15.9,
+        "target": 3.4,
+        "sma50": 15.7
       }
     },
     "META": {
@@ -5988,17 +6000,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-18T23:00:50.560571+08:00",
-      "price": 614.99,
+      "price": 604.741,
       "price_is_live": true,
       "entry": 653.23,
       "stop": 682.7,
       "target": 594.3,
-      "sma50": 679.55,
+      "sma50": 679.48,
       "pct": {
-        "entry": 6.2,
-        "stop": 11.0,
-        "target": -3.4,
-        "sma50": 10.5
+        "entry": 8.0,
+        "stop": 12.9,
+        "target": -1.7,
+        "sma50": 12.4
       }
     },
     "AAOI": {
@@ -6006,17 +6018,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-10T22:39:29.166290+08:00",
-      "price": 40.93,
+      "price": 40.255,
       "price_is_live": true,
       "entry": 49.7,
       "stop": 55.24,
       "target": 38.61,
-      "sma50": 83.87,
+      "sma50": 83.86,
       "pct": {
-        "entry": 21.4,
-        "stop": 35.0,
-        "target": -5.7,
-        "sma50": 104.9
+        "entry": 23.5,
+        "stop": 37.2,
+        "target": -4.1,
+        "sma50": 108.3
       }
     },
     "MRVL": {
@@ -6024,17 +6036,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-04T00:58:31.516324+08:00",
-      "price": 143.645,
+      "price": 142.5462,
       "price_is_live": true,
       "entry": 168.48,
       "stop": 182.05,
       "target": 141.35,
-      "sma50": 224.45,
+      "sma50": 224.13,
       "pct": {
-        "entry": 17.3,
-        "stop": 26.7,
-        "target": -1.6,
-        "sma50": 56.3
+        "entry": 18.2,
+        "stop": 27.7,
+        "target": -0.8,
+        "sma50": 57.2
       },
       "plan_status": "moved"
     },
@@ -6043,17 +6055,17 @@
       "source": "deep dive",
       "direction": "bearish",
       "researched_at": "2026-11-04T00:53:29.554600+08:00",
-      "price": 545.9872,
+      "price": 543.695,
       "price_is_live": true,
       "entry": 852.36,
       "stop": 920.68,
       "target": 715.73,
-      "sma50": 843.88,
+      "sma50": 842.94,
       "pct": {
-        "entry": 56.1,
-        "stop": 68.6,
-        "target": 31.1,
-        "sma50": 54.6
+        "entry": 56.8,
+        "stop": 69.3,
+        "target": 31.6,
+        "sma50": 55.0
       }
     },
     "MSFT": {
@@ -6372,14 +6384,14 @@
         "vs_spy_1m": -7.1
       },
       "price": {
-        "last": 381.1935,
-        "chg_1d": -0.66,
-        "chg_5d": -4.09,
+        "last": 379.395,
+        "chg_1d": -1.13,
+        "chg_5d": -4.54,
         "chg_1m": 2.68,
         "chg_3m": 11.18,
-        "vs_sma50_pct": 1.4,
-        "vs_ema200_pct": 0.4,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": 1.0,
+        "vs_ema200_pct": -0.1,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Tesla, Inc.",
@@ -6573,14 +6585,14 @@
         "vs_spy_1m": 0.9
       },
       "price": {
-        "last": 93.1525,
-        "chg_1d": -1.0,
-        "chg_5d": -6.43,
+        "last": 91.86,
+        "chg_1d": -2.37,
+        "chg_5d": -7.72,
         "chg_1m": -39.55,
         "chg_3m": -37.4,
-        "vs_sma50_pct": -31.4,
-        "vs_ema200_pct": -39.8,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -32.4,
+        "vs_ema200_pct": -40.7,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Reddit, Inc.",
@@ -6779,14 +6791,14 @@
         "vs_spy_1m": 0.9
       },
       "price": {
-        "last": 286.04,
-        "chg_1d": 1.27,
-        "chg_5d": -4.24,
+        "last": 280.84,
+        "chg_1d": -0.57,
+        "chg_5d": -5.98,
         "chg_1m": -17.0,
         "chg_3m": -17.04,
-        "vs_sma50_pct": -12.0,
-        "vs_ema200_pct": -11.8,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -13.6,
+        "vs_ema200_pct": -13.4,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Alphabet Inc.",
@@ -6996,14 +7008,14 @@
         "vs_spy_1m": 0.9
       },
       "price": {
-        "last": 614.99,
-        "chg_1d": -0.23,
-        "chg_5d": -1.38,
+        "last": 604.741,
+        "chg_1d": -1.89,
+        "chg_5d": -3.03,
         "chg_1m": -11.22,
         "chg_3m": 13.01,
-        "vs_sma50_pct": -9.5,
-        "vs_ema200_pct": -3.9,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -11.0,
+        "vs_ema200_pct": -5.5,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Meta Platforms, Inc.",
@@ -7218,14 +7230,14 @@
         "vs_spy_1m": -10.8
       },
       "price": {
-        "last": 150.425,
-        "chg_1d": -0.35,
-        "chg_5d": -9.49,
+        "last": 149.29,
+        "chg_1d": -1.11,
+        "chg_5d": -10.17,
         "chg_1m": -30.26,
         "chg_3m": -30.31,
-        "vs_sma50_pct": -28.5,
-        "vs_ema200_pct": -25.5,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -29.0,
+        "vs_ema200_pct": -26.1,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "NVIDIA Corporation",
@@ -7435,14 +7447,14 @@
         "vs_spy_1m": -10.8
       },
       "price": {
-        "last": 143.645,
-        "chg_1d": -1.3,
-        "chg_5d": -12.65,
+        "last": 142.5462,
+        "chg_1d": -2.06,
+        "chg_5d": -13.32,
         "chg_1m": -39.46,
         "chg_3m": -42.01,
-        "vs_sma50_pct": -36.0,
-        "vs_ema200_pct": -24.5,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -36.4,
+        "vs_ema200_pct": -25.1,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Marvell Technology, Inc.",
@@ -7621,14 +7633,14 @@
         "vs_spy_1m": -6.6
       },
       "price": {
-        "last": 40.93,
-        "chg_1d": 0.34,
-        "chg_5d": -22.55,
+        "last": 40.255,
+        "chg_1d": -1.31,
+        "chg_5d": -23.83,
         "chg_1m": -46.85,
         "chg_3m": -68.4,
-        "vs_sma50_pct": -51.2,
-        "vs_ema200_pct": -57.5,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -52.0,
+        "vs_ema200_pct": -58.2,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Applied Optoelectronics, Inc.",
@@ -7838,14 +7850,14 @@
         "vs_spy_1m": -6.6
       },
       "price": {
-        "last": 545.9872,
-        "chg_1d": -0.92,
-        "chg_5d": -12.59,
+        "last": 543.695,
+        "chg_1d": -1.34,
+        "chg_5d": -12.96,
         "chg_1m": -33.0,
         "chg_3m": -37.33,
-        "vs_sma50_pct": -35.3,
-        "vs_ema200_pct": -26.7,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -35.5,
+        "vs_ema200_pct": -27.0,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Lumentum Holdings Inc.",
@@ -8015,14 +8027,14 @@
         "vs_spy_1m": -6.6
       },
       "price": {
-        "last": 46.725,
-        "chg_1d": 2.06,
-        "chg_5d": -6.85,
+        "last": 46.265,
+        "chg_1d": 1.06,
+        "chg_5d": -7.77,
         "chg_1m": -18.38,
         "chg_3m": -13.22,
-        "vs_sma50_pct": -19.8,
-        "vs_ema200_pct": 2.9,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -20.6,
+        "vs_ema200_pct": 1.9,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Hewlett Packard Enterprise Comp",
@@ -8232,14 +8244,14 @@
         "vs_spy_1m": -6.6
       },
       "price": {
-        "last": 350.265,
-        "chg_1d": -0.62,
-        "chg_5d": -1.3,
+        "last": 350.01,
+        "chg_1d": -0.69,
+        "chg_5d": -1.37,
         "chg_1m": 3.89,
         "chg_3m": 13.3,
         "vs_sma50_pct": 2.7,
-        "vs_ema200_pct": 13.6,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_ema200_pct": 13.5,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Apple Inc.",
@@ -8454,14 +8466,14 @@
         "vs_spy_1m": -10.8
       },
       "price": {
-        "last": 57.0401,
-        "chg_1d": 4.34,
-        "chg_5d": -6.8,
+        "last": 56.7414,
+        "chg_1d": 3.79,
+        "chg_5d": -7.29,
         "chg_1m": -40.38,
         "chg_3m": -40.66,
-        "vs_sma50_pct": -38.1,
-        "vs_ema200_pct": -31.8,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -38.4,
+        "vs_ema200_pct": -32.2,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Intel Corporation",
@@ -8641,14 +8653,14 @@
         "vs_spy_1m": -10.8
       },
       "price": {
-        "last": 708.98,
-        "chg_1d": 0.53,
-        "chg_5d": -11.2,
+        "last": 706.42,
+        "chg_1d": 0.16,
+        "chg_5d": -11.52,
         "chg_1m": -21.29,
         "chg_3m": -27.6,
-        "vs_sma50_pct": -23.4,
-        "vs_ema200_pct": -7.7,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -23.7,
+        "vs_ema200_pct": -8.0,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Micron Technology, Inc.",
@@ -8847,14 +8859,14 @@
         "vs_spy_1m": -10.8
       },
       "price": {
-        "last": 209.217,
-        "chg_1d": -1.16,
-        "chg_5d": -10.51,
+        "last": 208.44,
+        "chg_1d": -1.53,
+        "chg_5d": -10.84,
         "chg_1m": -19.65,
         "chg_3m": -31.76,
-        "vs_sma50_pct": -22.9,
-        "vs_ema200_pct": -21.3,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -23.2,
+        "vs_ema200_pct": -21.6,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Lam Research Corporation",
@@ -9048,14 +9060,14 @@
         "vs_spy_1m": -4.8
       },
       "price": {
-        "last": 47.0271,
-        "chg_1d": -0.58,
-        "chg_5d": -3.75,
+        "last": 47.185,
+        "chg_1d": -0.24,
+        "chg_5d": -3.43,
         "chg_1m": -14.6,
         "chg_3m": -24.3,
-        "vs_sma50_pct": -13.3,
-        "vs_ema200_pct": -16.2,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -13.0,
+        "vs_ema200_pct": -15.9,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Baker Hughes Company",
@@ -9249,14 +9261,14 @@
         "vs_spy_1m": 9.0
       },
       "price": {
-        "last": 125.44,
-        "chg_1d": -0.11,
-        "chg_5d": -6.74,
+        "last": 125.095,
+        "chg_1d": -0.39,
+        "chg_5d": -7.0,
         "chg_1m": -16.46,
         "chg_3m": -9.47,
-        "vs_sma50_pct": -11.5,
-        "vs_ema200_pct": -16.7,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -11.8,
+        "vs_ema200_pct": -16.9,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Vistra Corp.",
@@ -9450,14 +9462,14 @@
         "vs_spy_1m": 5.8
       },
       "price": {
-        "last": 1358.1801,
-        "chg_1d": -1.78,
-        "chg_5d": -4.73,
+        "last": 1357.91,
+        "chg_1d": -1.8,
+        "chg_5d": -4.74,
         "chg_1m": 7.85,
         "chg_3m": 11.25,
         "vs_sma50_pct": 8.1,
         "vs_ema200_pct": 19.1,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Eli Lilly and Company",
@@ -9656,14 +9668,14 @@
         "vs_spy_1m": -10.8
       },
       "price": {
-        "last": 144.2,
-        "chg_1d": -0.47,
-        "chg_5d": -8.19,
+        "last": 144.27,
+        "chg_1d": -0.42,
+        "chg_5d": -8.14,
         "chg_1m": -10.29,
         "chg_3m": -21.93,
         "vs_sma50_pct": -15.3,
         "vs_ema200_pct": -15.9,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "KLA Corporation",
@@ -9857,14 +9869,14 @@
         "vs_spy_1m": 6.0
       },
       "price": {
-        "last": 161.6301,
-        "chg_1d": -0.79,
-        "chg_5d": -5.78,
+        "last": 161.8251,
+        "chg_1d": -0.67,
+        "chg_5d": -5.67,
         "chg_1m": -14.47,
         "chg_3m": -24.26,
-        "vs_sma50_pct": -13.1,
-        "vs_ema200_pct": -21.0,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": -13.0,
+        "vs_ema200_pct": -20.9,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Boeing Company (The)",
@@ -10063,14 +10075,14 @@
         "vs_spy_1m": -10.8
       },
       "price": {
-        "last": 67.29,
-        "chg_1d": 0.09,
-        "chg_5d": -8.73,
+        "last": 67.32,
+        "chg_1d": 0.13,
+        "chg_5d": -8.69,
         "chg_1m": -11.09,
         "chg_3m": -10.01,
         "vs_sma50_pct": -8.8,
-        "vs_ema200_pct": -13.2,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_ema200_pct": -13.1,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "ON Semiconductor Corporation",
@@ -10239,14 +10251,14 @@
         "vs_spy_1m": 9.0
       },
       "price": {
-        "last": 83.76,
-        "chg_1d": -1.2,
-        "chg_5d": -1.79,
+        "last": 84.01,
+        "chg_1d": -0.91,
+        "chg_5d": -1.5,
         "chg_1m": 7.51,
         "chg_3m": 0.46,
-        "vs_sma50_pct": 3.5,
-        "vs_ema200_pct": 0.4,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": 3.8,
+        "vs_ema200_pct": 0.7,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "NextEra Energy, Inc.",
@@ -10440,14 +10452,14 @@
         "vs_spy_1m": 5.8
       },
       "price": {
-        "last": 631.79,
-        "chg_1d": -1.8,
-        "chg_5d": -3.19,
+        "last": 629.79,
+        "chg_1d": -2.11,
+        "chg_5d": -3.5,
         "chg_1m": 2.16,
         "chg_3m": 9.71,
-        "vs_sma50_pct": 4.3,
-        "vs_ema200_pct": 11.7,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "vs_sma50_pct": 4.0,
+        "vs_ema200_pct": 11.3,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       "profile": {
         "name": "Mastercard Incorporated",
@@ -10464,42 +10476,42 @@
       {
         "symbol": "SPY",
         "name": "S&P 500",
-        "chg_1d": -0.62,
-        "chg_5d": -4.15,
+        "chg_1d": -1.04,
+        "chg_5d": -4.56,
         "chg_1m": -5.05,
         "chg_3m": -4.4,
-        "last": 725.67,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "last": 722.593,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       {
         "symbol": "QQQ",
         "name": "Nasdaq-100",
-        "chg_1d": -0.39,
-        "chg_5d": -4.54,
+        "chg_1d": -1.08,
+        "chg_5d": -5.2,
         "chg_1m": -8.1,
         "chg_3m": -7.46,
-        "last": 656.9101,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "last": 652.39,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       {
         "symbol": "IWM",
         "name": "Russell 2000",
-        "chg_1d": -1.14,
-        "chg_5d": -4.09,
+        "chg_1d": -1.23,
+        "chg_5d": -4.18,
         "chg_1m": -2.05,
         "chg_3m": -9.71,
-        "last": 267.05,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "last": 266.81,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       {
         "symbol": "^VIX",
         "name": "VIX",
-        "chg_1d": 14.58,
-        "chg_5d": 50.48,
+        "chg_1d": 13.68,
+        "chg_5d": 49.3,
         "chg_1m": 34.83,
         "chg_3m": 45.57,
-        "last": 28.14,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "last": 27.92,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       {
         "symbol": "^TNX",
@@ -10512,18 +10524,18 @@
         "unit": "yield",
         "level": 5.05,
         "chg_1d_bp": -2,
-        "chg_5d_bp": -5,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "chg_5d_bp": -6,
+        "as_of": "2026-11-19T18:35:07+00:00"
       },
       {
         "symbol": "DX-Y.NYB",
         "name": "Dollar",
-        "chg_1d": -0.04,
-        "chg_5d": 0.63,
+        "chg_1d": 0.01,
+        "chg_5d": 0.68,
         "chg_1m": 1.86,
         "chg_3m": 4.72,
-        "last": 103.816,
-        "as_of": "2026-11-19T17:35:08+00:00"
+        "last": 103.872,
+        "as_of": "2026-11-19T18:35:07+00:00"
       }
     ],
     "events": [],
@@ -10537,15 +10549,15 @@
     "movers": [
       {
         "ticker": "INTC",
-        "chg_1d": 4.34
+        "chg_1d": 3.79
       },
       {
-        "ticker": "HPE",
-        "chg_1d": 2.06
+        "ticker": "RDDT",
+        "chg_1d": -2.37
       },
       {
         "ticker": "MA",
-        "chg_1d": -1.8
+        "chg_1d": -2.11
       }
     ],
     "analyst_actions_3d": []
@@ -10567,18 +10579,18 @@
         ]
       },
       "appetite": {
-        "value": 17,
+        "value": 18,
         "label": "extreme fear",
         "components": {
           "momentum": 0,
-          "strength": 9,
-          "breadth": 57,
-          "vix term": 4,
+          "strength": 13,
+          "breadth": 58,
+          "vix term": 5,
           "volatility": 1,
-          "junk demand": 36,
-          "safe haven": 13
+          "junk demand": 35,
+          "safe haven": 12
         },
-        "as_of": "01:21 MYT"
+        "as_of": "02:35 MYT"
       },
       "sections": [
         {
@@ -10755,14 +10767,14 @@
         },
         {
           "title": "Under the surface",
-          "lead": "(live \u00b7 as of 01:21 MYT \u00b7 today's partial bars; headlines and Read are from the pre-open desk)",
+          "lead": "(live \u00b7 as of 02:35 MYT \u00b7 today's partial bars; headlines and Read are from the pre-open desk)",
           "lines": [
-            "M7 (1D): GOOGL +0.7% \u00b7 MSFT -0.1% \u00b7 AAPL -0.9% \u00b7 NVDA -1.1% \u00b7 META -1.1% \u00b7 AMZN -1.6% \u00b7 TSLA -1.7%",
-            "Sectors 1W vs S&P: leading Staples +3.2, Utilities +2.6, Discretionary +1.9 \u00b7 lagging Tech -1.7, Health -0.6, Materials -0.5",
-            "S&P 500 breadth 51% above 50-day \u00b7 your universe 27% \u00b7 equal-weight vs S&P 1M +4.8 pts \u00b7 small vs large 1M +2.8 pts \u00b7 VIX/VIX3M 1.07 \u00b7 credit +0.1",
-            "Themes 1W (equal-wt): Cybersecurity +5.7% \u00b7 Casinos -0.7% \u00b7 Defense -3.1% \u00b7 Biotech large-cap -3.9% \u00b7 \u2026 \u00b7 Photonics -12.8% \u00b7 Nuclear -13.2% \u00b7 Neoclouds -20.1%",
-            "Strongest: Cybersecurity (1/5 above 50-day, lead PANW +11.2%) \u00b7 Weakest: Neoclouds (0/4 above 50-day, worst IREN -25.4%)",
-            "Appetite index 17/100 (extreme fear, vs recent months) \u2014 momentum 0 \u00b7 strength 9 \u00b7 breadth 57 \u00b7 vix term 4 \u00b7 volatility 1 \u00b7 junk demand 36 \u00b7 safe haven 13",
+            "M7 (1D): AAPL -0.6% \u00b7 GOOGL -0.7% \u00b7 NVDA -1.1% \u00b7 MSFT -1.1% \u00b7 TSLA -1.2% \u00b7 META -2.1% \u00b7 AMZN -2.8%",
+            "Sectors 1W vs S&P: leading Staples +3.6, Utilities +3.2, Real estate +2.1 \u00b7 lagging Tech -2.0, Health -0.4, Energy -0.3",
+            "S&P 500 breadth 53% above 50-day \u00b7 your universe 27% \u00b7 equal-weight vs S&P 1M +5.0 pts \u00b7 small vs large 1M +3.1 pts \u00b7 VIX/VIX3M 1.05 \u00b7 credit +0.1",
+            "Themes 1W (equal-wt): Cybersecurity +4.4% \u00b7 Casinos -0.3% \u00b7 Defense -2.6% \u00b7 Biotech large-cap -3.6% \u00b7 \u2026 \u00b7 Photonics -12.7% \u00b7 Nuclear -12.8% \u00b7 Neoclouds -19.8%",
+            "Strongest: Cybersecurity (0/5 above 50-day, lead PANW +11.4%) \u00b7 Weakest: Neoclouds (0/4 above 50-day, worst IREN -24.3%)",
+            "Appetite index 18/100 (extreme fear, vs recent months) \u2014 momentum 0 \u00b7 strength 13 \u00b7 breadth 58 \u00b7 vix term 5 \u00b7 volatility 1 \u00b7 junk demand 35 \u00b7 safe haven 12",
             "Narratives heating up: China\u2013Taiwan tension 3.5\u00d7 (7 stories) \u00b7 Credit stress 2.4\u00d7 (13 stories)",
             "  China\u2013Taiwan tension: \u201cTrump, Xi, Putin begin historic meeting with Ukraine war on agenda\u201d",
             "  Credit stress: \u201cECB to inspect banks over private credit links\u201d"
@@ -10776,18 +10788,13 @@
                   "name": null,
                   "items": [
                     {
-                      "name": "GOOGL",
-                      "value": "+0.7%",
-                      "tone": "up"
-                    },
-                    {
-                      "name": "MSFT",
-                      "value": "-0.1%",
+                      "name": "AAPL",
+                      "value": "-0.6%",
                       "tone": "down"
                     },
                     {
-                      "name": "AAPL",
-                      "value": "-0.9%",
+                      "name": "GOOGL",
+                      "value": "-0.7%",
                       "tone": "down"
                     },
                     {
@@ -10796,18 +10803,23 @@
                       "tone": "down"
                     },
                     {
-                      "name": "META",
+                      "name": "MSFT",
                       "value": "-1.1%",
                       "tone": "down"
                     },
                     {
-                      "name": "AMZN",
-                      "value": "-1.6%",
+                      "name": "TSLA",
+                      "value": "-1.2%",
                       "tone": "down"
                     },
                     {
-                      "name": "TSLA",
-                      "value": "-1.7%",
+                      "name": "META",
+                      "value": "-2.1%",
+                      "tone": "down"
+                    },
+                    {
+                      "name": "AMZN",
+                      "value": "-2.8%",
                       "tone": "down"
                     }
                   ]
@@ -10824,17 +10836,17 @@
                   "items": [
                     {
                       "name": "Staples",
-                      "value": "+3.2",
+                      "value": "+3.6",
                       "tone": "up"
                     },
                     {
                       "name": "Utilities",
-                      "value": "+2.6",
+                      "value": "+3.2",
                       "tone": "up"
                     },
                     {
-                      "name": "Discretionary",
-                      "value": "+1.9",
+                      "name": "Real estate",
+                      "value": "+2.1",
                       "tone": "up"
                     }
                   ]
@@ -10844,17 +10856,17 @@
                   "items": [
                     {
                       "name": "Tech",
-                      "value": "-1.7",
+                      "value": "-2.0",
                       "tone": "down"
                     },
                     {
                       "name": "Health",
-                      "value": "-0.6",
+                      "value": "-0.4",
                       "tone": "down"
                     },
                     {
-                      "name": "Materials",
-                      "value": "-0.5",
+                      "name": "Energy",
+                      "value": "-0.3",
                       "tone": "down"
                     }
                   ]
@@ -10871,7 +10883,7 @@
                   "items": [
                     {
                       "name": "S&P 500 breadth",
-                      "value": "51% above 50-day",
+                      "value": "53% above 50-day",
                       "tone": null
                     },
                     {
@@ -10881,17 +10893,17 @@
                     },
                     {
                       "name": "equal-weight vs S&P 1M",
-                      "value": "+4.8 pts",
+                      "value": "+5.0 pts",
                       "tone": "up"
                     },
                     {
                       "name": "small vs large 1M",
-                      "value": "+2.8 pts",
+                      "value": "+3.1 pts",
                       "tone": "up"
                     },
                     {
                       "name": "VIX/VIX3M",
-                      "value": "1.07",
+                      "value": "1.05",
                       "tone": null
                     },
                     {
@@ -10913,22 +10925,22 @@
                   "items": [
                     {
                       "name": "Cybersecurity",
-                      "value": "+5.7%",
+                      "value": "+4.4%",
                       "tone": "up"
                     },
                     {
                       "name": "Casinos",
-                      "value": "-0.7%",
+                      "value": "-0.3%",
                       "tone": "down"
                     },
                     {
                       "name": "Defense",
-                      "value": "-3.1%",
+                      "value": "-2.6%",
                       "tone": "down"
                     },
                     {
                       "name": "Biotech large-cap",
-                      "value": "-3.9%",
+                      "value": "-3.6%",
                       "tone": "down"
                     },
                     {
@@ -10938,17 +10950,17 @@
                     },
                     {
                       "name": "Photonics",
-                      "value": "-12.8%",
+                      "value": "-12.7%",
                       "tone": "down"
                     },
                     {
                       "name": "Nuclear",
-                      "value": "-13.2%",
+                      "value": "-12.8%",
                       "tone": "down"
                     },
                     {
                       "name": "Neoclouds",
-                      "value": "-20.1%",
+                      "value": "-19.8%",
                       "tone": "down"
                     }
                   ]
@@ -10964,7 +10976,7 @@
                   "name": "Strongest",
                   "items": [
                     {
-                      "name": "Cybersecurity (1/5 above 50-day, lead PANW +11.2%)",
+                      "name": "Cybersecurity (0/5 above 50-day, lead PANW +11.4%)",
                       "value": "",
                       "tone": "up"
                     }
@@ -10974,7 +10986,7 @@
                   "name": "Weakest",
                   "items": [
                     {
-                      "name": "Neoclouds (0/4 above 50-day, worst IREN -25.4%)",
+                      "name": "Neoclouds (0/4 above 50-day, worst IREN -24.3%)",
                       "value": "",
                       "tone": "down"
                     }
@@ -11418,7 +11430,7 @@
           "holding": "0/1"
         }
       ],
-      "live_at": "01:21"
+      "live_at": "02:35"
     },
     "league": {
       "date": "2026-11-13",
@@ -11742,7 +11754,7 @@
       ],
       "stale": []
     },
-    "desk_age_h": 3.8,
+    "desk_age_h": 4.8,
     "league_age_d": 6
   },
   "why_moved": {
